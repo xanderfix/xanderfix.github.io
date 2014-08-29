@@ -1,6 +1,19 @@
+body {
+    background-color:white;
+}
+#main {
+    height:750px;
+    margin-left:100px;
+    margin-right:100px;
+    background-color:black;
+}
+p {
+    color:white;
+}
+
 #navbar {
     height: 25px;
-    color: red;
+   background-color: red;
 }
 .navbar {
     display:inline;
