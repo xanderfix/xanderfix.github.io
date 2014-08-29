@@ -1,0 +1,11 @@
+#navbar {
+    height: 25px;
+    color: red;
+}
+.navbar {
+    display:inline;
+}
+a {
+    color:white;
+    font-weight:bold;
+}
