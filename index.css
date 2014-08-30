@@ -1,17 +1,23 @@
-body {
-    background-color:white;
+html { 
+  background: url(http://www.gamejudgment.com/wp-content/uploads/2011/01/Top-5-Games-to-Play-While-Listening-to-a-Podcast-Mario-world-1-1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #main {
-    height:750px;
-    margin-left:100px;
-    margin-right:100px;
+    height:100%;
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:0%
+    margin-bottom:0%;
     background-color:black;
 }
 p {
     color:white;
 }
 #navbar {
-   height: 25px;
+   height:3.5%;
    background-color: red;
 }
 li {
@@ -19,13 +25,16 @@ li {
 }
 img {
     margin:0px 0px 0px 0px;
-    height:25px;
-    width:25px;
+    height:100%;
+    width:3%;
 }
 .non-img {
-    margin-right:100px;
+    margin-right:11.5%;
 }
 a {
     color:white;
     font-weight:bold;
+}
+#KONGletters {
+    width:8%;
 }
