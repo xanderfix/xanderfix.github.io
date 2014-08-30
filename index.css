@@ -29,11 +29,14 @@ img {
     width:3%;
 }
 .non-img {
-    margin-right:11.5%;
+    margin-right:11%;
 }
 a {
     color:white;
     font-weight:bold;
+}
+#SamusShip {
+    width:3.5%;
 }
 #KONGletters {
     width:8%;
