@@ -1,5 +1,5 @@
 html { 
-  background: url(http://www.gamejudgment.com/wp-content/uploads/2011/01/Top-5-Games-to-Play-While-Listening-to-a-Podcast-Mario-world-1-1.png) no-repeat center center fixed; 
+  background: url(http://www.wallpeer.com/wp-content/uploads/2014/02/super-metroid-wallpaper-2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,6 +12,7 @@ html {
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
+    opacity:0.8;
 }
 p {
     color:white;
