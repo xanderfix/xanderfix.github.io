@@ -12,7 +12,10 @@ html {
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
+    opacity:0.9;
+}
+h1 {
+    color:white;
 }
 p {
     color:white;
@@ -28,6 +31,17 @@ img {
     margin:0px 0px 0px 0px;
     height:100%;
     width:3%;
+    display:inline;
+}
+#SPimg1 {
+    height:256;
+    width:224;
+    opacity:2;
+}
+#SPimg2{
+    height:160;
+    width:240;
+    opacity:2;
 }
 .non-img {
     margin-right:11%;
@@ -42,8 +56,18 @@ a {
 #KONGletters {
     width:8%;
 }
-.SPimg {
-    height:600%;
-    width:20%;
-    display:inline-block;
+#imgBackground1 {
+    background-color:black;
+    display:inline;
+    height:256px;
+    width:224px;
+    opacity:2;
 }
+#imgBackground2 {
+    background-color:black;
+    display:inline;
+    height:160px;
+    width:240px;
+    opacity:2;
+}
+
