@@ -14,6 +14,12 @@ html {
     background-color:black;
     opacity:0.8;
 }
+h1 {
+    color:white;
+}
+h2 {
+    color:white;
+}
 p {
     color:white;
 }
@@ -41,4 +47,12 @@ a {
 }
 #KONGletters {
     width:8%;
+}
+#img1 {
+    height:350px;
+    width:256px;
+}
+#img2 {
+    height:350px;
+    width:256px;
 }
