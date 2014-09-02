@@ -51,3 +51,7 @@ a {
     width:256px;
     margin-top:1%;
 }
+#title {
+    text-align:center;
+    color:white;
+}
