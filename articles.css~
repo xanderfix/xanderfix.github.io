@@ -1,0 +1,44 @@
+html { 
+  background: url(images/16bitHyrule) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main {
+    height:100%;
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:0%
+    margin-bottom:0%;
+    background-color:black;
+    opacity:0.8;
+}
+p {
+    color:white;
+}
+#navbar {
+   height:3.5%;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+img {
+    margin:0px 0px 0px 0px;
+    height:100%;
+    width:3%;
+}
+.non-img {
+    margin-right:11%;
+}
+a {
+    color:white;
+    font-weight:bold;
+}
+#SamusShip {
+    width:3.5%;
+}
+#KONGletters {
+    width:8%;
+}

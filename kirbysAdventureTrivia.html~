@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Trivia</title>
+<link type="text/css" rel="stylesheet" href="kirbysAdventureTrivia.css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <li id="SamusShip"><img src="images/samusShip.gif"/></li>
+           <li class="non-img"><a href="index.html">Home</a></li>
+           <li><img src="images/triforce.jpg"/></li>
+           <li class="non-img"><a href="articles.html">Articles</a></li>
+           <li><img src="images/?block.png"/></li>
+           <li class="non-img"><a href="trivia.html">Trivia</a></li>
+           <li><img src="images/mikeKirby.png"/></li>
+           <li class="non-img"><a href="videos.html">Videos</a></li>
+           <li><img src="images/kongLetters.png" id="KONGletters"/></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1>Kirby's Adventure Trivia</h1>
+        <ul>
+            <li><p>-Put together, the first letter of the first seven levels' names spells VIBGYOR which is ROYGBIV, a common acronym for the colors of the rainbow, spelled backwards.</p></li>
+            <li><p>-Furthermore, the border during each level's scene matches its' color (Ice Cream Island: indigo, Rainbow Resort: red, etc.).</p></li>
+            <div id="imgBackground1">
+                <img src="images/iceCreamIsland.png" id="SPimg1"/>
+            </div>
+            <div id="imgBackground2">
+                <img src="images/rainbowResort.png" id="SPimg2"/>
+            </div>
+            <li><p>-At approximately 6 megabits, Kirby's Adventure has the most memory of any NES cartridge.</p></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+

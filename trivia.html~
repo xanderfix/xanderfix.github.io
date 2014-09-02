@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Trivia</title>
+<link type="text/css" rel="stylesheet" href="trivia.css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <li id="SamusShip"><img src="images/samusShip.gif"/></li>
+           <li class="non-img"><a href="index.html">Home</a></li>
+           <li><img src="images/triforce.jpg"/></li>
+           <li class="non-img"><a href="articles.html">Articles</a></li>
+           <li><img src="images/?block.png"/></li>
+           <li class="non-img"><a href="trivia.html">Trivia</a></li>
+           <li><img src="images/mikeKirby.png"/></li>
+           <li class="non-img"><a href="videos.html">Videos</a></li>
+           <li><img src="images/kongLetters.png" id="KONGletters"/></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <a href="kirbysAdventureTrivia.html" class="KA">Kirby's Adventure</a>
+    <img src="images/KAcover.png" id="KAimg" class="KA"/>
+</div>
+</body>
+</html>
+

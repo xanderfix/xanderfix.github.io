@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Contact</title>
+<link type="text/css" rel="stylesheet" href="contact.css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <li id="SamusShip"><img src="images/samusShip.gif"/></li>
+           <li class="non-img"><a href="index.html">Home</a></li>
+           <li><img src="images/triforce.jpg"/></li>
+           <li class="non-img"><a href="articles.html">Articles</a></li>
+           <li><img src="images/?block.jpg"/></li>
+           <li class="non-img"><a href="trivia.html">Trivia</a></li>
+           <li><img src="images/mikeKirby.png"/></li>
+           <li class="non-img"><a href="videos.html">Videos</a></li>
+           <li><img src="images/kongLetters.png" id="KONGletters"/></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <p>If you have any comments or questions, you can e-mail me at xanderfix@gmail.com.</p> 
+    <p> Also, my Nintendo Network ID is OculusSupremus if you would like to friend/follow me on your Wii U.</p>
+</div>
+</body>
+</html>
+
