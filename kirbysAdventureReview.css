@@ -1,0 +1,76 @@
+html { 
+  background: url(images/16bitHyrule.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main {
+    height:2250px;
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:0%
+    margin-bottom:0%;
+    background-color:black;
+    opacity:0.8;
+}
+h1 {
+    color:white;
+}
+p {
+    color:white;
+}
+#navbar {
+   height:1%;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+img {
+    margin:0px 0px 0px 0px;
+    height:100%;
+    width:3%;
+}
+.non-img {
+    margin-right:11%;
+}
+a {
+    color:white;
+    font-weight:bold;
+}
+#SamusShip {
+    width:3.5%;
+}
+#KONGletters {
+    width:8%;
+}
+h4 {
+    color:white;
+}
+table {
+    color:white;
+}
+#KAimg {
+    height:350px;
+    width:256px;
+}
+#KAimg2 {
+    height:133px;
+    width:200px;
+}
+#KAimg3 {
+    height:435px;
+    width:580px;
+}
+#KAimg4 {
+    height:209px;
+    width:138px;
+}
+#KAimg5 {
+    height:224px;
+    width:256px;
+}
+.caption {
+    font-size:12px;
+}
