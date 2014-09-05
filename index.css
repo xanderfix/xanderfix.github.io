@@ -19,6 +19,7 @@ h1 {
 }
 h2 {
     color:white;
+    font-size:32px;
 }
 p {
     color:white;
@@ -36,11 +37,12 @@ img {
     width:3%;
 }
 .non-img {
-    margin-right:11%;
+    margin-right:7%;
 }
 a {
     color:white;
     font-weight:bold;
+    font-size:24px;
 }
 #SamusShip {
     width:3.5%;
