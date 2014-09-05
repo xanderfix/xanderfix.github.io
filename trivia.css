@@ -61,7 +61,11 @@ a {
 }
 .DKCTF {
     margin-left:3.5%;
+    display:inline;
 }
 div {
     display:block;
+}
+#td1 {
+    padding-top:300px;
 }
