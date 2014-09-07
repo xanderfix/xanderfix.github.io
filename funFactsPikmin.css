@@ -1,5 +1,5 @@
 html { 
-  background: url(images/superMetroidBackground.jpg) no-repeat center center fixed; 
+  background: url(images/marioLevel1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,14 +12,7 @@ html {
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
-}
-h1 {
-    color:white;
-}
-h2 {
-    color:white;
-    font-size:32px;
+    opacity:0.9;
 }
 p {
     color:white;
@@ -35,6 +28,7 @@ img {
     margin:0px 0px 0px 0px;
     height:100%;
     width:3%;
+    display:inline;
 }
 .non-img {
     margin-right:5%;
@@ -50,17 +44,33 @@ a {
 #KONGletters {
     width:8%;
 }
+#title {
+    text-align:center;
+    color:white;
+}
+td {
+    color:white;
+    border:3px solid blue;
+}
+table {
+    margin-left:33%;
+    margin-bottom:10px;
+}
+.caption {
+    font-size:14px;
+    display:inline;
+    margin-left:17%;
+}
 #img1 {
-    height:167px;
-    width:228px;
+    height:176px;
+    width:200px;
+    margin-left:15%;
 }
 #img2 {
     height:240px;
     width:325px;
+    margin-left:15%;
 }
-#title {
-    text-align:center;
-}
-td {
-    border: 7px solid black;
+#SPcaption {
+    margin-left:22%;
 }

@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:1000px;
+    height:1150px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -18,7 +18,7 @@ p {
     color:white;
 }
 #navbar {
-   height:2.5%;
+   height:2.3%;
    background-color: red;
 }
 li {
@@ -68,4 +68,12 @@ div {
 }
 #td1 {
     padding-top:300px;
+}
+#FFPimg {
+    height:240px;
+    width:325px;
+    margin-left:3.5%;
+}
+.FFP {
+    margin-left:3.5%;
 }
