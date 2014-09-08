@@ -76,3 +76,9 @@ table {
 .caption {
     font-size:12px;
 }
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
