@@ -1,24 +1,25 @@
+
 html { 
-  background: url(images/marioLevel1.png) no-repeat center center fixed; 
+  background: url(images/legendOfZeldaTitleScreens.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:2200px;
+    height:1600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.95;
+    opacity:0.8;
 }
 p {
     color:white;
 }
 #navbar {
-   height:1%;
+   height:1.6%;
    background-color: red;
 }
 li {
@@ -47,35 +48,16 @@ a {
     text-align:center;
     color:white;
 }
-#img1 {
-    height:263px;
-    width:468px;
-}
-#img2 {
-    height:263px;
-    width:468px;
-}
-#img3 {
-    height:263px;
-    width:468px;
-}
-#img4 {
-    height:263px;
-    width:468px;
-}
-#img5 {
-    height:368px;
-    width:468px;
-}
-#img6 {
-    height:273px;
-    width:486px;
-}
 #comments {
     background-color:#99FF33;
     opacity:0.9;
     margin-left:8%;
     margin-right:8%;   
+}
+.poll {
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
 }
 .date {
     font-size:12px;
