@@ -37,7 +37,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -63,4 +63,7 @@ a {
 }
 td {
     border: 7px solid black;
+}
+#ocarinaSongs {
+    width:5%;
 }

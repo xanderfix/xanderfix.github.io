@@ -30,7 +30,7 @@ img {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -66,4 +66,7 @@ div {
 #ZPimg {
     height:366px;
     width:333px;
+}
+#ocarinaSongs {
+    width:5%;
 }

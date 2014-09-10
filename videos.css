@@ -30,7 +30,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -46,4 +46,7 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#ocarinaSongs {
+    width:5%;
 }
