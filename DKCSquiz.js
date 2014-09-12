@@ -10,8 +10,8 @@
         var selectionValid = false;
  
         // Questions
-        TriviaData[0][0] = "Donkey Kong, Pac-Man and Tempest were all released in the same year.";
-        TriviaData[1][0] = "Capcom is a Chinese company.";
+        TriviaData[0][0] = "How many times is K. Rool(including King, Kaptain, and Baron) fought in the original Donkey Kong Country Trilogy?";
+        TriviaData[1][0] = "In an infamous Donkey Kong Country easter egg that causes Rambi to change shape in the first level, what does Rambi turn into?";
         TriviaData[2][0] = "Othello was the first arcade game released by Nintendo.";
         TriviaData[3][0] = "The Atari 2600 video game system was first released in 1975.";
         TriviaData[4][0] = "The Sega Saturn game system was released first in the U.S. in 1995.";
@@ -22,8 +22,8 @@
         TriviaData[9][0] = "Microsoft first released the Xbox gaming system worldwide in 2001.";
    
         // Answers
-        TriviaData[0][1] = "A";
-        TriviaData[1][1] = "C";
+        TriviaData[0][1] = "C";
+        TriviaData[1][1] = "B";
         TriviaData[2][1] = "A";
         TriviaData[3][1] = "A";
         TriviaData[4][1] = "A";
@@ -47,8 +47,8 @@
         TriviaData[9][2] = "no";
 
         //A
-        TriviaData[0][3] = "Hello World";   
-        TriviaData[1][3] = "Hello World";
+        TriviaData[0][3] = "3";   
+        TriviaData[1][3] = "A gold Winky";
         TriviaData[2][3] = "Hello World";
         TriviaData[3][3] = "Hello World";
         TriviaData[4][3] = "Hello World";
@@ -59,8 +59,8 @@
         TriviaData[9][3] = "Hello World";     
 
         //B
-        TriviaData[0][4] = "Hello World";   
-        TriviaData[1][4] = "Hello World";
+        TriviaData[0][4] = "6";   
+        TriviaData[1][4] = "A silver Donkey Kong";
         TriviaData[2][4] = "Hello World";
         TriviaData[3][4] = "Hello World";
         TriviaData[4][4] = "Hello World";
@@ -71,8 +71,8 @@
         TriviaData[9][4] = "Hello World";       
 
         //C
-        TriviaData[0][5] = "Hello World";   
-        TriviaData[1][5] = "Hello World";
+        TriviaData[0][5] = "5";   
+        TriviaData[1][5] = "A bronze Expresso";
         TriviaData[2][5] = "Hello World";
         TriviaData[3][5] = "Hello World";
         TriviaData[4][5] = "Hello World";
@@ -82,9 +82,9 @@
         TriviaData[8][5] = "Hello World";
         TriviaData[9][5] = "Hello World";       
 
-        //A
-        TriviaData[0][6] = "Hello World";   
-        TriviaData[1][6] = "Hello World";
+        //D
+        TriviaData[0][6] = "9";   
+        TriviaData[1][6] = "None of the above";
         TriviaData[2][6] = "Hello World";
         TriviaData[3][6] = "Hello World";
         TriviaData[4][6] = "Hello World";
@@ -92,7 +92,19 @@
         TriviaData[6][6] = "Hello World";
         TriviaData[7][6] = "Hello World";
         TriviaData[8][6] = "Hello World";
-        TriviaData[9][6] = "Hello World";         
+        TriviaData[9][6] = "Hello World";   
+
+        //info
+        TriviaData[0][7] = "He's fought as King K. Rool in Donkey Kong Country's Ganplank Galleon, as Kaptain K. Rool in K. Rool Duel and Krocodile Kore in Donkey Kong Country 2, and as Baron K. Roolestien in Kastle Kaos and The Knautalis in Donkey Kong Country 3.";   
+        TriviaData[1][7] = "If you bring Rambi to the level's beginning, grab the hidden oil drum, throw it at the tree, jump on it, then dismount when you touch Rambi, he will turn into a silver version of Donkey Kong.";
+        TriviaData[2][7] = "Hello World";
+        TriviaData[3][7] = "Hello World";
+        TriviaData[4][7] = "Hello World";
+        TriviaData[5][7] = "Hello World";
+        TriviaData[6][7] = "Hello World";
+        TriviaData[7][7] = "Hello World";
+        TriviaData[8][7] = "Hello World";
+        TriviaData[9][7] = "Hello World";       
  
         // Sets question text and indicator so that we know the question has been displayed
         function setQuestion() {
@@ -141,6 +153,7 @@
             else if (document.getElementById("D").checked) {
                 processAnswer("D");
             }
+            document.getElementById("info").innerHTML = TriviaData[currentQuestion][7];
             // get next question if not asked all yet
             if (questionsAsked < 10) {
                 setQuestion();

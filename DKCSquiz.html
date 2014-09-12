@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>Donkey Kong Country Series Trivia Game</title>
-        <link type="text/css" rel="stylesheet" href="quiz.css"/>
-        <script language="javascript" type="text/javascript" src="quiz2.js">
+        <link type="text/css" rel="stylesheet" href="DKCSquiz.css"/>
+        <script language="javascript" type="text/javascript" src="DKCSquiz.js">
         </script>
     </head>
     <body>
@@ -31,13 +31,14 @@
             <span id="TriviaQuestion">???</span>
         </p>
         <p>
-        <input id="A" type="radio" value="A" name="answer" checked="checked"/><span id="atext">A</span><br>
-        <input id="B" type="radio" value="B" name="answer" /><span id="btext">B</span><br>
-        <input id="C" type="radio" value="C" name="answer" /><span id="ctext">C</span><br>
-        <input id="D" type="radio" value="D" name="answer" /><span id="dtext">D</span>
+        <input id="A" type="radio" value="A" name="answer"/><span id="atext">A</span><br>
+        <input id="B" type="radio" value="B" name="answer"/><span id="btext">B</span><br>
+        <input id="C" type="radio" value="C" name="answer"/><span id="ctext">C</span><br>
+        <input id="D" type="radio" value="D" name="answer"/><span id="dtext">D</span>
     </p>
-            <input id="ButtonContinue" onclick="checkAnswer()" type="button" value="continue" />
+            <input id="ButtonContinue" type="button" onclick="checkAnswer()" value="continue"/>
         </p>
+    <p id="info">Press the button to begin.</p>
     </div>
 </body>
 </html>
