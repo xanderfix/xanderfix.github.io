@@ -2,6 +2,8 @@
     <head>
         <title>Trivia Game</title>
         <link type="text/css" rel="stylesheet" href="quiz.css"/>
+        <script language="javascript" type="text/javascript" src="quiz/js">
+        </script>
     </head>
     <body>
         <div id="main">
@@ -29,63 +31,20 @@
             <span id="TriviaQuestion">???</span>
         </p>
         <p>
-            <input id="A" type="radio" value="A"/>A
+            <input id="A" name="answer" type="radio" value="A"/>A
         </p>
         <p>
-            <input id="B" type="radio" value="B"/>B
+            <input id="B" name="answer" type="radio" value="B"/>B
         </p>
         <p>
-            <input id="C" type="radio" value="C"/>C
+            <input id="C" name="answer" type="radio" value="C"/>C
         </p>
         <p>
-            <input id="D" type="radio" value="D"/>D
+            <input id="D" name="answer" type="radio" value="D"/>D
         </p>
         <p>
             <input id="ButtonContinue" onclick="checkAnswer()" type="button" value="continue" />
         </p>
-        <script language="javascript" type="text/javascript">
-            var trivia = [["How many times is K. Rool(including King, Kaptain, and Baron) fought in the original Donkey Kong Country Trilogy?", C, 3, 6, 5, 9, "no"]]
-
-            var questionNum=1;
-            var numCorrect=0;
-            var currentQuestion=0;
-
-             function setQuestion() {
-                 selectionValid = false; // Flag to make sure question has not been asked yet
-                 while (selectionValid == false) {
-                     currentQuestion = 0; // randomly select starting question
-                     if (trivia[currentQuestion][6] == "no") {
-                         selectionValid = true;
-                      };
-                 };
-                  document.getElementById("TriviaQuestion").innerHTML = trivia[currentQuestion][0];
-                  document.getElementById("A").innerHTML = trivia[currentQuestion][2];
-                  document.getElementById("B").innerHTML = trivia[currentQuestion][3];
-                  document.getElementById("C").innerHTML = trivia[currentQuestion][4];
-                  document.getElementById("D").innerHTML = trivia[currentQuestion][5];
-                  trivia[currentQuestion][2] = "yes";
-                  questionsAsked = questionsAsked + 1;
-             };
-
-             function checkAnswer() {
-                 if(document.getElementById(trivia[currentQuestion[1]]).checked) {
-                     numCorrect += 1;
-                 };
-                 // get next question if not asked all yet
-                 if (questionsAsked <= 10) {
-                    setQuestion();
-                 };
-                 // final question asked - disable button and show final results
-                else {
-                    alert("Quiz complete! You got " + totalCorrect + " correct out of 10.");
-                    document.getElementById("ButtonContinue").disabled = true;
-                };
-                // update totals
-                document.getElementById("NumberAsked").innerHTML = questionsAsked;
-                document.getElementById("NumberCorrect").innerHTML = totalCorrect;
-            };
-            setQuestion();
-        </script>
     </div>
 </body>
 </html>
