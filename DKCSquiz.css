@@ -15,7 +15,7 @@ html {
     opacity:0.8;
 }
 p {
-    color:white;
+    color:black;
 }
 #navbar {
    height:2.3%;
@@ -49,4 +49,9 @@ a {
 }
 #ocarinaSongs {
     width:5%;
+}
+#trivia {
+    background-color:white;
+    margin-left:20%;
+    margin-right:20%;
 }

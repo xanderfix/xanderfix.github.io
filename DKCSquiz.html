@@ -24,21 +24,23 @@
             </ul>
         </div>
         <h1 id="title">Donkey Kong Country Series Trivia Game</h1>
-        <p>
-            Asking question <span id="NumberAsked">1</span> of 10 with <span id="NumberCorrect">0</span> answers correct</p>
+        <div id="trivia">
+             <p>
+                Asking question <span id="NumberAsked">1</span> of 10 with <span id="NumberCorrect">0</span> answers correct</p>
+            </p>
+            <p>
+                <span id="TriviaQuestion">???</span>
+            </p>
+            <p>
+            <input id="A" type="radio" value="A" name="answer"/><span id="atext">A</span><br>
+            <input id="B" type="radio" value="B" name="answer"/><span id="btext">B</span><br>
+            <input id="C" type="radio" value="C" name="answer"/><span id="ctext">C</span><br>
+            <input id="D" type="radio" value="D" name="answer"/><span id="dtext">D</span>
         </p>
-        <p>
-            <span id="TriviaQuestion">???</span>
-        </p>
-        <p>
-        <input id="A" type="radio" value="A" name="answer"/><span id="atext">A</span><br>
-        <input id="B" type="radio" value="B" name="answer"/><span id="btext">B</span><br>
-        <input id="C" type="radio" value="C" name="answer"/><span id="ctext">C</span><br>
-        <input id="D" type="radio" value="D" name="answer"/><span id="dtext">D</span>
-    </p>
-            <input id="ButtonContinue" type="button" onclick="checkAnswer()" value="continue"/>
-        </p>
-    <p id="info">Press the button to begin.</p>
+                <input id="ButtonContinue" type="button" onclick="checkAnswer()" value="continue"/>
+            </p>
+        <p id="info">Press the button to begin.</p>
+        </div>
     </div>
 </body>
 </html>

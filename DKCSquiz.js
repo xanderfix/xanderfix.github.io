@@ -12,10 +12,10 @@
         // Questions
         TriviaData[0][0] = "How many times is K. Rool(including King, Kaptain, and Baron) fought in the original Donkey Kong Country Trilogy?";
         TriviaData[1][0] = "In an infamous Donkey Kong Country easter egg that causes Rambi to change shape in the first level, what does Rambi turn into?";
-        TriviaData[2][0] = "Othello was the first arcade game released by Nintendo.";
-        TriviaData[3][0] = "The Atari 2600 video game system was first released in 1975.";
-        TriviaData[4][0] = "The Sega Saturn game system was released first in the U.S. in 1995.";
-        TriviaData[5][0] = "The legendary game Doom was released in 1993 for the PC.";
+        TriviaData[2][0] = "What is the name of the Brother Bear that lives in Donkey Kong Country 3's Lost World?";
+        TriviaData[3][0] = "In Donkey Kong Country 2, what information does Wrinkly Kong give about herself?";
+        TriviaData[4][0] = "In Donkey Kong Country Tropical Freeze, what happens when Donkey Kong re-enters the plane in the first level and pounds next to the TVs?";
+        TriviaData[5][0] = "Which of these is NOT a Donkey Kong Country level?";
         TriviaData[6][0] = "Dragon's Lair was the first arcade game to feature laser-disc technology.";
         TriviaData[7][0] = "In 1990, Nintendo and Sega went to court over the rights to Tetris.";
         TriviaData[8][0] = "In 1996 Nintendo sells its billionth cartridge worldwide.";
@@ -25,8 +25,8 @@
         TriviaData[0][1] = "C";
         TriviaData[1][1] = "B";
         TriviaData[2][1] = "A";
-        TriviaData[3][1] = "A";
-        TriviaData[4][1] = "A";
+        TriviaData[3][1] = "C";
+        TriviaData[4][1] = "D";
         TriviaData[5][1] = "A";
         TriviaData[6][1] = "D";
         TriviaData[7][1] = "A";
@@ -49,10 +49,10 @@
         //A
         TriviaData[0][3] = "3";   
         TriviaData[1][3] = "A gold Winky";
-        TriviaData[2][3] = "Hello World";
-        TriviaData[3][3] = "Hello World";
-        TriviaData[4][3] = "Hello World";
-        TriviaData[5][3] = "Hello World";
+        TriviaData[2][3] = "Boomer";
+        TriviaData[3][3] = "\"I give the best advice.\"";
+        TriviaData[4][3] = "The TVs play the Donkey Kong Country TV show";
+        TriviaData[5][3] = "Aquatic Ambiance";
         TriviaData[6][3] = "Hello World";
         TriviaData[7][3] = "Hello World";
         TriviaData[8][3] = "Hello World";
@@ -61,10 +61,10 @@
         //B
         TriviaData[0][4] = "6";   
         TriviaData[1][4] = "A silver Donkey Kong";
-        TriviaData[2][4] = "Hello World";
-        TriviaData[3][4] = "Hello World";
-        TriviaData[4][4] = "Hello World";
-        TriviaData[5][4] = "Hello World";
+        TriviaData[2][4] = "Bjorn";
+        TriviaData[3][4] = "\"I'm over 100 years old.\"";
+        TriviaData[4][4] = "Nothing happens";
+        TriviaData[5][4] = "Trick Track Trek";
         TriviaData[6][4] = "Hello World";
         TriviaData[7][4] = "Hello World";
         TriviaData[8][4] = "Hello World";
@@ -73,10 +73,10 @@
         //C
         TriviaData[0][5] = "5";   
         TriviaData[1][5] = "A bronze Expresso";
-        TriviaData[2][5] = "Hello World";
-        TriviaData[3][5] = "Hello World";
-        TriviaData[4][5] = "Hello World";
-        TriviaData[5][5] = "Hello World";
+        TriviaData[2][5] = "Ba-Boom";
+        TriviaData[3][5] = "\"Only one peice of information I give is useless.\"";
+        TriviaData[4][5] = "The Tvs play Super Mario Bros";
+        TriviaData[5][5] = "Loopy Lights";
         TriviaData[6][5] = "Hello World";
         TriviaData[7][5] = "Hello World";
         TriviaData[8][5] = "Hello World";
@@ -85,10 +85,10 @@
         //D
         TriviaData[0][6] = "9";   
         TriviaData[1][6] = "None of the above";
-        TriviaData[2][6] = "Hello World";
-        TriviaData[3][6] = "Hello World";
-        TriviaData[4][6] = "Hello World";
-        TriviaData[5][6] = "Hello World";
+        TriviaData[2][6] = "Blue";
+        TriviaData[3][6] = "\"I've taught to every kind of kremling.\"";
+        TriviaData[4][6] = "The Tvs play the Donkey Kong Country Returns title screen";
+        TriviaData[5][6] = "Temple Tempest";
         TriviaData[6][6] = "Hello World";
         TriviaData[7][6] = "Hello World";
         TriviaData[8][6] = "Hello World";
@@ -97,10 +97,10 @@
         //info
         TriviaData[0][7] = "He's fought as King K. Rool in Donkey Kong Country's Ganplank Galleon, as Kaptain K. Rool in K. Rool Duel and Krocodile Kore in Donkey Kong Country 2, and as Baron K. Roolestien in Kastle Kaos and The Knautalis in Donkey Kong Country 3.";   
         TriviaData[1][7] = "If you bring Rambi to the level's beginning, grab the hidden oil drum, throw it at the tree, jump on it, then dismount when you touch Rambi, he will turn into a silver version of Donkey Kong.";
-        TriviaData[2][7] = "Hello World";
-        TriviaData[3][7] = "Hello World";
-        TriviaData[4][7] = "Hello World";
-        TriviaData[5][7] = "Hello World";
+        TriviaData[2][7] = "Boomer lives in the lost world in his bomb shelter and if you bring him bonus coins, he blow up the piles of rocks preventing access to the levels.";
+        TriviaData[3][7] = "The information she gives about herself that only one piece of information she gives out is useless.  If you then buy the information for Kaptain K. Rool, she just tells you to bring a lot of extra lives.";
+        TriviaData[4][7] = "The TVs will begin to play the Donkey Kong Country Returns title screen.  This can be read on the Donkey Kong Country Easter Eggs page in the Trivia section of this website.";
+        TriviaData[5][7] = "Aquatic Ambiance is the name of the game's underwater theme, not a level.";
         TriviaData[6][7] = "Hello World";
         TriviaData[7][7] = "Hello World";
         TriviaData[8][7] = "Hello World";
@@ -141,19 +141,21 @@
         // This function checks the answer, updates correct total
         // and randomly selects the next question
         function checkAnswer() {
-            if (document.getElementById("A").checked) {
-                processAnswer("A");
+            if(questionsAsked > 1) {
+                if (document.getElementById("A").checked) {
+                    processAnswer("A");
+                }
+                else if (document.getElementById("B").checked) {
+                    processAnswer("B");
+                }
+                else if (document.getElementById("C").checked) {
+                    processAnswer("C");
+                }
+                else if (document.getElementById("D").checked) {
+                    processAnswer("D");
+                }
+                document.getElementById("info").innerHTML = TriviaData[currentQuestion][7];
             }
-            else if (document.getElementById("B").checked) {
-                processAnswer("B");
-            }
-            else if (document.getElementById("C").checked) {
-                processAnswer("C");
-            }
-            else if (document.getElementById("D").checked) {
-                processAnswer("D");
-            }
-            document.getElementById("info").innerHTML = TriviaData[currentQuestion][7];
             // get next question if not asked all yet
             if (questionsAsked < 10) {
                 setQuestion();
