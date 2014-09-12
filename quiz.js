@@ -1,4 +1,4 @@
-var trivia = [["How many times is K. Rool(including King, Kaptain, and Baron) fought in the original Donkey Kong Country Trilogy?", C, 3, 6, 5, 9, "no"]]
+var trivia = [["How many times is K. Rool(including King, Kaptain, and Baron) fought in the original Donkey Kong Country Trilogy?", "C", 3, 6, 5, 9, "no"]]
 
 var questionNum=1;
 var numCorrect=0;
@@ -27,9 +27,19 @@ function processAnswer(myAnswer) {
         numCorrect += 1;
     };
 };
+
 function checkAnswer() {
-    if(document.getElementById(trivia[currentQuestion[1]]).checked) {
-        numCorrect += 1;
+    if(document.getElementById("A").checked) {
+        processAnswer("A");
+    };
+    else if(document.getElementById("B").checked) {
+        processAnswer("B");
+    };
+    else if(document.getElementById("C").checked) {
+        processAnswer("C");
+    };
+    else if(document.getElementById("D").checked) {
+        processAnswer("D");
     };
     // get next question if not asked all yet
     if (questionsAsked <= 10) {
@@ -44,4 +54,3 @@ function checkAnswer() {
     document.getElementById("NumberAsked").innerHTML = questionsAsked;
     document.getElementById("NumberCorrect").innerHTML = totalCorrect;
 };
-            setQuestion();
