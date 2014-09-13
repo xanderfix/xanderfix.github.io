@@ -15,7 +15,7 @@ html {
     opacity:0.8;
 }
 p {
-    color:black;
+    color:white;
 }
 #navbar {
    height:2.3%;
@@ -51,7 +51,7 @@ a {
     width:5%;
 }
 #trivia {
-    background-color:white;
+    background-color:66000;
     margin-left:20%;
-    margin-right:20%;
+    margin-right:20%;     
 }
