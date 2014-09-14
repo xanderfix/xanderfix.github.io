@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:1150px;
+    height:1450px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -18,7 +18,7 @@ p {
     color:white;
 }
 #navbar {
-   height:2.3%;
+   height:1.7%;
    background-color: red;
 }
 li {
