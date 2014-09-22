@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Kirby's Adventure Review</title>
+<link type="text/css" rel="stylesheet" href="kirbysAdventureReview.css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
+           <li class="non-img">Home</a></li>
+           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
+           <li class="non-img">Articles</a></li>
+           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
+           <li class="non-img">Trivia</a></li>
+           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
+           <li class="non-img">Videos</a></li>
+           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
+           <li class="non-img">Music</li></a>
+           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
+           <li>Contact</a></li>
+        </ul>
+    </div>
+    <h1>Kirby's Adventure Review</h1>
+    <p class ="date">9/2/2014</p>
+    <p>Kirby's Adventure is an NES classic featuring the lovable pink puffball, Kirby.  Combining innovative gameplay with some of the best NES graphics, Kirby's Adventure is definetly a game you will love.</p>
+        <img src="images/KAcover.png" id="KAimg"/>
+        <p class="caption">The North American box art</p> 
+    <p>The story is quite simple, the villanous King Dedede has stolen the magical star rod from the Fountain of Dreams, causing everyone to have a dreamless sleep.  After discovering this, Kirby set out to recover the seven pieces of the star rod from Dedede and his friends.</p>
+        <img src="images/KAimage1.png" id="KAimg2"/>
+        <p class="caption">The opening scene from the game's remake: Kirby Nightmare in Dream Land</p>
+    <p>The game is divided into seven levels.  Each of these levels acts like a hub where Kirby can access various stages through doors.  Clearing one stage unlocks the next door, and occasionally a minigame.  Once the boss stage is completed, it becomes a door to the next level.</p>
+        <img src="images/KAimage2.jpg" id="KAimg3"/>
+        <p class="caption">Vegetable Valley, the first level of the game</p>
+    <p>The game plays similar to its' predecessor, Kirby's Dream Land, where Kirby can inhale his enemies, dash, fly and swim to get to the stage's end.  However, Kirby can now gain a special power by eating cerain enemies, which has become a staple of the series.</p>
+        <img src="images/KAimage3.gif" id="KAimg4"/>
+        <p class="caption">Kirby using the sword power</p>
+    <p>The stage designs are simple, yet charming.  Kirby has to climb a spinning tower, board a pirate ship, and even battle through a black and white stage to return the star rod to the Fountain of Dreams.  This, combined with a bright, happy soundtrack creates an excellent gaming experience that will leave you amazed you're playing an NES game.</p>
+        <img src="images/KAimage4.png" id="KAimg5"/>
+        <p class="caption">Kirby on a rotating tower in level 3: Butter Building</p>
+    <p>To conclude, Kirby's Adventure is a must play, especially since you can now get it on the Wii U eshop for $5.  Turn it on, and have an adventure!</p>
+    <table>
+        <h4>Summary</h4>
+        <tr>
+            <td>Story</td>
+            <td>7.5/10</td>
+        </tr>
+        <tr>
+            <td>Gameplay</td>
+            <td>8/10</td>
+        </tr>
+        <tr>
+            <td>Music</td>
+            <td>8/10</td>
+        </tr>
+        <tr>
+            <td>Replay</td>
+            <td>6.5/10</td>
+        </tr>
+        <tr>
+            <td>Overall</td>
+            <td>7.5/10</td>
+        </tr>
+    </table>
+</div>
+    <div id="comments">
+         <!-- begin htmlcommentbox.com -->
+         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+         <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24TlB3y%2FGO4kzwiU97upQh.1"+"&opts=17374&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end htmlcommentbox.com -->
+    </div>
+</body>
+</html>

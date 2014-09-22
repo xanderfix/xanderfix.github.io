@@ -1,7 +1,8 @@
 <html>
+    <html>
 <head>
-<title>Kirby's Adventure Trivia</title>
-<link type="text/css" rel="stylesheet" href="kirbysAdventureTrivia.css"/>
+<title>Trivia</title>
+<link type="text/css" rel="stylesheet" href="funFactsPikmin.css"/>
 </head>
 
 <body>
@@ -22,20 +23,43 @@
            <li>Contact</a></li>
         </ul>
     </div>
-        <h1>Kirby's Adventure Trivia</h1>
-        <p class ="date">9/1/2014</p>
-        <ul>
-            <li><p>-Put together, the first letter of the first seven levels' names spells VIBGYOR which is ROYGBIV, a common acronym for the colors of the rainbow, spelled backwards.</p></li>
-            <li><p>-Furthermore, the border during each level's scene matches its' color (Ice Cream Island: indigo, Rainbow Resort: red, etc.).</p></li>
-            <div id="imgBackground1">
-                <img src="images/iceCreamIsland.png" id="SPimg1"/>
-            </div>
-            <div id="imgBackground2">
-                <img src="images/rainbowResort.png" id="SPimg2"/>
-            </div>
-            <li><p>-At approximately 6 megabits, Kirby's Adventure has the most memory of any NES cartridge.</p></li>
-        </ul>
-    </div>
+    <h1 id="title">Fun Facts: Pikmin Stats</h1>
+    <p class ="date">9/7/2014</p>
+    <p>Following is table of the weight, height, and carrying capacity of Pikmin.  The calculations for carrying capacity were made using the fact that the Doomsday Apparatus, a one kilogram weight found in Pikmin 2, requires 1000 pikmin to carry it.  The calculations on weight were made from the fact that Pikmin can carry about 20 times their weight.  Finally, I got the height stats from the New Play Control! Pikmin 2 instruction booklet, where scale pictures of the Pikmin are shown.</p>
+    <table>
+        <tr>
+            <td>Average Weight</td>
+            <td>50 mg</td>
+        </tr>
+        <tr>
+            <td>Average Height</td>
+            <td>0.9 cm</td>
+        </tr>
+        <tr>
+            <td>Average Max Carrying Capacity</td>
+            <td>1 gram</td>
+        </tr>
+        <tr>
+            <td>Purple Pikmin Weight</td>
+            <td>500 mg</td>
+        </tr>
+        <tr>
+            <td>Purple Pikmin Height</td>
+            <td>1.3 cm</td>
+        </tr>
+        <tr>
+            <td>White Pikmin Height</td>
+            <td>0.6 cm</td>
+        </tr>
+        <tr>
+            <td>Purple Pikmin Carrying Capacity</td>
+            <td>10 grams</td>
+        </tr>
+    </table>
+        <img src="images/funFactsPikmin1.jpg" id="img1"/>
+        <img src="images/funFactsPikmin2.jpg" id="img2"/>
+        <p class="caption"><br>The Doomsday Apparatus</p>
+        <p class="caption" id="SPcaption">The chart I used to find Pikmin heights</p>
 </div>
     <div id="comments">
          <!-- begin htmlcommentbox.com -->
@@ -46,4 +70,3 @@
     </div>
 </body>
 </html>
-

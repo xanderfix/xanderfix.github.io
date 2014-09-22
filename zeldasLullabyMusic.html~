@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>Contact</title>
-<link type="text/css" rel="stylesheet" href="contact.css"/>
+<title>How to Play Zelda's Lullaby(Ocarina of Time Version)</title>
+<link type="text/css" rel="stylesheet" href="zeldasLullabyMusic.css"/>
 </head>
 
 <body>
@@ -22,9 +22,11 @@
            <li>Contact</a></li>
         </ul>
     </div>
-    <h1 id="title">Contact</h1>
-    <p>If you have any comments or questions, you can e-mail me at xanderfix@gmail.com.</p> 
-    <p> Also, my Nintendo Network ID is OculusSupremus if you would like to friend/follow me on your Wii U.</p>
+    <h1 id="title">How to Play Zelda's Lullaby(Ocarina of Time Version)</h1>
+    <p>Here is the midi file, sheet music, and guitar tab for Zelda's Lullaby. An amazing guitar tab for Zelda's Lullaby has already been created on the website csguitar89, so the link leads to that tab.</p>
+    <a href="music/zeldasLullaby.mid"><p>Zelda's Lullaby.midi</p></a>
+    <a href="music/zeldasLullaby.pdf"><p>Zelda's Lullaby Sheet Music</p></a>
+    <a href="http://www.mediamere.com/fileadmin/Klanten/CSGuitar89.com/tabs/Zeldas_Lullaby.rtf"><p>Zelda's Lullaby Guitar Tab</p></a>
 </div>
 </body>
 </html>

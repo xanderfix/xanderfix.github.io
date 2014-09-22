@@ -8,20 +8,41 @@
 <div id="main">
     <div id="navbar">
         <ul>
-           <li id="SamusShip"><img src="images/samusShip.gif"/></li>
-           <li class="non-img"><a href="index.html">Home</a></li>
-           <li><img src="images/triforce.jpg"/></li>
-           <li class="non-img"><a href="articles.html">Articles</a></li>
-           <li><img src="images/?block.png"/></li>
-           <li class="non-img"><a href="trivia.html">Trivia</a></li>
-           <li><img src="images/mikeKirby.png"/></li>
-           <li class="non-img"><a href="videos.html">Videos</a></li>
-           <li><img src="images/kongLetters.png" id="KONGletters"/></li>
-           <li><a href="contact.html">Contact</a></li>
+           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
+           <li class="non-img">Home</a></li>
+           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
+           <li class="non-img">Articles</a></li>
+           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
+           <li class="non-img">Trivia</a></li>
+           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
+           <li class="non-img">Videos</a></li>
+           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
+           <li class="non-img">Music</li></a>
+           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
+           <li>Contact</a></li>
         </ul>
     </div>
-    <a href="kirbysAdventureTrivia.html" class="KA">Kirby's Adventure</a>
-    <img src="images/KAcover.png" id="KAimg" class="KA"/>
+    <h1 id="title">Trivia</h1>
+    <div>
+        <a href="DKCSquiz.html">Donkey Kong Country Series Trivia Game
+        <img src="images/DKcountryCover.jpg"/></a>
+    </div>
+    <div>
+        <a href="funFactsPikmin.html" class="FFP">Fun Facts: Pikmin Stats
+        <img src="images/funFactsPikmin2.jpg" class=FFP" id="FFPimg"/></a>
+    </div>
+    <div>
+        <table>
+            <tr>
+        <td id="td1"><a href="donkeyKCTFEE.html" class="DKCTF"><p>Donkey Kong Country Tropical <br>Freeze Easter Eggs</p></a></td>
+        <td><a href="donkeyKCTFEE.html" class="DKCTF"><img src="images/donkeyKCTF.jpg" class="DKCTF" id="DKCTFimg"/></a></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <a href="kirbysAdventureTrivia.html" class="KA">Kirby's Adventure Trivia
+        <img src="images/KAcover.png" id="KAimg" class="KA"/></a>
+    </div>
 </div>
 </body>
 </html>
