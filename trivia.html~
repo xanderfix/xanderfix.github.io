@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>Trivia</title>
+<title>Trivia | Zelda Rocks</title>
+<meta name="description" content="Trivia and quizzes about videogames."/>
 <link type="text/css" rel="stylesheet" href="trivia.css"/>
 </head>
 
@@ -34,7 +35,7 @@
     <div>
         <table>
             <tr>
-        <td id="td1"><a href="donkeyKCTFEE.html" class="DKCTF"><p>Donkey Kong Country Tropical <br>Freeze Easter Eggs</p></a></td>
+        <td id="td1"><a href="donkeyKongCountryTropicalFreezeEasterEggs.html" class="DKCTF"><p>Donkey Kong Country Tropical <br>Freeze Easter Eggs</p></a></td>
         <td><a href="donkeyKCTFEE.html" class="DKCTF"><img src="images/donkeyKCTF.jpg" class="DKCTF" id="DKCTFimg"/></a></td>
             </tr>
         </table>
@@ -45,5 +46,15 @@
     </div>
 </div>
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54960566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
 

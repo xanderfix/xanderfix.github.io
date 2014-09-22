@@ -1,7 +1,8 @@
 <html>
     <head>
-        <title>Donkey Kong Country Series Trivia Game</title>
-        <link type="text/css" rel="stylesheet" href="DKCSquiz.css"/>
+        <title>Donkey Kong Country Series Trivia Game | Trivia | Zelda Rocks</title>
+        <meta name="description" content="A trivia game about the Donkey Kong Country Series."/>
+        <link type="text/css" rel="stylesheet" href="donkeyKongCountrySeriesTriviaGame.css"/>
         <script language="javascript" type="text/javascript" src="DKCSquiz.js">
         </script>
     </head>
