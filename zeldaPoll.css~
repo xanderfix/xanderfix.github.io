@@ -1,12 +1,12 @@
 html { 
-  background: url(images/kirbyEnding.png) no-repeat center center fixed; 
+  background: url(images/legendOfZeldaTitleScreens.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:1200px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -18,7 +18,7 @@ p {
     color:white;
 }
 #navbar {
-   height:17%;
+   height:2.2%;
    background-color: red;
 }
 li {
@@ -30,7 +30,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -46,4 +46,22 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.poll {
+    width:80%;
+    margin-left:10%;
+    margin-right:50%;
+}
+.date {
+    font-size:12px;
+    margin-left:90%;
+}
+#ocarinaSongs {
+    width:5%;
 }

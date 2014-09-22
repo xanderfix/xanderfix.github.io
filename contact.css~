@@ -1,12 +1,12 @@
 html { 
-  background: url(http://images4.alphacoders.com/191/191376.jpg) no-repeat center center fixed; 
+  background: url(images/DKC1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:25%;
+    height:250px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -19,27 +19,32 @@ p {
     font-size:150%;
 }
 #navbar {
-   height:14%;
+   height:10%;
    background-color: red;
 }
 li {
     display:inline;
 }
-img {
+.img {
     margin:0px 0px 0px 0px;
     height:100%;
     width:3%;
 }
 .non-img {
-    margin-right:11%;
+    margin-right:5%;
 }
 a {
     color:white;
     font-weight:bold;
+    font-size:24px;
 }
 #SamusShip {
     width:4%;
 }
 #KONGletters {
     width:8%;
+}
+#title {
+    text-align:center;
+    color:white;
 }

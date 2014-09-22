@@ -1,24 +1,24 @@
 html { 
-  background: url(images/kirbyEnding.png) no-repeat center center fixed; 
+  background: url(images/marioLevel1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:2200px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
+    opacity:0.95;
 }
 p {
     color:white;
 }
 #navbar {
-   height:17%;
+   height:1%;
    background-color: red;
 }
 li {
@@ -46,4 +46,38 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#img1 {
+    height:263px;
+    width:468px;
+}
+#img2 {
+    height:263px;
+    width:468px;
+}
+#img3 {
+    height:263px;
+    width:468px;
+}
+#img4 {
+    height:263px;
+    width:468px;
+}
+#img5 {
+    height:368px;
+    width:468px;
+}
+#img6 {
+    height:273px;
+    width:486px;
+}
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.date {
+    font-size:12px;
+    margin-left:90%;
 }

@@ -1,12 +1,12 @@
 html { 
-  background: url(images/kirbyEnding.png) no-repeat center center fixed; 
+  background: url(images/marioLevel1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:1150px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -15,10 +15,10 @@ html {
     opacity:0.8;
 }
 p {
-    color:white;
+    color:black;
 }
 #navbar {
-   height:17%;
+   height:2.3%;
    background-color: red;
 }
 li {
@@ -30,7 +30,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -46,4 +46,12 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#ocarinaSongs {
+    width:5%;
+}
+#trivia {
+    background-color:white;
+    margin-left:20%;
+    margin-right:20%;
 }

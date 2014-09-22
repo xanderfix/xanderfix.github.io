@@ -1,12 +1,12 @@
 html { 
-  background: url(images/kirbyEnding.png) no-repeat center center fixed; 
+  background: url(images/superMetroidBackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:750px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -14,11 +14,18 @@ html {
     background-color:black;
     opacity:0.8;
 }
+h1 {
+    color:white;
+}
+h2 {
+    color:white;
+    font-size:32px;
+}
 p {
     color:white;
 }
 #navbar {
-   height:17%;
+   height:3.5%;
    background-color: red;
 }
 li {
@@ -30,7 +37,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:3%;
 }
 a {
     color:white;
@@ -43,7 +50,20 @@ a {
 #KONGletters {
     width:8%;
 }
+#img1 {
+    height:366px;
+    width:333px;
+}
+#img2 {
+    height:240px;
+    width:325px;
+}
 #title {
     text-align:center;
-    color:white;
+}
+td {
+    border: 7px solid black;
+}
+#ocarinaSongs {
+    width:4%;
 }

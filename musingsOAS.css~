@@ -1,12 +1,12 @@
 html { 
-  background: url(images/kirbyEnding.png) no-repeat center center fixed; 
+  background: url(images/16bitHyrule.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:400px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -18,7 +18,7 @@ p {
     color:white;
 }
 #navbar {
-   height:17%;
+   height:6.6%;
    background-color: red;
 }
 li {
@@ -46,4 +46,22 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#pLink {
+     font-size:16px;
+}
+#pImg {
+    height:167px;
+    width:228px;
+    margin-left:33%;
+}
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.date {
+    font-size:12px;
+    margin-left:90%;
 }

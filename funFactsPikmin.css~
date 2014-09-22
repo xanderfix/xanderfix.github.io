@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:600px;
+    height:750px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -14,15 +14,11 @@ html {
     background-color:black;
     opacity:0.9;
 }
-h1 {
-    color:white;
-    text-align:center;
-}
 p {
     color:white;
 }
 #navbar {
-   height:4%;
+   height:3.5%;
    background-color: red;
 }
 li {
@@ -33,16 +29,6 @@ li {
     height:100%;
     width:3%;
     display:inline;
-}
-#SPimg1 {
-    height:256;
-    width:224;
-    opacity:2;
-}
-#SPimg2{
-    height:160;
-    width:240;
-    opacity:2;
 }
 .non-img {
     margin-right:5%;
@@ -58,19 +44,35 @@ a {
 #KONGletters {
     width:8%;
 }
-#imgBackground1 {
-    background-color:black;
-    display:inline;
-    height:256px;
-    width:224px;
-    opacity:2;
+#title {
+    text-align:center;
+    color:white;
 }
-#imgBackground2 {
-    background-color:black;
+td {
+    color:white;
+    border:3px solid blue;
+}
+table {
+    margin-left:33%;
+    margin-bottom:10px;
+}
+.caption {
+    font-size:14px;
     display:inline;
-    height:160px;
-    width:240px;
-    opacity:2;
+    margin-left:17%;
+}
+#img1 {
+    height:176px;
+    width:200px;
+    margin-left:15%;
+}
+#img2 {
+    height:240px;
+    width:325px;
+    margin-left:15%;
+}
+#SPcaption {
+    margin-left:22%;
 }
 #comments {
     background-color:#99FF33;
