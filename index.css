@@ -52,22 +52,23 @@ a {
 }
 #img1 {
     height:366px;
-    width:333px;
+    width:100%;
 }
 #img2 {
     height:240px;
-    width:325px;
+    width:100%;
 }
 #title {
     text-align:center;
 }
 td {
     border: 7px solid black;
+    width:33%;
 }
 #ocarinaSongs {
     width:5%;
 }
 #img3 {
     height:175px;
-    width:300px;
+    width:100%;
 }
