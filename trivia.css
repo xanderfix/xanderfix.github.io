@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:1450px;
+    height:1550px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -68,6 +68,7 @@ div {
 }
 #td1 {
     padding-top:300px;
+    border:25px solid black;
 }
 #FFPimg {
     height:240px;
@@ -79,4 +80,8 @@ div {
 }
 #ocarinaSongs {
     width:5%;
+}
+#td2 {
+    padding-top:250px;
+    border:25px solid black;
 }
