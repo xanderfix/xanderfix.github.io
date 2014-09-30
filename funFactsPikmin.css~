@@ -31,7 +31,7 @@ li {
     display:inline;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -83,4 +83,7 @@ table {
 .date {
     font-size:12px;
     margin-left:90%;
+}
+#ocarinaSongs {
+    width:5%;
 }

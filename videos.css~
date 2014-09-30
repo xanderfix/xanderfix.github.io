@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:150px;
+    height:300px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -18,7 +18,7 @@ p {
     color:white;
 }
 #navbar {
-   height:17%;
+   height:8.5%;
    background-color: red;
 }
 li {
@@ -30,7 +30,7 @@ li {
     width:3%;
 }
 .non-img {
-    margin-right:5%;
+    margin-right:2.5%;
 }
 a {
     color:white;
@@ -46,4 +46,14 @@ a {
 #title {
     text-align:center;
     color:white;
+}
+#ocarinaSongs {
+    width:5%;
+}
+#ZLimg {
+    height:175px;
+    width:300px;
+}
+.video {
+    display:block;
 }

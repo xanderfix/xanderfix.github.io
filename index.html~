@@ -1,8 +1,29 @@
 <html>
 <head>
-<title>Zelda Rocks|Home</title>
+<title>Home | Zelda Rocks</title>
 <meta name="description" content="Welcome to zeldarocks, a website with video game articles, trivia, and music videos."/>
 <link type="text/css" rel="stylesheet" href="index.css"/>
+<script>
+    var width1 = document.getElementById("img1").width;
+    width1 = width1 * 1.06;
+    document.getElementById("img1").height="width1";
+    var width2 = document.getElementById("img2").width;
+    width2 = width2 * 0.75;
+    document.getElementById("img2").height="width2";
+    var width3 = document.getElementById("img3").width;
+    width3 = width3 * 0.6;
+    document.getElementById("img3").height="width3";
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54960566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -35,26 +56,16 @@
         </thead>
         <tr>
             <td><a href="zeldaPoll.html"><img src="images/legendOfZeldaTitleScreens.jpg" id="img1"/></a></td>
-            <td><a href="DKCSquiz.html"><img src="images/DKcountryCover.jpg" id="img2"/></a></td>
-            <td><p>None</p></td>
+            <td><a href="donkeyKongCountrySeriesTriviaGame.html"><img src="images/DKcountryCover.jpg" id="img2"/></a></td>
+            <td><a href="zeldasLullaby.html"><img src="images/zeldasLullaby.png" id="img3"/></a></td>
         </tr>
         <tr>
             <td><a href="zeldaPoll.html">Which Zelda Game is Best?</a></td>
-            <td><a href="DKCSquiz.html">Donkey Kong Country Series<br> Trivia Game</a></td>
-            <td><p>None</p></td>
+            <td><a href="donkeyKongCountrySeriesTriviaGame.html">Donkey Kong Country Series<br> Trivia Game</a></td>
+            <td><a href="zeldasLullaby.html"><p>Zelda's Lullaby Guitar Cover</p></a></td>
         </tr>
     </table>
 </div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54960566-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
 

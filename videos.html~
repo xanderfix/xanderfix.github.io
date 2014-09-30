@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Videos | Zelda Rocks</title>
+<meta name="description" content="Videogame music videos"/>
 <link type="text/css" rel="stylesheet" href="videos.css"/>
 </head>
 
@@ -23,7 +24,11 @@
         </ul>
     </div>
     <h1 id="title">Videos</h1>
-    <p>There are currently no videos.  Check back later.</p>
+    <div class="video">
+        <a href="zeldasLullaby.html">Zelda's Lullaby Guitar Cover
+        <img src="images/zeldasLullaby.png" id="ZLimg"/>
+        </a>
+    </div>
 </div>
 </body>
 <script>

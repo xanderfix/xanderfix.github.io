@@ -1,22 +1,18 @@
 html { 
-  background: url(images/16bitHyrule.jpg) no-repeat center center fixed; 
+  background: url(images/marioLevel1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-    height:2250px;
+    height:2200px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.9;
-}
-h1 {
-    color:white;
-    text-align:center;
+    opacity:0.95;
 }
 p {
     color:white;
@@ -47,34 +43,33 @@ a {
 #KONGletters {
     width:8%;
 }
-h4 {
+#title {
+    text-align:center;
     color:white;
 }
-table {
-    color:white;
+#img1 {
+    height:263px;
+    width:468px;
 }
-#KAimg {
-    height:350px;
-    width:256px;
+#img2 {
+    height:263px;
+    width:468px;
 }
-#KAimg2 {
-    height:133px;
-    width:200px;
+#img3 {
+    height:263px;
+    width:468px;
 }
-#KAimg3 {
-    height:194px;
-    width:259px;
+#img4 {
+    height:263px;
+    width:468px;
 }
-#KAimg4 {
-    height:209px;
-    width:138px;
+#img5 {
+    height:368px;
+    width:468px;
 }
-#KAimg5 {
-    height:224px;
-    width:256px;
-}
-.caption {
-    font-size:12px;
+#img6 {
+    height:273px;
+    width:486px;
 }
 #comments {
     background-color:#99FF33;

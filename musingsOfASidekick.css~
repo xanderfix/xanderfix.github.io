@@ -6,23 +6,19 @@ html {
   background-size: cover;
 }
 #main {
-    height:2250px;
+    height:400px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.9;
-}
-h1 {
-    color:white;
-    text-align:center;
+    opacity:0.8;
 }
 p {
     color:white;
 }
 #navbar {
-   height:1%;
+   height:6.6%;
    background-color: red;
 }
 li {
@@ -47,34 +43,17 @@ a {
 #KONGletters {
     width:8%;
 }
-h4 {
+#title {
+    text-align:center;
     color:white;
 }
-table {
-    color:white;
+#pLink {
+     font-size:16px;
 }
-#KAimg {
-    height:350px;
-    width:256px;
-}
-#KAimg2 {
-    height:133px;
-    width:200px;
-}
-#KAimg3 {
-    height:194px;
-    width:259px;
-}
-#KAimg4 {
-    height:209px;
-    width:138px;
-}
-#KAimg5 {
-    height:224px;
-    width:256px;
-}
-.caption {
-    font-size:12px;
+#pImg {
+    height:167px;
+    width:228px;
+    margin-left:33%;
 }
 #comments {
     background-color:#99FF33;

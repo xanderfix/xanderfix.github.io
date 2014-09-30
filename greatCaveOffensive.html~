@@ -1,8 +1,9 @@
 <html>
 <head>
 <title>Donkey Kong Country Tropical Freeze Easter Eggs | Trivia | Zelda Rocks</title>
-<meta name="description" content="Easter eggs in the game Donkey Kong Country Tropical Freeze."/>
-<link type="text/css" rel="stylesheet" href="donkeyKongCountryTropicalFreezeEasterEggs.css"/>
+<meta name="description" content="Easter eggs relating to the treaures in the Great Cave Offensive game in Kirby Super Star/ Ultra."/>
+<meta name="robots" content="noindex"/>
+<link type="text/css" rel="stylesheet" href="greatCaveOffensive.css"/>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,20 +34,79 @@
            <li>Contact</a></li>
         </ul>
     </div>
-    <h1 id="title">Donkey Kong Country Tropical Freeze Easter Eggs</h1>
-    <p class ="date">9/3/2014</p>
-    <p>-At the beginning of the first level, if Donkey Kong goes back into the plane and ground pounds next to the TVs, they will begin playing the title screen from Donkey Kong Country Returns.</p>
-    <img src="images/donkeyKCTFEE1.jpg" id="img1"/>
-    <p>-Next to the secret exit in level 1-3, Canopy Chaos,  there is an old gramaphone.  If Donkey Kong ground pounds next to it, it will begin playing the title music from Donkey Kong Country.</p>
-    <img src="images/donkeyKCTFEE2.jpg" id="img2"/>
-    <p>-In level 1-B, Busted Bayou, Samus' ship can be seen in the background.</p>
-    <img src="images/DKCTFEE3.png" id="img3"/>
-    <p>-At Funky's Fly 'N' Buy, if you select the Crash Guard, Funky quotes The Legend of Zelda.</p>
-    <img src="images/donkeyKCTFEE4.jpg" id="img4"/>
-    <p></p>
-    <img src="images/donkeyKCTFEE5.jpg" id="img5"/>
-    <p>-In the background of level 6-4, Blurry Flurry, the giant bat that chased Donkey Kong in level 4-5 of Donkey Kong Country Returns can be seen frozen in ice.</p>
-    <img src="images/donkeyKCTFEE6.jpg" id="img6"/>
+    <h1 id="title">Kirby Super Star Ultra: <br>Great Cave Offensive Treasure Refrences</h1>
+    <p class ="date">9/30/2014</p>
+    <p>Many of the treasures in the Kirby Super Star/ Kirby Super Star Ultra game The Great Cave Offensive are refrences to other Nintendo games.  Below is a table listing those treasures and the related refrence.  As many treasures were changed to objects from other games in Kirby Super Star Ultra, the list is from that game.</p>
+    <table>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    <tr>
+        <td><img/></td>
+        <td><p></p></td>
+    </tr>
+    </table>
 </div>
     <div id="comments">
          <!-- begin htmlcommentbox.com -->
@@ -56,14 +116,4 @@
         <!-- end htmlcommentbox.com -->
     </div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54960566-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
