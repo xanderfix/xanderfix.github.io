@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:1500px;
+    height:1850px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -71,4 +71,8 @@ table {
 }
 td {
     border:1px solid pink;
+}
+.tdimg {
+    width:30px;
+    height:30px;
 }
