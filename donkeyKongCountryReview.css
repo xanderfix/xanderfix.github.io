@@ -6,13 +6,13 @@ html {
   background-size: cover;
 }
 #main {
-    height:2000px;
+    height:2800px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
+    opacity:0.9;
 }
 p {
     color:white;
@@ -79,4 +79,12 @@ table {
     width:500px;
     height:433px;
     margin-left:10%;
+}
+#img3 {
+    margin-left:10%;
+    margin-right:10%;
+}
+#img4 {
+    margin-left:10%;
+    margin-right:10%;    
 }
