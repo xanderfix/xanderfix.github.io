@@ -68,14 +68,9 @@ a {
     height:175px;
     width:100%;
 }
-table {
-   width:70%;
-}
 .tdimg {
     width:60%;
 }
 #poll {
-    display:inline;
-    float:right;
-    margin-top:-90%;
+    
 }
