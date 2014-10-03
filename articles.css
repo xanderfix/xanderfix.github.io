@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 #main {
-    height:1050px;
+    height:1350px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -69,4 +69,8 @@ div {
 }
 #ocarinaSongs {
     width:5%;
+}
+#DKCimg {
+    width:429px;
+    height:300px;
 }

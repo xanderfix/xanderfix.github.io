@@ -12,7 +12,7 @@
     ga('create', 'UA-54960566-1', 'auto');
     ga('send', 'pageview');
     var width1 = document.getElementById("img1").width;
-    width1 = width1 * 1.06;
+    width1 = width1 * 0.77;
     document.getElementById("img1").height="width1";
     var width2 = document.getElementById("img2").width;
     width2 = width2 * 0.65;
@@ -44,24 +44,25 @@
     <h1 id="title">Home</h1>
     <h1>What's New:<h1>
     <table>
-        <thead>
-            <tr>
-                <td><h2>Articles</h2></td>
-                <td><h2>Trivia</h2></td>
-                <td><h2>Videos</h2></td>
-            </tr>
-        </thead>
         <tr>
-            <td><a href="zeldaPoll.html"><img src="images/legendOfZeldaTitleScreens.jpg" id="img1"/></a></td>
-            <td><a href="greatCaveOffensive.html"><img src="images/GCO.png" id="img2"/></a></td>
-            <td><a href="zeldasLullaby.html"><img src="images/zeldasLullaby.png" id="img3"/></a></td>
+            <td><h2>Articles</h2></td>
+            <td class="tdimg"><a href="donkeyKongCountryReview.html"><img src="images/DKcountryCover.jpg" id="img1"/></a></td>
+            <td class="tdp"><a href="donkeyKongCountryReview.html">Donkey Kong Country Review</a></td>
         </tr>
         <tr>
-            <td><a href="zeldaPoll.html">Which Zelda Game is Best?</a></td>
+            <td><h2>Trivia</h2></td>
+            <td class="tdimg"><a href="greatCaveOffensive.html"><img src="images/GCO.png" id="img2"/></a></td>
             <td><a href="greatCaveOffensive.html">Kirby Super Star Ultra:<br> Great Cave Offensive Treasure References</a></td>
-            <td><a href="zeldasLullaby.html"><p>Zelda's Lullaby Guitar Cover</p></a></td>
+        <tr>
+            <td><h2>Videos</h2></td>
+            <td class="tdimg"><a href="SMBtheme.html"><img src="images/SMBtheme.png" id="img3"/></a></td>
+            <td><a href="SMBtheme.html"><p>Super Mario Bros. Theme Guitar Cover</p></a></td>
         </tr>
     </table>
+    <div id="poll">
+        <script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8350434.js"></script>
+        <noscript><a href="http://polldaddy.com/poll/8350434/">Which Super Mario Bros. game is the best?</a></noscript>
+    </div>
 </div>
 </body>
 </html>

@@ -6,13 +6,13 @@ html {
   background-size: cover;
 }
 #main {
-    height:300px;
+    height:600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
+    opacity:0.9;
 }
 p {
     color:white;
@@ -56,4 +56,8 @@ a {
 }
 .video {
     display:block;
+}
+#SMBimg1 {
+    width:300px;
+    height:175px;
 }
