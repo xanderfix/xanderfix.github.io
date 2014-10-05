@@ -32,10 +32,6 @@ p {
 li {
     display:inline;
 }
-.link {
-    display:inline-block;
-    width:16%;
-}
 .title {
     text-align:center;
 }
