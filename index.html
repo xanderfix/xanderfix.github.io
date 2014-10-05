@@ -11,15 +11,7 @@
 
     ga('create', 'UA-54960566-1', 'auto');
     ga('send', 'pageview');
-    var width1 = document.getElementById("img1").width;
-    width1 = width1 * 0.77;
-    document.getElementById("img1").height="width1";
-    var width2 = document.getElementById("img2").width;
-    width2 = width2 * 0.65;
-    document.getElementById("img2").height="width2";
-    var width3 = document.getElementById("img3").width;
-    width3 = width3 * 0.6;
-    document.getElementById("img3").height="width3";
+
 </script>
 </head>
 
@@ -27,42 +19,27 @@
 <div id="main">
     <div id="navbar">
         <ul>
-           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
-           <li class="non-img">Home</a></li>
-           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
-           <li class="non-img">Articles</a></li>
-           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
-           <li class="non-img">Trivia</a></li>
-           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
-           <li class="non-img">Videos</a></li>
-           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
-           <li class="non-img">Music</li></a>
-           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
-           <li>Contact</a></li>
+           <a href="index.html"><li><div class="link">Home</div></a></li>
+           <a href="articles.html"><li><div class="link">Articles</div></a></li>
+           <a href="trivia.html"><li><div class="link">Trivia</div></a></li>
+           <a href="videos.html"><li><div class="link">Videos</div></a></li>
+           <a href="music.html"><li><div class="link">Music</div></a></li>
+           <a href="contact.html"><li><div class="link">Contact</div></a></li>
         </ul>
     </div>
-    <h1 id="title">Home</h1>
+    <h1 class="title">Home</h1>
+    <div id="about">
+        <p>Do you love video games?  Do you want to find video game reviews, trivia, polls and more?  Do you remember what NES stands for? <br> If the answer to any of those questions was yes, then this is the site to be on!  Browse through articles, trivia, and videos above; or search content by game series.<br><br><a href="kirbyStuff.html" class="aboutlink">Kirby</a><a href="donkeyKongStuff.html" class="aboutlink">Donkey Kong</a><a href="pikminStuff.html" class="aboutlink">Pikmin</a><a href="zeldaStuff.html" class="aboutlink">Legend of Zelda</a><a href="marioStuff.html" class="aboutlink">Mario</a></p>
+    </div>
+    <div id="WN">
+        <h2>Newest Post</h2>
+        <p class="date">10/2/2014</p>
+        <a href="donkeyKongCountryReview.html"><img src="images/DKcountryCover.jpg"/><p>Donkey Kong Country Review <br>  A review of the 1994 SNES classic, Donkey Kong Country.
+    </div>
     <div id="poll">
         <script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8350434.js"></script>
         <noscript><a href="http://polldaddy.com/poll/8350434/">Which Super Mario Bros. game is the best?</a></noscript>
     </div>
-    <h1>What's New:<h1>
-    <table>
-        <tr>
-            <td><h2>Articles</h2></td>
-            <td><a href="donkeyKongCountryReview.html"><img class="tdimg" src="images/DKcountryCover.jpg" id="img1"/></a></td>
-            <td class="tdp"><a href="donkeyKongCountryReview.html">Donkey Kong Country Review</a></td>
-        </tr>
-        <tr>
-            <td><h2>Trivia</h2></td>
-            <td><a href="greatCaveOffensive.html"><img class="tdimg" src="images/GCO.png" id="img2"/></a></td>
-            <td><a href="greatCaveOffensive.html">Kirby Super Star Ultra:<br> Great Cave Offensive Treasure References</a></td>
-        <tr>
-            <td><h2>Videos</h2></td>
-            <td><a href="SMBtheme.html"><img class="tdimg" src="images/SMBtheme.png" id="img3"/></a></td>
-            <td><a href="SMBtheme.html"><p>Super Mario Bros. Theme Guitar Cover</p></a></td>
-        </tr>
-    </table>
 </div>
 </body>
 </html>

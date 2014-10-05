@@ -1,25 +1,26 @@
-html { 
-  background: url(images/superMetroidBackground.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.link {
+    display:inline-block;
+    width:16%;
+    font-weight:bold;
+    font-size:24px;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+body {
+    background-color: #2E5CE6;
 }
 #main {
-    height:1000px;
+    height:800px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.8;
 }
 h1 {
     color:white;
-}
-h2 {
-    color:white;
-    font-size:32px;
 }
 p {
     color:white;
@@ -31,46 +32,34 @@ p {
 li {
     display:inline;
 }
-.img {
-    margin:0px 0px 0px 0px;
-    height:100%;
-    width:3%;
+.link {
+    display:inline-block;
+    width:16%;
 }
-.non-img {
-    margin-right:2%;
-}
-a {
-    color:white;
-    font-weight:bold;
-    font-size:24px;
-}
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
-#img1 {
-    height:366px;
-    width:100%;
-}
-#img2 {
-    height:240px;
-    width:100%;
-}
-#title {
+.title {
     text-align:center;
 }
-#ocarinaSongs {
-    width:5%;
-}
-#img3 {
-    height:175px;
-    width:100%;
-}
-.tdimg {
-    width:60%;
+#about {
+    display:block;
+    border:1px solid red;
+    margin-left:10%;
+    margin-right:10%;   
 }
 #poll {
     float:right;    
+    display:inline-block;
+    margin-right:10%;
+}
+#WN {
+    display:inline-block;
+    background-color:red;
+    margin-left:10%;
+}
+.date {
+    font-size:12px;
+}
+.aboutlink {
+    margin-right:15px;
+    font-size:20px;
+    font-weight:bold;
 }
