@@ -42,18 +42,14 @@ li {
 #about {
     display:block;
     border:1px solid red;
-    margin-left:10%;
-    margin-right:10%;   
 }
 #poll {
     float:right;    
     display:inline-block;
-    margin-right:10%;
 }
 #WN {
     display:inline-block;
     background-color:red;
-    margin-left:10%;
 }
 .date {
     font-size:12px;
