@@ -54,3 +54,17 @@ a {
 #liBegin {
     font-size:24px;
 }
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}

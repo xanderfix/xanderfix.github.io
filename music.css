@@ -43,3 +43,17 @@ a {
 #ocarinaSongs {
     width:5%;
 }
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}

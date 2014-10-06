@@ -75,3 +75,17 @@ a {
     margin-left:15%;
     margin-right:15%;
 }
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}
