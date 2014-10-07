@@ -99,7 +99,7 @@
         TriviaData[1][7] = "If you bring Rambi to the level's beginning, grab the hidden oil drum, throw it at the tree, jump on it, then dismount when you touch Rambi, he will turn into a silver version of Donkey Kong.";
         TriviaData[2][7] = "Boomer lives in the lost world in his bomb shelter and if you bring him bonus coins, he blow up the piles of rocks preventing access to the levels.";
         TriviaData[3][7] = "The information she gives about herself is that only one piece of information she gives out is useless.  If you then buy the information for Kaptain K. Rool, she just tells you to bring a lot of extra lives.";
-        TriviaData[4][7] = "The TVs will begin to play the Donkey Kong Country Returns title screen.  This can be read on the Donkey Kong Country Easter Eggs page in the Trivia section of this website.";
+        TriviaData[4][7] = "The TVs will begin to play the Donkey Kong Country Returns title screen.  This can be read on the Donkey Kong Country Trpoical Freeze Easter Eggs page in the Trivia section of this website.";
         TriviaData[5][7] = "Aquatic Ambiance is the name of the game's underwater theme, not a level.";
         TriviaData[6][7] = "After beating Kaptain K. Rool, Diddy's place in the Video Game Heroes competition is shown.  To win he needs 40 DK coins to beat Link with 19, Yoshi with 29, and Mario with 39.";
         TriviaData[7][7] = "The scientific name of the Banana Bird, Bananus Goldus Flutterus, is told to Dixie and Kiddy by Bramble after they trade him a Flupperius Petallus Pongus(Red Flower) for a Banana Bird";
