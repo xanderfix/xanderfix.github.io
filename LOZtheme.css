@@ -6,13 +6,12 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:900px;
+    height:600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.9;
 }
 p {
     color:white;
@@ -42,20 +41,26 @@ a {
 #ocarinaSongs {
     width:5%;
 }
-#ZLimg {
-    height:175px;
-    width:300px;
+#screenshot {
+    height:350px;
+    width:600px;
 }
-.video {
-    display:block;
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
 }
-#SMBimg1 {
-    width:300px;
-    height:175px;
+.date {
+    font-size:12px;
+    margin-left:90%;
 }
-#smbimg2 {
-    width:300px;
-    height:175px;
+#plink {
+    font-size:18px;
+}
+#video {
+    margin-left:15%;
+    margin-right:15%;
 }
 #left {
     float:left;
@@ -71,7 +76,7 @@ a {
 .rightimg {
     width:100%;
 }
-#LOZimg {
-    width:300px;
-    height:175px;
+#description {
+    margin-left:15%;
+    margin-right:15%;
 }

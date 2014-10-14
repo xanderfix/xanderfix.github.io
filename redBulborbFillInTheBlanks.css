@@ -6,12 +6,16 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1350px;
+    height:600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
-    background-color:black;
+    background-color:green;
+}
+h1 {
+    color:white;
+    text-align:center;
 }
 p {
     color:white;
@@ -23,11 +27,20 @@ p {
 li {
     display:inline;
 }
+#SPimg1 {
+    height:256;
+    width:224;
+    opacity:2;
+}
+#SPimg2{
+    height:160;
+    width:240;
+    opacity:2;
+}
 a {
     color:white;
     font-weight:bold;
     font-size:24px;
-    margin-bottom:25px;
 }
 #SamusShip {
     width:3.5%;
@@ -35,39 +48,32 @@ a {
 #KONGletters {
     width:8%;
 }
-.article {
+#imgBackground1 {
+    background-color:black;
     display:inline;
-    margin-left:3.5%;
+    height:256px;
+    width:224px;
+    opacity:2;
 }
-#KAimg {
-    height:350px;
-    width:256px;
-    margin-top:1%;
+#imgBackground2 {
+    background-color:black;
+    display:inline;
+    height:160px;
+    width:240px;
+    opacity:2;
 }
-#title {
-    text-align:center;
-    color:white;
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
 }
-#MOASimg {
-    height:167px;
-    width:228px;
-}
-div {
-    display:block;
-}
-#ZPimg {
-    height:366px;
-    width:333px;
+.date {
+    font-size:12px;
+    margin-left:90%;
 }
 #ocarinaSongs {
     width:5%;
-}
-#ZLimg {
-    width:303px;
-    height:175px;
-}
-img  {
-    margin-top:25px;
 }
 #left {
     float:left;
@@ -83,10 +89,6 @@ img  {
 .rightimg {
     width:100%;
 }
-#LOZthemeimg {
-    width:300px;
-    height:175px;
-}
-div {
-    margin-bottom:10px;
+#game {
+    color:white;
 }
