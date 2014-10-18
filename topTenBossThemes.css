@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:5650px;
+    height:5800px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -57,7 +57,7 @@ h1 {
 }
 .date {
     font-size:12px;
-    margin-left:90%;
+    margin-left:80%;
 }
 #plink {
     font-size:18px;
@@ -83,4 +83,7 @@ h1 {
 .number {
     margin-left:15%;
     margin-right:15%;
+}
+#spvideo {
+    margin-top:10px;
 }
