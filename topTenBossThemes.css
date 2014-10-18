@@ -37,10 +37,11 @@ a {
     width:8%;
 }
 h1 {
-    color:white;
+    color:green;
 }
 #title {
     text-align:center;
+    color:orange;
 }
 #ocarinaSongs {
     width:5%;
@@ -57,7 +58,7 @@ h1 {
 }
 .date {
     font-size:12px;
-    margin-left:80%;
+    margin-left:75%;
 }
 #plink {
     font-size:18px;
