@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1350px;
+    height:1550px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -82,4 +82,8 @@ div {
 }
 .rightimg {
     width:100%;
+}
+#PSTGimg {
+    width:437px;
+    height:132px;
 }

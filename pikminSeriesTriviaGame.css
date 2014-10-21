@@ -60,3 +60,7 @@ a {
 .rightimg {
     width:100%;
 }
+.date {
+    font-size:12px;
+    margin-left:70%;
+}
