@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:2000px;
+    height:2400px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -86,4 +86,8 @@ div {
 #TTBTimg {
     width:300px;
     height:175px;
+}
+#DKCCCimg {
+    width:432;;
+    height:324px;
 }
