@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1700px;
+    height:600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -34,40 +34,33 @@ a {
 #KONGletters {
     width:8%;
 }
-.article {
-    display:inline;
-    margin-left:3.5%;
-}
-#KAimg {
-    height:350px;
-    width:256px;
-    margin-top:1%;
-}
 #title {
     text-align:center;
     color:white;
 }
-#MOASimg {
-    height:167px;
-    width:228px;
-}
-div {
-    display:block;
-}
-#ZPimg {
-    height:366px;
-    width:333px;
-}
 #ocarinaSongs {
     width:5%;
 }
-#DKCimg {
-    width:429px;
-    height:300px;
+#screenshot {
+    height:350px;
+    width:600px;
 }
-#DKCTFEEimg {
-    width:275px;
-    height:375px;
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.date {
+    font-size:12px;
+    margin-left:90%;
+}
+#plink {
+    font-size:18px;
+}
+#video {
+    margin-left:15%;
+    margin-right:15%;
 }
 #left {
     float:left;
@@ -83,11 +76,7 @@ div {
 .rightimg {
     width:100%;
 }
-#DKCCCimg {
-    width:432px;
-    height:324px;
-}
-#DKCTimg {
-    width:300px;
-    height:175px;
+#description {
+    margin-left:15%;
+    margin-right:15%;
 }
