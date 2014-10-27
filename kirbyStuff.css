@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1350px;
+    height:1650px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -78,4 +78,8 @@ div {
 }
 .rightimg {
     width:100%;
+}
+#KAMimg {
+    width:338px;
+    height:315px;
 }

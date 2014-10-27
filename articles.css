@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:2400px;
+    height:2700px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -90,4 +90,8 @@ div {
 #DKCCCimg {
     width:432;;
     height:324px;
+}
+#KAMimg {
+    height:338px;
+    width:315px;
 }
