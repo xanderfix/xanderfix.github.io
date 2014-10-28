@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Donkey Kong Country Review | Articles | Zelda Rocks</title>
+<meta name="description" content="A review of the SNES adventure, Donkey Kong Country"/>
+<meta name="robots" content="noindex">
+<link type="text/css" rel="stylesheet" href="donkeyKongCountryReview.css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54960566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
+           <li class="non-img">Home</a></li>
+           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
+           <li class="non-img">Articles</a></li>
+           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
+           <li class="non-img">Trivia</a></li>
+           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
+           <li class="non-img">Videos</a></li>
+           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
+           <li class="non-img">Music</li></a>
+           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
+           <li>Contact</a></li>
+        </ul>
+    </div>
+    <h1 id="title">Donkey Kong Country Review</h1>
+    <p class ="date">9/29/2014</p>
+    <img id="img1" src="images/DKcountryCover.jpg"/>
+    <p class="caption">The game's box art.</p>
+    <p>Released in 1994 for the SNES, Donkey Kong Country showcased amazing graphics and gameplay.  This, combined with Rare's knack for creating funny, lovable characters and a superb soundtrack have made this game a classic.</p>
+    <img id="img2" src="images/emptyBananaHoard.jpg"/>
+    <p class="caption">Donkey Kong shocked to find his banana hoard missing.</p>
+    <p>The plot is basic (and only described in the instruction manual), yet engaging.  One dark and stromy night, Donkey Kong the Third (the grandson of the original DK) left his nephew, Diddy Kong, to guard his banana hoard.  During the night, evil reptiles called Kremlings landed on DOnkey Kong Island in their ship.  They then proceeded to overwhelm Diddy Kong, seal him in a barrel, and steal the banana hoard.  When Donkey Kong woke up in the morning, he found his bananas and Diddy gone, prompting him to track down the culprits.</p>
+    <p>The game is divided into a series of worlds, with multiple sidescrolling levels in each.  You play as either Donkey or Diddy in a tag team system to reach the end of the level.  Their only abilities are to roll, jump, pick up barrels, and cling to vines.  When either kong is touched by an enemy or hazard, they die.  If both Kongs die, a life is lost and they return to the level's beginning or the mid-way barrel.</p>
+    <p>Another big gameply element is barrels.  If a Kong dies, they can be revived by finding and throwing a DK barrel.  Wooden barrels, explosive oil barrels, and far-rolling steel barrels can all be picked up and thrown at enemies.  Many levels also feature barrel cannons which launch the Kongs either automatically or upon a button being pressed.  There is also one mid-way barrel in each level which once touched, revives the Kongs there when they die.</p>
+    <p>There are many unique kinds of levels.  SOme take place underwater; this is dangerous because the Kongs cannot attack and move slower.  Other levels have sections requiring you to launch through a series of moving barrel cannons with proper timing.  Other unique levels include riding a vine or flying treadmill to the end.</p>
+    <p>Animal buddies are other animals who aid the Kongs after being rescued from the crates they are sealed in.  Rambi the Rhino rams enemies out of the way with his sharp horn.  Expresso the Ostrich is fast and can glide, but lacks the ability to attack.  Winky the Frog can jump extremely high and kill even spiky enemies with his powerful feet.</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <table>
+        <h4>Summary</h4>
+        <tr>
+            <td>Story</td>
+            <td>7.5/10</td>
+        </tr>
+        <tr>
+            <td>Gameplay</td>
+            <td>8.5/10</td>
+        </tr>
+         <tr>
+            <td>Controls</td>
+            <td>8.5/10</td>
+        </tr>
+         <tr>
+            <td>Graphics</td>
+            <td>9/10</td>
+        </tr>
+        <tr>
+            <td>Music</td>
+            <td>9.5/10</td>
+        </tr>
+        <tr>
+            <td>Replay</td>
+            <td>8/10</td>
+        </tr>
+        <tr>
+            <td>Overall</td>
+            <td>8.5/10</td>
+        </tr>
+    </table>    
+    </div>
+    <div id="comments">
+         <!-- begin htmlcommentbox.com -->
+         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+         <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24TlB3y%2FGO4kzwiU97upQh.1"+"&opts=17374&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end htmlcommentbox.com -->
+    </div>
+</body>
+</html>
