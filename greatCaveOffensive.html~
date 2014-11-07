@@ -2,7 +2,6 @@
 <head>
 <title>Donkey Kong Country Tropical Freeze Easter Eggs | Trivia | Zelda Rocks</title>
 <meta name="description" content="Easter eggs relating to the treaures in the Great Cave Offensive game in Kirby Super Star/ Ultra."/>
-<meta name="robots" content="noindex"/>
 <link type="text/css" rel="stylesheet" href="greatCaveOffensive.css"/>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,95 +16,112 @@
 </head>
 
 <body>
+<div id="left">
+    <img src="images/marioMushroom.jpg" class="leftimg"/>
+    <img src="images/LttPmasterSword.jpg" class="leftimg"/>
+    <img src="images/morphBall.jpg" class="leftimg"/>
+    <img src="images/barrel2.jpg" class="leftimg"/>
+    <img src="images/waddleDoo.jpg" class="leftimg"/>
+    <img src="images/smashBall.jpg" class="leftimg"/>
+    <img src="images/blueJinjo.jpg" class="leftimg"/>
+    <img src="images/redPikmin.jpg" class="leftimg"/>
+    <img src="images/ring.jpg" class="leftimg"/>
+</div>
+<div id="right">
+    <img src="images/questionBlock.jpg" class="rightimg"/>
+    <img src="images/triforce.jpg" class="rightimg"/>
+    <img src="images/metroid.png" class="rightimg"/>
+    <img src="images/kingKRool.jpg" class="rightimg"/>
+    <img src="images/mikeKirby.png" class="rightimg"/>
+    <img src="images/masterHand.jpg" class="rightimg"/>
+    <img src="images/jiggy.jpg" class="rightimg"/>
+    <img src="images/redBulborb.jpg" class="rightimg"/>
+    <img src="images/chaosEmeralds.jpg" class="rightimg"/>
+</div>
 <div id="main">
     <div id="navbar">
         <ul>
-           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
-           <li class="non-img">Home</a></li>
-           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
-           <li class="non-img">Articles</a></li>
-           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
-           <li class="non-img">Trivia</a></li>
-           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
-           <li class="non-img">Videos</a></li>
-           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
-           <li class="non-img">Music</li></a>
-           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
-           <li>Contact</a></li>
+           <a href="index.html"><li><div class="link">Home</div></a></li>
+           <a href="articles.html"><li><div class="link">Articles</div></a></li>
+           <a href="trivia.html"><li><div class="link">Trivia</div></a></li>
+           <a href="videos.html"><li><div class="link">Videos</div></a></li>
+           <a href="music.html"><li><div class="link">Music</div></a></li>
+           <a href="games.html"><li><div class="link">Games</div></a></li>
+           <a href="contact.html"><li><div class="link">Contact</div></a></li>
         </ul>
     </div>
-    <h1 id="title">Kirby Super Star Ultra: <br>Great Cave Offensive Treasure Refrences</h1>
+    <h1 id="title">Kirby Super Star Ultra: <br>Great Cave Offensive Treasure References</h1>
     <p class ="date">9/30/2014</p>
-    <p>Many of the treasures in the Kirby Super Star/ Kirby Super Star Ultra game The Great Cave Offensive are refrences to other Nintendo games.  Below is a table listing those treasures and the related refrence.  As many treasures were changed to objects from other games in Kirby Super Star Ultra, the list is from that game.</p>
+    <p id="intro">Many of the treasures in the Kirby Super Star/ Kirby Super Star Ultra game The Great Cave Offensive are refrences to other Nintendo games.  Below is a table listing those treasures and the related refrence.  As many treasures were changed to objects from other games in Kirby Super Star Ultra, the list is from that game.</p>
     <table>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
-    <tr>
-        <td><img/></td>
-        <td><p></p></td>
-    </tr>
+        <tr>
+            <td><img src="images/GCO1.png" class="tdimg"/><p>Whip</p></td>
+            <td><p>A whip that strongly resembles the infamous Vampire Killer from the NES game <i>Castlevania.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO2.png" class="tdimg"/><p>Screw Attack</p></td>
+            <td><p>The Screw Attack upgrade from the <i>Metroid</i> series.  It was incorrectly labeled as Screw Ball in <i>Kirby Super Star.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO3.png" class="tdimg"/><p>Phanto Mask</td>
+            <td><p>A Phanto is an enemy from <i>Super Mario Bros. 2</i>.  This treasure was called the Zebra Mask in <i>Kirby Super Star</i> because it looks like a zebra's nose.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO4.png" class="tdimg"/><p>Bandana</td>
+            <td><p>What appears to be the bandana worn by Fighter Kirby.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO5.png" class="tdimg"/><p>Machine Parts</p></td>
+            <td><p>The wings of the Legendary Air Ride Machine, Hydra, from <i>Kirby Air Ride.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO6.png" class="tdimg"/><p>Bucket</p></td>
+            <td><p>The bucket from the Super Famicom game, <i>Mario and Wario.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO7.png" class="tdimg"/><p>Power Paintbrush</p></td>
+            <td><p>The magic paintbrush used by Drawcia, primary antagonist and final boss of <i>Kirby: Canvas Curse.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO8.png" class="tdimg"/><p>Falcon Helment</p></td>
+            <td><p>The helmet worn by Captain Falcon, the main playable character in the <i>F-Zero</i> series.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO9.png" class="tdimg"/><p>Cell Phone</p></td>
+            <td><p>The cell phone Kirby uses to call the other Kirbys in <i>Kirby and the Amazing Mirror.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO10.png" class="tdimg"/><p>Koopa Shell</p></td>
+            <td><p>A green koopa shell from the <i>Mario</i> series.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO11.png" class="tdimg"/><p>Falchion</p></td>
+            <td><p>The Falchion, a magic sword used in the <i>Fire Emblem</i> series.  In <i>Kirby Super Star</i> it was mistakenly called sword.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO12.png" class="tdimg"/><p>Three-Star Cane</p></td>
+            <td><p>The weapon (known as the Triple Star) wielded by Daroach/Dark Daroach, the 6th and 8th bosses and secondary antagonist of <i>Kirby Squeak Squad</i>.  Upon defeating Dark Daroach, Kirby can then use the weapon to defeat the final boss, Dark Nebula.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO13.png" class="tdimg"/><p>Mr. Saturn</p></td>
+            <td><p>A member of the friendly alien species, all of whom are known as Mr. Saturn, seen in the <i>Mother</i> series (called Earthbound in America).</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO14.png" class="tdimg"/><p>Gold Watering Can</p></td>
+            <td><p>A hidden item in the <i>Animal Crossing</i> series.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO15.png" class="tdimg"/><p>Kong's Barrel</p></td>
+            <td><p>A DK barrel from the <i>Donkey Kong Country</i> series.  In <i>Kirby Super Star</i>, it's an ordinary wooden barrel from the same series.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO16.png" class="tdimg"/><p>Pegasus Wing</p></td>
+            <td><p>One of the three sacred Treasures from the NES game, <i>Kid Icarus.</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/GCO17.png" class="tdimg"/><p>Triforce</p></td>
+            <td><p>The legendary artifact, the triforce, from the <i>Legend of Zelda</i> series.</p></td>
+        </tr>
     </table>
 </div>
     <div id="comments">

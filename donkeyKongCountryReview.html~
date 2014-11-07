@@ -2,7 +2,6 @@
 <head>
 <title>Donkey Kong Country Review | Articles | Zelda Rocks</title>
 <meta name="description" content="A review of the SNES adventure, Donkey Kong Country"/>
-<meta name="robots" content="noindex">
 <link type="text/css" rel="stylesheet" href="donkeyKongCountryReview.css"/>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,21 +16,38 @@
 </head>
 
 <body>
+<div id="left">
+    <img src="images/marioMushroom.jpg" class="leftimg"/>
+    <img src="images/LttPmasterSword.jpg" class="leftimg"/>
+    <img src="images/morphBall.jpg" class="leftimg"/>
+    <img src="images/barrel2.jpg" class="leftimg"/>
+    <img src="images/waddleDoo.jpg" class="leftimg"/>
+    <img src="images/smashBall.jpg" class="leftimg"/>
+    <img src="images/blueJinjo.jpg" class="leftimg"/>
+    <img src="images/redPikmin.jpg" class="leftimg"/>
+    <img src="images/ring.jpg" class="leftimg"/>
+</div>
+<div id="right">
+    <img src="images/questionBlock.jpg" class="rightimg"/>
+    <img src="images/triforce.jpg" class="rightimg"/>
+    <img src="images/metroid.png" class="rightimg"/>
+    <img src="images/kingKRool.jpg" class="rightimg"/>
+    <img src="images/mikeKirby.png" class="rightimg"/>
+    <img src="images/masterHand.jpg" class="rightimg"/>
+    <img src="images/jiggy.jpg" class="rightimg"/>
+    <img src="images/redBulborb.jpg" class="rightimg"/>
+    <img src="images/chaosEmeralds.jpg" class="rightimg"/>
+</div>
 <div id="main">
     <div id="navbar">
         <ul>
-           <a href="index.html"><li id="SamusShip"><img src="images/samusShip.gif" class="img"/></li>
-           <li class="non-img">Home</a></li>
-           <a href="articles.html"><li><img src="images/triforce.jpg" class="img"/></li>
-           <li class="non-img">Articles</a></li>
-           <a href="trivia.html"><li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqPIWPlHRR7EK03_5AKuKSTcR_lkLct_2PywFwcNbXrAuYnVNexyROrjE" class="img"/></li>
-           <li class="non-img">Trivia</a></li>
-           <a href="videos.html"><li><img src="images/mikeKirby.png" class="img"/></li>
-           <li class="non-img">Videos</a></li>
-           <a href="music.html"><li><img src="images/ocarinaSongs.gif" class="img" id="ocarinaSongs"/></li>
-           <li class="non-img">Music</li></a>
-           <a href="contact.html"><li><img src="images/kongLetters.png" id="KONGletters" class="img"/></li>
-           <li>Contact</a></li>
+           <a href="index.html"><li><div class="link">Home</div></a></li>
+           <a href="articles.html"><li><div class="link">Articles</div></a></li>
+           <a href="trivia.html"><li><div class="link">Trivia</div></a></li>
+           <a href="videos.html"><li><div class="link">Videos</div></a></li>
+           <a href="music.html"><li><div class="link">Music</div></a></li>
+           <a href="games.html"><li><div class="link">Games</div></a></li>
+           <a href="contact.html"><li><div class="link">Contact</div></a></li>
         </ul>
     </div>
     <h1 id="title">Donkey Kong Country Review</h1>
@@ -41,11 +57,21 @@
     <p class="caption">Donkey Kong shocked to find his banana hoard missing.</p>
     <p>The plot is basic (and only described in the instruction manual), yet engaging.  One dark and stormy night, Donkey Kong the Third (the grandson of the original DK) left his nephew, Diddy Kong, to guard his banana hoard.  During the night, evil reptiles called Kremlings landed on Donkey Kong Island in their ship.  They then proceeded to overwhelm Diddy Kong, seal him in a barrel, and steal the banana hoard.  When Donkey Kong woke up in the morning, he found his bananas and Diddy gone, prompting him to track down the culprits.</p>
     <p>The game is divided into a series of worlds, with multiple sidescrolling levels in each.  You play as either Donkey or Diddy in a tag team system to reach the end of the level.  Their abilities are rolling, jumping, picking up barrels, and clinging to vines.  When either kong is touched by an enemy or hazard, they die.  If both Kongs die, a life is lost and they return to the level's beginning or the mid-way barrel.</p>
+    <table id="table1">
+        <tr>
+           <td><img src="images/barrel1.jpg" class="tdimg"/></td>
+           <td><img src="images/barrel2.jpg" class="tdimg"/></td>
+           <td><img src="images/barrel3.jpg" class="tdimg"/></td>
+           <td><img src="images/barrel4.jpg" class="tdimg"/></td>
+        </tr>
+    </table>
     <table>
         <tr>
-           <td><img src="images/barrel1.jpg"/></td>
-           <td><img src="images/barrel2.jpg"/></td>
-           <td><img src="images/barrel3.jpg"/></td>
+           <td><img src="images/barrel5.jpg" class="tdimg"/></td>
+           <td><img src="images/barrel6.jpg" class="tdimg"/></td>
+           <td><img src="images/barrel7.jpg" class="tdimg"/></td>
+        </tr>
+    </table>
     <p class="caption">The seven main kinds of barrels.</p>
     <p>Another big gameplay element is barrels.  If a Kong dies, they can be revived by finding and throwing a DK barrel.  Ordinary wooden barrels, far rolling steel barrels, and explosive TNT barrels can all be thrown at enemies.  Barrel cannons launch the Kongs either automatically or upon a button being pressed.  There is also one mid-way barrel in each level which once touched, will revive the Kongs there when they die.</p>
     <p>There are many different unique kinds of levels.  Some take place underwtaer; this is dangerous because the Kongs cannot attack and move slower.  Other levels have sections where you have to launch through a series of barrel cannons with proper timing.  Other unique levels include riding a vine or a flying treadmill to the end.</p>
