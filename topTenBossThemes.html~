@@ -57,15 +57,15 @@
     <h1 id="title">Top 10 Boss Battle Themes</h1>
     <p class="date">10/18/2014</p>
     <p>Following is a list of what I think are the top 10 best boss battle themes in the history of videogames.  Songs were chosen based on their abilty to be memorable, the harmony of the various instruments and their abilty to complement the feel of the moment.  If you disagree with the list, feel free to let me know what you think in the comments.</p>
-    <h1 class="number">10. Super Mario Sunshine Boss Theme #1</h1>
-    <p>The first item on this list is boss theme #1 from Super Mario Sunshine. It's both upbeat and exciting.  The tune has just enough intensity for a boss theme while still being an embodiment of the game's bright, happy nature.</p>
-    <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/58ZVat0Ocdg?rel=0" frameborder="0" allowfullscreen></iframe>
-    <h1 class="number">9. Super Mario Bros. 3 Boss Theme</h1>
-    <p>This next theme is an amzing song from an amazing game.  It's rather fast and short (like many of the games battles) and like most of the Super Mario Bros. 3 songs, it takes full advantage of the ability to have more tracks per song than its' predecessor.  The theme gets double credit for sounding just as good 20 years later in New Super Mario Bros.</p>
+    <h1 class="number">10. Super Mario Bros. 3 Boss Theme</h1>
+    <p>The first theme is an amazing song from an amazing game.  It's rather fast and short (like many of the games battles) and like most of the Super Mario Bros. 3 songs, it takes full advantage of the ability to have more tracks per song than its' predecessor.  The theme gets double credit for sounding just as good 20 years later in New Super Mario Bros.</p>
     <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/7CgFWFmGqlo?rel=0" frameborder="0" allowfullscreen></iframe>
-    <h1 class="number">8. Super Mario 3d World Boss Theme #1</h1>
+    <h1 class="number">9. Super Mario 3d World Boss Theme #1</h1>
     <p>Though Super Mario 3d World doesn't have very much good original music, I really loved this theme.  This theme boasts a good building brass  and rythm guitar  plus a wonderful rock-n-roll ending.  It's in-game remix, World Bowser, is also good, but lacks the intensity.  Overall, a nice, original piece.
     <iframe id="spvideo" width="560" height="315" src="//www.youtube.com/embed/OvRobF6r7gM?rel=0" frameborder="0" allowfullscreen></iframe>   
+    <h1 class="number">8. Heavy Lobster Boss Theme</h1>
+    <p>This song adds a lot of intensity to the battle with the Heavy Lobster on board the Halberd.  In the original <i>Kirby Super Star</i>, the ordinary boss theme was played, but a more intense theme was added in <i>Kirby Super Star Ultra</i>. It has been suggested by many people to sing HEA-VY LOB-STER throughout the duration of the song.  I remember going in the sound test area and listening to this for at least 1/2 an hour.</p>
+    <iframe class="video" width="420" height="315" src="//www.youtube.com/embed/sidWF7mavRY?rel=0" frameborder="0" allowfullscreen></iframe>
     <h1 class="number">7. Battle with Marx (Kirby Super Star/Ultra final boss)</h1>
     <p>To put it simply, this piece sounds like Marx.  Creepy, surprising, and aggresive, this theme really complements the maniacal laughing and sporadic flying of Marx/Marx Soul.</p>
     <iframe class="video" width="420" height="315" src="//www.youtube.com/embed/wBrzRHcDW4U?rel=0" frameborder="0" allowfullscreen></iframe> 
@@ -88,13 +88,14 @@
     <h1 class="number">1. In the Final (Mario and Luigi: Bowser's Inside Story Final Boss Theme)</h1>
     <p>This fast-paced action packed piano theme really makes this battle amazing.  The song sounds like the musical version of the preceeding dialouge:<br><br>Dark Bowser: "Still here? Has the dark power not yet crushed your puny hopes? Soon this kingdom will vanish along with all who dwell within. And you, too, will sleep eternally in the dark power's embrace!"<br><br>Bowser: "GWAHAHA! Great dark hurricane! Seriously, perfect backdrop for an awesome final battle! You really sweat the details! Listen up! You're saying the kingdom will vanish? NOT TODAY! THIS KINGDOM IS ALL MINE! SO YOU VANISH!"<br><br>If this theme sounds like it's from Kingdom Hearts (it's often described that way) that's because it's by the same composer</p>
     <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/z6M2xt_Ks4Y?rel=0" frameborder="0" allowfullscreen></iframe>
+    <p>Comments not showing up? click <a href="topTenBossThemes#HCB_comment_box">here</a>.</p>
 </div>
-<div id="comments">
-         <!-- begin htmlcommentbox.com -->
-         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
-         <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24TlB3y%2FGO4kzwiU97upQh.1"+"&opts=17374&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-        <!-- end htmlcommentbox.com -->
+    <div id="comments">
+        <!-- begin htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} hcb_user.PAGE="www.zeldarocks.com/topTenBossThemes.html";(function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24TlB3y%2FGO4kzwiU97upQh.1"+"&opts=21470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end htmlcommentbox.com -->
     </div>
 </body>
 </html>
