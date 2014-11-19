@@ -59,7 +59,7 @@ a {
 }
 .date {
     font-size:12px;
-    margin-left:75%;
+    margin-left:90%;
 }
 #plink {
     font-size:18px;

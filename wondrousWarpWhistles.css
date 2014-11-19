@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1500px;
+    height:800px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -15,12 +15,6 @@ body {
 }
 p {
     color:white;
-    margin-left:15%;
-    margin-right:15%;
-}
-h1 {
-    color:white;
-    text-align:center;
 }
 #navbar {
    height:26px;
@@ -44,12 +38,13 @@ a {
     text-align:center;
     color:white;
 }
-#ocarinaSongs {
-    width:5%;
+#pLink {
+     font-size:16px;
 }
-#screenshot {
-    height:350px;
-    width:600px;
+#pImg {
+    height:167px;
+    width:228px;
+    margin-left:33%;
 }
 #comments {
     background-color:#99FF33;
@@ -59,14 +54,10 @@ a {
 }
 .date {
     font-size:12px;
-    margin-left:75%;
+    margin-left:70%;
 }
-#plink {
-    font-size:18px;
-}
-.video {
-    margin-left:15%;
-    margin-right:15%;
+#ocarinaSongs {
+    width:5%;
 }
 #left {
     float:left;
@@ -82,13 +73,17 @@ a {
 .rightimg {
     width:100%;
 }
-.description {
+.text {
     margin-left:15%;
     margin-right:15%;
 }
-#glitchimg {
+.caption {
+    font-size:12px;
+    margin-left:15%;
+}
+#img1 {
+    width:432px;
+    height:324px;
     margin-left:15%;
     margin-right:15%;
-    width:318px;
-    height:183px;
 }
