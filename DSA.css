@@ -1,0 +1,93 @@
+.link {
+    display:inline-block;
+    width:13%;
+}
+body {
+    background-color: #2E5CE6;
+}
+#main {
+    height:1400px;
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:0%
+    margin-bottom:0%;
+    background-color:black;
+}
+p {
+    color:white;
+    margin-left:15%;
+    margin-right:15%;
+}
+#navbar {
+   height:26px;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+a {
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+}
+#SamusShip {
+    width:3.5%;
+}
+#KONGletters {
+    width:8%;
+}
+h1 {
+    text-align:center;
+    color:white;
+}
+#pLink {
+     font-size:16px;
+}
+#pImg {
+    height:167px;
+    width:228px;
+    margin-left:33%;
+}
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.date {
+    font-size:12px;
+    margin-left:70%;
+}
+#ocarinaSongs {
+    width:5%;
+}
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}
+.text {
+    margin-left:15%;
+    margin-right:15%;
+}
+.caption {
+    font-size:12px;
+    margin-left:15%;
+}
+.articleimg {
+    margin-left:15%;
+    margin-right:15%;
+}
+#DS {
+    width:235px;
+    height:214px;
+}
