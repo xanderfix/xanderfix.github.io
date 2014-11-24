@@ -57,6 +57,8 @@ li {
     font-weight:bold;
 }
 #ftimg {
+    width:300px;
+    height:175px;
 }
 #left {
     float:left;
