@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1400px;
+    height:1800px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -93,4 +93,8 @@ a {
 }
 #fact {
     color:green;
+}
+.LOZ {
+    display:inline;
+    margin-left:15%;
 }
