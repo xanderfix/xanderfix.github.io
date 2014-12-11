@@ -55,13 +55,16 @@
     <h1>Fill in the Blanks:<br>Olimar's Notes: Red Bulborb</h1>
     <p class ="date">12/11/2014</p>
     <form>
-        <input id="input1" type="text" name="noun" placeholder="noun"><br>
-        <input type="submit" value="Submit">
+        <input id="input1" type="text" name="adjective" placeholder="adjective"><br>
     </form> 
+    <button onclick="result()">Submit</button>
     <p id="answerp">Result will appear here</p>
     <script>
-    var input1 = document.getElementById("input1").value;
+    function result() {
+    var input1 = "";
+    input1 = document.getElementById("input1").value;
     document.getElementById("answerp").innerHTML = "Hello " + input1 + ".";
+    }
     </script>
 </div>
     <div id="comments">
