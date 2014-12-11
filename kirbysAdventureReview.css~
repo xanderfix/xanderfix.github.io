@@ -1,9 +1,9 @@
-html { 
-  background: url(images/16bitHyrule.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.link {
+    display:inline-block;
+    width:13%;
+}
+body {
+    background-color: #2E5CE6;
 }
 #main {
     height:2250px;
@@ -12,7 +12,6 @@ html {
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
-    opacity:0.9;
 }
 h1 {
     color:white;
@@ -22,19 +21,11 @@ p {
     color:white;
 }
 #navbar {
-   height:1%;
+   height:26px;
    background-color: red;
 }
 li {
     display:inline;
-}
-.img {
-    margin:0px 0px 0px 0px;
-    height:100%;
-    width:3%;
-}
-.non-img {
-    margin-right:2.5%;
 }
 a {
     color:white;
@@ -88,4 +79,18 @@ table {
 }
 #ocarinaSongs {
     width:5%;
+}
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
 }
