@@ -54,18 +54,17 @@
     </div>
     <h1>Fill in the Blanks:<br>Olimar's Notes: Red Bulborb</h1>
     <p class ="date">12/11/2014</p>
-    <p>This game is similar to Mad Libs.  You and your friends take turns filling in the boxes with words from that category (noun, adjective, number, etc.).  When you are done, press submit and the written passage will be displayed with some words replaced with the ones you typed.  This passage is Captain Olimar's notes on the Red Bulborb from <i>Pikmin 2</i>, which can be found <a href="http://www.pikminwiki.com/Red_Bulborb">on this page</a>.
     <form>
-        <input id="input1" type="text" name="input1" placeholder="adjective"><br><br>
-        <input id="input2" type="text" name="input2" placeholder="insect"><br><br>
-        <input id="input3" type="text" name="input3" placeholder="mammal"><br><br>
-        <input id="input4" type="text" name="input4" placeholder="plural body part"><br><br>
-        <input id="input5" type="text" name="input5" placeholder="fraction"><br><br>
-        <input id="input6" type="text" name="input6" placeholder="adjective"><br><br>
-        <input id="input7" type="text" name="input7" placeholder="shape"><br><br>
-        <input id="input8" type="text" name="input8" placeholder="adjective"><br><br>
-        <input id="input9" type="text" name="input9" placeholder="adjective"><br><br>
-        <input id="input10" type="text" name="input10" placeholder="plural characteristic"><br><br>
+        <input id="input1" type="text" name="input1" placeholder="adjective"><br>
+        <input id="input2" type="text" name="input2" placeholder="insect"><br>
+        <input id="input3" type="text" name="input3" placeholder="mammal"><br>
+        <input id="input4" type="text" name="input4" placeholder="plural body part"><br>
+        <input id="input5" type="text" name="input5" placeholder="fraction"><br>
+        <input id="input6" type="text" name="input6" placeholder="adjective"><br>
+        <input id="input7" type="text" name="input7" placeholder="shape"><br>
+        <input id="input8" type="text" name="input8" placeholder="adjective"><br>
+        <input id="input9" type="text" name="input9" placeholder="adjective"><br>
+        <input id="input10" type="text" name="input10" placeholder="plural characteristic"><br>
     </form> 
     <button onclick="result()">Submit</button>
     <p id="answerp">Result will appear here</p>
@@ -73,24 +72,6 @@
     function result() {
     var input1 = "";
     input1 = document.getElementById("input1").value;
-    var input2 = "";
-    input2 = document.getElementById("input2").value;
-    var input3 = "";
-    input3 = document.getElementById("input3").value;
-    var input4 = "";
-    input4 = document.getElementById("input4").value;
-    var input5 = "";
-    input5 = document.getElementById("input5").value;
-    var input6 = "";
-    input6 = document.getElementById("input6").value;
-    var input7 = "";
-    input7 = document.getElementById("input7").value;
-    var input8 = "";
-    input8 = document.getElementById("input8").value;
-    var input9 = "";
-    input9 = document.getElementById("input9").value;
-    var input10 = "";
-    input10 = document.getElementById("input10").value;
     document.getElementById("answerp").innerHTML = "This "+ input1 + " organism has the familiar mandibles and cranial morphology of the "+ input2 + "-"+ input3 +" family, as well as the characteristic bulging " + input4 + ". As with most "+ input2 + "-"+ input3 +"s, the creature's cranium comprises " + input5 + " of its total length and girth. Showing a " + input6 + " abdomen with white " + input7 + "s, this creature is primarily nocturnal, choosing to prey upon smaller creatures returning to their nests. Originally classified as the "+ input8 +" bulborb, further research has reclassified this species as the "+ input9 +" bulborb. Subspecies of varied "+ input10 +" have recently been discovered, but academics are divided into two rival camps over how to handle their classification.";
     }
     </script>
