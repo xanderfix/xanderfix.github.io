@@ -16,6 +16,9 @@ body {
 p {
     color:white;
 }
+pre {
+    margin-top:20px;
+}
 #navbar {
    height:26px;
    background-color: red;
