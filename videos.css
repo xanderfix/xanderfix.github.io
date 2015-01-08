@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1850px;
+    height:1350px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -78,4 +78,7 @@ a {
 .videoimg {
     width:300px;
     height:175px;
+}
+.nextPage {
+    color:blue;
 }
