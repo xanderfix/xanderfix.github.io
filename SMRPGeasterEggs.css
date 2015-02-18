@@ -6,15 +6,22 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1850px;
+    height:4000px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
     margin-bottom:0%;
     background-color:black;
+    opacity:0.95;
 }
 p {
     color:white;
+    margin-left:15%;
+    margin-right:15%;
+}
+.articleimg {
+    width:50%;
+    margin-left:25%;
 }
 #navbar {
    height:26px;
@@ -34,44 +41,26 @@ a {
 #KONGletters {
     width:8%;
 }
-.KA {
-    margin-left:3.5%;
-}
-#KAimg {
-    height:350px;
-    width:256px;
-    margin-top:1%;
-}
 #title {
     text-align:center;
     color:white;
 }
-#DKCTFimg {
-    height:350px;
-    width:256px;
+h3 {
+    text-align:center;
+    color:white;
 }
-.DKCTF {
-    margin-left:3.5%;
-    display:inline;
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
 }
-div {
-    display:block;
+.date {
+    font-size:12px;
+    margin-left:75%;
 }
-#td1 {
-    padding-top:300px;
-    border:25px solid black;
-}
-#FFPimg {
-    height:240px;
-    width:325px;
-    margin-left:3.5%;
-}
-.FFP {
-    margin-left:3.5%;
-}
-#td2 {
-    padding-top:250px;
-    border:25px solid black;
+#ocarinaSongs {
+    width:5%;
 }
 #left {
     float:left;
@@ -87,3 +76,4 @@ div {
 .rightimg {
     width:100%;
 }
+
