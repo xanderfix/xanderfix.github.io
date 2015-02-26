@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>How to Play Zelda's Lullaby(Ocarina of Time Version) | Music | Zelda Rocks</title>
+<meta name="description" content="Sheet music, guitar tab, and midi file for the Ocarina of Time Version of Zelda's Lullaby."/>
+<link type="text/css" rel="stylesheet" href="zeldasLullabyMusic.css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54960566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="left">
+    <img src="images/marioMushroom.jpg" class="leftimg"/>
+    <img src="images/LttPmasterSword.jpg" class="leftimg"/>
+    <img src="images/morphBall.jpg" class="leftimg"/>
+    <img src="images/barrel2.jpg" class="leftimg"/>
+    <img src="images/waddleDoo.jpg" class="leftimg"/>
+    <img src="images/smashBall.jpg" class="leftimg"/>
+    <img src="images/blueJinjo.jpg" class="leftimg"/>
+    <img src="images/redPikmin.jpg" class="leftimg"/>
+    <img src="images/ring.jpg" class="leftimg"/>
+</div>
+<div id="right">
+    <img src="images/questionBlock.jpg" class="rightimg"/>
+    <img src="images/triforce.jpg" class="rightimg"/>
+    <img src="images/metroid.png" class="rightimg"/>
+    <img src="images/kingKRool.jpg" class="rightimg"/>
+    <img src="images/mikeKirby.png" class="rightimg"/>
+    <img src="images/masterHand.jpg" class="rightimg"/>
+    <img src="images/jiggy.jpg" class="rightimg"/>
+    <img src="images/redBulborb.jpg" class="rightimg"/>
+    <img src="images/chaosEmeralds.jpg" class="rightimg"/>
+</div>
+<div id="main">
+    <div id="navbar">
+        <ul>
+           <a href="index.html"><li><div class="link">Home</div></a></li>
+           <a href="articles.html"><li><div class="link">Articles</div></a></li>
+           <a href="trivia.html"><li><div class="link">Trivia</div></a></li>
+           <a href="videos.html"><li><div class="link">Videos</div></a></li>
+           <a href="music.html"><li><div class="link">Music</div></a></li>
+           <a href="games.html"><li><div class="link">Games</div></a></li>
+           <a href="contact.html"><li><div class="link">Contact</div></a></li>
+        </ul>
+    </div>
+    <h1 id="title">How to Play Zelda's Lullaby(Ocarina of Time Version)</h1>
+    <p>Here is the midi file, sheet music, and guitar tab for Zelda's Lullaby. An amazing guitar tab for Zelda's Lullaby has already been created on the website csguitar89, so the link leads to that tab.</p>
+    <a href="music/zeldasLullaby.mid"><p>Zelda's Lullaby.midi</p></a>
+    <a href="music/zeldasLullaby.pdf"><p>Zelda's Lullaby Sheet Music</p></a>
+    <a href="http://www.mediamere.com/fileadmin/Klanten/CSGuitar89.com/tabs/Zeldas_Lullaby.rtf"><p>Zelda's Lullaby Guitar Tab</p></a>
+</div>
+</body>
+</html>
+
