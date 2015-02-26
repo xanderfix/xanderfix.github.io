@@ -49,34 +49,6 @@ a {
     margin-left:75%;
     mrgin-right:0%;
 }
-table {
-    color:white;
-}
-#img1 {
-    width:429px;
-    height:300px;
-    margin-left:10%;
-}
-#img2 {
-    width:300px;
-    height:256px;
-    margin-left:10%;
-}
-#img3 {
-    margin-left:10%;
-    margin-right:10%;
-}
-#img4 {
-    margin-left:10%;
-    margin-right:10%;    
-}
-.tdimg {
-   width:125px;
-   height:155px; 
-}
-table {
-    margin-left:10%;
-}
 #left {
     float:left;
     width:8%;
@@ -91,3 +63,4 @@ table {
 .rightimg {
     width:100%;
 }
+

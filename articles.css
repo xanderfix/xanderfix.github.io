@@ -31,12 +31,6 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 .article {
     display:inline;
     margin-left:3.5%;
@@ -60,9 +54,6 @@ div {
 #ZPimg {
     height:366px;
     width:333px;
-}
-#ocarinaSongs {
-    width:5%;
 }
 #DKCimg {
     width:429px;
