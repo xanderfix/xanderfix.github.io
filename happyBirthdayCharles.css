@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:3000px;
+    height:1000px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -38,6 +38,10 @@ a {
     text-align:center;
     color:white;
 }
+h3 {
+    text-align:center;
+    color:white;
+}
 #comments {
     background-color:#99FF33;
     opacity:0.9;
@@ -63,4 +67,12 @@ a {
 .rightimg {
     width:100%;
 }
-
+#birthday {
+    width:100%;
+}
+#audio {
+    margin-left:auto;
+    margin-right:auto;
+    border:2px solid red;
+    width:30%;
+}
