@@ -33,7 +33,7 @@ a {
     color:white;
 }
 #trivia {
-    background-color:66000;
+    background-color:#953395;
     margin-left:20%;
     margin-right:20%;     
 }
@@ -54,4 +54,12 @@ a {
 .date {
     font-size:12px;
     margin-left:70%;
+}
+#p {
+    margin-left:20%;
+    margin-right:20%;
+}
+#keaton {
+    margin-left:20%;
+    margin-right:20%;
 }
