@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:3800px;
+    height:1750px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -67,4 +67,16 @@ h3 {
 .rightimg {
     width:100%;
 }
-
+.imgdiv {
+    margin-left:auto;
+    margin-right:auto;
+}
+#rupee {
+    width:24px;
+}
+#ZELDAmaps {
+    width:370px;
+}
+#polsVoice {
+    width:256px;
+}
