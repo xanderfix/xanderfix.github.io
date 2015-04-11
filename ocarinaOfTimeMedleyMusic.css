@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1600px;
+    height:1100px;
     margin-left:8%;
     margin-right:8%;
     margin-top:0%
@@ -14,6 +14,10 @@ body {
     background-color:black;
 }
 p {
+    color:white;
+    margin-left:15%;
+}
+h1 {
     color:white;
     margin-left:15%;
 }
@@ -60,7 +64,7 @@ a {
 .rightimg {
     width:100%;
 }
-.video {
+#video {
     margin-left:15%;
     margin-right:15%;
 }
