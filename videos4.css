@@ -1,0 +1,79 @@
+.link {
+    display:inline-block;
+    width:13%;
+}
+body {
+    background-color: #2E5CE6;
+}
+#main {
+    height:1350px;
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:0%
+    margin-bottom:0%;
+    background-color:black;
+    opacity:0.9;
+}
+p {
+    color:white;
+}
+#navbar {
+   height:26px;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+a {
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+}
+#title {
+    text-align:center;
+    color:white;
+}
+#ZLimg {
+    height:175px;
+    width:300px;
+}
+.video {
+    display:block;
+}
+#SMBimg1 {
+    width:300px;
+    height:175px;
+}
+#smbimg2 {
+    width:300px;
+    height:175px;
+}
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}
+#LOZimg {
+    width:300px;
+    height:175px;
+}
+.videoimg {
+    width:300px;
+    height:175px;
+}
+.nextPage {
+    color:blue;
+}
+#kirbyimg {
+    width:344px;
+    height:192px;
+}
