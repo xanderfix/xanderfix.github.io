@@ -43,12 +43,7 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
+
 #imgBackground1 {
     background-color:black;
     display:inline;
@@ -71,10 +66,7 @@ a {
 }
 .date {
     font-size:12px;
-    margin-left:90%;
-}
-#ocarinaSongs {
-    width:5%;
+    margin-left:70%;
 }
 #left {
     float:left;
