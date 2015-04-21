@@ -1,6 +1,6 @@
 .link {
     display:inline-block;
-    width:13%;
+    width:12%;
 }
 html { 
   background: url(images/kirbyEnding.png) no-repeat center center fixed; 
@@ -13,7 +13,7 @@ html {
     height:600px;
     margin-left:8%;
     margin-right:8%;
-    margin-top:0%
+    margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
     opacity:0.9;

@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:600px;
+    height:1500px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
@@ -15,6 +15,9 @@ body {
 }
 p {
     color:white;
+}
+pre {
+    margin-top:20px;
 }
 #navbar {
    height:26px;
@@ -28,39 +31,15 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
+.article {
+    display:inline;
 }
 #title {
     text-align:center;
     color:white;
 }
-#ocarinaSongs {
-    width:5%;
-}
-#screenshot {
-    height:350px;
-    width:600px;
-}
-#comments {
-    background-color:#99FF33;
-    opacity:0.9;
-    margin-left:8%;
-    margin-right:8%;   
-}
-.date {
-    font-size:12px;
-    margin-left:90%;
-}
-#plink {
-    font-size:18px;
-}
-#video {
-    margin-left:15%;
-    margin-right:15%;
+div {
+    display:block;
 }
 #left {
     float:left;
@@ -75,4 +54,9 @@ a {
 }
 .rightimg {
     width:100%;
+}x;
+}
+.nextPage {
+    color:blue;
+    margin-top:25px;
 }

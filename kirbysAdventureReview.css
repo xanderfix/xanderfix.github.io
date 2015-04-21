@@ -1,6 +1,6 @@
 .link {
     display:inline-block;
-    width:13%;
+    width:12%;
 }
 body {
     background-color: #2E5CE6;
@@ -9,7 +9,7 @@ body {
     height:2250px;
     margin-left:8%;
     margin-right:8%;
-    margin-top:0%
+    margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
 }

@@ -1,5 +1,5 @@
     display:inline-block;
-    width:13%;
+    width:12%;
 }
 body {
     background-color: #2E5CE6;
@@ -8,7 +8,7 @@ body {
     height:600px;
     margin-left:8%;
     margin-right:8%;
-    margin-top:0%
+    margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
 }
@@ -27,18 +27,9 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 #title {
     text-align:center;
     color:white;
-}
-#ocarinaSongs {
-    width:5%;
 }
 #screenshot {
     height:350px;
