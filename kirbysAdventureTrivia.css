@@ -79,6 +79,12 @@ a {
 .leftimg {
     width:100%;
 }
+#Twitter {
+    display:inline;
+}
+#G+ {
+    display:inline;
+}
 .rightimg {
     width:100%;
 }
