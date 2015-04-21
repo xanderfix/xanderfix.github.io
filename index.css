@@ -84,8 +84,10 @@ li {
     color:#FF8533;
 }
 #logo {
-    height:40px;
-    width:40px;
+    display:inline;
+    margin-left:0%;
+    height:100px;
+    width:100px;
 }
 #Follow {
     display:inline;
