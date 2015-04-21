@@ -97,5 +97,6 @@ li {
     display:inline;
 }
 #links {
-    float:right;
+    display:inline-block;
+    margin-left:55%;
 }
