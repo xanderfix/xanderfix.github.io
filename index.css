@@ -87,3 +87,15 @@ li {
     height:40px;
     width:40px;
 }
+#Follow {
+    display:inline;
+}
+#subscribe {
+    display:inline;
+}
+#google+ {
+    display:inline;
+}
+#links {
+    float:right;
+}
