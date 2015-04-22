@@ -29,12 +29,6 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 #title {
     text-align:center;
     color:white;
@@ -75,9 +69,6 @@ table {
     font-size:12px;
     margin-left:90%;
 }
-#ocarinaSongs {
-    width:5%;
-}
 #left {
     float:left;
     width:8%;
@@ -91,4 +82,11 @@ table {
 }
 .rightimg {
     width:100%;
+}
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
 }

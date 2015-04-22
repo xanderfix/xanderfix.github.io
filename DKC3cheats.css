@@ -88,3 +88,10 @@ a {
     float:right;
     display:inline;
 }
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
+}

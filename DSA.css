@@ -30,12 +30,6 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 h1 {
     text-align:center;
     color:white;
@@ -57,9 +51,6 @@ h1 {
 .date {
     font-size:12px;
     margin-left:70%;
-}
-#ocarinaSongs {
-    width:5%;
 }
 #left {
     float:left;
@@ -90,4 +81,11 @@ h1 {
 #DS {
     width:235px;
     height:214px;
+}
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
 }

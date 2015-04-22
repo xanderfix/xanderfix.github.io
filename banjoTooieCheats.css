@@ -32,29 +32,12 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 #title {
     text-align:center;
     color:white;
 }
 div {
     display:block;
-}
-#FFPimg {
-    height:240px;
-    width:325px;
-    margin-left:3.5%;
-}
-.FFP {
-    margin-left:3.5%;
-}
-#ocarinaSongs {
-    width:5%;
 }
 #left {
     float:left;
@@ -88,4 +71,11 @@ table {
 }
 td {
     border:2px solid gold;
+}
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
 }

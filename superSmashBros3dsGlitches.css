@@ -83,3 +83,10 @@ a {
     width:318px;
     height:183px;
 }
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
+}

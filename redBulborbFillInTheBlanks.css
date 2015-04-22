@@ -34,12 +34,6 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#SamusShip {
-    width:3.5%;
-}
-#KONGletters {
-    width:8%;
-}
 h4 {
     color:white;
 }
@@ -79,9 +73,6 @@ table {
     font-size:12px;
     margin-left:70%;
 }
-#ocarinaSongs {
-    width:5%;
-}
 #left {
     float:left;
     width:8%;
@@ -101,4 +92,11 @@ input {
 }
 button {
     margin-left:15%;
+}
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
 }
