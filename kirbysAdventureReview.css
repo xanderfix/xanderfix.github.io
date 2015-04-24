@@ -85,6 +85,9 @@ table {
 .rightimg {
     width:100%;
 }
+#Twitter {
+    display:inline;
+}
 #G+ {
     display:inline;
 }
