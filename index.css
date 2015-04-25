@@ -44,11 +44,20 @@ li {
     float:right;    
     display:inline-block;
 }
+h2 {
+    margin-left:10px;
+}
 #WN {
     display:inline-block;
     background-color:red;
+    margin-left:3%;
+    width:362px;
+}
+#WNimg {
+    margin-left:10px;
 }
 .date {
+    margin-left:10px;
     font-size:12px;
 }
 .aboutlink {
@@ -75,6 +84,8 @@ li {
     width:100%;
 }
 #WNp {
+    margin-left:10px;
+    msrgin-right:10px;
     font-size:14px;
 }
 #aboutp1 {
