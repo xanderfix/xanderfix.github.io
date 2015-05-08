@@ -20,6 +20,10 @@ p {
     text-align:center;
     font-size:150px;
 }
+#button {
+    margin-top:50px;
+    text-align:center;
+}
 #navbar {
    height:26px;
    background-color: red;
