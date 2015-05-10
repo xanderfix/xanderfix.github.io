@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Fill in the Blanks: The Legend of Zelda Intro Story| Articles | Zelda Rocks</title>
+<meta name="description" content="The intro story from The Legend of Zelda in a Mad Libs style game."/>
+<link type="text/css" rel="stylesheet" href="redBulborbFillInTheBlanks.css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54960566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="navbar">
+        <ul>
+           <a href="index.html"><li><div class="link">Home</div></a></li>
+           <a href="articles.html"><li><div class="link">Articles</div></a></li>
+           <a href="trivia.html"><li><div class="link">Trivia</div></a></li>
+           <a href="videos.html"><li><div class="link">Videos</div></a></li>
+           <a href="music.html"><li><div class="link">Music</div></a></li>
+           <a href="polls.html"><li><div class="link">Polls</div></a></li>
+           <a href="games.html"><li><div class="link">Games</div></a></li>
+           <a href="contact.html"><li><div class="link">Contact</div></a></li>
+        </ul>
+    </div>
+<div id="left">
+    <a href="marioStuff.html"><img src="images/marioMushroom.jpg" class="leftimg"/></a>
+    <a href="zeldaStuff.html"><img src="images/LttPmasterSword.jpg" class="leftimg"/></a>
+    <a href="metroidStuff.html"><img src="images/morphBall.jpg" class="leftimg"/></a>
+    <a href="donkeyKongStuff.html"><img src="images/barrel2.jpg" class="leftimg"/></a>
+    <a href="kirbyStuff.html"><img src="images/waddleDoo.jpg" class="leftimg"/></a>
+    <a href="starFoxStuff.html"><img src="images/smartBomb.jpg" class="leftimg"/></a>
+    <a href="yoshiStuff.html"><img src="images/yoshis.jpg" class="leftimg"></a>
+    <a href="superSmashBrosStuff.html"><img src="images/smashBall.jpg" class="leftimg"/></a>
+    <a href="banjoKazooieStuff.html"><img src="images/blueJinjo.jpg" class="leftimg"/></a>
+    <a href="pikminStuff.html"><img src="images/redPikmin.jpg" class="leftimg"/></a>
+</div>
+<div id="right">
+    <a href="marioStuff.html"><img src="images/questionBlock.jpg" class="rightimg"/></a>
+    <a href="zeldaStuff.html"><img src="images/triforce.jpg" class="rightimg"/></a>
+    <a href="metroidStuff.html"><img src="images/metroid.png" class="rightimg"/></a>
+    <a href="donkeyKongStuff.html"><img src="images/kingKRool.jpg" class="rightimg"/></a>
+    <a href="kirbyStuff.html"><img src="images/mikeKirby.png" class="rightimg"/></a>
+    <a href="starFoxStuff.html"><img src="images/arwing.jpg" class="leftimg"/></a>
+    <a href="yoshiStuff.html"><img src="images/yoshiEgg.jpg" class="leftimg"></a>
+    <a href="superSmashBrosStuff.html"><img src="images/masterHand.jpg" class="rightimg"/></a>
+    <a href="banjoKazooieStuff.html"><img src="images/jiggy.jpg" class="rightimg"/></a>
+    <a href="pikminStuff.html"><img src="images/redBulborb.jpg" class="rightimg"/></a>
+</div>
+<div id="main">
+    <h1>Fill in the Blanks:<br>The Legend of Zelda Intro Story</h1>
+    <p class ="date">5/10/2015</p>
+    <p>In this game you fill in the boxes with words that fit the category (noun, name, verb etc.). A written passage will then appear with certain words replaced with the ones you filled in. This passage is the story that appears on the title screen after a few seconds in <i>The Legend of Zelda</i>.</p>
+    <form>
+        <input id="input1" type="text" name="input1" placeholder="number"><br><br>
+        <input id="input2" type="text" name="input2" placeholder="man's name"><br><br>
+        <input id="input3" type="text" name="input3" placeholder="adjective"><br><br>
+        <input id="input4" type="text" name="input4" placeholder="woman's name"><br><br>
+        <input id="input5" type="text" name="input5" placeholder="adjective"><br><br>
+        <input id="input6" type="text" name="input6" placeholder="number"><br><br>
+        <input id="input7" type="text" name="input7" placeholder="man's name"><br><br>
+    </form> 
+    <button onclick="result()">Submit</button>
+    <p id="answerp">Result will appear here</p>
+    <script>
+    function result() {
+    var input1 = "";
+    input1 = document.getElementById("input1").value;
+    var input2 = "";
+    input2 = document.getElementById("input2").value;
+    var input3 = "";
+    input3 = document.getElementById("input3").value;
+    var input4 = "";
+    input4 = document.getElementById("input4").value;
+    var input5 = "";
+    input5 = document.getElementById("input5").value;
+    var input6 = "";
+    input6 = document.getElementById("input6").value;
+    var input7 = "";
+    input7 = document.getElementById("input7").value;
+    document.getElementById("answerp").innerHTML = input1 + " years ago prince darkness "+input2+" stole one of the Triforce with "+input3+". Princess "+input4+" had one of the Triforce with "+input5+". She divided it into "input6+" units to hide it from "+input2+" before she was captured. Go find the "+input6+" units "+input7+" to save her.";
+    }
+    </script>
+    <div id="Twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="Zelda_Rocks" data-size="large">Tweet</a></div>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div id="G+" class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</div>
+    <div id="comments">
+         <!-- begin htmlcommentbox.com -->
+         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+         <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24TlB3y%2FGO4kzwiU97upQh.1"+"&opts=17374&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end htmlcommentbox.com -->
+    </div>
+</body>
+</html>
