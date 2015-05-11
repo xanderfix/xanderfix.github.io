@@ -33,18 +33,9 @@ a {
     display:inline;
     margin-left:3.5%;
 }
-#KAimg {
-    height:350px;
-    width:256px;
-    margin-top:1%;
-}
 #title {
     text-align:center;
     color:white;
-}
-#MOASimg {
-    height:167px;
-    width:228px;
 }
 div {
     display:block;
@@ -74,6 +65,9 @@ div {
 #LOZthemeimg {
     width:300px;
     height:175px;
+}
+#tLoZStory {
+    height:210px;
 }
 div {
     margin-bottom:10px;

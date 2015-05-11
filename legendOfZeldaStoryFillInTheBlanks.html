@@ -58,12 +58,13 @@
     <p>In this game you fill in the boxes with words that fit the category (noun, name, verb etc.). A written passage will then appear with certain words replaced with the ones you filled in. This passage is the story that appears on the title screen after a few seconds in <i>The Legend of Zelda</i>.</p>
     <form>
         <input id="input1" type="text" name="input1" placeholder="number"><br><br>
-        <input id="input2" type="text" name="input2" placeholder="man's name"><br><br>
-        <input id="input3" type="text" name="input3" placeholder="adjective"><br><br>
-        <input id="input4" type="text" name="input4" placeholder="woman's name"><br><br>
-        <input id="input5" type="text" name="input5" placeholder="adjective"><br><br>
-        <input id="input6" type="text" name="input6" placeholder="number"><br><br>
-        <input id="input7" type="text" name="input7" placeholder="man's name"><br><br>
+        <input id="input2" type="text" name="input2" placeholder="adjective ending in -ness"><br><br>
+        <input id="input2" type="text" name="input3" placeholder="man's name"><br><br>
+        <input id="input3" type="text" name="input4" placeholder="adjective"><br><br>
+        <input id="input4" type="text" name="input5" placeholder="woman's name"><br><br>
+        <input id="input5" type="text" name="input6" placeholder="adjective"><br><br>
+        <input id="input6" type="text" name="input7" placeholder="number"><br><br>
+        <input id="input7" type="text" name="input8" placeholder="man's name"><br><br>
     </form> 
     <button onclick="result()">Submit</button>
     <p id="answerp">Result will appear here.</p>
@@ -85,7 +86,9 @@
     input6 = document.getElementById("input6").value;
     var input7 = "";
     input7 = document.getElementById("input7").value;
-    document.getElementById("answerp").innerHTML = "Result:<br>" + input1 + " years ago prince darkness " + input2 + " stole one of the Triforce with " + input3+ ". Princess " + input4 + " had one of the Triforce with " + input5 + ". She divided it into " + input6 + " units to hide it from " + input2 + " before she was captured. Go find the " + input6 + " units " + input7 + " to save her.";
+    var input8 = "";
+    input8 = document.getElementById("input8").value;
+    document.getElementById("answerp").innerHTML = "Result:<br>" + input1 + " years ago prince " + input2 + " " + input3 + " stole one of the Triforce with " + input4 + ". Princess " + input5 + " had one of the Triforce with " + input6 + ". She divided it into " + input7 + " units to hide it from " + input3 + " before she was captured. Go find the " + input7 + " units " + input8 + " to save her.";
     document.getElementById("p2").innerHTML = "Original Story:";
     document.getElementById("storyImg").src = "images/tLoZStory.jpg";
     }
