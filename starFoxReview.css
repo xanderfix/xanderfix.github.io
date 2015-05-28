@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:3000px;
+    height:1650px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
@@ -24,7 +24,7 @@ p {
 }
 .caption {
     font-size:12px;
-    margin-left:10%;
+    margin-left:15%;
 }
 li {
     display:inline;
@@ -51,7 +51,7 @@ a {
 .date {
     font-size:12px;
     margin-left:75%;
-    mrgin-right:0%;
+    margin-right:0%;
 }
 table {
     color:white;
@@ -76,4 +76,18 @@ table {
 }
 #G+ {
     display:inline;
+}
+.img {
+    display: inline;
+    margin-left:15%;
+}
+.SPimg {
+    display:inline;
+}
+#conclusion {
+    color:white;
+    margin-left:15%;
+}
+#conclusionp {
+    font-size:22px;
 }
