@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1650px;
+    height:1850px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
@@ -90,4 +90,10 @@ table {
 }
 #conclusionp {
     font-size:22px;
+}
+#bigImg1 {
+    width:35%;
+}
+#bigImg2 {
+    width:35%;
 }
