@@ -80,9 +80,11 @@ table {
 .img {
     display: inline;
     margin-left:15%;
+    width:35%;
 }
 .SPimg {
     display:inline;
+    width:35%;
 }
 #conclusion {
     color:white;
@@ -90,10 +92,4 @@ table {
 }
 #conclusionp {
     font-size:22px;
-}
-#bigImg1 {
-    width:35%;
-}
-#bigImg2 {
-    width:35%;
 }
