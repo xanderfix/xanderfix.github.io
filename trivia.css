@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1850px;
+    height:1550px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
@@ -58,9 +58,6 @@ div {
 #FFPimg {
     height:240px;
     width:325px;
-    margin-left:3.5%;
-}
-.FFP {
     margin-left:3.5%;
 }
 #td2 {
