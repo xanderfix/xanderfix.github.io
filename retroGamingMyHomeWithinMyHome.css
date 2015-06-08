@@ -34,13 +34,9 @@ a {
     font-weight:bold;
     font-size:24px;
 }
-#title {
+.title {
     text-align:center;
     color:white;
-}
-#score {
-    color:white;
-    margin-left:15%;
 }
 #comments {
     background-color:#99FF33;
@@ -72,24 +68,11 @@ table {
 }
 #Twitter {
     display:inline;
-    margin-left:3.25%;
+    margin-left:15%;
 }
 #G+ {
     display:inline;
 }
-.img {
-    display: inline;
+.articleimg {
     margin-left:15%;
-    width:35%;
-}
-.SPimg {
-    display:inline;
-    width:35%;
-}
-#conclusion {
-    color:white;
-    margin-left:15%;
-}
-#conclusionp {
-    font-size:22px;
 }
