@@ -76,3 +76,7 @@ table {
 .articleimg {
     margin-left:15%;
 }
+#twitterHandle {
+    text-decoration:none;
+    font-size:21px;
+}
