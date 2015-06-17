@@ -81,3 +81,8 @@ button {
 #storyImg {
     margin-left:15%;
 }
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
+}

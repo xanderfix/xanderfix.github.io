@@ -92,3 +92,8 @@ table {
     display:inline;
     margin-left:-3.25%;
 }
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
+}
