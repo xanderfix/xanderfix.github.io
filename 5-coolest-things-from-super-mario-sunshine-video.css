@@ -6,7 +6,7 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:1350px;
+    height:600px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
@@ -27,26 +27,31 @@ a {
     color:white;
     font-weight:bold;
     font-size:24px;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.article {
-    display:inline;
 }
 #title {
     text-align:center;
     color:white;
 }
-div {
-    display:block;
+#screenshot {
+    height:350px;
+    width:600px;
 }
-#SMBTimg {
-    width:300px;
-    height:175px;
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
 }
-#img2 {
-    width:300px;
-    height:175px;
+.date {
+    font-size:12px;
+    margin-left:70%;
+}
+#plink {
+    font-size:18px;
+}
+#video {
+    margin-left:15%;
+    margin-right:15%;
 }
 #left {
     float:left;
@@ -62,15 +67,19 @@ div {
 .rightimg {
     width:100%;
 }
-#SMWimg {
-    width:300px;
-    height:175px;
+#description {
+    margin-left:15%;
+    margin-right:15%;
 }
-.nextPage {
-    color:blue;
+#Twitter {
+    display:inline;
+    margin-left:15%;
 }
-#FFPimg {
-    height:240px;
-    width:325px;
-    margin-left:3.5%;
+#G+ {
+    display:inline;
+}
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
 }

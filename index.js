@@ -2,11 +2,11 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "6/18/2015";
-         document.getElementById("WNa").href = "koopasThemeGuitarCover.html";
-         document.getElementById("WNimg").src = "images/koopasThemeGuitarCover.png";
-         document.getElementById("WNp").innerHTML = "Koopa's Theme Guitar Cover<br>My guitar cover of Koopa's Theme from <i>Super Mario 64</i>.";
-         document.getElementById("WN").style.width = "362px";
+         document.getElementById("WNdate").innerHTML = "6/26/2015";
+         document.getElementById("WNa").href = "5-coolest-things-from-super-mario-sunshine.html";
+         document.getElementById("WNimg").src = "images/sirenaBeachGamecubeControllerSmall.jpg";
+         document.getElementById("WNp").innerHTML = "5 Coolest Things from<br>Super Mario Sunshine<br>My list of the 5 coolest things <br>from <i>Super Mario Sunshine</i>.";
+         document.getElementById("WN").style.width = "320px";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "6/15/2015";
@@ -23,11 +23,11 @@ function change() {
          document.getElementById("WN").style.width = "281px"; 
     }
     if (time == 3) {
-         document.getElementById("WNdate").innerHTML = "6/26/2015";
-         document.getElementById("WNa").href = "5-coolest-things-from-super-mario-sunshine.html";
-         document.getElementById("WNimg").src = "images/sirenaBeachGamecubeControllerSmall.jpg";
-         document.getElementById("WNp").innerHTML = "5 Coolest Things from<br>Super Mario Sunshine<br>My list of the 5 coolest things <br>from <i>Super Mario Sunshine</i>.";
-         document.getElementById("WN").style.width = "320px";
+         document.getElementById("WNdate").innerHTML = "7/2/2015";
+         document.getElementById("WNa").href = "5-coolest-things-from-super-mario-sunshine-video.html";
+         document.getElementById("WNimg").src = "images/5-coolest-things-from-super-mario-sunshine-video.png";
+         document.getElementById("WNp").innerHTML = "5 Coolest Things from<br>Super Mario Sunshine (Video)<br>My video of the 5 coolest things <br>from <i>Super Mario Sunshine</i>.";
+         document.getElementById("WN").style.width = "362px";
          time = -1;
     }
     time+=1;
