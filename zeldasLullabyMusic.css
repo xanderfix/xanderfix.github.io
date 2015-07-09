@@ -15,6 +15,8 @@ body {
 }
 p {
     color:white;
+    margin-left:15%;
+    margin-right:15%;
 }
 #navbar {
    height:26px;
@@ -58,7 +60,7 @@ a {
 }
 #Twitter {
     display:inline;
-    margin-left:3.25%;
+    margin-left:15%;
 }
 #G+ {
     display:inline;
@@ -67,4 +69,7 @@ a {
     margin-left:auto;
     margin-right:auto;
     width:728px;
+}
+#video {
+    margin-left:15%;
 }
