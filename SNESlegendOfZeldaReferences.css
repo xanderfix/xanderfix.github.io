@@ -6,13 +6,11 @@ body {
     background-color: #2E5CE6;
 }
 #main {
-    height:3200px;
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
-    opacity:0.95;
 }
 p {
     color:white;
