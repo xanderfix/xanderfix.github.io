@@ -45,6 +45,7 @@ p {
 }
 .articleimg {
     width:100%;
+    height:300px;
 }
 .nextPages {
     margin-left:10%;
