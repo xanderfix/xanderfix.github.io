@@ -16,6 +16,9 @@ body {
 p {
     color:white;
 }
+a {
+    text-decoration:none;
+}
 .article {
     border:3px dashed white;
     border-style:dashed none dashed none;
