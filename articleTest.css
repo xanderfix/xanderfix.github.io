@@ -27,6 +27,7 @@ p {
 .articlepdiv {
     text-decoration:none;
     width:69%;
+    border:1px solid red;
     display:inline-block;
     float:left;
     height:225px;
@@ -38,6 +39,7 @@ p {
     font-size:1.2em;
     vertical-align: middle;
     line-height: normal;
+    text-align:center;
 }
 .articleimgdiv {
     display:inline-block;
