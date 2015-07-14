@@ -1,3 +1,0 @@
-getElementById('img1').setAttribute("style","height:document.getElementById("img1").offsetWidth*1.06");
-//getElementById('img2').setAttribute("style","width:500px");
-//getElementById('img3').setAttribute("style","width:500px");
