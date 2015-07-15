@@ -1,6 +1,7 @@
 .link {
     display:inline-block;
     width:12%;
+    font-size:24px;
 }
 body {
     background-color: #2E5CE6;
@@ -15,6 +16,45 @@ body {
 p {
     color:white;
 }
+a {
+    text-decoration:none;
+}
+.article {
+    border:3px dashed white;
+    border-style:dashed none dashed none;
+    width:80%;
+    display:inline-block;
+    margin-left:10%;
+    margin-bottom:25px;
+}
+.articlepdiv {
+    width:69%;
+    display:inline-block;
+    float:left;
+    height:225px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.articlep {
+    font-size:1.2em;
+    vertical-align: middle;
+    line-height: normal;
+    text-align:center;
+}
+.articleimgdiv {
+    display:inline-block;
+    width:30%;
+    float:right;
+}
+.articleimg {
+    width:100%;
+    height:225px;
+}
+.nextPages {
+    margin-left:10%;
+    margin-right:10%;
+}
 #navbar {
    height:26px;
    background-color: red;
@@ -25,22 +65,10 @@ li {
 a {
     color:white;
     font-weight:bold;
-    font-size:24px;
-}
-.article {
-    display:inline;
-    margin-left:3.5%;
 }
 #title {
     text-align:center;
     color:white;
-}
-#MOASimg {
-    height:167px;
-    width:228px;
-}
-div {
-    display:block;
 }
 #left {
     float:left;
@@ -56,7 +84,6 @@ div {
 .rightimg {
     width:100%;
 }
-#BTCimg {
-    width:320px;
-    height:240px;
+.nextPage {
+    font-size:2em;
 }
