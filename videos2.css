@@ -31,7 +31,7 @@ a {
     width:69%;
     display:inline-block;
     float:left;
-    height:225px;
+    height:175px;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -49,7 +49,7 @@ a {
 }
 .articleimg {
     width:100%;
-    height:225px;
+    height:175px;
 }
 .nextPages {
     margin-left:10%;
