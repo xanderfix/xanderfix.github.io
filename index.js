@@ -9,20 +9,28 @@ function change() {
          document.getElementById("WN").style.width = "362px";
     }
     if (time == 1) {
+         document.getElementById("WNdate").innerHTML = "7/11/2015";
+         document.getElementById("WNa").href = "songOfStormsRemix.html";
+         document.getElementById("WNimg").src = "images/songOfStormsRemix.png";
+         document.getElementById("WNp").innerHTML = "Song of Storms Remix (MIDI)";
+         document.getElementById("WN").style.width = "320px";
+    }
+    if (time == 2) {
          document.getElementById("WNdate").innerHTML = "7/2/2015";
          document.getElementById("WNa").href = "5-coolest-things-from-super-mario-sunshine-video.html";
          document.getElementById("WNimg").src = "images/5-coolest-things-from-super-mario-sunshine-video.png";
          document.getElementById("WNp").innerHTML = "5 Coolest Things from<br>Super Mario Sunshine (Video)<br>My video of the 5 coolest things <br>from <i>Super Mario Sunshine</i>.";
          document.getElementById("WN").style.width = "362px";
     }
-    if (time == 2) {
+    if (time == 3) {
          document.getElementById("WNdate").innerHTML = "5/11/2015";
          document.getElementById("WNa").href = "legendOfZeldaStoryFillInTheBlanks.html";
          document.getElementById("WNimg").src = "images/legendOFZeldaStoryFillInTheBlanks.jpg";
          document.getElementById("WNp").innerHTML = "Fill in the Blanks: <br>The Legend of Zelda Intro Story<br>A fill in the blanks game featuring the <br>story from <i>The Legend of Zelda</i>.";
          document.getElementById("WN").style.width = "281px"; 
+         time = -1;
     }
-    if (time == 3) {
+    if (time == 4) {
          document.getElementById("WNdate").innerHTML = "8/4/2015";
          document.getElementById("WNa").href = "Kirby-Level-Name-Acronyms.html";
          document.getElementById("WNimg").src = "images/lollipopLand.png";

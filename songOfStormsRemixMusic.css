@@ -18,6 +18,10 @@ p {
     margin-left:15%;
     margin-right:15%;
 }
+.date {
+    font-size:12px;
+    margin-left:70%;
+}
 #navbar {
    height:26px;
    background-color: red;
