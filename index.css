@@ -51,7 +51,7 @@ h2 {
     display:inline-block;
     background-color:red;
     margin-left:3%;
-    width:420px;
+    width:362px;
 }
 #WNimg {
     margin-left:10px;
@@ -84,8 +84,7 @@ h2 {
     width:100%;
 }
 #WNp {
-    margin-left:10px;
-    msrgin-right:10px;
+    text-align:center;
     font-size:14px;
 }
 #aboutp1 {
