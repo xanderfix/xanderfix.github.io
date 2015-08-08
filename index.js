@@ -17,17 +17,17 @@ function change() {
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "7/11/2015";
-         document.getElementById("WNa").href = "songOfStormsRemix.html";
+         document.getElementById("WNa").href = "Song-of-Storms-Remix.html";
          document.getElementById("WNimg").src = "images/songOfStormsRemix.png";
-         document.getElementById("WNp").innerHTML = "Song of Storms Remix (MIDI)";
+         document.getElementById("WNp").innerHTML = "Song of Storms Remix<br><br> My remix of the Song of Storms from <i>The Legend of Zelda: Ocarina of Time</i> played on the computer program Synthesia.";
          document.getElementById("WN").style.width = "320px";
     }
     if (time == 3) {
-         document.getElementById("WNdate").innerHTML = "7/2/2015";
-         document.getElementById("WNa").href = "5-coolest-things-from-super-mario-sunshine-video.html";
-         document.getElementById("WNimg").src = "images/5-coolest-things-from-super-mario-sunshine-video.png";
-         document.getElementById("WNp").innerHTML = "5 Coolest Things from<br>Super Mario Sunshine (Video)<br><br>My video of the 5 coolest things from <i>Super Mario Sunshine</i>.";
-         document.getElementById("WN").style.width = "362px";
+         document.getElementById("WNdate").innerHTML = "7/11/2015";
+         document.getElementById("WNa").href = "songOfStormsRemix.html";
+         document.getElementById("WNimg").src = "images/songOfStormsRemix.png";
+         document.getElementById("WNp").innerHTML = "Song of Storms Remix (MIDI)<br><br>The MIDI file for my Song of Storms Remix.";
+         document.getElementById("WN").style.width = "320px";
     }
     if (time == 4) {
          document.getElementById("WNdate").innerHTML = "8/7/2015";
