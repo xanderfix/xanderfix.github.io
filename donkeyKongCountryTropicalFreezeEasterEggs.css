@@ -15,6 +15,14 @@ body {
 }
 p {
     color:white;
+    font-size:1.2em;
+    margin-left:15%;
+    margin-right:15%;
+    text-align:center;
+}
+h3 {
+    text-align:center;
+    color:white;
 }
 #navbar {
    height:26px;
@@ -32,29 +40,13 @@ a {
     text-align:center;
     color:white;
 }
-#img1 {
-    height:263px;
-    width:468px;
+.img {
+    margin-left:auto;
+    margin-right:auto;
+    width:450px;
 }
-#img2 {
-    height:263px;
-    width:468px;
-}
-#img3 {
-    height:263px;
-    width:468px;
-}
-#img4 {
-    height:263px;
-    width:468px;
-}
-#img5 {
-    height:368px;
-    width:468px;
-}
-#img6 {
-    height:273px;
-    width:486px;
+#specialImg {
+    width:902px;
 }
 #comments {
     background-color:#99FF33;
@@ -82,7 +74,7 @@ a {
 }
 #Twitter {
     display:inline;
-    margin-left:3.25%;
+    margin-left:15%;
 }
 #G+ {
     display:inline;
