@@ -16,6 +16,10 @@ body {
 p {
     color:white;
 }
+#mainp {
+    margin-left:15%;
+    margin-right:15%;
+}
 #navbar {
    height:26px;
    background-color: red;
@@ -66,7 +70,7 @@ table {
 }
 .date {
     font-size:12px;
-    margin-left:90%;
+    margin-left:70%;
 }
 #left {
     float:left;
@@ -84,7 +88,7 @@ table {
 }
 #Twitter {
     display:inline;
-    margin-left:3.25%;
+    margin-left:15%;
 }
 #G+ {
     display:inline;
