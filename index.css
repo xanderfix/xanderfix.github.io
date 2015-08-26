@@ -112,6 +112,36 @@ h2 {
 #TitleP {
     font-size:16px;
 }
+#marioLink:hover {
+    color:d82800;
+}
+#zeldaLink:hover {
+    color:80d010;
+}
+#metroidLink:hover {
+    color:ffa947;
+}
 #kirbyLink:hover {
     color:ffb0cf;
+}
+#starFoxLink:hover {
+    color:d0e0d0;
+}
+#donkeyKongLink:hover {
+    color:602b1d;
+}
+#banjoKazooieLink:hover {
+    color:ffeb5d;
+}
+#superSmashBrosLink:hover {
+    color:5712a9;
+}
+#pikminLink:hover {
+    color:56b0e5;
+}
+#guestArticlesLink:hover {
+    color:db2ca3;
+}
+#otherLink:hover {
+    color:f3c39f;
 }
