@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "8/7/2015";
-         document.getElementById("WNa").href = "Jigsaw-Puzzle-Bring-on-the-Super-Ability.html";
-         document.getElementById("WNimg").src = "images/superAbilitiesSmall.jpg";
-         document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Bring on the Super Ability!<br><br>A jigsaw puzzle using the official artwork for Kirby's Super Abilities from <i>Kirby's Return to Dreamland</i>.";
+         document.getElementById("WNdate").innerHTML = "8/12/2015";
+         document.getElementById("WNa").href = "How-to-Play-Midnas-Lament.html";
+         document.getElementById("WNimg").src = "images/midnasLament.jpg";
+         document.getElementById("WNp").innerHTML = "How to Play Midna's Lament";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "8/4/2015";
@@ -27,9 +27,9 @@ function change() {
     }
     if (time == 4) {
          document.getElementById("WNdate").innerHTML = "8/12/2015";
-         document.getElementById("WNa").href = "How-to-Play-Midnas-Lament.html";
-         document.getElementById("WNimg").src = "images/midnasLament.jpg";
-         document.getElementById("WNp").innerHTML = "How to Play Midna's Lament";
+         document.getElementById("WNa").href = "Jigsaw-Puzzle-Super-Mario-Bros-3-World-Maps.html";
+         document.getElementById("WNimg").src = "images/SMB3W1.png";
+         document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
          time = -1;
     }
     time+=1;
