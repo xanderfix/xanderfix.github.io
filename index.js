@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "8/28/2015";
-         document.getElementById("WNa").href = "A-Brief-History-Of-Super-Mario-Bros-2.html";
-         document.getElementById("WNimg").src = "images/superMarioBros2screenshot.jpg";
-         document.getElementById("WNp").innerHTML = "A Brief History Of: Super Mario Bros. 2<br><br> Exploring the strange history of <i>Super Mario Bros. 2</i>; which wasn't even originally a Mario game!";
+         document.getElementById("WNdate").innerHTML = "8/30/2015";
+         document.getElementById("WNa").href = "Lets-Play-Kirbys-Return-to-Dreamland.html";
+         document.getElementById("WNimg").src = "images/Let's Play Kirby's Return to Dreamland 1.jpg";
+         document.getElementById("WNp").innerHTML = "Let's Play Kirby's Return to Dreamland<br><br>My sister and I's first 'Let's Play', <i>Kirby's Return to Dreamland</i>."
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "8/12/2015";
@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Kirby Level Name Acronyms<br><br>Investigating the secrets of Kirby series level names.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "8/30/2015";
-         document.getElementById("WNa").href = "Lets=Play-Kirbys-Return-to-Dreamland.html";
-         document.getElementById("WNimg").src = "images/Let's Play Kirby's Return to Dreamland 1.jpg";
-         document.getElementById("WNp").innerHTML = "Let's Play Kirby's Return to Dreamland<br><br>My sister and I's first 'Let's Play', <i>Kirby's Return to Dreamland</i>."
+         document.getElementById("WNdate").innerHTML = "9/13/2015";
+         document.getElementById("WNa").href = "1-Year-Anniversary.html";
+         document.getElementById("WNimg").src = "images/superMarioBrosAndDuckHunt.jpg";
+         document.getElementById("WNp").innerHTML = "1 Year Anniversary!<br><br> Celebrating the 1 year anniversary of this website and the 30th anniversary of Super Mario Bros.!"
          time = -1;
     }
     time+=1;

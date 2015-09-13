@@ -92,17 +92,10 @@ h2 {
     font-size:1.3em;
 }
 #img1 {
-    width:375px;
+    width:300px;
     margin-left:auto;
     margin-right:auto;
 }
 #img2 {
-    width:350px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img3 {
-    width:350px;
-    margin-left:auto;
-    margin-right:auto;
+    width:100%;
 }
