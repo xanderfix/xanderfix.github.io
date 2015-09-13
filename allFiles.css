@@ -58,6 +58,7 @@ li {
 }
 #navImg2 {
     content:url(images/powerStar.png);
+    background-image:url(images/starGrab.gif);
 }
 #navImg3 {
     content:url(images/masterSword.png);
