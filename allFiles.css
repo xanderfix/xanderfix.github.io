@@ -1,0 +1,163 @@
+.link {
+    display:inline-block;
+    width:12%;
+    font-weight:bold;
+    font-size:24px;
+}
+body {
+    background-color: #2E5CE6;
+}
+#main {
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:-21px;
+    margin-bottom:0%;
+    background-color:black;
+}
+h1 {
+    color:white;
+}
+li {
+    display:inline;
+}
+#marioLink:hover {
+    color:d82800;
+}
+#zeldaLink:hover {
+    color:80d010;
+}
+#metroidLink:hover {
+    color:ffa947;
+}
+#kirbyLink:hover {
+    color:ffb0cf;
+}
+#starFoxLink:hover {
+    color:d0e0d0;
+}
+#donkeyKongLink:hover {
+    color:602b1d;
+}
+#banjoKazooieLink:hover {
+    color:ffeb5d;
+}
+#superSmashBrosLink:hover {
+    color:5712a9;
+}
+#pikminLink:hover {
+    color:56b0e5;
+}
+#guestArticlesLink:hover {
+    color:db2ca3;
+}
+#otherLink:hover {
+    color:f3c39f;
+}
+#navImg1 {
+    content:url(images/mushroom.png);
+}
+#navImg2 {
+    content:url(images/powerStar.png);
+}
+#navImg3 {
+    content:url(images/masterSword.png);
+}
+#navImg4 {
+    content:url(images/Triforce.png);
+}
+#navImg5 {
+    content:url(images/samusShip.png);
+}
+#navImg6 {
+    content:url(images/metroids.png);
+}
+#navImg7 {
+    content:url(images/sparklingStars.png);
+}
+#navImg8 {
+    content:url(images/waddleDee.png);
+}
+#navImg9 {
+    content:url(images/andross.png);
+}
+#navImg10 {
+    content:url(images/arwing.png);
+}
+#navImg11 {
+    content:url(images/DKbarrel.jpg);
+}
+#navImg12 {
+    content:url(images/kingKRool.jpg);
+}
+#navImg13 {
+    content:url(images/yoshis.png);
+}
+#navImg14 {
+    content:url(images/yoshiEgg.jpg);
+}
+#navImg15 {
+    content:url(images/jinjo.jpeg);
+}
+#navImg16 {
+    content:url(images/jiggy.png);
+}
+#navImg17 {
+    content:url(images/smashBall.png);
+}
+#navImg18 {
+    content:url(images/masterHand.jpg);
+}
+#navImg19 {
+    content:url(images/redPikmin.jpg);
+}
+#navImg20 {
+    content:url(images/redBulborb.jpg);
+}
+#navImg21 {
+    content:url(images/bellBag.jpg);
+}
+#navImg22 {
+    content:url(images/bellBag.jpg);
+}
+#navImg23 {
+    content:url(images/greenSquid.png);
+}
+#navImg24 {
+    content:url(images/squidSisters.jpg);
+}
+#navImg1:hover {
+    content:url(images/marioBeatsBowser.gif);
+}
+#navImg2:hover {
+    content:url(images/starGrab.gif);
+}
+#navImg3:hover {
+    content:url(images/masterSword.gif);
+}
+#navImg4:hover {
+    content:url(images/Triforce.gif);
+}
+#navImg5:hover {
+    content:url(images/samusAppears.gif);
+}
+#navImg11:hover {
+    content:url(images/crankyPhonograph.gif);
+}
+#navImg12:hover {
+    content:url(images/kingKRool.gif);
+}
+#navImg13:hover {
+    content:url(images/yoshis.gif);
+}
+#navImg15:hover {
+    content:url(images/banjoKazooieTitle.gif);
+}
+#navImg16:hover {
+    content:url(images/jiggyGrab.gif);
+}
+#navImg18:hover {
+    content:url(images/masterHand.gif);
+}
+#navImg24:hover {
+    content:url(images/stayFresh.gif);
+}

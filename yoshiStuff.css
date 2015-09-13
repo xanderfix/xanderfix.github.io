@@ -35,10 +35,6 @@ a {
     text-align:center;
     color:white;
 }
-#MOASimg {
-    height:167px;
-    width:228px;
-}
 div {
     display:block;
 }
@@ -55,8 +51,4 @@ div {
 }
 .rightimg {
     width:100%;
-}
-#BTCimg {
-    width:320px;
-    height:240px;
 }
