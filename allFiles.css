@@ -164,6 +164,9 @@ li {
 #navImg18:hover {
     content:url(images/masterHand.gif);
 }
+#navImg23:hover {
+    content:url(images/splatoon.gif);
+}
 #navImg24:hover {
     content:url(images/stayFresh.gif);
 }
