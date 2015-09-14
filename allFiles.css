@@ -58,7 +58,6 @@ li {
 }
 #navImg2 {
     content:url(images/powerStar.png);
-    background-image:url(images/starGrab.gif);
 }
 #navImg3 {
     content:url(images/masterSword.png);
@@ -140,6 +139,12 @@ li {
 }
 #navImg5:hover {
     content:url(images/samusAppears.gif);
+}
+#navImg7:hover {
+    content:url(images/kirbyDance.gif);
+}
+#navImg8:hover {
+    content:url(images/ultraSword.gif);
 }
 #navImg11:hover {
     content:url(images/crankyPhonograph.gif);
