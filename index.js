@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Kirby Level Name Acronyms<br><br>Investigating the secrets of Kirby series level names.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "9/13/2015";
-         document.getElementById("WNa").href = "1-Year-Anniversary.html";
-         document.getElementById("WNimg").src = "images/superMarioBrosAndDuckHunt.jpg";
-         document.getElementById("WNp").innerHTML = "1 Year Anniversary!<br><br> Celebrating the 1 year anniversary of this website and the 30th anniversary of Super Mario Bros.!"
+         document.getElementById("WNdate").innerHTML = "9/17/2015";
+         document.getElementById("WNa").href = "A-Beginners-Guide-to-Splatoon-Part-1-Inkopolis-Plaza.html";
+         document.getElementById("WNimg").src = "images/inkopolisMap.jpg";
+         document.getElementById("WNp").innerHTML = "A Beginner's Guide to Splatoon:<br> Part 1 Inkopolis Plaza<br><br> The first part of my beginner's guide to <i>Splatoon</i> covering  the game's hub area, Inkopolis Plaza."
          time = -1;
     }
     time+=1;
