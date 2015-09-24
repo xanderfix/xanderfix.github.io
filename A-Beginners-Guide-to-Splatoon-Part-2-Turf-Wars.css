@@ -102,11 +102,47 @@ h2 {
 .partLink:hover {
     color:ff9d02;
 }
-#nextSection {
-    width:20%;
-    margin-left:80%;
+#previousSection {
+    margin-left:5%;
+    display:inline;
 }
-#construction {
-    font-size:1.5em;
-    text-align:center;
+#nextSection {
+    margin-right:5%;
+    float:right;
+    display:inline;
+}
+#img1 {
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img2 {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img3 {
+    width:630px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img4 {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img5 {
+    width:439px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img6 {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img7 {
+    width:313px;
+    margin-left:auto;
+    margin-right:auto;
 }

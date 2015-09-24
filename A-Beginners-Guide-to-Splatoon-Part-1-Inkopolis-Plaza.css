@@ -105,9 +105,14 @@ h2 {
 .partLink:hover {
     color:ff9d02;
 }
+#previousSection {
+    margin-left:5%;
+    display:inline;
+}
 #nextSection {
-    width:30%;
-    margin-left:70%;
+    margin-right:5%;
+    float:right;
+    display:inline;
 }
 #img1 {
     width:600px;
