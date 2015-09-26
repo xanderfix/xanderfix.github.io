@@ -3,15 +3,15 @@ function change() {
     setInterval(function change1() {
     if (time == 0) {
          document.getElementById("WNdate").innerHTML = "9/23/2015";
+         document.getElementById("WNa").href = "Zeldas-Rescue-Acoustic-Guitar-Cover.html";
+         document.getElementById("WNimg").src = "images/Zelda's Rescue Acoustic Guitar Cover.jpg";
+         document.getElementById("WNp").innerHTML = "Zelda's Rescue Acoustic Guitar Cover<br><br>My acoustic guitar cover of Zelda's Rescue from A Link to the Past."
+    }
+    if (time == 1) {
+         document.getElementById("WNdate").innerHTML = "9/23/2015";
          document.getElementById("WNa").href = "A-Beginners-Guide-to-Splatoon-Part-2-Turf-Wars.html";
          document.getElementById("WNimg").src = "images/splatoonBattle.jpg";
          document.getElementById("WNp").innerHTML = "A Beginner's Guide to Splatoon:<br> Part 2 Turf Wars<br><br> The second part of my beginner's guide to <i>Splatoon</i> giving some handy tips for the game's main mode, Turf Wars."
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "8/30/2015";
-         document.getElementById("WNa").href = "Lets-Play-Kirbys-Return-to-Dreamland.html";
-         document.getElementById("WNimg").src = "images/Let's Play Kirby's Return to Dreamland 1.jpg";
-         document.getElementById("WNp").innerHTML = "Let's Play Kirby's Return to Dreamland<br><br>My sister and I's first 'Let's Play', <i>Kirby's Return to Dreamland</i>."
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "8/12/2015";

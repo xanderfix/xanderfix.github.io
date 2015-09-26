@@ -13,8 +13,14 @@ body {
     background-color:black;
 }
 p {
+    font-size:1.2em;
     color:white;
-    text-align:center;
+    margin-left:15%;
+    margin-right:15%;
+}
+.date {
+    font-size:12px;
+    margin-left:70%;
 }
 #navbar {
    height:26px;
@@ -32,10 +38,6 @@ a {
     text-align:center;
     color:white;
 }
-#screenshot {
-    height:350px;
-    width:600px;
-}
 #comments {
     background-color:#99FF33;
     opacity:0.9;
@@ -45,14 +47,6 @@ a {
 .date {
     font-size:12px;
     margin-left:90%;
-}
-#plink {
-    font-size:18px;
-}
-#video {
-    width:560px;
-    margin-left:auto;
-    margin-right:auto;
 }
 #left {
     float:left;
@@ -79,4 +73,15 @@ a {
     margin-left:auto;
     margin-right:auto;
     width:728px;
+}
+#video {
+    width:560px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#videoLink {
+    text-decoration:none;
+}
+#videoLink:hover {
+    color:ffdc26;
 }
