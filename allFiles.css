@@ -93,7 +93,7 @@ li {
     content:url(images/yoshis.png);
 }
 #navImg14 {
-    content:url(images/yoshiEgg.jpg);
+    content:url(images/yoshiEgg.png);
 }
 #navImg15 {
     content:url(images/jinjo.jpeg);
@@ -154,6 +154,9 @@ li {
 }
 #navImg13:hover {
     content:url(images/yoshis.gif);
+}
+#navImg14:hover {
+    content:url(images/yoshiEggs.gif);
 }
 #navImg15:hover {
     content:url(images/banjoKazooieTitle.gif);
