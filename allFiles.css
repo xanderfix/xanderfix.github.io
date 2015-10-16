@@ -58,6 +58,8 @@ li {
 }
 #navImg2 {
     content:url(images/powerStar.png);
+    background-image:url(images/starGrab.gif);
+    background-size:100% 100%;
 }
 #navImg3 {
     content:url(images/masterSword.png);
@@ -93,7 +95,9 @@ li {
     content:url(images/yoshis.png);
 }
 #navImg14 {
-    content:url(images/yoshiEgg.png);
+    content:url(images/yoshiEgg.jpg);
+    background-image:url(images/yoshiEggs.gif);
+    background-size:100% 100%;
 }
 #navImg15 {
     content:url(images/jinjo.jpeg);
