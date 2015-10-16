@@ -55,6 +55,8 @@ li {
 }
 #navImg1 {
     content:url(images/mushroom.png);
+    background-image:url(images/marioBeatsBowser.gif);
+    background-size:100% 100%;
 }
 #navImg2 {
     content:url(images/powerStar.png);
@@ -63,21 +65,31 @@ li {
 }
 #navImg3 {
     content:url(images/masterSword.png);
+    background-image:url(images/masterSword.gif);
+    background-size:100% 100%;
 }
 #navImg4 {
     content:url(images/triforce.png);
+    background-image:url(images/Triforce.gif);
+    background-size:100% 100%;
 }
 #navImg5 {
     content:url(images/samusShip.png);
+    background-image:url(images/samusAppears.gif);
+    background-size:100% 100%;
 }
 #navImg6 {
     content:url(images/metroids.png);
 }
 #navImg7 {
     content:url(images/sparklingStars.png);
+    background-image:url(images/kirbyDance.gif);
+    background-size:100% 100%;
 }
 #navImg8 {
     content:url(images/waddleDee.png);
+    background-image:url(images/ultraSword.gif);
+    background-size:100% 100%;
 }
 #navImg9 {
     content:url(images/andross.png);
@@ -87,12 +99,18 @@ li {
 }
 #navImg11 {
     content:url(images/DKbarrel.jpg);
+    background-image:url(images/crankyPhonograph.gif);
+    background-size:100% 100%;
 }
 #navImg12 {
     content:url(images/kingKRool.jpg);
+    background-image:url(images/kingKRool.gif);
+    background-size:100% 100%;
 }
 #navImg13 {
     content:url(images/yoshis.png);
+    background-image:url(images/yoshis.gif);
+    background-size:100% 100%;
 }
 #navImg14 {
     content:url(images/yoshiEgg.jpg);
@@ -101,15 +119,21 @@ li {
 }
 #navImg15 {
     content:url(images/jinjo.jpeg);
+    background-image:url(images/banjoKazooieTitle.gif);
+    background-size:100% 100%;
 }
 #navImg16 {
     content:url(images/jiggy.png);
+    /*background-image:url(images/jiggyGrab.gif);*/
+    background-size:100% 100%;
 }
 #navImg17 {
     content:url(images/smashBall.png);
 }
 #navImg18 {
     content:url(images/masterHand.jpg);
+    background-image:url(images/masterHand.gif);
+    background-size:100% 100%;
 }
 #navImg19 {
     content:url(images/redPikmin.jpg);
@@ -125,9 +149,13 @@ li {
 }
 #navImg23 {
     content:url(images/greenSquid.png);
+    background-image:url(images/splatoon.gif);
+    background-size:100% 100%;
 }
 #navImg24 {
     content:url(images/squidSisters.jpg);
+    background-image:url(images/stayFresh.gif);
+    background-size:100% 100%;
 }
 #navImg1:hover {
     content:url(images/marioBeatsBowser.gif);
