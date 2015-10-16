@@ -124,7 +124,7 @@ li {
 }
 #navImg16 {
     content:url(images/jiggy.png);
-    /*background-image:url(images/jiggyGrab.gif);*/
+    background-image:url(images/jiggyGrab.gif);
     background-size:100% 100%;
 }
 #navImg17 {
