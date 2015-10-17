@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "10/9/2015";
-         document.getElementById("WNa").href = "How-to-Play-the-Ocarina-of-Time-Warp-Songs.html";
-         document.getElementById("WNimg").src = "images/Ocarina of Time Medallions.png";
-         document.getElementById("WNp").innerHTML = "How to Play the Ocarina of Time Warp Songs";
+         document.getElementById("WNdate").innerHTML = "10/15/2015";
+         document.getElementById("WNa").href = "Heavy-Lobster-Guitar-Cover.html";
+         document.getElementById("WNimg").src = "images/Heavy Lobster Guitar Cover.png";
+         document.getElementById("WNp").innerHTML = "Heavy Lobster Guitar Cover<br><br>My electric guitar cover of the Heavy Lobster theme from <i>Kirby Super Star Ultra</i>.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/25/2015";
@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "10/11/2015";
-         document.getElementById("WNa").href = "Ocarina-of-Time-Warp-Songs-Piano-Medley.html";
-         document.getElementById("WNimg").src = "images/Ocarina of Time Warp Songs Piano Medley.png";
-         document.getElementById("WNp").innerHTML = "Ocarina of Time Warp Songs Piano Medley<br><br>My piano medley of slightly remixed versions of the Ocarina of Time warp songs.";
+         document.getElementById("WNdate").innerHTML = "10/16/2015";
+         document.getElementById("WNa").href = "How-to-Play-the-Heavy-Lobster-Theme.html";
+         document.getElementById("WNimg").src = "images/How to Play the Heavy Lobster Theme.png";
+         document.getElementById("WNp").innerHTML = "How to Play the Heavy Lobster Theme";
          time = -1;
     }
     time+=1;
