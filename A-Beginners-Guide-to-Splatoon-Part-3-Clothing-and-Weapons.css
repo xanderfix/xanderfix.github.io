@@ -19,7 +19,18 @@ p {
     margin-right:15%;
     font-size:1.2em;
 }
+.note {
+    font-size:1em;
+}
+h1 {
+    color:white;
+    text-align:center;
+}
 h2 {
+    color:white;
+    text-align:center;
+}
+h3 {
     color:white;
     text-align:center;
 }
@@ -102,11 +113,57 @@ h2 {
 .partLink:hover {
     color:ff9d02;
 }
-#nextSection {
-    width:20%;
-    margin-left:80%;
+#previousSection {
+    margin-left:5%;
+    display:inline;
 }
-#construction {
-    font-size:1.5em;
-    text-align:center;
+#nextSection {
+    margin-right:5%;
+    float:right;
+    display:inline;
+}
+.standardImg {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img1 {
+    width:369px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img2 {
+    width:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img3 {
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img4 {
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img5 {
+    width:128px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img6 {
+    width:128px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img7 {
+    width:439px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#img8 {
+    width:439px;
+    margin-left:auto;
+    margin-right:auto;
 }

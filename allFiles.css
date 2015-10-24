@@ -128,7 +128,9 @@ li {
     background-size:100% 100%;
 }
 #navImg17 {
-    content:url(images/smashBall.png);
+    content:url(images/smashBall.jpg);
+    background-image:url(images/smash.gif);
+    background-size:100% 100%;
 }
 #navImg18 {
     content:url(images/masterHand.jpg);
@@ -195,6 +197,9 @@ li {
 }
 #navImg16:hover {
     content:url(images/jiggyGrab.gif);
+}
+#navImg17:hover {
+    content:url(images/smash.gif);
 }
 #navImg18:hover {
     content:url(images/masterHand.gif);
