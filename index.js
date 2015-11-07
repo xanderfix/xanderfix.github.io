@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "10/25/2015";
-         document.getElementById("WNa").href = "How-to-Play-Drawcia-Sorceress.html";
-         document.getElementById("WNimg").src = "images/DrawciaSorceress.png";
-         document.getElementById("WNp").innerHTML = "How to Play Drawcia Sorceress";
+         document.getElementById("WNdate").innerHTML = "11/5/2015";
+         document.getElementById("WNa").href = "How-to-Play-Duel-in-the-Darkened-Sky.html";
+         document.getElementById("WNimg").src = "images/darkMatterSwordsman.png";
+         document.getElementById("WNp").innerHTML = "How to Play Duel in the Darkened Sky<br>(Dark Matter Battle Phase 1)";
          time = -1;
     }
     time+=1;

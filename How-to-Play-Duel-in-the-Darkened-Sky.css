@@ -11,37 +11,11 @@ body {
     margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
-    opacity:0.95;
 }
 p {
     color:white;
-    margin-left:15%;
-    margin-right:15%;
+    text-align:center;
     font-size:1.2em;
-}
-.note {
-    font-size:1em;
-}
-h1 {
-    color:white;
-    text-align:center;
-}
-h2 {
-    color:white;
-    text-align:center;
-}
-h3 {
-    color:white;
-    text-align:center;
-}
-.caption {
-    text-align:center;
-    font-size:1em;
-}
-.articleimg {
-    width:50%;
-    display:inline;
-    margin-left:25%;
 }
 #navbar {
    height:26px;
@@ -59,10 +33,6 @@ a {
     text-align:center;
     color:white;
 }
-h2 {
-    text-align:center;
-    color:white;
-}
 #comments {
     background-color:#99FF33;
     opacity:0.9;
@@ -71,7 +41,7 @@ h2 {
 }
 .date {
     font-size:12px;
-    margin-left:65%;
+    margin-left:70%;
 }
 #left {
     float:left;
@@ -94,36 +64,16 @@ h2 {
 #G+ {
     display:inline;
 }
-#twitterhandle {
-    font-size:18px;
-    text-decoration:none;
-}
 .ad {
     margin-left:auto;
     margin-right:auto;
     width:728px;
 }
-#intro {
-    font-size:1.3em;
-}
-.partLink {
-    font-size:20px;
-    text-decoration:none;
-}
-.partLink:hover {
-    color:ff9d02;
-}
-#previousSection {
-    margin-left:5%;
-    display:inline;
-}
-#nextSection {
-    margin-right:5%;
-    float:right;
-    display:inline;
-}
-.standardImg {
-    width:600px;
+#video {
+    width:560px;
     margin-left:auto;
     margin-right:auto;
+}
+#noUnderline {
+    text-decoration:none;
 }
