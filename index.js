@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "10/24/2015";
-         document.getElementById("WNa").href = "A-Beginners-Guide-to-Splatoon-Part-3-Clothing-and-Weapons.html";
-         document.getElementById("WNimg").src = "images/ammoKnights.jpg";
-         document.getElementById("WNp").innerHTML = "Part 3 Clothing and Weapons<br><br> The third part of my beginner's guide to <i>Splatoon</i> explaining the functions and purchasing of clothing and weapons."
+         document.getElementById("WNdate").innerHTML = "11/5/2015";
+         document.getElementById("WNa").href = "How-to-Play-Duel-in-the-Darkened-Sky.html";
+         document.getElementById("WNimg").src = "images/darkMatterSwordsman.png";
+         document.getElementById("WNp").innerHTML = "How to Play Duel in the Darkened Sky<br>(Dark Matter Battle Phase 1)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "10/15/2015";
@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "11/5/2015";
-         document.getElementById("WNa").href = "How-to-Play-Duel-in-the-Darkened-Sky.html";
-         document.getElementById("WNimg").src = "images/darkMatterSwordsman.png";
-         document.getElementById("WNp").innerHTML = "How to Play Duel in the Darkened Sky<br>(Dark Matter Battle Phase 1)";
+         document.getElementById("WNdate").innerHTML = "11/15/2015";
+         document.getElementById("WNa").href = "Amazing-Artwork-by-Arrow-Valley.html";
+         document.getElementById("WNimg").src = "images/ArrowValleyTwinmold.jpg";
+         document.getElementById("WNp").innerHTML = "Amazing Artwork by Arrow Valley<br><br> Showcasing some amazing Nintendo artwork by YouTube channel Arrow Valley.";
          time = -1;
     }
     time+=1;
