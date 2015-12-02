@@ -19,13 +19,6 @@ p {
     margin-right:15%;
     font-size:1.2em;
 }
-.note {
-    font-size:1em;
-}
-h2 {
-    color:white;
-    text-align:center;
-}
 .caption {
     text-align:center;
     font-size:1em;
@@ -51,7 +44,7 @@ a {
     text-align:center;
     color:white;
 }
-h2 {
+h1 {
     text-align:center;
     color:white;
 }
@@ -95,78 +88,29 @@ h2 {
     margin-right:auto;
     width:728px;
 }
-#intro {
-    font-size:1.3em;
-}
-.partLink:hover {
-    color:ff9d02;
-}
-#previousSection {
-    margin-left:5%;
-    display:inline;
-}
-#nextSection {
-    margin-right:5%;
-    float:right;
-    display:inline;
-}
-#img1 {
-    width:600px;
+#video {
+    width:560px;
     margin-left:auto;
     margin-right:auto;
 }
-#img2 {
-    width:600px;
+.LEVLimg {
+    width:680px;
     margin-left:auto;
     margin-right:auto;
 }
-#img3 {
-    width:450px;
+#pLink {
+    font-size:20px;
+    text-decoration:none;
+}
+#kickstarter {
+    width:220px;
     margin-left:auto;
     margin-right:auto;
 }
-#img4 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
+.LEVLlink {
+    text-align:center;
+    font-size:1.4em;
 }
-#img5 {
-    width:479px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img6 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img7 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img8 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img9 {
-    width:640px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img10 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img11 {
-    width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#img12 {
-    width:300px;
-    margin-left:auto;
-    margin-right:auto;
+.LEVLlinka {
+    text-decoration:none;
 }

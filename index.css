@@ -92,3 +92,21 @@ h2 {
 #TitleP {
     font-size:16px;
 }
+.imgTD {
+    width:10%;
+}
+.titleTD {
+    width:20%;
+}
+.descriptionTD {
+    width:70%;
+}
+.imgInTD {
+    width:100%;
+}
+.pInTD {
+    text-align:center;
+}
+td {
+    border:1px solid red;
+}
