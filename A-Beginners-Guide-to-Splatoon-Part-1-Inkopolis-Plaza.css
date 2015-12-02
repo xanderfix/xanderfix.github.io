@@ -98,6 +98,10 @@ h2 {
 #intro {
     font-size:1.3em;
 }
+.partLink {
+    font-size:20px;
+    text-decoration:none;
+}
 .partLink:hover {
     color:ff9d02;
 }
