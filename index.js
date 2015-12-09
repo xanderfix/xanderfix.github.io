@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "12/1/2015";
-         document.getElementById("WNa").href = "Levl-Up-Bros-Early-Access-Gaming.html";
-         document.getElementById("WNimg").src = "images/levlUpBros2.png";
-         document.getElementById("WNp").innerHTML = "Levl Up Bros.<br>Early Access Gaming<br><br> A really innovative early access gaming platform called Levl Up Bros.";
+         document.getElementById("WNdate").innerHTML = "12/3/2015";
+         document.getElementById("WNa").href = "Epic-Zelda-Guitar-Medley-Performed-by-Nimrod16.html";
+         document.getElementById("WNimg").src = "images/epicZeldaGuitarMedleyNim16Cropped.png";
+         document.getElementById("WNp").innerHTML = "Epic Zelda Guitar Medley<br>Performed by Nimrod16<br><br> An amazing guitar medley of the best songs from Ocarina of Time and A Link to the Past.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "11/27/2015";
@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "12/3/2015";
-         document.getElementById("WNa").href = "Epic-Zelda-Guitar-Medley-Performed-by-Nimrod16.html";
-         document.getElementById("WNimg").src = "images/epicZeldaGuitarMedleyNim16Cropped.png";
-         document.getElementById("WNp").innerHTML = "Epic Zelda Guitar Medley<br>Performed by Nimrod16<br><br> An amazing guitar medley of the best songs from Ocarina of Time and A Link to the Past.";
+         document.getElementById("WNdate").innerHTML = "12/8/2015";
+         document.getElementById("WNa").href = "Mega-Man-Unlimited.html";
+         document.getElementById("WNimg").src = "images/megaManUnlimited.jpg";
+         document.getElementById("WNp").innerHTML = "Mega Man Unlimited<br><br> An amazing, NES-inspired, Mega Man fan game.";
          time = -1;
     }
     time+=1;
