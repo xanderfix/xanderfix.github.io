@@ -33,6 +33,6 @@ function change() {
          time = -1;
     }
     time+=1;
-    }, 4444)
+    }, 5000)
 }
 
