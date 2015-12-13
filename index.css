@@ -7,7 +7,7 @@ a {
 }
 p {
     color:white;
-    font-family:"Comic Sans MS", sans-serif;
+    font-size:1.2em;
 }
 #navbar {
    height:26px;
@@ -66,15 +66,17 @@ h2 {
 }
 #WNp {
     text-align:center;
-    font-size:14px;
+    font-size:1.1em;
 }
 #aboutp1 {
     color:#00FF00;
     text-align:center;
+    font-family:"Comic Sans MS", sans-serif;
 }
 #aboutp2 {
     color:#FF8533;
     text-align:center;
+    font-family:"Comic Sans MS", sans-serif;
 }
 #Follow {
     display:inline;
@@ -92,21 +94,35 @@ h2 {
 #TitleP {
     font-size:16px;
 }
+#featuredWebsites {
+    background-color:;
+}
+.tdDiv {
+    width:100%;
+    height:100%;
+}
 .imgTD {
     width:10%;
 }
 .titleTD {
-    width:20%;
+    width:25%;
 }
 .descriptionTD {
-    width:70%;
+    width:65%;
 }
 .imgInTD {
     width:100%;
 }
 .pInTD {
     text-align:center;
+    font-size:1.3em;
+}
+.h1InTD {
+    text-align:center;
 }
 td {
     border:1px solid red;
+}
+table {
+    background-color:black;
 }

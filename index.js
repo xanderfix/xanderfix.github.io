@@ -10,7 +10,7 @@ function change() {
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "11/27/2015";
          document.getElementById("WNa").href = "Stone-Kirby-Transformations-Easter-Eggs.html";
-         document.getElementById("WNimg").src = "images/stoneKirbyRTDL.jpg";
+         document.getElementById("WNimg").src = "images/stoneKirbyDreamCollection.png";
          document.getElementById("WNp").innerHTML = "Stone Kirby Transformations Easter Eggs<br><br> Displaying all of the cool easter eggs related to stone Kirby's transformations.";
     }
     if (time == 2) {
