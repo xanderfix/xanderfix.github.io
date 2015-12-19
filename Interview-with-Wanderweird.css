@@ -19,11 +19,13 @@ p {
     margin-right:15%;
     font-size:1.2em;
 }
-h3 {
-    font-size:1.3em;
+.caption {
+    text-align:center;
+    font-size:1em;
 }
 .articleimg {
     width:50%;
+    display:inline;
     margin-left:25%;
 }
 #navbar {
@@ -42,7 +44,7 @@ a {
     text-align:center;
     color:white;
 }
-h3 {
+h1 {
     text-align:center;
     color:white;
 }
@@ -54,7 +56,7 @@ h3 {
 }
 .date {
     font-size:12px;
-    margin-left:70%;
+    margin-left:65%;
 }
 #left {
     float:left;
@@ -72,13 +74,32 @@ h3 {
 }
 #Twitter {
     display:inline;
-    margin-left:3.25%;
+    margin-left:15%;
 }
 #G+ {
     display:inline;
+}
+#twitterhandle {
+    font-size:18px;
+    text-decoration:none;
 }
 .ad {
     margin-left:auto;
     margin-right:auto;
     width:728px;
+}
+.mandala {
+    width:60%;
+    margin-right:auto;
+    margin-left:auto;
+}
+.mandalaImg {
+    width:100%;
+}
+.question {
+    text-align:center;
+    font-size:1.25em;
+}
+#SM {
+    text-align:center;
 }
