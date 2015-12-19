@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "12/8/2015";
-         document.getElementById("WNa").href = "Mega-Man-Unlimited.html";
-         document.getElementById("WNimg").src = "images/megaManUnlimited.jpg";
-         document.getElementById("WNp").innerHTML = "Mega Man Unlimited<br><br> An amazing, NES-inspired, Mega Man fan game.";
+         document.getElementById("WNdate").innerHTML = "12/19/2015";
+         document.getElementById("WNa").href = "Interview-with-Wanderweird.html";
+         document.getElementById("WNimg").src = "images/mandalaSuperMetroid.jpg";
+         document.getElementById("WNp").innerHTML = "Interview with Wanderweird<br><br> An interview with an amazing artist who creates retro video game mandalas.";
          time = -1;
     }
     time+=1;
