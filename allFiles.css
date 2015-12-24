@@ -210,6 +210,9 @@ li {
 #navImg18:hover {
     content:url(images/masterHand.gif);
 }
+#navImg20:hover {
+    content:url(images/bulborb.gif);
+}
 #navImg22:hover {
     content:url(images/KKSlider.gif);
 }
