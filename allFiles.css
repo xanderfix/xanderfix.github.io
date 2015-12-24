@@ -210,6 +210,9 @@ li {
 #navImg18:hover {
     content:url(images/masterHand.gif);
 }
+#navImg22:hover {
+    content:url(images/KKSlider.gif);
+}
 #navImg23:hover {
     content:url(images/splatoon.gif);
 }
