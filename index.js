@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "12/3/2015";
-         document.getElementById("WNa").href = "Epic-Zelda-Guitar-Medley-Performed-by-Nimrod16.html";
-         document.getElementById("WNimg").src = "images/epicZeldaGuitarMedleyNim16Cropped.png";
-         document.getElementById("WNp").innerHTML = "Epic Zelda Guitar Medley<br>Performed by Nimrod16<br><br> An amazing guitar medley of the best songs from Ocarina of Time and A Link to the Past.";
+         document.getElementById("WNdate").innerHTML = "12/17/2015";
+         document.getElementById("WNa").href = "Super-Mario-Galaxy-The-Girls-Sadness-Piano-Cover.html";
+         document.getElementById("WNimg").src = "images/Super Mario Galaxy The Girl's Sadness Piano Cover.png";
+         document.getElementById("WNp").innerHTML = "Super Mario Galaxy<br>The Girl's Sadness Piano Cover<br><br> My piano cover of the sad storybook theme from Super Mario Galaxy.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "11/27/2015";
