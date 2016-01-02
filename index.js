@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "12/19/2015";
-         document.getElementById("WNa").href = "Interview-with-Wanderweird.html";
-         document.getElementById("WNimg").src = "images/mandalaSuperMetroid.jpg";
-         document.getElementById("WNp").innerHTML = "Interview with Wanderweird<br><br> An interview with an amazing artist who creates retro video game mandalas.";
+         document.getElementById("WNdate").innerHTML = "1/2/2015";
+         document.getElementById("WNa").href = "A-Tribute-to-Bits.html";
+         document.getElementById("WNimg").src = "images/Nim16ATtB.jpg";
+         document.getElementById("WNp").innerHTML = "Interview with Wanderweird<br><br> An album of eight awesome retro video game rock covers by Nimrod16.";
          time = -1;
     }
     time+=1;
