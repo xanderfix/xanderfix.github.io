@@ -73,9 +73,6 @@ table {
 #G+ {
     display:inline;
 }
-.articleimg {
-    margin-left:15%;
-}
 #twitterHandle {
     text-decoration:none;
     font-size:21px;
@@ -84,4 +81,14 @@ table {
     margin-left:auto;
     margin-right:auto;
     width:728px;
+}
+#img1 {
+    margin-left:auto;
+    margin-right:auto;
+    width:521px;
+}
+#img2 {
+    margin-left:auto;
+    margin-right:auto;
+    width:386px;
 }
