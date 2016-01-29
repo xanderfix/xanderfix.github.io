@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "1/2/2015";
-         document.getElementById("WNa").href = "A-Tribute-to-Bits.html";
-         document.getElementById("WNimg").src = "images/Nim16ATtB.jpg";
-         document.getElementById("WNp").innerHTML = "Interview with Wanderweird<br><br> An album of eight awesome retro video game rock covers by Nimrod16.";
+         document.getElementById("WNdate").innerHTML = "1/18/2015";
+         document.getElementById("WNa").href = "How-to-Play-Green-Hill-Zone.html";
+         document.getElementById("WNimg").src = "images/greenHillZone.png";
+         document.getElementById("WNp").innerHTML = "How to Play Green Hill Zone";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "12/17/2015";
@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "1/18/2015";
-         document.getElementById("WNa").href = "How-to-Play-Green-Hill-Zone.html";
-         document.getElementById("WNimg").src = "images/greenHillZone.png";
-         document.getElementById("WNp").innerHTML = "How to Play Green Hill Zone";
+         document.getElementById("WNdate").innerHTML = "1/29/2015";
+         document.getElementById("WNa").href = "DLC-Just-Right-Too-Much-or-Not-Enough.html";
+         document.getElementById("WNimg").src = "images/sonicAndKnuckles.png";
+         document.getElementById("WNp").innerHTML = "DLC: Just Right, Too Much, or Not Enough?<br>By Greg Betancourt Jr.<br><br>Greg examines the pros and cons of DLC and how it's changed gaming.";
          time = -1;
     }
     time+=1;
