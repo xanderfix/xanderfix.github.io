@@ -64,6 +64,17 @@ h2 {
 .rightimg {
     width:100%;
 }
+#links {
+    margin-left:75%;
+    width:25%;
+}
+.socialMediaImgDiv {
+    width:14.74%;
+    display:inline-block;
+}
+.socialMediaImg {
+    width:100%;
+}
 #WNp {
     text-align:center;
     font-size:1.1em;
@@ -77,19 +88,6 @@ h2 {
     color:#FF8533;
     text-align:center;
     font-family:"Comic Sans MS", sans-serif;
-}
-#Follow {
-    display:inline;
-}
-#subscribe {
-    display:inline;
-}
-#google+ {
-    display:inline;
-}
-#links {
-    display:inline-block;
-    margin-left:50%;
 }
 #TitleP {
     font-size:16px;
