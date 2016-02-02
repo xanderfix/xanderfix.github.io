@@ -104,7 +104,8 @@ h1 {
     border-top:3px dashed white;
     border-bottom:3px dashed white;
     width:80%;
-    height:440px;
+    min-height: 100px;
+    overflow: hidden;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:25px;
@@ -152,6 +153,7 @@ h1 {
 #AtADescriptionText {
     margin-left:0%;
     margin-right:0%;
+    margin-top:-10px;
     font-size:1.5em;
     font-family:Arcade;
 }
