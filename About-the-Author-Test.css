@@ -110,7 +110,7 @@ h1 {
     margin-bottom:25px;
 }
 #AtAName {
-    width:169px;
+    width:160px;
     height:100px;
     border:0px solid red;
     display:inline-block;
@@ -122,8 +122,8 @@ h1 {
 }
 #AtASocialMedia {
     width:74%;
+    height:100px;
     float:right;
-    height:56px;
     display:inline-block;
 }
 #links {
@@ -138,15 +138,14 @@ h1 {
     width:100%;
 }
 #AtAPicture {
-    height:169px;
+    height:160px;
     display:inline-block;
 }
 #AtAPictureImg {
-    height:100%;
+    width:160px;
 }
 #AtADescription {
     width:74%;
-    height:169px;
     float:right;
     display:inline-block;
 }
