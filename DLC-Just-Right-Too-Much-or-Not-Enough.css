@@ -100,14 +100,15 @@ h2 {
     border-top:3px dashed white;
     border-bottom:3px dashed white;
     width:80%;
-    height:400px;
+    min-height: 100px;
+    overflow: hidden;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:25px;
 }
 #AtAName {
-    width:169px;
-    height:56px;
+    width:160px;
+    height:100px;
     border:0px solid red;
     display:inline-block;
 }
@@ -118,8 +119,8 @@ h2 {
 }
 #AtASocialMedia {
     width:74%;
+    height:100px;
     float:right;
-    height:56px;
     display:inline-block;
 }
 #links {
@@ -134,21 +135,21 @@ h2 {
     width:100%;
 }
 #AtAPicture {
-    height:169px;
+    height:160px;
     display:inline-block;
 }
 #AtAPictureImg {
-    height:100%;
+    width:160px;
 }
 #AtADescription {
     width:74%;
-    height:169px;
     float:right;
     display:inline-block;
 }
 #AtADescriptionText {
     margin-left:0%;
     margin-right:0%;
-    font-size:1.4em;
+    margin-top:-10px;
+    font-size:1.5em;
     font-family:Arcade;
 }
