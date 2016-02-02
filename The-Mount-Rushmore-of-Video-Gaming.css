@@ -126,6 +126,7 @@ table {
 }
 #AtANameText {
     color:white;
+    font-weight:normal;
     font-family:Arcade;
     text-align:center;
 }
