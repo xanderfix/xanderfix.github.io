@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Triforce;
+    src: url(Triforce.ttf);
+}
+@font-face {
+    font-family: NES;
+    src: url(Pixel_NES.otf);
+}
+@font-face {
+    font-family: Arcade;
+    src: url(ARCADECLASSIC.TTF);
+}
 .link {
     display:inline-block;
     width:12%;
@@ -91,4 +103,65 @@ table {
     margin-left:auto;
     margin-right:auto;
     width:386px;
+}
+#AtATitle {
+    color:white;
+    text-align:center;
+    font-family:NES;
+}
+#aboutTheAuthor {
+    border-top:3px dashed white;
+    border-bottom:3px dashed white;
+    width:80%;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:25px;
+}
+#AtAName {
+    width:169px;
+    height:56px;
+    border:0px solid red;
+    display:inline-block;
+}
+#AtANameText {
+    color:white;
+    font-family:Arcade;
+    text-align:center;
+}
+#AtASocialMedia {
+    width:74%;
+    float:right;
+    height:56px;
+    display:inline-block;
+}
+#links {
+    margin-left:85%;
+    width:15%;
+}
+.socialMediaImgDiv {
+    width:47%;
+    display:inline-block;
+}
+.socialMediaImg {
+    width:100%;
+}
+#AtAPicture {
+    height:169px;
+    display:inline-block;
+}
+#AtAPictureImg {
+    height:100%;
+}
+#AtADescription {
+    width:74%;
+    height:169px;
+    float:right;
+    display:inline-block;
+}
+#AtADescriptionText {
+    margin-left:0%;
+    margin-right:0%;
+    font-size:1.4em;
+    font-family:Arcade;
 }
