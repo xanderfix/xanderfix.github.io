@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Triforce;
+    src: url(Triforce.ttf);
+}
+@font-face {
+    font-family: NES;
+    src: url(Pixel_NES.otf);
+}
+@font-face {
+    font-family: Arcade;
+    src: url(ARCADECLASSIC.TTF);
+}
 .link {
     display:inline-block;
     width:12%;
@@ -19,6 +31,87 @@ h1 {
 }
 li {
     display:inline;
+}
+#AtATitle {
+    color:white;
+    text-align:center;
+    font-family:NES;
+}
+#aboutTheAuthor {
+    border-top:3px dashed white;
+    border-bottom:3px dashed white;
+    width:80%;
+    min-height: 100px;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:25px;
+}
+#AtAName {
+    width:160px;
+    height:100px;
+    border:0px solid red;
+    display:inline-block;
+}
+#AtANameTextXander {
+    color:#165014;
+    font-weight:normal;
+    font-family:Triforce;
+    text-align:center;
+}
+#AtANameTextGreg {
+    color:white;
+    font-weight:normal;
+    font-family:Arcade;
+    text-align:center;
+}
+#AtASocialMedia {
+    width:74%;
+    height:100px;
+    float:right;
+    display:inline-block;
+}
+#links {
+    margin-left:55%;
+    width:45%;
+}
+.socialMediaImgDiv {
+    width:14.74%;
+    display:inline-block;
+}
+.socialMediaImg {
+    width:100%;
+}
+#AtAPicture {
+    height:160px;
+    display:inline-block;
+}
+#AtAPictureImg {
+    width:160px;
+}
+#AtADescription {
+    width:74%;
+    float:right;
+    display:inline-block;
+}
+#AtADescriptionTextXander {
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:-5px;
+    font-size:1.5em;
+    font-family:Gregorian, Sans;
+}
+#AtADescriptionTextGreg {
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:-10px;
+    font-size:1.5em;
+    font-family:Arcade;
+}
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
 }
 #marioLink:hover {
     color:d82800;

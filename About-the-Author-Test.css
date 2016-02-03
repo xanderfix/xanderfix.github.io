@@ -116,7 +116,13 @@ h1 {
     border:0px solid red;
     display:inline-block;
 }
-#AtANameText {
+#AtANameTextXander {
+    color:#165014;
+    font-weight:normal;
+    font-family:Triforce;
+    text-align:center;
+}
+#AtANameTextGreg {
     color:white;
     font-weight:normal;
     font-family:Arcade;
@@ -129,11 +135,11 @@ h1 {
     display:inline-block;
 }
 #links {
-    margin-left:77%;
-    width:23%;
+    margin-left:55%;
+    width:45%;
 }
 .socialMediaImgDiv {
-    width:31%;
+    width:14.74%;
     display:inline-block;
 }
 .socialMediaImg {
@@ -151,7 +157,14 @@ h1 {
     float:right;
     display:inline-block;
 }
-#AtADescriptionText {
+#AtADescriptionTextXander {
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:-5px;
+    font-size:1.5em;
+    font-family:Gregorian, Sans;
+}
+#AtADescriptionTextGreg {
     margin-left:0%;
     margin-right:0%;
     margin-top:-10px;

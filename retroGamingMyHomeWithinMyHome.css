@@ -125,7 +125,7 @@ table {
     border:0px solid red;
     display:inline-block;
 }
-#AtANameText {
+#AtANameTextGreg {
     color:white;
     font-weight:normal;
     font-family:Arcade;
@@ -160,7 +160,7 @@ table {
     float:right;
     display:inline-block;
 }
-#AtADescriptionText {
+#AtADescriptionTextGreg {
     margin-left:0%;
     margin-right:0%;
     margin-top:-10px;
