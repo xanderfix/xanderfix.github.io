@@ -10,6 +10,10 @@
     font-family: Arcade;
     src: url(ARCADECLASSIC.TTF);
 }
+@font-face {
+    font-family: Cursive;
+    src: url(Precious.ttf);
+}
 .link {
     display:inline-block;
     width:12%;
@@ -65,6 +69,12 @@ li {
     font-family:Arcade;
     text-align:center;
 }
+#AtANameTextChloe {
+    color:pink;
+    font-weight:normal;
+    font-family:Cursive;
+    text-align:center;
+}
 #AtASocialMedia {
     width:74%;
     height:100px;
@@ -107,6 +117,13 @@ li {
     margin-top:-10px;
     font-size:1.5em;
     font-family:Arcade;
+}
+#AtADescriptionTextChloe {
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:-5px;
+    font-size:1.5em;
+    font-family:Gregorian, Sans;
 }
 .ad {
     margin-left:auto;

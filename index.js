@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "1/29/2015";
-         document.getElementById("WNa").href = "DLC-Just-Right-Too-Much-or-Not-Enough.html";
-         document.getElementById("WNimg").src = "images/sonicAndKnuckles.png";
-         document.getElementById("WNp").innerHTML = "DLC: Just Right, Too Much, or Not Enough?<br>By Greg Betancourt Jr.<br><br>Greg examines the pros and cons of DLC and how it's changed gaming.";
+         document.getElementById("WNdate").innerHTML = "2/3/2015";
+         document.getElementById("WNa").href = "Why-I-Like-Animal-Crossing-New-Leaf.html";
+         document.getElementById("WNimg").src = "images/animalCrossingNLhouse.jpg";
+         document.getElementById("WNp").innerHTML = "Why I Like Animal Crossing: New Leaf<br>By Chloe<br><br>Chloe talks about why she likes the popular 3DS game, Animal Crossing: New Leaf.";
          time = -1;
     }
     time+=1;
