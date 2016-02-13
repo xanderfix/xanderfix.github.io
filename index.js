@@ -26,10 +26,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Jigsaw Puzzle: <br>Super Mario Bros. 3 World Maps<br><br>Jigsaw puzzles for the <i>Super Mario Bros. 3</i> world maps.";
     }
     if (time == 4) {
-         document.getElementById("WNdate").innerHTML = "2/3/2015";
-         document.getElementById("WNa").href = "Why-I-Like-Animal-Crossing-New-Leaf.html";
-         document.getElementById("WNimg").src = "images/animalCrossingNLhouse.jpg";
-         document.getElementById("WNp").innerHTML = "Why I Like Animal Crossing: New Leaf<br>By Chloe<br><br>Chloe talks about why she likes the popular 3DS game, Animal Crossing: New Leaf.";
+         document.getElementById("WNdate").innerHTML = "2/13/2015";
+         document.getElementById("WNa").href = "Emulators-Amazing-Tools-or-Piracy-Devices.html";
+         document.getElementById("WNimg").src = "images/phoneEmulator.jpg";
+         document.getElementById("WNp").innerHTML = "Emulators: Amazing Tools or Piracy Devices?<br><br>A look at the types and uses of emulators; and why there is so much controversy over their use.";
          time = -1;
     }
     time+=1;
