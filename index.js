@@ -2,16 +2,16 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "1/29/2015";
+         document.getElementById("WNa").href = "Ganondorfs-Theme-Guitar-Cover.html";
+         document.getElementById("WNimg").src = "images/GanondorfsThemeGuitarCover.png";
+         document.getElementById("WNp").innerHTML = "Ganondorf's Theme Guitar Cover<br><br> My electric guitar cover of the Ocarina of Time version of Ganondorf's Theme.";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "1/18/2015";
          document.getElementById("WNa").href = "How-to-Play-Green-Hill-Zone.html";
          document.getElementById("WNimg").src = "images/greenHillZone.png";
          document.getElementById("WNp").innerHTML = "How to Play Green Hill Zone";
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "12/17/2015";
-         document.getElementById("WNa").href = "Super-Mario-Galaxy-The-Girls-Sadness-Piano-Cover.html";
-         document.getElementById("WNimg").src = "images/Super Mario Galaxy The Girl's Sadness Piano Cover.png";
-         document.getElementById("WNp").innerHTML = "Super Mario Galaxy<br>The Girl's Sadness Piano Cover<br><br> My piano cover of the sad storybook theme from Super Mario Galaxy.";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "11/27/2015";

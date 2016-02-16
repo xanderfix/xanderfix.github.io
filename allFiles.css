@@ -36,6 +36,14 @@ h1 {
 li {
     display:inline;
 }
+p {
+    color:white;
+    font-size:1.2em;
+}
+.date {
+    font-size:12px;
+    margin-left:75%;
+}
 #AtATitle {
     color:white;
     text-align:center;
