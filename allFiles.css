@@ -178,8 +178,6 @@ p {
 }
 #navImg2 {
     content:url(images/powerStar.png);
-    background-image:url(images/powerStar.png);
-    background-size:100% 100%;
 }
 #navImg3 {
     content:url(images/masterSword.png);
@@ -281,8 +279,6 @@ p {
     content:url(images/marioBeatsBowser.gif);
 }
 #navImg2:hover {
-    background-image:url(images/powerStar.png);
-    background-size:100% 100%;
     content:url(images/starGrab.gif);
 }
 #navImg3:hover {
