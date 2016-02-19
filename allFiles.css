@@ -293,66 +293,106 @@ p {
 }
 #navImg1:hover {
     content:url(images/marioBeatsBowser.gif);
+    background-image:url(images/mushroom.png);
+    background-size:100% 100%;
 }
 #navImg2:hover {
+    content:url(images/starGrab.gif);
     background-image:url(images/powerStar.png);
     background-size:100% 100%;
-    content:url(images/starGrab.gif);
 }
 #navImg3:hover {
     content:url(images/masterSword.gif);
+    background-image:url(images/masterSword.png);
+    background-size:100% 100%;
 }
 #navImg4:hover {
     content:url(images/Triforce.gif);
+    background-image:url(images/triforce.png);
+    background-size:100% 100%;
 }
 #navImg5:hover {
     content:url(images/samusAppears.gif);
+    background-image:url(images/samusShip.png);
+    background-size:100% 100%;
 }
 #navImg6:hover {
     content:url(images/goldenStatues.gif);
+    background-image:url(images/metroids.png);
+    background-size:100% 100%;
 }
 #navImg7:hover {
     content:url(images/kirbyDance.gif);
+    background-image:url(images/sparklingStars.png);
+    background-size:100% 100%;
 }
 #navImg8:hover {
     content:url(images/ultraSword.gif);
+    background-image:url(images/waddleDee.png);
+    background-size:100% 100%;
 }
 #navImg10:hover {
     content:url(images/arwing.gif);
+    background-image:url(images/arwing.png);
+    background-size:100% 100%;
 }
 #navImg11:hover {
     content:url(images/crankyPhonograph.gif);
+    background-image:url(images/DKbarrel.jpg);
+    background-size:100% 100%;
 }
 #navImg12:hover {
     content:url(images/kingKRool.gif);
+    background-image:url(images/kingKRool.jpg);
+    background-size:100% 100%;
 }
 #navImg13:hover {
     content:url(images/yoshis.gif);
+    background-image:url(images/yoshis.png);
+    background-size:100% 100%;
 }
 #navImg14:hover {
     content:url(images/yoshiEggs.gif);
+    background-image:url(images/yoshiEggs.jpg);
+    background-size:100% 100%;
 }
 #navImg15:hover {
     content:url(images/banjoKazooieTitle.gif);
+    background-image:url(images/jinjo.jpeg);
+    background-size:100% 100%;
 }
 #navImg16:hover {
     content:url(images/jiggyGrab.gif);
+    background-image:url(images/jiggy.png);
+    background-size:100% 100%;
 }
 #navImg17:hover {
     content:url(images/smash.gif);
+    background-image:url(images/smashBall.jpg);
+    background-size:100% 100%;
 }
 #navImg18:hover {
     content:url(images/masterHand.gif);
+    background-image:url(images/masterHand.jpg);
+    background-size:100% 100%;
 }
 #navImg20:hover {
     content:url(images/bulborb.gif);
+    background-image:url(images/redBulborb.jpg);
+    background-size:100% 100%;
 }
 #navImg22:hover {
     content:url(images/KKSlider.gif);
+    background-image:url(images/bellBag.jpg);
+    background-size:100% 100%;
 }
 #navImg23:hover {
     content:url(images/splatoon.gif);
+    background-image:url(images/greenSquid.png);
+    background-size:100% 100%;
 }
 #navImg24:hover {
     content:url(images/stayFresh.gif);
+    background-image:url(images/squidSisters.jpg);
+    background-size:100% 100%;
 }
