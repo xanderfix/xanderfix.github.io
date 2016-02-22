@@ -198,97 +198,83 @@ p {
 }
 #navImg6 {
     content:url(images/metroids.png);
-    background-image:url(images/metroids.png);
-    background-size:100% 100%;
 }
 #navImg7 {
     content:url(images/sparklingStars.png);
-    background-image:url(images/sparklingStars.png);
+    background-image:url(images/kirbyDance.gif);
     background-size:100% 100%;
 }
 #navImg8 {
     content:url(images/waddleDee.png);
-    background-image:url(images/waddleDee.png);
+    background-image:url(images/ultraSword.gif);
     background-size:100% 100%;
 }
 #navImg9 {
     content:url(images/andross.png);
-    background-image:url(images/andross.png);
-    background-size:100% 100%;
 }
 #navImg10 {
     content:url(images/arwing.png);
-    background-image:url(images/arwing.png);
-    background-size:100% 100%;
 }
 #navImg11 {
     content:url(images/DKbarrel.jpg);
-    background-image:url(images/DKbarrel.jpg);
+    background-image:url(images/crankyPhonograph.gif);
     background-size:100% 100%;
 }
 #navImg12 {
     content:url(images/kingKRool.jpg);
-    background-image:url(images/kingKRool.jpg);
+    background-image:url(images/kingKRool.gif);
     background-size:100% 100%;
 }
 #navImg13 {
     content:url(images/yoshis.png);
-    background-image:url(images/yoshis.png);
+    background-image:url(images/yoshis.gif);
     background-size:100% 100%;
 }
 #navImg14 {
     content:url(images/yoshiEgg.jpg);
-    background-image:url(images/yoshiEggs.jpg);
+    background-image:url(images/yoshiEggs.gif);
     background-size:100% 100%;
 }
 #navImg15 {
     content:url(images/jinjo.jpeg);
-    background-image:url(images/jinjo.jpeg);
+    background-image:url(images/banjoKazooieTitle.gif);
     background-size:100% 100%;
 }
 #navImg16 {
     content:url(images/jiggy.png);
-    background-image:url(images/jiggy.png);
+    background-image:url(images/jiggyGrab.gif);
     background-size:100% 100%;
 }
 #navImg17 {
     content:url(images/smashBall.jpg);
-    background-image:url(images/smashBall.jpg);
+    background-image:url(images/smash.gif);
     background-size:100% 100%;
 }
 #navImg18 {
     content:url(images/masterHand.jpg);
-    background-image:url(images/masterHand.jpg);
+    background-image:url(images/masterHand.gif);
     background-size:100% 100%;
 }
 #navImg19 {
     content:url(images/redPikmin.jpg);
-    background-image:url(images/redPikmin.jpg);
-    background-size:100% 100%;
 }
 #navImg20 {
     content:url(images/redBulborb.jpg);
-    background-image:url(images/redBulborb.jpg);
-    background-size:100% 100%;
 }
 #navImg21 {
     content:url(images/bellBag.jpg);
-    background-image:url(images/bellBag.jpg);
-    background-size:100% 100%;
 }
 #navImg22 {
     content:url(images/bellBag.jpg);
-    background-image:url(images/bellBag.jpg);
-    background-size:100% 100%;
 }
 #navImg23 {
     content:url(images/greenSquid.png);
-    background-image:url(images/greenSquid.png);
+    background-image:url(images/splatoon.gif);
     background-size:100% 100%;
 }
 #navImg24 {
     content:url(images/squidSisters.jpg);
-    background-image:url(images/squidSisters.jpg);
+    background-image:url(images/stayFresh.gif);
     background-size:100% 100%;
 }
 #navImg1:hover {
