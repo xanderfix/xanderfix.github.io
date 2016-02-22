@@ -173,27 +173,25 @@ p {
 }
 #navImg1 {
     content:url(images/mushroom.png);
-    background-image:url(images/mushroom.png);
+    background-image:url(images/marioBeatsBowser.gif);
     background-size:100% 100%;
 }
 #navImg2 {
     content:url(images/powerStar.png);
-    background-image:url(images/powerStar.png);
-    background-size:100% 100%;
 }
 #navImg3 {
     content:url(images/masterSword.png);
-    background-image:url(images/masterSword.png);
+    background-image:url(images/masterSword.gif);
     background-size:100% 100%;
 }
 #navImg4 {
     content:url(images/triforce.png);
-    background-image:url(images/triforce.png);
+    background-image:url(images/Triforce.gif);
     background-size:100% 100%;
 }
 #navImg5 {
     content:url(images/samusShip.png);
-    background-image:url(images/samusShip.png);
+    background-image:url(images/samusAppears.gif);
     background-size:100% 100%;
 }
 #navImg6 {
@@ -281,8 +279,6 @@ p {
     content:url(images/marioBeatsBowser.gif);
 }
 #navImg2:hover {
-    background-image:url(images/powerStar.png);
-    background-size:100% 100%;
     content:url(images/starGrab.gif);
 }
 #navImg3:hover {
