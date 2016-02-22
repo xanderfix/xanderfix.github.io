@@ -198,6 +198,8 @@ p {
 }
 #navImg6 {
     content:url(images/metroids.png);
+    background-image:url(images/goldenStatues.gif);
+    background-size:100% 100%;
 }
 #navImg7 {
     content:url(images/sparklingStars.png);
@@ -214,6 +216,8 @@ p {
 }
 #navImg10 {
     content:url(images/arwing.png);
+    background-image:url(images/arwing.gif);
+    background-size:100% 100%;
 }
 #navImg11 {
     content:url(images/DKbarrel.jpg);
@@ -260,12 +264,16 @@ p {
 }
 #navImg20 {
     content:url(images/redBulborb.jpg);
+    background-image:url(images/bulborb.gif);
+    background-size:100% 100%;
 }
 #navImg21 {
     content:url(images/bellBag.jpg);
 }
 #navImg22 {
     content:url(images/bellBag.jpg);
+    background-image:url(images/KKSlider.gif);
+    background-size:100% 100%;
 }
 #navImg23 {
     content:url(images/greenSquid.png);
