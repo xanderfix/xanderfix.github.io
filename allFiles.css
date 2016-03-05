@@ -23,12 +23,18 @@
 body {
     background-color: #2E5CE6;
 }
+#navbar {
+   height:26px;
+   background-color:red;
+   border-radius:5px;
+}
 #main {
     margin-left:8%;
     margin-right:8%;
     margin-top:-21px;
     margin-bottom:0%;
     background-color:black;
+    border-radius:25px;
 }
 h1 {
     color:white;

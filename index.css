@@ -4,6 +4,7 @@ a {
 }
 #main {
     height:1000px;
+    border-radius:25px;
 }
 p {
     color:white;
@@ -11,7 +12,8 @@ p {
 }
 #navbar {
    height:26px;
-   background-color: red;
+   background-color:red;
+   border-radius:5px;
 }
 .title {
     text-align:center;
@@ -32,6 +34,7 @@ h2 {
     background-color:red;
     margin-left:3%;
     width:370px;
+    border-radius:10px;
 }
 #WNimg {
     margin-left:10px;
