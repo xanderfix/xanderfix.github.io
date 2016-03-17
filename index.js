@@ -4,7 +4,7 @@ function change() {
     if (time == 0) {
          document.getElementById("WNdate").innerHTML = "3/17/2015";
          document.getElementById("WNa").href = "Green-Hill-Zone-Remix.html";
-         document.getElementById("WNimg").src = "images/greenHillZoneRemixMusic.png";
+         document.getElementById("WNimg").src = "images/GreenHillZoneRemixMusic.png";
          document.getElementById("WNp").innerHTML = "Green Hill Zone Remix";
     }
     if (time == 1) {
