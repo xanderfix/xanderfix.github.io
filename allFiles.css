@@ -180,42 +180,42 @@ p {
 }
 #navImg1 {
     content:url(images/mushroom.png);
-    background-image:url(images/marioBeatsBowser.gif);
+    /*background-image:url(images/marioBeatsBowser.gif);*/
     background-size:100% 100%;
 }
 #navImg2 {
     content:url(images/powerStar.png);
-    background-image:url(images/starGrab.gif);
+    /*background-image:url(images/starGrab.gif);*/
     background-size:100% 100%;
 }
 #navImg3 {
     content:url(images/masterSword.png);
-    background-image:url(images/masterSword.gif);
+    /*background-image:url(images/masterSword.gif);*/
     background-size:100% 100%;
 }
 #navImg4 {
     content:url(images/triforce.png);
-    background-image:url(images/Triforce.gif);
+    /*background-image:url(images/Triforce.gif);*/
     background-size:100% 100%;
 }
 #navImg5 {
     content:url(images/samusShip.png);
-    background-image:url(images/samusAppears.gif);
+    /*background-image:url(images/samusAppears.gif);*/
     background-size:100% 100%;
 }
 #navImg6 {
     content:url(images/metroids.png);
-    background-image:url(images/goldenStatues.gif);
+    /*background-image:url(images/goldenStatues.gif);*/
     background-size:100% 100%;
 }
 #navImg7 {
     content:url(images/sparklingStars.png);
-    background-image:url(images/kirbyDance.gif);
+    /*background-image:url(images/kirbyDance.gif);*/
     background-size:100% 100%;
 }
 #navImg8 {
     content:url(images/waddleDee.png);
-    background-image:url(images/ultraSword.gif);
+    /*background-image:url(images/ultraSword.gif);*/
     background-size:100% 100%;
 }
 #navImg9 {
@@ -223,47 +223,47 @@ p {
 }
 #navImg10 {
     content:url(images/arwing.png);
-    background-image:url(images/arwing.gif);
+    /*background-image:url(images/arwing.gif);*/
     background-size:100% 100%;
 }
 #navImg11 {
     content:url(images/DKbarrel.jpg);
-    background-image:url(images/crankyPhonograph.gif);
+    /*background-image:url(images/crankyPhonograph.gif);*/
     background-size:100% 100%;
 }
 #navImg12 {
     content:url(images/kingKRool.jpg);
-    background-image:url(images/kingKRool.gif);
+    /*background-image:url(images/kingKRool.gif);*/
     background-size:100% 100%;
 }
 #navImg13 {
     content:url(images/yoshis.png);
-    background-image:url(images/yoshis.gif);
+    /*background-image:url(images/yoshis.gif);*/
     background-size:100% 100%;
 }
 #navImg14 {
     content:url(images/yoshiEgg.jpg);
-    background-image:url(images/yoshiEggs.gif);
+    /*background-image:url(images/yoshiEggs.gif);*/
     background-size:100% 100%;
 }
 #navImg15 {
     content:url(images/jinjo.jpeg);
-    background-image:url(images/banjoKazooieTitle.gif);
+    /*background-image:url(images/banjoKazooieTitle.gif);*/
     background-size:100% 100%;
 }
 #navImg16 {
     content:url(images/jiggy.png);
-    background-image:url(images/jiggyGrab.gif);
+    /*background-image:url(images/jiggyGrab.gif);*/
     background-size:100% 100%;
 }
 #navImg17 {
     content:url(images/smashBall.jpg);
-    background-image:url(images/smash.gif);
+    /*background-image:url(images/smash.gif);*/
     background-size:100% 100%;
 }
 #navImg18 {
     content:url(images/masterHand.jpg);
-    background-image:url(images/masterHand.gif);
+    /*background-image:url(images/masterHand.gif);*/
     background-size:100% 100%;
 }
 #navImg19 {
@@ -271,7 +271,7 @@ p {
 }
 #navImg20 {
     content:url(images/redBulborb.jpg);
-    background-image:url(images/bulborb.gif);
+    /*background-image:url(images/bulborb.gif);*/
     background-size:100% 100%;
 }
 #navImg21 {
@@ -279,20 +279,20 @@ p {
 }
 #navImg22 {
     content:url(images/bellBag.jpg);
-    background-image:url(images/KKSlider.gif);
+    /*background-image:url(images/KKSlider.gif);*/
     background-size:100% 100%;
 }
 #navImg23 {
     content:url(images/greenSquid.png);
-    background-image:url(images/splatoon.gif);
+    /*background-image:url(images/splatoon.gif);*/
     background-size:100% 100%;
 }
 #navImg24 {
     content:url(images/squidSisters.jpg);
-    background-image:url(images/stayFresh.gif);
+    /*background-image:url(images/stayFresh.gif);*/
     background-size:100% 100%;
 }
-#navImg1:hover {
+/*#navImg1:hover {
     content:url(images/marioBeatsBowser.gif);
 }
 #navImg2:hover {
@@ -354,4 +354,4 @@ p {
 }
 #navImg24:hover {
     content:url(images/stayFresh.gif);
-}
+}*/
