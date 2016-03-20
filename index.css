@@ -6,6 +6,12 @@ a {
     height:1000px;
     border-radius:25px;
 }
+#title {
+    height:2em;
+}
+.titleImg {
+    height:100%;
+}
 p {
     color:white;
     font-size:1.2em;
