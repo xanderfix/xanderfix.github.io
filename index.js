@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "3/25/2016";
-         document.getElementById("WNa").href = "Artwork-From-2015.html";
-         document.getElementById("WNimg").src = "images/The Trials of Yoshi.png";
-         document.getElementById("WNp").innerHTML = "Artwork from 2015<br><br>A collection of all of the artwork I created in 2015.";
+         document.getElementById("WNdate").innerHTML = "3/28/2016";
+         document.getElementById("WNa").href = "The-Seven-Starred-Lotus-Super-Mario-RPG-Mandala.html";
+         document.getElementById("WNimg").src = "images/superMarioRPGMandala.jpg";
+         document.getElementById("WNp").innerHTML = "The Seven Starred Lotus:<br>Super Mario RPG Mandala by Wanderweird<br><br>A massive mandala based on Super Mario RPG: Legend of The Seven Stars; featuring every area, character, boss, and enemy from the game.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "3/17/2016";
