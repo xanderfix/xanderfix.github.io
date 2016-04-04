@@ -2,16 +2,16 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "4/4/2016";
+         document.getElementById("WNa").href = "How-to-Play-Dark-Minds-Theme.html";
+         document.getElementById("WNimg").src = "images/darkMind.png";
+         document.getElementById("WNp").innerHTML = "How to Play Dark Mind's Theme<br>(Dark Mind's Second Form)";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "3/28/2016";
          document.getElementById("WNa").href = "The-Seven-Starred-Lotus-Super-Mario-RPG-Mandala.html";
          document.getElementById("WNimg").src = "images/superMarioRPGMandala.jpg";
          document.getElementById("WNp").innerHTML = "The Seven Starred Lotus:<br>Super Mario RPG Mandala by Wanderweird<br><br>A massive mandala based on Super Mario RPG: Legend of The Seven Stars; featuring every area, character, boss, and enemy from the game.";
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "3/17/2016";
-         document.getElementById("WNa").href = "Green-Hill-Zone-Remix.html";
-         document.getElementById("WNimg").src = "images/GreenHillZoneRemixMusic.png";
-         document.getElementById("WNp").innerHTML = "Green Hill Zone Remix";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "3/6/2016";
