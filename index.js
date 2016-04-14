@@ -3,7 +3,7 @@ function change() {
     setInterval(function change1() {
     if (time == 0) {
          document.getElementById("WNdate").innerHTML = "4/13/2016";
-         document.getElementById("WNa").href = "Interview-DKC-Speedrunner-Antilles58.html";
+         document.getElementById("WNa").href = "Interview-DKC-speedrunner-Antilles58.html";
          document.getElementById("WNimg").src = "images/antilles58DKC2.png";
          document.getElementById("WNp").innerHTML = "Interview:<br>Donkey Kong Country Speedrunner Antilles58<br><br>An interview with Antilles58, an expert Donkey Kong Country series speedrunner.";
     }
