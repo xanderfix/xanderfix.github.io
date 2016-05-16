@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "4/18/2016";
-         document.getElementById("WNa").href = "Mega-Man-Piano-Playthrough.html";
-         document.getElementById("WNimg").src = "images/megaManPianoPlaythrough.png";
-         document.getElementById("WNp").innerHTML = "Mega Man Piano Playthrough<br><br> Me playing my piano along with the world record speedrun of the original Mega Man.";
+         document.getElementById("WNdate").innerHTML = "5/11/2016";
+         document.getElementById("WNa").href = "Yoshis-Island-Story-Theme-Cover.html";
+         document.getElementById("WNimg").src = "images/yoshisIslandStoryThemeCover.png";
+         document.getElementById("WNp").innerHTML = "Yoshi's Island Story Theme Cover<br><br> My cover of the story theme from Super Mario World 2: Yoshi's Island.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "4/13/2016";
