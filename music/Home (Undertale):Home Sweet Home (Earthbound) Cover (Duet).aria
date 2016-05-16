@@ -1,7 +1,7 @@
-<seqview xscroll="5292.000000" yscroll="193" zoom="100">
-<sequence maintempo="115" measureAmount="51" currentTrack="1" beatResolution="960" internalName="Home (Undertale)/Home Sweet Home (Earthbound) Cover (Duet)" fileFormatVersion="4" channelManagement="auto" metronome="false">
+<seqview xscroll="3584.000000" yscroll="148" zoom="100">
+<sequence maintempo="115" measureAmount="51" currentTrack="2" beatResolution="960" internalName="Home (Undertale)/Home Sweet Home (Earthbound) Cover (Duet)" fileFormatVersion="4" channelManagement="auto" metronome="false">
 
-<measure  firstMeasure="39" denom="4" num="4"/>
+<measure  firstMeasure="28" denom="4" num="4"/>
 
 <tempo>
 </tempo>
@@ -334,7 +334,7 @@
   <note pitch="41" start="106886" end="107565" volume="48" fret="26" string="0"/>
   <note pitch="43" start="107519" end="111254" volume="43" fret="24" string="0"/>
   <note pitch="53" start="111389" end="113345" volume="48" fret="14" string="0"/>
-  <note pitch="43" start="113295" end="114296" volume="48" fret="24" string="0"/>
+  <note pitch="43" start="113295" end="114296" volume="48" fret="24" string="0" selected="true"/>
   <note pitch="46" start="114247" end="115244" volume="48" fret="21" string="0"/>
   <note pitch="48" start="115199" end="116232" volume="48" fret="19" string="0"/>
   <note pitch="50" start="116184" end="117185" volume="48" fret="17" string="0"/>
@@ -368,7 +368,7 @@
   <note pitch="48" start="147855" end="148856" volume="48" fret="19" string="0"/>
   <note pitch="46" start="148807" end="149654" volume="43" fret="21" string="0"/>
   <note pitch="51" start="149759" end="151745" volume="48" fret="16" string="0"/>
-  <note pitch="53" start="151695" end="153595" volume="48" fret="19" string="0" selected="true"/>
+  <note pitch="53" start="151695" end="153595" volume="48" fret="19" string="0"/>
   <note pitch="53" start="153599" end="154633" volume="48" fret="19" string="0"/>
   <note pitch="55" start="154584" end="155585" volume="48" fret="17" string="0"/>
   <note pitch="57" start="155535" end="156536" volume="48" fret="16" string="0"/>
