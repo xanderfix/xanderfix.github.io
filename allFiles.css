@@ -14,6 +14,10 @@
     font-family: Cursive;
     src: url(Precious.ttf);
 }
+@font-face {
+    font-family: Mother3;
+    src: url(Mother3.ttf);
+}
 .link {
     display:inline-block;
     width:12%;
