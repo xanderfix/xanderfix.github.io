@@ -134,8 +134,8 @@ h1 {
     font-family:Cursive;
     text-align:center;
 }
-#AtANameTextN {
-    color:pink;
+#AtANameTextNick {
+    color:blue;
     font-weight:normal;
     font-family:Cursive;
     text-align:center;
@@ -190,7 +190,7 @@ h1 {
     font-size:1.5em;
     font-family:Gregorian, Sans;
 }
-#AtADescriptionTextN {
+#AtADescriptionTextNick {
     margin-left:0%;
     margin-right:0%;
     margin-top:-5px;
