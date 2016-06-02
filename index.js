@@ -2,10 +2,10 @@ var time = 0;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "5/16/2016";
-         document.getElementById("WNa").href = "How-to-Play-the-Yoshis-Island-Story-Theme.html";
-         document.getElementById("WNimg").src = "images/yoshisIslandStoryTheme.png";
-         document.getElementById("WNp").innerHTML = "How to Play the Yoshi's Island Story Theme";
+         document.getElementById("WNdate").innerHTML = "6/1/2016";
+         document.getElementById("WNa").href = "How-to-Play-The-Greatest-Warrior-in-the-Galaxy.html";
+         document.getElementById("WNimg").src = "images/galactaKnight.png";
+         document.getElementById("WNp").innerHTML = "How to Play The Greatest Warrior in the Galaxy<br>(Galacta Knight's Theme)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "5/11/2016";
