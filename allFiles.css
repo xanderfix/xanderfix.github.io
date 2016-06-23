@@ -102,6 +102,12 @@ p {
     font-family:Cursive;
     text-align:center;
 }
+#AtANameTextNick {
+    color:blue;
+    font-weight:normal;
+    font-family:Mother3;
+    text-align:center;
+}
 #AtASocialMedia {
     width:74%;
     height:100px;
@@ -146,6 +152,13 @@ p {
     font-family:Arcade;
 }
 #AtADescriptionTextChloe {
+    margin-left:0%;
+    margin-right:0%;
+    margin-top:-5px;
+    font-size:1.5em;
+    font-family:Gregorian, Sans;
+}
+#AtADescriptionTextNick {
     margin-left:0%;
     margin-right:0%;
     margin-top:-5px;
