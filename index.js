@@ -2,22 +2,22 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "6/24/2016";
+         document.getElementById("WNa").href = "The-Penny-Arcade-in-Manitou-Springs.html";
+         document.getElementById("WNimg").src = "images/PennyArcade3.png";
+         document.getElementById("WNp").innerHTML = "The Penny Arcade<br>in Manitou Springs<br><br>One of the oldest arcades in the west, with everything from Frogger to skeeball to penny machines!";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "6/22/2016";
          document.getElementById("WNa").href = "The-Legend-of-Zelda-Medley.html";
          document.getElementById("WNimg").src = "images/GBApiano.png";
          document.getElementById("WNp").innerHTML = "The Legend of Zelda Medley<br><br> An amazing Zelda medley by Nick, the newest member of ZeldaRocks!<br>(In case you can't tell Xander is writing this).";
     }
-    if (time == 1) {
+    if (time == 2) {
          document.getElementById("WNdate").innerHTML = "6/1/2016";
          document.getElementById("WNa").href = "How-to-Play-The-Greatest-Warrior-in-the-Galaxy.html";
          document.getElementById("WNimg").src = "images/galactaKnight.png";
          document.getElementById("WNp").innerHTML = "How to Play The Greatest Warrior in the Galaxy<br>(Galacta Knight's Theme)";
-    }
-    if (time == 2) {
-         document.getElementById("WNdate").innerHTML = "4/13/2016";
-         document.getElementById("WNa").href = "Interview-DKC-Speedrunner-Antilles58.html";
-         document.getElementById("WNimg").src = "images/Antilles58DKC2.png";
-         document.getElementById("WNp").innerHTML = "Interview:<br>Donkey Kong Country Speedrunner Antilles58<br><br>An interview with Antilles58, an expert Donkey Kong Country series speedrunner.";
     }     
     if (time == 3) {
          document.getElementById("WNdate").innerHTML = "3/6/2016";
