@@ -2,16 +2,16 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "7/10/2016";
+         document.getElementById("WNa").href = "Eight-Melodies-Earthbound-Beginnings-Cover.html";
+         document.getElementById("WNimg").src = "images/eightMelodiesCover.png";
+         document.getElementById("WNp").innerHTML = "Eight Melodies (Earthbound Beginnings/Mother) Cover<br><br>Xander's cover of the Eight Melodies from Earthbound Beginnings/Mother performed on piano and acoustic guitar; plus a metal Mt. Itoi cover at the end.";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "7/2/2016";
          document.getElementById("WNa").href = "art.html";
          document.getElementById("WNimg").src = "images/smashMural3.jpg";
          document.getElementById("WNp").innerHTML = "Super Smash Bros. Mural";
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "7/1/2016";
-         document.getElementById("WNa").href = "Hyrule-Market-Theme-Cover.html";
-         document.getElementById("WNimg").src = "images/HyruleMarketThemeCover.png";
-         document.getElementById("WNp").innerHTML = "Hyrule Market Theme Cover<br><br>A new cover by Xander of the Hyrule Market Theme from Ocarina of Time performed on piano and acoustic guitar.";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "6/27/2016";
