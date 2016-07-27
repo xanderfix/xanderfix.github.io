@@ -2,22 +2,23 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "7/27/2016";
+         document.getElementById("WNa").href = "art.html";
+         document.getElementById("WNimg").src = "images/Venusorcerer.png";
+         document.getElementById("WNp").innerHTML = "The Venusorcerer<br><br>A chalk drawing by Xander and Chloe based on Nick's love of Venusaur's and wordplay (everyone's in on this one!).";
+         
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "7/26/2016";
          document.getElementById("WNa").href = "Why-Nintendo-Vans-Are-Awesome.html";
          document.getElementById("WNimg").src = "images/nintendoVans2.jpg";
-         document.getElementById("WNp").innerHTML = "Xander explains why Nintendo Vans are awesome and you should definitely get some.";
+         document.getElementById("WNp").innerHTML = "Why Nintendo Vans Are Awesome<br><br>Xander explains why Nintendo Vans are awesome and you should definitely get some.";
     }
-    if (time == 1) {
+    if (time == 2) {
          document.getElementById("WNdate").innerHTML = "7/10/2016";
          document.getElementById("WNa").href = "Eight-Melodies-Earthbound-Beginnings-Cover.html";
          document.getElementById("WNimg").src = "images/eightMelodiesCover.png";
          document.getElementById("WNp").innerHTML = "Eight Melodies (Earthbound Beginnings/Mother) Cover<br><br>Xander's cover of the Eight Melodies from Earthbound Beginnings/Mother performed on piano and acoustic guitar; plus a metal Mt. Itoi cover at the end.";
-    }
-    if (time == 2) {
-         document.getElementById("WNdate").innerHTML = "7/2/2016";
-         document.getElementById("WNa").href = "art.html";
-         document.getElementById("WNimg").src = "images/smashMural3.jpg";
-         document.getElementById("WNp").innerHTML = "Super Smash Bros. Mural";
     }     
     if (time == 3) {
          document.getElementById("WNdate").innerHTML = "6/27/2016";
