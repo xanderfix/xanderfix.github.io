@@ -15,10 +15,10 @@ function change() {
          document.getElementById("WNp").innerHTML = "Why Nintendo Vans Are Awesome<br><br>Xander explains why Nintendo Vans are awesome and you should definitely get some.";
     }
     if (time == 2) {
-         document.getElementById("WNdate").innerHTML = "7/10/2016";
-         document.getElementById("WNa").href = "Eight-Melodies-Earthbound-Beginnings-Cover.html";
-         document.getElementById("WNimg").src = "images/eightMelodiesCover.png";
-         document.getElementById("WNp").innerHTML = "Eight Melodies (Earthbound Beginnings/Mother) Cover<br><br>Xander's cover of the Eight Melodies from Earthbound Beginnings/Mother performed on piano and acoustic guitar; plus a metal Mt. Itoi cover at the end.";
+         document.getElementById("WNdate").innerHTML = "7/26/2016";
+         document.getElementById("WNa").href = "Home-Undertale-Ness-House-Cover.html";
+         document.getElementById("WNimg").src = "images/homeUndertaleCover.png";
+         document.getElementById("WNp").innerHTML = "Home (Undertale)/Ness's House Cover<br><br>Xander and Nick's duet arrangement of Home from Undertale and Ness's House (Home Sweet Home) from Earthbound.";
     }     
     if (time == 3) {
          document.getElementById("WNdate").innerHTML = "6/27/2016";
