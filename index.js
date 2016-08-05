@@ -2,17 +2,16 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+         document.getElementById("WNdate").innerHTML = "8/5/2016";
+         document.getElementById("WNa").href = "Interview-Someone-Who-Actually-Caught-Em-All.html";
+         document.getElementById("WNimg").src = "images/completePokedex.png";
+         document.getElementById("WNp").innerHTML = "Interview:<br>Someone Who Actually Caught 'Em All<br><br>An interview with someone who completed the amazing feat of catching all 721 Pokemon!";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "7/27/2016";
          document.getElementById("WNa").href = "art.html";
          document.getElementById("WNimg").src = "images/Venusorcerer.png";
          document.getElementById("WNp").innerHTML = "The Venusorcerer<br><br>A chalk drawing by Xander and Chloe based on Nick's love of Venusaur's and wordplay (everyone's in on this one!).";
-         
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "7/26/2016";
-         document.getElementById("WNa").href = "Why-Nintendo-Vans-Are-Awesome.html";
-         document.getElementById("WNimg").src = "images/nintendoVans2.jpg";
-         document.getElementById("WNp").innerHTML = "Why Nintendo Vans Are Awesome<br><br>Xander explains why Nintendo Vans are awesome and you should definitely get some.";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "7/26/2016";
