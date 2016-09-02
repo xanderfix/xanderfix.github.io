@@ -2,16 +2,16 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "8/17/2016";
-         document.getElementById("WNa").href = "How-to-Play-The-Mega-Man-2-Soundtrack.html";
-         document.getElementById("WNimg").src = "images/megaMan2Soundtrack.jpg";
-         document.getElementById("WNp").innerHTML = "How to Play The Mega Man 2 Soundtrack (Work in Progress)";
+         document.getElementById("WNdate").innerHTML = "8/30/2016";
+         document.getElementById("WNa").href = "Gravity-Beetle-Cover.html";
+         document.getElementById("WNimg").src = "images/gravityBeetleCover.png";
+         document.getElementById("WNp").innerHTML = "Gravity Beetle Cover<br><br>Xander's cover of Gravity Beetle from Mega Man X3, plus a cover of X-Hunter stage 1 from X2 at the end (featuring Xander's dogs).";
     }
     if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "8/11/2016";
-         document.getElementById("WNa").href = "Crocodile-Cacophony-Cover.html";
-         document.getElementById("WNimg").src = "images/crocodileCacophonyCover.png";
-         document.getElementById("WNp").innerHTML = "Crocodile Cacophony Cover<br><br>Xander's cover of Crocodile Cacophony (Kaptain K. Rool's Theme) from Donkey Kong Country 2 performed on guitar and keyboard, plus a Flight of the Zinger short at the end!";
+         document.getElementById("WNdate").innerHTML = "8/27/2016";
+         document.getElementById("WNa").href = "How-to-Play-Real-Dark-Matter.html";
+         document.getElementById("WNimg").src = "images/darkMatter.png";
+         document.getElementById("WNp").innerHTML = "How to Play Real Dark Matter<br>(Kirby's Dream Land 2 Final Boss)";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "8/5/2016";
