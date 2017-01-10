@@ -2,22 +2,22 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "9/24/2016";
-         document.getElementById("WNa").href = "How-to-Play-Hyper-Zone-2.html";
-         document.getElementById("WNimg").src = "images/KDL3Zero.png";
-         document.getElementById("WNp").innerHTML = "How to Play Hyper Zone 2<br>(Vs. Zero KDL3)";
+         document.getElementById("WNdate").innerHTML = "12/25/2016";
+         document.getElementById("WNa").href = "Toy-Day-Cover.html";
+         document.getElementById("WNimg").src = "images/ToyDayCover.png";
+         document.getElementById("WNp").innerHTML = "Toy Day Cover (Animal Crossing)<br><br>Nick and Xander's quaint little cover of Toy Day from Animal Crossing. Happy holidays everyone!";
     }
     if (time == 1) {
+         document.getElementById("WNdate").innerHTML = "12/24/2016";
+         document.getElementById("WNa").href = "How-to-Play-Jangle-Bells.html";
+         document.getElementById("WNimg").src = "images/DKC3merry.png";
+         document.getElementById("WNp").innerHTML = "How to Play Jangle Bells<br>(DKC3 MERRY Cheat)";
+    }
+    if (time == 2) {
          document.getElementById("WNdate").innerHTML = "9/13/2016";
          document.getElementById("WNa").href = "2-Year-Anniversary.html";
          document.getElementById("WNimg").src = "images/Nicole.gif";
          document.getElementById("WNp").innerHTML = "2 Year Anniversary!<br><br>Celebrating the second anniversary of ZeldaRocks plus a preview of a cool new music project.";
-    }
-    if (time == 2) {
-         document.getElementById("WNdate").innerHTML = "8/30/2016";
-         document.getElementById("WNa").href = "Gravity-Beetle-Cover.html";
-         document.getElementById("WNimg").src = "images/gravityBeetleCover.png";
-         document.getElementById("WNp").innerHTML = "Gravity Beetle Cover<br><br>Xander's cover of Gravity Beetle from Mega Man X3, plus a cover of X-Hunter stage 1 from X2 at the end (featuring Xander's dogs).";
     }     
     if (time == 3) {
          document.getElementById("WNdate").innerHTML = "7/27/2016";
