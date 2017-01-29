@@ -5,7 +5,7 @@ function change() {
          document.getElementById("WNdate").innerHTML = "1/28/2016";
          document.getElementById("WNa").href = "The-Legacy-Final-Fantasy-1-Tribute-Album.html";
          document.getElementById("WNimg").src = "images/TheLegacyAlbumCoverSmall.png";
-         document.getElementById("WNp").innerHTML = "The legacy: Final Fantasy 1 Tribute Album<br><br>An amazing Final Fantasy 1 tribute album by Pixel Mixers. The best part? It's now available to download for free!";
+         document.getElementById("WNp").innerHTML = "The Legacy: Final Fantasy 1 Tribute Album<br><br>An amazing Final Fantasy 1 tribute album by Pixel Mixers. The best part? It's now available to download for free!";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "1/27/2016";
