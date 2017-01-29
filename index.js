@@ -2,22 +2,22 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "12/25/2016";
-         document.getElementById("WNa").href = "Toy-Day-Cover.html";
-         document.getElementById("WNimg").src = "images/ToyDayCover.png";
-         document.getElementById("WNp").innerHTML = "Toy Day Cover (Animal Crossing)<br><br>Nick and Xander's quaint little cover of Toy Day from Animal Crossing. Happy holidays everyone!";
+         document.getElementById("WNdate").innerHTML = "1/28/2016";
+         document.getElementById("WNa").href = "The-Legacy-Final-Fantasy-1-Tribute-Album.html";
+         document.getElementById("WNimg").src = "images/TheLegacyAlbumCoverSmall.png";
+         document.getElementById("WNp").innerHTML = "The legacy: Final Fantasy 1 Tribute Album<br><br>An amazing Final Fantasy 1 tribute album by Pixel Mixers. The best part? It's now available to download for free!";
     }
     if (time == 1) {
+         document.getElementById("WNdate").innerHTML = "1/27/2016";
+         document.getElementById("WNa").href = "https://www.youtube.com/watch?v=Y4kM1eyIM-U&t=4s";
+         document.getElementById("WNimg").src = "images/ALttPPrologue.png";
+         document.getElementById("WNp").innerHTML = "A Link to the Past - Prologue Cover<br><br>Xander's cover of the classic prologue theme from The Legend of Zelda: A Link to the Past.";
+    }
+    if (time == 2) {
          document.getElementById("WNdate").innerHTML = "12/24/2016";
          document.getElementById("WNa").href = "How-to-Play-Jangle-Bells.html";
          document.getElementById("WNimg").src = "images/DKC3merry.png";
          document.getElementById("WNp").innerHTML = "How to Play Jangle Bells<br>(DKC3 MERRY Cheat)";
-    }
-    if (time == 2) {
-         document.getElementById("WNdate").innerHTML = "9/13/2016";
-         document.getElementById("WNa").href = "2-Year-Anniversary.html";
-         document.getElementById("WNimg").src = "images/Nicole.gif";
-         document.getElementById("WNp").innerHTML = "2 Year Anniversary!<br><br>Celebrating the second anniversary of ZeldaRocks plus a preview of a cool new music project.";
     }     
     if (time == 3) {
          document.getElementById("WNdate").innerHTML = "7/27/2016";
