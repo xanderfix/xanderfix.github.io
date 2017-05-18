@@ -24,6 +24,9 @@ p {
 .title {
     text-align:center;
 }
+#banner {
+    color:red;
+}
 #about {
     display:block;
     border:1px solid red;
