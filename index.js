@@ -2,16 +2,16 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-         document.getElementById("WNdate").innerHTML = "3/18/2016";
+         document.getElementById("WNdate").innerHTML = "6/1/2017";
+         document.getElementById("WNa").href = "Zelda-II-Boss-Battle-Cover.html";
+         document.getElementById("WNimg").src = "images/ZeldaIIBossBattleCover.png";
+         document.getElementById("WNp").innerHTML = "Zelda II - Boss Battle Cover<br><br>Xander's synth cover of Boss Battle from Zelda II: The Adventure of Link for the new Zelda tribute album "Hylian Downfall".";
+    }
+    if (time == 1) {
+         document.getElementById("WNdate").innerHTML = "3/18/2017";
          document.getElementById("WNa").href = "Revisiting-Pokemon-Red-Rescue-Team-The-Adventures-of-Team-LANmolas.html";
          document.getElementById("WNimg").src = "images/PokemonRedRescueTeamBox.jpg";
          document.getElementById("WNp").innerHTML = "Revisiting Pokemon Red Rescue Team: The Adventures of Team LANmolas<br><br>Nicole revisits her favorite childhood game, Pokemon Red Rescue Team, and comically finds it wasn't anywhere close to as good as she remembered.";
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "2/24/2016";
-         document.getElementById("WNa").href = "https://www.youtube.com/watch?v=wAdqNVmy3Ks";
-         document.getElementById("WNimg").src = "images/FinalFantasy4BossCover.png";
-         document.getElementById("WNp").innerHTML = "Final Fantasy 4 - Boss + Zeromus Cover<br><br>Xander's dual cover of the standard and final boss themes from Final Fantasy 4, accompanied by a sweet (though slightly cheesy) RPG style battle video!";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "12/24/2016";
