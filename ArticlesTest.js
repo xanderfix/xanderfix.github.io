@@ -1,6 +1,6 @@
 function change() {
     if (document.getElementById("Test").innerHTML == "True") {
-         document.getElementById("Test").innerHTML = "It actually worked!";
+         document.getElementById("Test").innerHTML = "It actually worked! (In case anyone else reads this, it originally said True before you even saw the page finish loading.)";
     }
     if (time == 0) {
          document.getElementById("WNdate").innerHTML = "6/1/2017";
