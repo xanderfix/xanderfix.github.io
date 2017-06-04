@@ -5,7 +5,7 @@ function change() {
          document.getElementById("WNdate").innerHTML = "6/1/2017";
          document.getElementById("WNa").href = "Zelda-II-Boss-Battle-Cover.html";
          document.getElementById("WNimg").src = "images/ZeldaIIBossBattleCover.png";
-         document.getElementById("WNp").innerHTML = "Zelda II - Boss Battle Cover<br><br>Xander's synth cover of Boss Battle from Zelda II: The Adventure of Link for the new Zelda tribute album "Hylian Downfall".";
+         document.getElementById("WNp").innerHTML = "Zelda II - Boss Battle Cover<br><br>Xander's synth cover of Boss Battle from Zelda II: The Adventure of Link for the new Zelda tribute album Hylian Downfall.";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "3/18/2017";

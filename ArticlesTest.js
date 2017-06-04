@@ -1,6 +1,6 @@
 function change() {
     document.getElementById("title").innerHTRML = "More Than Just a Title Now!";
-    if (document.getElementById("Test").innerHTML == "True") {
+    /*if (document.getElementById("Test").innerHTML == "True") {
          document.getElementById("Test").innerHTML = "It actually worked! (In case anyone else reads this, it originally said True before you even saw the page finish loading.)";
     }
     if (time == 0) {
@@ -38,6 +38,6 @@ function change() {
          document.getElementById("WNa").href = "Stone-Kirby-Transformations-Easter-Eggs.html";
          document.getElementById("WNimg").src = "images/stoneKirbyDreamCollection.png";
          document.getElementById("WNp").innerHTML = "Stone Kirby Transformations Easter Eggs<br><br> Displaying all of the cool easter eggs related to stone Kirby's transformations.";
-    }
+    }*/
 }
 
