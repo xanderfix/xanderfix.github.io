@@ -2,16 +2,16 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
+		 document.getElementById("WNdate").innerHTML = "9/18/2017";
+         document.getElementById("WNa").href = "The-Super-Ninhundred.html";
+         document.getElementById("WNimg").src = "images/SNESgames.jpg";
+         document.getElementById("WNp").innerHTML = "The Super Ninhundred<br><br>One man's quest to beat 100 of the best SNES games, 100%. AKA Playing With Super Power!";
+    }
+    if (time == 1) {
          document.getElementById("WNdate").innerHTML = "6/1/2017";
          document.getElementById("WNa").href = "Zelda-II-Boss-Battle-Cover.html";
          document.getElementById("WNimg").src = "images/ZeldaIIBossBattleThumbnail.png";
          document.getElementById("WNp").innerHTML = "Zelda II - Boss Battle Cover<br><br>Xander's synth cover of Boss Battle from Zelda II: The Adventure of Link for the new Zelda tribute album Hylian Downfall.";
-    }
-    if (time == 1) {
-         document.getElementById("WNdate").innerHTML = "3/18/2017";
-         document.getElementById("WNa").href = "Revisiting-Pokemon-Red-Rescue-Team-The-Adventures-of-Team-LANmolas.html";
-         document.getElementById("WNimg").src = "images/PokemonRedRescueTeamBox.jpg";
-         document.getElementById("WNp").innerHTML = "Revisiting Pokemon Red Rescue Team: The Adventures of Team LANmolas<br><br>Nicole revisits her favorite childhood game, Pokemon Red Rescue Team, and comically finds it wasn't anywhere close to as good as she remembered.";
     }
     if (time == 2) {
          document.getElementById("WNdate").innerHTML = "12/24/2016";
