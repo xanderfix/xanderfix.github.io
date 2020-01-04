@@ -23,12 +23,7 @@ h2 {
 	margin-right: 2.5%;
 }
 .midi {
-	text-decoration: underline;
 	margin-left: 2.5%;
-	color:gray;
-}
-a {
-    text-decoration:none;
 }
 .article {
     border:3px dashed white;
@@ -85,10 +80,6 @@ a {
 }
 li {
     display:inline;
-}
-a {
-    color:white;
-    font-weight:bold;
 }
 #title {
     text-align:center;
