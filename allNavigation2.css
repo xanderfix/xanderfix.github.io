@@ -21,11 +21,13 @@ h2 {
 	border-style:none none dashed none;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
+	font-size:5VH;
 }
 .midi {
 	text-decoration: underline;
 	margin-left: 2.5%;
 	color:gray;
+	font-size:3.5VH;
 }
 a {
     text-decoration:none;
