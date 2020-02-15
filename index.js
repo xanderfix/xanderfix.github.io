@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "2/08/2020";
-         document.getElementById("WNa").href = "Flame-Mammoth-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Flame Mammoth Stage.png";
-         document.getElementById("WNp").innerHTML = "Mega Man X - Flame Mammoth)";
+		 document.getElementById("WNdate").innerHTML = "2/15/2020";
+         document.getElementById("WNa").href = "Cammy-Stage-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Cammy Stage.png";
+         document.getElementById("WNp").innerHTML = "Super Street Fighter II - Cammy Stage";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
