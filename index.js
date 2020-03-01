@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "2/23/2020";
-         document.getElementById("WNa").href = "Mad-Jack-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Mad Jack.png";
-         document.getElementById("WNp").innerHTML = "DK64 - Mad Jack (Frantic Factory Boss)";
+		 document.getElementById("WNdate").innerHTML = "3/01/2020";
+         document.getElementById("WNa").href = "Launch-Octopus-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Launch Octopus.png";
+         document.getElementById("WNp").innerHTML = "Mega Man X - Launch Octopus";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
