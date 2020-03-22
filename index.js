@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "3/15/2020";
-         document.getElementById("WNa").href = "National-Park-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - National Park.png";
-         document.getElementById("WNp").innerHTML = "Pokémon HG/SS - National Park";
+		 document.getElementById("WNdate").innerHTML = "3/22/2020";
+         document.getElementById("WNa").href = "Armored-Armadillo-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Armored Armadillo.png";
+         document.getElementById("WNp").innerHTML = "Mega Man X - Armored Armadillo";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
