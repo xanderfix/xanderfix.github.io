@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "4/19/2020";
-         document.getElementById("WNa").href = "Moonstruck-Blossom-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Moonstruck Blossom.png";
-         document.getElementById("WNp").innerHTML = "Kirby Triple Deluxe - Moonstruck Blossom";
+		 document.getElementById("WNdate").innerHTML = "5/31/2020";
+         document.getElementById("WNa").href = "Secret-Mine-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Secret Mine.png";
+         document.getElementById("WNp").innerHTML = "Luigi's Mansion Dark Moon - Secret Mine";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
