@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "5/31/2020";
-         document.getElementById("WNa").href = "Secret-Mine-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Secret Mine.png";
-         document.getElementById("WNp").innerHTML = "Luigi's Mansion Dark Moon - Secret Mine";
+		 document.getElementById("WNdate").innerHTML = "6/7/2020";
+         document.getElementById("WNa").href = "Return-to-Dreamland-Boss-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Return to Dreamland Boss.png";
+         document.getElementById("WNp").innerHTML = "Kirby's Return to Dreamland - Boss Battle";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
