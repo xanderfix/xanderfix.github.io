@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "6/7/2020";
-         document.getElementById("WNa").href = "Return-to-Dreamland-Boss-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Return to Dreamland Boss.png";
-         document.getElementById("WNp").innerHTML = "Kirby's Return to Dreamland - Boss Battle";
+		 document.getElementById("WNdate").innerHTML = "6/21/2020";
+         document.getElementById("WNa").href = "Rowdy-Rumble-Musoc.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Rowdy Rumble.png";
+         document.getElementById("WNp").innerHTML = "Kingdom Hearts II - Rowdy Rumble";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
