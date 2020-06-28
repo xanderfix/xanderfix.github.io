@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "6/21/2020";
-         document.getElementById("WNa").href = "Rowdy-Rumble-Musoc.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Rowdy Rumble.png";
-         document.getElementById("WNp").innerHTML = "Kingdom Hearts II - Rowdy Rumble";
+		 document.getElementById("WNdate").innerHTML = "6/28/2020";
+         document.getElementById("WNa").href = "Elder-Princess-Shroob-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Elder Princess Shroob.png";
+         document.getElementById("WNp").innerHTML = "Mario & Luigi: Partners in Time - Elder Princess Shroob (Final Boss Phase 2)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
