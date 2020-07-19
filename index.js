@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "6/28/2020";
-         document.getElementById("WNa").href = "Elder-Princess-Shroob-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Elder Princess Shroob.png";
-         document.getElementById("WNp").innerHTML = "Mario & Luigi: Partners in Time - Elder Princess Shroob (Final Boss Phase 2)";
+		 document.getElementById("WNdate").innerHTML = "7/19/2020";
+         document.getElementById("WNa").href = "Gerudo-Valley-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Gerudo Valley.png";
+         document.getElementById("WNp").innerHTML = "Ocarina of Time - Gerudo Valley";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
