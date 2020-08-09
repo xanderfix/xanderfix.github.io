@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "7/26/2020";
-         document.getElementById("WNa").href = "Dr-Cossack-Stage-1-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Dr. Cossack Stage 1.png";
-         document.getElementById("WNp").innerHTML = "Mega Man 4 - Dr. Cossack Stage 1";
+		 document.getElementById("WNdate").innerHTML = "8/9/2020";
+         document.getElementById("WNa").href = "Calamari-Inkantation-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Calamari Inkantation.png";
+         document.getElementById("WNp").innerHTML = "Splatoon - Calamari Inkantation (Final Boss Theme 2)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
