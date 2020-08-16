@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "8/9/2020";
-         document.getElementById("WNa").href = "Calamari-Inkantation-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Calamari Inkantation.png";
-         document.getElementById("WNp").innerHTML = "Splatoon - Calamari Inkantation (Final Boss Theme 2)";
+		 document.getElementById("WNdate").innerHTML = "8/16/2020";
+         document.getElementById("WNa").href = "Red-Streamer-Battle-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Red Streamer Battle.png";
+         document.getElementById("WNp").innerHTML = "Paper Mario: The Origami King - Red Streamer Battle";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
