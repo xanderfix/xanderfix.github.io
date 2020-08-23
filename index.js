@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "8/16/2020";
-         document.getElementById("WNa").href = "Red-Streamer-Battle-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Red Streamer Battle.png";
-         document.getElementById("WNp").innerHTML = "Paper Mario: The Origami King - Red Streamer Battle";
+		 document.getElementById("WNdate").innerHTML = "8/23/2020";
+         document.getElementById("WNa").href = "You-Blow-My-Mind-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - You Blow My Mind.png";
+         document.getElementById("WNp").innerHTML = "Street Fighter III: Third Stike - You Blow My Mind (Dudley Stage)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
