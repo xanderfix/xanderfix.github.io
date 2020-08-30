@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "8/23/2020";
-         document.getElementById("WNa").href = "You-Blow-My-Mind-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - You Blow My Mind.png";
-         document.getElementById("WNp").innerHTML = "Street Fighter III: Third Stike - You Blow My Mind (Dudley Stage)";
+		 document.getElementById("WNdate").innerHTML = "8/30/2020";
+         document.getElementById("WNa").href = "Battle-Against-A-True-Hero-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Battle Against a True Hero.png";
+         document.getElementById("WNp").innerHTML = "Undertale - Battle Against a True Hero (Vs. Undyne the Undying)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
