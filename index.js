@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "8/30/2020";
-         document.getElementById("WNa").href = "Battle-Against-A-True-Hero-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Battle Against a True Hero.png";
-         document.getElementById("WNp").innerHTML = "Undertale - Battle Against a True Hero (Vs. Undyne the Undying)";
+		 document.getElementById("WNdate").innerHTML = "9/6/2020";
+         document.getElementById("WNa").href = "Dust-Man-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Dust Man.png";
+         document.getElementById("WNp").innerHTML = "Mega Man 4 - Dust Man";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
