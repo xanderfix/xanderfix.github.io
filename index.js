@@ -2,10 +2,10 @@ var time = 1;
 function change() {
     setInterval(function change1() {
     if (time == 0) {
-		 document.getElementById("WNdate").innerHTML = "9/6/2020";
-         document.getElementById("WNa").href = "Dust-Man-Music.html";
-         document.getElementById("WNimg").src = "images/Thumbnail - Dust Man.png";
-         document.getElementById("WNp").innerHTML = "Mega Man 4 - Dust Man";
+		 document.getElementById("WNdate").innerHTML = "11/15/2020";
+         document.getElementById("WNa").href = "Molgera-Ganons-Tower-Music.html";
+         document.getElementById("WNimg").src = "images/Thumbnail - Molgera (Ganon's Tower).png";
+         document.getElementById("WNp").innerHTML = "Wind Waker - Molgera (Ganon's Tower)";
     }
     if (time == 1) {
          document.getElementById("WNdate").innerHTML = "9/18/2017";
