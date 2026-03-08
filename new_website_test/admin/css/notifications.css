@@ -1,0 +1,17 @@
+.toolbar { margin-bottom: 0; }
+.notifications-container { display: grid; grid-template-rows: auto auto; grid-template-columns: 1fr 1fr; }
+.notifications-intro { grid-row: 1; grid-column: 1; }
+.notifications-settings { grid-row: 2; grid-column: 1; }
+.notifications-help { grid-row: 1/3; grid-column: 2; }
+.notifications-help img { box-sizing: border-box; max-width: 90%; margin: 30px 5%; }
+h2 { margin-bottom: 1.2em; }
+p { margin-bottom: .7em; }
+input { margin-bottom: .3em; }
+input[type=button], input[type=submit], input[type=reset], button { margin: .5em 0; }
+
+@media screen and (max-width: 1024px) {
+    .notifications-container { grid-template-rows: 1fr; grid-template-columns: auto; }
+    .notifications-intro { grid-row: 1; grid-column: 1; }
+    .notifications-settings { grid-row: 2; grid-column: 1; }
+    .notifications-help { grid-row: 3; grid-column: 1; }
+}
