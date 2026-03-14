@@ -1,0 +1,76 @@
+.link {
+    display:inline-block;
+    width:12%;
+}
+body {
+    background-color: #2E5CE6;
+}
+#main {
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:-21px;
+    margin-bottom:0%;
+    background-color:black;
+}
+p {
+    color:white;
+}
+#navbar {
+   height:26px;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+a {
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+}
+#title {
+    text-align:center;
+    color:white;
+}
+#trivia {
+    background-color:#953395;
+    margin-left:20%;
+    margin-right:20%;     
+}
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}
+.date {
+    font-size:12px;
+    margin-left:70%;
+}
+#p {
+    margin-left:20%;
+    margin-right:20%;
+}
+#keaton {
+    margin-left:20%;
+    margin-right:20%;
+}
+#Twitter {
+    display:inline;
+    margin-left:3.25%;
+}
+#G+ {
+    display:inline;
+}
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
+}

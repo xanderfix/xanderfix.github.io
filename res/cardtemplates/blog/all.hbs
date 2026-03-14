@@ -1,0 +1,221 @@
+
+{{#if misc.nocardLayout}}
+{{else}}
+    {{#if misc.isArrangeSlideshow}}
+        <div 
+            class="swiper" 
+            style="overflow: hidden; padding-top:10px; padding-bottom:30px;"
+        >
+            <div 
+                class="swiper-wrapper im-cc-blogpost-cardlayout" 
+                {{#if misc.cardLayoutCardArrangement}}cardarrangement="{{misc.cardLayoutCardArrangement}}" {{/if}}
+            >
+    {{else}}
+        <x5engine-cardlayout 
+            class="im-cc-blogpost-cardlayout" 
+            {{#if misc.cardLayoutCardArrangement}}cardarrangement="{{misc.cardLayoutCardArrangement}}" {{/if}}
+            {{#if card.height}}cardheight="{{card.height}}" {{/if}}
+            {{#if misc.cardLayoutCardsPerRow}}cardsperrow="{{misc.cardLayoutCardsPerRow}}" {{/if}}
+            {{#if misc.isLayoutHorizontal}}{{#if misc.layoutHorizontalMediaQueryStart}}layouthorizontalmediaquerystart="{{misc.layoutHorizontalMediaQueryStart}}" {{/if}}{{/if}}
+        >
+    {{/if}}
+{{/if}}
+
+{{#each bps}}
+
+    {{! ***** ***** ***** ***** ***** CARD ***** ***** ***** ***** ***** }}
+    <x5engine-card
+        id="blogpost_{{id}}_card" 
+        class="{{#if ../misc.isArrangeSlideshow}}swiper-slide {{/if}}im-cc-BlogPostCard{{#if cardCoverSpecified}} im-cc-BlogPostCardWithCover{{/if}}" 
+        contentlayout="{{../misc.cardContentLayout}}" 
+        {{#if ../misc.cardContentDimension}}contentdimension="{{../misc.cardContentDimension}}" {{/if}}
+        {{#if ../misc.cardBreakpoint}}breakpoint="{{../misc.cardBreakpoint}}" {{/if}}
+        fixedHeight="{{#if ../misc.cardFixedHeight}}true{{else}}false{{/if}}" 
+        {{#if ../misc.isArrangeSlideshow}}{{else}}slot="arrangeable" {{/if}}
+        {{#if ../misc.layoutVerticalMediaQueryStart}}layoutverticalmediaquerystart="{{../misc.layoutVerticalMediaQueryStart}}" {{/if}}
+        role="article"
+        aria-label="{{title}}"
+        tabindex="0"
+    >
+        <div slot="cover" >
+
+            {{! ***** ***** ***** COVER ***** ***** ***** }}
+
+            {{! ***** //Image ***** }}
+
+            <div class="im-cc-BlogPostWrapperCardCover" >{{!
+                }}<img 
+                    {{#if ../misc.isLazyLoadingEnabled}}loading="lazy"{{/if}}
+                    id="imBlogPostCardCover_{{id}}" 
+                    class="im-cc-BlogPostCardCover{{#if cardCover}}{{else}} contain{{/if}}" 
+                    src="{{currentPath}}{{#if isHighlighted}}{{cover}}{{else}}{{#if cardCover}}{{cardCover}}{{else}}blog/images/blog_post_placeholder.svg{{/if}}{{/if}}" 
+                    alt="{{coverAlt}}"
+                    {{#if coverTitle}}title="{{coverTitle}}"{{/if}}
+                    onclick="window.location='{{relativeUrl}}';" 
+                />{{!
+            }}</div>
+
+            {{! ***** ***** ***** COVER - end ***** ***** ***** }}
+
+        </div>
+
+        <div slot="title" >
+
+            {{! ***** ***** ***** TITLE ***** ***** ***** }}
+
+            <div class="im-cc-wrapper-title" >
+
+                {{! ***** //Title ***** }}
+
+                {{#if ../card.txtBlock.name.show}}
+                <header 
+                    class="im-cc-BlogPostCardTitle" 
+                >
+                    <h1>
+                        <a 
+                            href="{{relativeUrl}}"
+                        >{{title}}</a>
+                    </h1>
+                </header>
+                {{/if}}
+
+                {{! ***** //Details line ***** }}
+
+                <div class="im-cc-BlogPostDetails" >
+
+                    {{! ***** //Category ***** }}
+
+                    {{#if ../card.txtBlock.details.showCategory}}{{!
+                    }}<span 
+                        class="im-cc-BlogPostCardCategory" 
+                    >{{!
+                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_category" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="blogpost_{{id}}_card_category">{{../l10n.blog_icon_category}}</title>
+                            <path d="M17 6.659v12.927l-5-3.178-5 3.178V6.659C7 5.19 8.12 4 9.5 4h5C15.88 4 17 5.19 17 6.659z"></path>
+                        </svg>{{!
+                        }}<a 
+                            href="{{currentPath}}blog/?category={{escapedCategory}}"
+                        >{{category}}</a>
+                    </span>
+                    {{/if}}
+
+                    {{! ***** //Author ***** }}
+
+                    {{#if ../card.txtBlock.details.showAuthor}}
+                    <span 
+                        class="im-cc-BlogPostCardAuthor" 
+                    >{{!
+                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_author" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="blogpost_{{id}}_card_author">{{../l10n.blog_icon_author}}</title>
+                            <path d="M4 20c0-3 4-3 6-5 1-1-2-1-2-6 0-3.333 1.333-5 4-5s4 1.667 4 5c0 5-3 5-2 6 2 2 6 2 6 5"></path>
+                        </svg>{{!
+                        }}<a 
+                            href="{{currentPath}}blog/?author={{escapedAuthor}}"
+                        >{{author}}</a>
+                    </span>
+                    {{/if}}
+
+                    {{! ***** //Date ***** }}
+
+                    {{#if ../card.txtBlock.details.showDate}}
+                    <span 
+                        class="im-cc-BlogPostCardDate" 
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_date" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="blogpost_{{id}}_card_date">{{../l10n.blog_icon_date}}</title>
+                            <path d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"></path><path d="M15 15h2v2h-2z"></path>
+                        </svg>
+                        {{timestamp}}
+                    </span>
+                    {{/if}}
+
+                    {{! ***** //Read time ***** }}
+
+                    {{#if ../card.txtBlock.details.showReadTime}}
+                    <span 
+                        class="im-cc-BlogPostCardReadTime" 
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_read_time" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="blogpost_{{id}}_card_read_time">{{../l10n.blog_icon_read_time}}</title>
+                            <circle cx="12" cy="12" r="10"></circle><path d="M12 5v7l4 4"></path>
+                        </svg>
+                        {{readTime}}
+                    </span>
+                    {{/if}}
+
+                </div>
+
+            </div>
+
+            {{! ***** ***** ***** TITLE - end ***** ***** ***** }}
+
+        </div>
+        <div slot="contents" >
+
+            {{! ***** ***** ***** CONTENTS ***** ***** ***** }}
+
+            <div class="im-cc-wrapper-contents" >
+
+                {{! ***** //Description ***** }}
+
+                <div 
+                    class="im-cc-BlogPostCardDescription" 
+                >
+                    {{#if ../card.txtBlock.description.show}}
+                    {{{summary}}}
+                    <div 
+                        class="im-cc-BlogPostCardDescriptionFade" 
+                    ></div>
+                    {{/if}}
+                </div>
+                
+                {{! ***** //Button ***** }}
+
+                <div class="im-cc-BlogPostButtonRowWrapper" >{{!
+                    }}{{#if ../card.txtBlock.button.show}}{{!
+                    }}<div 
+                        class="im-cc-BlogPostCardButton" 
+                    >{{!
+                        }}<a 
+                            href="{{relativeUrl}}" 
+                        >
+                            {{#if ../card.txtBlock.button.useImage}}
+                            <img 
+                                {{#if ../misc.isLazyLoadingEnabled}}loading="lazy"{{/if}}
+                                width="{{../card.txtBlock.button.image.width}}" 
+                                height="{{../card.txtBlock.button.image.height}}" 
+                                src="../{{../card.txtBlock.button.image.image}}" 
+                                alt="{{../l10n.blog_read_all}}" 
+                                title="{{../l10n.blog_read_all}}" 
+                            />
+                            {{else}}
+                            {{../l10n.blog_read_all}}
+                            {{/if}}
+                        </a>{{!
+                    }}</div>{{!
+                    }}{{/if}}{{!
+                }}</div>
+
+            </div>
+
+            {{! ***** ***** ***** CONTENTS - end ***** ***** ***** }}
+
+        </div>
+
+    </x5engine-card>
+    {{! ***** ***** ***** ***** ***** CARD - end ***** ***** ***** ***** ***** }}
+
+{{/each}}
+
+{{#if misc.nocardLayout}}
+{{else}}
+    {{#if misc.isArrangeSlideshow}}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    {{else}}
+        </x5engine-cardlayout>
+    {{/if}}
+{{/if}}

@@ -1,0 +1,22 @@
+.sitetest input[type=text], .sitetest input[type=password] {
+	margin-bottom: 0;
+	max-width: 400px;
+	width: 100%;
+}
+
+.sitetest textarea {
+	border-radius: 0;
+	margin-bottom: 0;
+	line-height: 1.3;
+	height: 220px;
+}
+
+.sitetest textarea.log-text {
+	line-height: 1.5;
+	width: 99%;
+	height: 250px;
+}
+
+.sitetest select {
+	border-radius: 0;
+}

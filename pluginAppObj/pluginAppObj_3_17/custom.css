@@ -1,0 +1,129 @@
+#pluginAppObj_3_17{
+	position: relative;
+    max-width: 100%;
+	font-size: 0;
+	width: 1000px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+#youtubegallery_pluginAppObj_3_17{
+	position: relative;
+	display: inline-block;
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-container{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-slide{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: block;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-slide a{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-slide .slide-content{
+	display: table-cell;
+    height: inherit;
+    width: inherit;
+    max-height: inherit;
+    max-width: inherit;
+}
+
+#youtubegallery_pluginAppObj_3_17.bullets .swiper-pagination{
+	left: 0;
+    width: 100%;
+	bottom: 0;
+}
+
+#youtubegallery_pluginAppObj_3_17.bullets .swiper-container .swiper-pagination{
+	bottom: 10px;
+}
+
+#youtubegallery_pluginAppObj_3_17.progress .swiper-pagination{
+    width: calc(100% - 70px);
+    height: 4px;
+    left: 35px;
+    top: 0
+}
+
+#youtubegallery_pluginAppObj_3_17.progress .swiper-container .swiper-pagination{
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 0
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-pagination .swiper-pagination-bullet{
+	margin: 0 5px;
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-pagination-bullet-active {
+    background: rgba(255, 255, 255, 1);
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-pagination-progress .swiper-pagination-progressbar{
+	background: rgba(255, 255, 255, 1);
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'rgb%28255%2C255%2C255%29'%2F%3E%3C%2Fsvg%3E");
+    
+}
+
+#youtubegallery_pluginAppObj_3_17 .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'rgb%28255%2C255%2C255%29'%2F%3E%3C%2Fsvg%3E");
+    
+}
+
+ #youtubegallery_pluginAppObj_3_17 #play {
+    transition: opacity 0.8s;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity:0;;
+}
+
+#youtubegallery_pluginAppObj_3_17 #play:hover {
+   opacity:1;;
+}
+
+#youtubegallery_pluginAppObj_3_17 #play svg {
+    opacity: 0.8;
+    fill: rgba(255, 255, 255, 1);
+    pointer-events: none; 
+    display: block; 
+    width: 15%; 
+    height: 15%;
+    min-height: 48px;
+    min-width: 48px;
+}
+
+#youtubegallery_pluginAppObj_3_17 yt-icon, #youtubegallery_pluginAppObj_3_17 .yt-icon {
+    display: inline-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    stroke: none;
+}

@@ -1,1 +1,0 @@
-var MaxNumber = 5;

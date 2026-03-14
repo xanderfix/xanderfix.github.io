@@ -1,0 +1,780 @@
+    {{! ***** ***** ***** ***** ***** CARD style ***** ***** ***** ***** ***** }}
+
+    {{#if misc.isArrangeSameHeightOrChangingHeight}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout {
+            row-gap:{{card.margin}}px;
+            column-gap:{{card.margin}}px;
+        }
+    {{/if}}
+
+    {{#if misc.isArrangeMasonry}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout {
+            padding:0px;
+            margin-right:-10px;
+        }    
+    {{/if}}
+
+    {{#if misc.isArrangeSlideshow}}
+        {{misc.rootSelector}} .swiper-pagination-bullet-active {
+            background: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}) !important;
+        }
+        {{misc.rootSelector}} .swiper-button-next, {{misc.rootSelector}} .swiper-button-prev {
+            color: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}) !important;
+        }
+        {{misc.rootSelector}} > div > .swiper > .swiper-wrapper > x5engine-card {
+            display: grid;
+        }
+    {{/if}}
+
+
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard { 
+
+        margin: 0px;
+
+        {{#if card.shadow.enabled}}
+        box-shadow: 
+            {{card.shadow.offset.x}}px 
+            {{card.shadow.offset.y}}px 
+            {{card.shadow.blur}}px 
+            {{card.shadow.spread}}px 
+            rgb({{card.shadow.color.r}},{{card.shadow.color.g}},{{card.shadow.color.b}}); 
+        {{/if}}
+
+        position: relative;
+        box-sizing: border-box;
+
+        background-color: rgba({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}},{{card.backgroundColor.a}}); 
+
+        border-style: solid;
+
+        border-top-width: {{card.border.widths.top}}px;
+        border-right-width: {{card.border.widths.right}}px;
+        border-bottom-width: {{card.border.widths.bottom}}px;
+        border-left-width: {{card.border.widths.left}}px;
+
+        border-top-color: rgba({{card.border.colors.top.r}},{{card.border.colors.top.g}},{{card.border.colors.top.b}},{{card.border.colors.top.a}}); 
+        border-right-color: rgba({{card.border.colors.right.r}},{{card.border.colors.right.g}},{{card.border.colors.right.b}},{{card.border.colors.right.a}}); 
+        border-bottom-color: rgba({{card.border.colors.bottom.r}},{{card.border.colors.bottom.g}},{{card.border.colors.bottom.b}},{{card.border.colors.bottom.a}}); 
+        border-left-color: rgba({{card.border.colors.left.r}},{{card.border.colors.left.g}},{{card.border.colors.left.b}},{{card.border.colors.left.a}}); 
+
+        border-radius: {{card.border.radius.topLeft}}px {{card.border.radius.topRight}}px {{card.border.radius.bottomRight}}px {{card.border.radius.bottomLeft}}px; 
+
+        text-align: left; 
+        line-height: 1.5; 
+        overflow: hidden; 
+
+    }
+
+    {{#if misc.isArrangeChangingHeight}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard { 
+            align-items: start;
+            align-content:start;
+        }
+    {{/if}}
+
+    {{#if misc.isArrangeSlideshow}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard {
+            margin-left: {{card.margin}}px;
+            height: {{card.height}}px !important;
+        }
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard:first-of-type {
+            margin-left: 0px;
+        }
+    {{/if}}
+
+    {{#if misc.isArrangeMasonry}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard {
+            margin: {{card.margin}}px;
+            margin-left: 0px;
+            align-items: start;
+            align-content:start;
+        }
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard:first-of-type {
+            margin-top: 0px;
+        }
+    {{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+        {
+            align-items: end;
+            align-content:start;
+        }
+    {{/if}}{{/if}}
+
+
+
+    {{#if misc.isLayoutHorizontalCoverLeft}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            grid-template-columns: {{card.image.percentSize}}% auto;
+            grid-template-rows: auto minmax(10%, 1fr);
+        }
+    {{/if}}
+
+    {{#if misc.isLayoutHorizontalCoverRight}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            grid-template-columns: auto {{card.image.percentSize}}%;
+            grid-template-rows: auto minmax(10%, 1fr);
+        }
+    {{/if}}
+
+    {{#if misc.isLayoutVerticalCoverTop}}
+        {{{misc.layoutVerticalMediaQueryStart}}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            grid-template-columns: 100%;
+            grid-template-rows: {{#if misc.layoutVerticalMediaQueryStart}}{{#if card.image.percentSize}}auto{{else}}0px{{/if}}{{else}}auto{{/if}} auto minmax(10%, 1fr);
+        }
+        {{#if misc.layoutVerticalMediaQueryStart}}{{else}}
+            {{#if misc.cardFixedHeight}}
+                {{misc.rootSelector}} 
+                    .im-cc-blogpost-cardlayout 
+                        .im-cc-BlogPostCard 
+                {
+                    grid-template-rows: {{misc.verticalImageHeight}}px auto minmax(0%, 1fr);
+                }
+            {{/if}}
+        {{/if}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.isLayoutVerticalTitleTop}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            grid-template-columns: 100%;
+            grid-template-rows: {{#if misc.isArrangeSlideshow}}auto 50% minmax(10%, 1fr){{else}}auto auto minmax(10%, 1fr){{/if}};
+        }
+        {{#if misc.cardFixedHeight}}
+            {{misc.rootSelector}} 
+                .im-cc-blogpost-cardlayout 
+                    .im-cc-BlogPostCard 
+            {
+                grid-template-rows: auto {{misc.verticalImageHeight}}px minmax(1%, 1fr);
+            }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            background-color: transparent;
+            grid-template-columns: 100%;
+        }
+        {{#if misc.isArrangeChangingHeightOrMasonry}}
+            {{misc.rootSelector}} 
+                .im-cc-blogpost-cardlayout 
+                    .im-cc-BlogPostCard 
+            {
+                grid-template-rows: auto minmax(10%, 1fr);
+            }
+        {{/if}}
+    {{/if}}
+    
+    {{#if misc.isLayoutCoverAsBackground}}{{else}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard [slot=cover] {
+            overflow: hidden;
+        }
+    {{/if}}
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard [slot=cover] {
+            width: 100%;
+            height: 100%;
+        }
+        {{#if misc.cardFixedHeight}}
+            {{misc.rootSelector}} 
+                .im-cc-blogpost-cardlayout 
+                    .im-cc-BlogPostCard 
+                        [slot=cover] 
+            {
+                height: calc({{card.height}}px - {{card.border.widths.top}}px - {{card.border.widths.bottom}}px);
+            }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.cardFixedHeight}}{{#if misc.isLayoutVertical}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    [slot=cover] 
+        {
+            margin: {{card.image.margins.top}}px {{card.image.margins.right}}px {{card.image.margins.bottom}}px {{card.image.margins.left}}px; 
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutHorizontal}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard [slot=cover] {
+            height: 100%;
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutHorizontal}}
+        {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostWrapperCardCover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .wrapper-title-contents {
+            margin: 0px;
+            grid-template-rows: auto minmax(10%, 1fr);
+        }
+    {{/if}}
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard [slot=title] {
+        padding: {{card.txtBlock.margins.top}}px {{card.txtBlock.margins.right}}px 0px {{card.txtBlock.margins.left}}px; 
+    }
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard [slot=title] {
+            grid-column: 1/2;
+            background-color: rgba({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}},{{card.backgroundColor.a}});
+            margin: {{card.txtBlock.margins.top}}px {{card.txtBlock.margins.right}}px 0px {{card.txtBlock.margins.left}}px;
+        }
+        
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    [slot=title] 
+        {
+            position: relative;
+            z-index: 1001;
+        }
+       
+    {{/if}}
+
+
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard [slot=contents] {
+        padding: 2px {{card.txtBlock.margins.right}}px {{card.txtBlock.margins.bottom}}px {{card.txtBlock.margins.left}}px; 
+    }
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutHorizontal}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard [slot=contents] {
+            height: 100%;
+            box-sizing: border-box; 
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard [slot=contents] {
+            background-color: rgba({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}},{{card.backgroundColor.a}});
+            margin: 0px {{card.txtBlock.margins.right}}px {{card.txtBlock.margins.bottom}}px {{card.txtBlock.margins.left}}px;
+        }
+
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    [slot=contents] 
+        {
+            position: relative;
+            z-index: 1002;
+        }
+
+    {{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutHorizontal}}
+        {{{misc.layoutHorizontalMediaQueryStart}}}
+            {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardDescription {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                top: 0px;
+                left: 0px;
+            }
+        {{#if misc.layoutHorizontalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeSlideshow}}
+        {{{misc.layoutVerticalMediaQueryStart}}}
+            {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
+                height: 100%;
+            }
+            {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardDescription {
+                overflow: hidden;
+            }
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}
+
+    {{! ***** ***** ***** ***** ***** COVER style ***** ***** ***** ***** ***** }}
+
+
+    
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostWrapperCardCover {
+        width: 100%;
+        height: 100%;
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover { 
+        box-sizing: border-box;
+
+        max-width: 100%;
+        width: 100%;
+
+        margin:auto;        
+        padding: {{card.image.margins.top}}px {{card.image.margins.right}}px {{card.image.margins.bottom}}px {{card.image.margins.left}}px; 
+
+        cursor: pointer;
+
+        display:block;
+
+        {{#if card.image.sizeAdapted}}object-fit: cover; {{else}}object-fit: scale-down; {{/if}}
+
+        {{#if misc.isLayoutVertical}}
+            {{#if card.image.sizeAdapted}}
+            {{else}}
+            max-height: 100%;
+            {{/if}}
+        {{/if}}
+
+        {{#if misc.imageOverRule}}transition: transform 300ms; z-index: 1; {{/if}}
+
+        vertical-align: text-top;
+    }
+
+    {{#if misc.isLayoutVertical}}
+        {{{misc.layoutVerticalMediaQueryStart}}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover { 
+            min-height: {{card.image.percentSize}}%;
+        }
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.isLayoutVerticalCoverTop}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover { 
+            min-height: {{card.image.percentSize}}%;
+        }
+    {{/if}}
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover { 
+            object-position: center top;
+            padding: 0px;
+        }
+    {{/if}}
+
+    {{#if misc.cardFixedHeight}}{{#if misc.isLayoutVertical}}
+        {{misc.rootSelector}}
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover
+        {
+            padding: 0px !important;
+            {{#if card.image.sizeAdapted}}{{else}}width: auto; {{/if}}
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.cardFixedHeight}}{{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover 
+        { 
+            {{#if card.image.sizeAdapted}}
+                object-fit: cover; 
+                height: 100%; 
+            {{else}}
+                object-fit: cover; 
+            {{/if}}
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.cardFixedHeight}}{{#if misc.isLayoutHorizontal}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover 
+        {    
+            height: 100%;
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutHorizontal}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover 
+        { 
+            {{#if card.image.sizeAdapted}}{{else}}width: auto;{{/if}}
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutVertical}}
+        {{{misc.layoutVerticalMediaQueryStart}}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover 
+        {
+            width: auto;
+        }
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}{{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} 
+            .im-cc-blogpost-cardlayout 
+                .im-cc-BlogPostCard 
+                    .im-cc-BlogPostCardCover 
+        {
+            object-fit: cover;
+        }
+    {{/if}}{{/if}}
+
+    {{#if misc.imageOverRule}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover:hover { 
+            {{misc.imageOverRule}}
+        }
+    {{/if}}
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover.contain {
+        object-fit: scale-down;
+        height: 100%;
+    }
+    
+    {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}
+        {{{misc.layoutVerticalMediaQueryStart}}}
+            {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardCover {
+                object-fit: scale-down;
+                max-height: 30vh;
+                width: auto;
+            }
+        }
+    {{/if}}{{/if}}
+
+
+    {{! ***** ***** ***** ***** ***** COVER style - end ***** ***** ***** ***** ***** }}
+
+    {{! ***** ***** ***** ***** ***** TITLE style ***** ***** ***** ***** ***** }}
+
+
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-title {
+        height: 100%;
+        max-height:100%;
+        display:grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-title {
+            padding: 20px 20px 0px 20px; 
+        }
+    {{else}}
+        {{misc.rootSelector}} 
+            .im-cc-BlogPostCard 
+                .im-cc-wrapper-title 
+        {
+            width: 100%;
+        }
+    {{/if}}
+
+
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardTitle {
+        margin:0px;
+        padding:0px;
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardTitle h1 { 
+        grid-row:1/2;
+        grid-column:1/2;
+        font-family: '{{card.txtBlock.name.style.font.familyName}}';
+        font-size: {{card.txtBlock.name.style.font.size}}pt;
+        font-style: {{card.txtBlock.name.style.font.style}};
+        font-weight: {{card.txtBlock.name.style.font.weight}};
+        color: rgb({{card.txtBlock.name.style.textColor.r}},{{card.txtBlock.name.style.textColor.g}},{{card.txtBlock.name.style.textColor.b}}); 
+        text-align: {{card.txtBlock.align}};
+        line-height: normal;
+        margin:0px;
+        padding:0px;
+    }
+    
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardTitle h1 a { 
+        font-family: '{{card.txtBlock.name.style.font.familyName}}';
+        font-size: {{card.txtBlock.name.style.font.size}}pt;
+        font-style: {{card.txtBlock.name.style.font.style}};
+        font-weight: {{card.txtBlock.name.style.font.weight}};
+        color: rgb({{card.txtBlock.name.style.textColor.r}},{{card.txtBlock.name.style.textColor.g}},{{card.txtBlock.name.style.textColor.b}}); 
+        text-align: {{card.txtBlock.align}};
+        text-decoration: none; 
+        margin:0px;
+        padding:0px;
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostDetails {
+        grid-row:2/3;
+        grid-column:1/2;
+        padding-top:1px;
+        text-align: {{card.txtBlock.align}};
+        {{#if card.txtBlock.details.showCategory}}
+            {{#if card.txtBlock.details.showAuthor}}{{else}}
+                {{#if card.txtBlock.details.showDate}}{{else}}
+                    {{#if card.txtBlock.details.showReadTime}}{{else}}
+                        padding-top:3px !important;
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+        {{/if}}
+
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        text-wrap: nowrap;
+        white-space: nowrap;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory { 
+        margin-left: -5px;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > a,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > a {
+        font-family: '{{card.txtBlock.details.style.font.familyName}}';
+        font-size: {{card.txtBlock.details.style.font.size}}pt; 
+        font-style: {{card.txtBlock.details.style.font.style}};
+        font-weight: {{card.txtBlock.details.style.font.weight}};
+        color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
+        text-decoration: none; 
+        text-wrap: nowrap;
+        white-space: nowrap;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime > svg {
+        position: relative;
+        top: 5px;
+        width: 20px; 
+        height: 20px; 
+        stroke: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime { 
+        font-family: '{{card.txtBlock.details.style.font.familyName}}';
+        font-size: {{card.txtBlock.details.style.font.size}}pt; 
+        font-style: {{card.txtBlock.details.style.font.style}};
+        font-weight: {{card.txtBlock.details.style.font.weight}};
+        color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
+        overflow: hidden; 
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor svg { 
+        {{#if card.txtBlock.details.showCategory}}{{else}}
+            {{#if card.txtBlock.details.showAuthor}}
+                left: -2px;
+            {{/if}}
+        {{/if}}
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate svg { 
+        {{#if card.txtBlock.details.showCategory}}{{else}}
+            {{#if card.txtBlock.details.showAuthor}}{{else}}
+                {{#if card.txtBlock.details.showDate}}
+                    left: -1px;
+                {{/if}}
+            {{/if}}
+        {{/if}}
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime svg { 
+        {{#if card.txtBlock.details.showCategory}}{{else}}
+            {{#if card.txtBlock.details.showAuthor}}{{else}}
+                {{#if card.txtBlock.details.showDate}}{{else}}
+                    {{#if card.txtBlock.details.showReadTime}}
+                        left: 0px !important;
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+        {{/if}}
+        left: 2px;
+    }
+
+    {{! ***** ***** ***** ***** ***** TITLE style - end ***** ***** ***** ***** ***** }}
+
+
+
+    {{! ***** ***** ***** ***** ***** CONTENTS style ***** ***** ***** ***** ***** }}
+
+    {{#if misc.isLayoutHorizontal}}
+        {{{misc.layoutHorizontalMediaQueryStart}}}
+    {{/if}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-contents {
+            height: 100%;
+            position: relative;
+        }
+    {{#if misc.isLayoutHorizontal}}{{#if misc.layoutHorizontalMediaQueryStart}}
+        }
+    {{/if}}{{/if}}
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-contents {
+        max-height:100%;
+        text-align: {{card.txtBlock.align}};       
+        display:grid;
+        grid-template-rows: {{#if misc.isLayoutHorizontal}}{{#if misc.isArrangeChangingHeightOrMasonry}}minmax(3lh, 1fr){{else}}1fr{{/if}}{{else}}1fr{{/if}} auto;
+        {{#if misc.isLayoutHorizontal}}
+        {{#if card.txtBlock.description.style.font.familyName}}font-family: '{{card.txtBlock.description.style.font.familyName}}';{{/if}}
+        font-size: {{card.txtBlock.description.style.font.size}}pt; 
+        font-style: {{card.txtBlock.description.style.font.style}}; 
+        font-weight: {{card.txtBlock.description.style.font.weight}}; 
+        {{/if}}
+    }
+
+    {{#if misc.isLayoutCoverAsBackground}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-contents {
+            padding: 0px 20px 20px 20px; 
+            height: {{card.txtBlock.height}}px;
+        }
+    {{else}}
+        {{misc.rootSelector}} 
+            .im-cc-BlogPostCard 
+                .im-cc-wrapper-contents 
+        {
+            width: 100%;
+            max-width: 100%;
+        }
+    {{/if}}
+
+    {{#if misc.isArrangeChangingHeightOrMasonry}}
+        {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}{{else}}
+            {{{misc.layoutHorizontalMediaQueryStart}}}
+                {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
+                    height: {{card.txtBlock.height}}px; 
+                }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
+            }
+            {{/if}}
+        {{/if}}{{/if}}
+        {{#if misc.isLayoutVerticalTitleTop}}
+            {{{misc.layoutHorizontalMediaQueryStart}}}
+                {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
+                    height: {{card.txtBlock.height}}px; 
+                }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
+            }
+            {{/if}}
+        {{/if}}
+    {{/if}}
+
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription { 
+        grid-row:1/2;
+        grid-column:1/1;
+        position: relative; 
+        padding-top:3px;
+        {{#if card.txtBlock.description.style.font.familyName}}font-family: '{{card.txtBlock.description.style.font.familyName}}';{{/if}}
+        font-size: {{card.txtBlock.description.style.font.size}}pt; 
+        font-style: {{card.txtBlock.description.style.font.style}};
+        font-weight: {{card.txtBlock.description.style.font.weight}};
+        color: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}); 
+        text-align: {{card.txtBlock.align}};
+        overflow: auto;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.0));
+        scrollbar-width: thin;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription:hover { 
+        overflow: auto;
+        -webkit-mask-image: none;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar { 
+          width: 8px;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px rgba(220,220,220,0); 
+        border-radius: 4px;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription:hover::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px grey; 
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar-thumb {
+        background: rgba(220,220,220,0); 
+        border-radius: 4px;
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription:hover::-webkit-scrollbar-thumb {
+        background: #d4d4d4; 
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3; 
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription .im-cc-BlogPostCardDescriptionFade { 
+        display:none;
+        position: absolute; 
+        width: 100%; 
+        height: 25px; 
+        left: 0; 
+        bottom: 0; 
+        box-shadow: inset 0px -20px 44px rgb({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}}); 
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostButtonRowWrapper {
+        grid-row:2/3;
+        grid-column:1/1;
+    }
+
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardButton { 
+        text-align: {{card.txtBlock.button.position}}; 
+        overflow: hidden; 
+    }
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardButton a { 
+
+        {{#if card.txtBlock.button.useImage}}
+
+            border-width:0px;
+
+        {{else}}
+
+            border-style: solid;
+
+            border-top-width: {{card.txtBlock.button.border.widths.top}}px;
+            border-right-width: {{card.txtBlock.button.border.widths.right}}px;
+            border-bottom-width: {{card.txtBlock.button.border.widths.bottom}}px;
+            border-left-width: {{card.txtBlock.button.border.widths.left}}px;
+
+            border-top-color: rgba({{card.txtBlock.button.border.colors.top.r}},{{card.txtBlock.button.border.colors.top.g}},{{card.txtBlock.button.border.colors.top.b}},{{card.txtBlock.button.border.colors.top.a}}); 
+            border-right-color: rgba({{card.txtBlock.button.border.colors.right.r}},{{card.txtBlock.button.border.colors.right.g}},{{card.txtBlock.button.border.colors.right.b}},{{card.txtBlock.button.border.colors.right.a}}); 
+            border-bottom-color: rgba({{card.txtBlock.button.border.colors.bottom.r}},{{card.txtBlock.button.border.colors.bottom.g}},{{card.txtBlock.button.border.colors.bottom.b}},{{card.txtBlock.button.border.colors.bottom.a}}); 
+            border-left-color: rgba({{card.txtBlock.button.border.colors.left.r}},{{card.txtBlock.button.border.colors.left.g}},{{card.txtBlock.button.border.colors.left.b}},{{card.txtBlock.button.border.colors.left.a}}); 
+
+            border-radius: {{card.txtBlock.button.border.radius.topLeft}}px {{card.txtBlock.button.border.radius.topRight}}px {{card.txtBlock.button.border.radius.bottomRight}}px {{card.txtBlock.button.border.radius.bottomLeft}}px; 
+
+            padding: {{card.txtBlock.button.margins.top}}px {{card.txtBlock.button.margins.left}}px; 
+
+            background-color: rgba({{card.txtBlock.button.style.backgroundColor.r}},{{card.txtBlock.button.style.backgroundColor.g}},{{card.txtBlock.button.style.backgroundColor.b}},{{card.txtBlock.button.style.backgroundColor.a}}); 
+
+            font-family: '{{card.txtBlock.button.style.font.familyName}}';
+            font-size: {{card.txtBlock.button.style.font.size}}pt; 
+            font-style: {{card.txtBlock.button.style.font.style}};
+            font-weight: {{card.txtBlock.button.style.font.weight}};
+
+            color: rgb({{card.txtBlock.button.style.textColor.r}},{{card.txtBlock.button.style.textColor.g}},{{card.txtBlock.button.style.textColor.b}}); 
+
+            display: inline-block; 
+            margin-bottom:-6px;
+
+        {{/if}}
+
+        text-decoration: none; 
+
+        cursor: pointer; 
+        overflow: hidden; 
+
+    }
+
+
+
+    {{! ***** ***** ***** ***** ***** CONTENTS style - end ***** ***** ***** ***** ***** }}
+
+    {{! ***** ***** ***** ***** ***** CARD style - end ***** ***** ***** ***** ***** }}

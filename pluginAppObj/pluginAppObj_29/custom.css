@@ -1,0 +1,40 @@
+#pluginAppObj_29 {
+    
+}
+
+#pluginAppObj_29_spotify iframe {
+    max-width: 100%;
+    display: block;
+}
+
+#pluginAppObj_29_spotify  > p {
+    margin: 15px 8px 15px 8px;
+}
+#pluginAppObj_29_spotify .p_error{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#pluginAppObj_29_spotify .error_post_container{
+    width: 99%;
+    text-align: left;
+}
+
+#pluginAppObj_29_spotify .error_post_thumb img {
+    position: relative;
+    top: 3px;
+    float: left;
+    clear: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+}
+
+#pluginAppObj_29_spotify .p_error_ui{
+    font-family: "Segoe UI";
+    font-size: 10pt;
+    line-height: 1.8;
+    margin-left: 22px;
+}

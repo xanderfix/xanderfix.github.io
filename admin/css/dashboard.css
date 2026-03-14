@@ -1,0 +1,192 @@
+.dashboard-boxes-container {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2%;
+	justify-content: start;
+	margin: 30px 20px 0;
+}
+
+.dashboard-box {
+	box-sizing: border-box;
+	width: 32%;
+	height: 360px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.dashboard-box .dismiss {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.dashboard-box > .title {
+	margin: 0 10px;
+	padding: 10px 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.dashboard-box > .title img {
+	vertical-align: -28%;
+	margin-right: 10px;
+	width: 24px;
+}
+
+.dashboard-box .content {
+	margin: 10px 14px;
+}
+
+.dashboard-box .bottom {
+	position: absolute;
+	left: 14px;
+	right: 14px;
+	bottom: 10px;
+}
+
+.dashboard-box .subtitle {
+	margin-bottom: 10px;
+}
+
+.dashboard-box .summary {
+	padding: 5px 0 5px 10px;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+.dashboard-box .summary .icon {
+	margin-right: 20px;
+}
+
+.dashboard-box .summary .value {
+	width: 10%;
+	display: inline-block;
+	font-weight: 400;
+}
+
+.dashboard-box .summary .caption {
+	width: 70%;
+	display: inline-block;
+}
+
+.dashboard-box .simple-plot-container {
+	max-height: 120px;
+}
+
+.dashboard-box .comment,
+.dashboard-box .user {
+	border-bottom: 1px solid #b5b5b5;
+	padding: 10px 2px;
+}
+
+.dashboard-box .comment span,
+.dashboard-box .user span {
+	display: inline-block;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.dashboard-box .user span {
+	width: 32%;
+}
+
+.dashboard-box .comment {
+	margin-top: 6px;
+}
+
+.dashboard-box .comment .row-1 {
+	margin-bottom: 5px;
+}
+
+.dashboard-box .comment .row-1 span,
+.dashboard-box .comment .row-2 {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dashboard-box .user {
+	margin-top: 23px;
+}
+
+.dashboard-box .test {
+	display: table-row;
+}
+
+.dashboard-box .test span {
+	display: table-cell;
+	vertical-align: middle;	
+	padding: 13px 10px;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+.dashboard-box .w-perc-24 {
+	width: 24%;
+}
+
+.dashboard-box .w-perc-32 {
+	width: 32%;
+}
+
+.dashboard-box .w-perc-40 {
+	width: 40%;
+}
+
+.dashboard-notifications-bar {
+	box-sizing: border-box;
+	position: relative;
+	display: none;
+	padding-left: 60px;
+	padding-right: 20px;
+	margin: 30px 20px;
+}
+
+.dashboard-notifications-bar h2 {
+	margin-bottom: 1.2em;
+}
+
+.dashboard-notifications-bar p {
+	margin-bottom: .7em;
+}
+
+.dashboard-notifications-bar .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dashboard-notifications-bar .dismiss {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+@media (max-width: 1410px) {
+	.dashboard-boxes-container {
+		gap: 4%;
+	}
+
+	.dashboard-box {
+		width: 48%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.dashboard-box {
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.dashboard-box .summary .caption {
+		display: none;
+	}
+}

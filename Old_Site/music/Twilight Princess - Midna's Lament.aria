@@ -1,0 +1,852 @@
+<seqview xscroll="4814.000000" yscroll="49" zoom="100">
+<sequence maintempo="132" measureAmount="70" currentTrack="0" beatResolution="480" internalName="" fileFormatVersion="4" channelManagement="auto" metronome="false">
+
+<measure  firstMeasure="0" denom="4" num="3"/>
+
+<tempo>
+  <controlevent type="201" tick="0" value="89.00000000"/>
+</tempo>
+<text>
+</text>
+<copyright>
+</copyright>
+<defaultkeysig keytype="2" keysymbolamount="0" />
+
+
+<track name="Melody" id="0" channel="0" volume="100" default_volume="80">
+  <key type="C" />
+  <editors height="297">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.344844" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="7"/>
+  </editors>
+  <magneticgrid divider="32" triplet="false" dotted="false"/>
+  <instrument id="1"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="62" start="5760" end="6690" volume="110"/>
+  <note pitch="54" start="6720" end="7185" volume="110"/>
+  <note pitch="55" start="7200" end="8130" volume="110"/>
+  <note pitch="59" start="8160" end="8625" volume="110"/>
+  <note pitch="60" start="8640" end="9570" volume="110"/>
+  <note pitch="62" start="9600" end="9833" volume="110"/>
+  <note pitch="64" start="9840" end="10073" volume="110"/>
+  <note pitch="60" start="10080" end="11520" volume="110"/>
+  <note pitch="45" start="12960" end="13193" volume="110"/>
+  <note pitch="38" start="13200" end="13433" volume="110"/>
+  <note pitch="43" start="13440" end="13905" volume="110"/>
+  <note pitch="45" start="13920" end="14153" volume="110"/>
+  <note pitch="38" start="14160" end="14393" volume="110"/>
+  <note pitch="43" start="14400" end="15840" volume="110"/>
+  <note pitch="62" start="17280" end="18210" volume="110"/>
+  <note pitch="54" start="18240" end="18705" volume="110"/>
+  <note pitch="55" start="18720" end="19650" volume="110"/>
+  <note pitch="59" start="19680" end="20145" volume="110"/>
+  <note pitch="57" start="20160" end="21090" volume="110"/>
+  <note pitch="55" start="21120" end="21353" volume="110"/>
+  <note pitch="54" start="21360" end="21593" volume="110"/>
+  <note pitch="52" start="21600" end="23040" volume="110"/>
+  <note pitch="42" start="24960" end="25193" volume="110"/>
+  <note pitch="35" start="25200" end="25433" volume="110"/>
+  <note pitch="40" start="25440" end="25673" volume="110"/>
+  <note pitch="42" start="25680" end="25913" volume="110"/>
+  <note pitch="43" start="25920" end="27360" volume="110"/>
+  <note pitch="50" start="28800" end="31680" volume="110"/>
+  <note pitch="56" start="31680" end="32370" volume="110"/>
+  <note pitch="49" start="32400" end="33090" volume="110"/>
+  <note pitch="50" start="33120" end="33810" volume="110"/>
+  <note pitch="54" start="33840" end="34530" volume="110"/>
+  <note pitch="52" start="34560" end="36960" volume="110"/>
+  <note pitch="54" start="36960" end="37193" volume="110"/>
+  <note pitch="52" start="37200" end="37433" volume="110"/>
+  <note pitch="55" start="37440" end="39840" volume="110"/>
+  <note pitch="62" start="40320" end="41250" volume="110"/>
+  <note pitch="54" start="41280" end="41745" volume="110"/>
+  <note pitch="55" start="41760" end="42690" volume="110"/>
+  <note pitch="59" start="42720" end="43185" volume="110"/>
+  <note pitch="60" start="43200" end="44130" volume="110"/>
+  <note pitch="62" start="44160" end="44393" volume="110"/>
+  <note pitch="64" start="44400" end="44633" volume="110"/>
+  <note pitch="60" start="44640" end="46080" volume="110"/>
+  <note pitch="45" start="47520" end="47753" volume="110"/>
+  <note pitch="38" start="47760" end="47993" volume="110"/>
+  <note pitch="43" start="48000" end="48465" volume="110"/>
+  <note pitch="45" start="48480" end="48713" volume="110"/>
+  <note pitch="38" start="48720" end="48953" volume="110"/>
+  <note pitch="43" start="48960" end="50400" volume="110"/>
+  <note pitch="62" start="51840" end="52770" volume="110"/>
+  <note pitch="54" start="52800" end="53265" volume="110"/>
+  <note pitch="55" start="53280" end="54210" volume="110"/>
+  <note pitch="59" start="54240" end="54705" volume="110"/>
+  <note pitch="57" start="54720" end="55650" volume="110"/>
+  <note pitch="55" start="55680" end="55913" volume="110"/>
+  <note pitch="54" start="55920" end="56153" volume="110"/>
+  <note pitch="52" start="56160" end="57600" volume="110"/>
+  <note pitch="42" start="59520" end="59753" volume="110"/>
+  <note pitch="35" start="59760" end="59993" volume="110"/>
+  <note pitch="40" start="60000" end="60233" volume="110"/>
+  <note pitch="42" start="60240" end="60473" volume="110"/>
+  <note pitch="43" start="60480" end="61920" volume="110"/>
+  <note pitch="64" start="75360" end="75593" volume="110"/>
+  <note pitch="57" start="75600" end="75833" volume="110"/>
+  <note pitch="62" start="75840" end="76305" volume="110"/>
+  <note pitch="64" start="76320" end="76553" volume="110"/>
+  <note pitch="57" start="76560" end="76793" volume="110"/>
+  <note pitch="62" start="76800" end="77760" volume="110"/>
+  <note pitch="62" start="81120" end="81353" volume="110"/>
+  <note pitch="55" start="81360" end="81593" volume="110"/>
+  <note pitch="60" start="81600" end="82065" volume="110"/>
+  <note pitch="62" start="82080" end="82313" volume="110"/>
+  <note pitch="55" start="82320" end="82553" volume="110"/>
+  <note pitch="60" start="82560" end="83520" volume="110" selected="true"/>
+  <note pitch="62" start="97920" end="98850" volume="110" fret="5" string="0"/>
+  <note pitch="54" start="98880" end="99345" volume="110" fret="13" string="0"/>
+  <note pitch="55" start="99360" end="100290" volume="110" fret="12" string="0"/>
+  <note pitch="59" start="100320" end="100785" volume="110" fret="8" string="0"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="92109" value="1.00000000"/>
+  <controlevent type="91" tick="92160" value="0.00000000"/>
+  <controlevent type="91" tick="92160" value="0.00000000"/>
+  <controlevent type="7" tick="92247" value="3.00000000"/>
+  <controlevent type="7" tick="92316" value="4.00000000"/>
+  <controlevent type="7" tick="92385" value="5.00000000"/>
+  <controlevent type="7" tick="92454" value="6.00000000"/>
+  <controlevent type="7" tick="92523" value="7.00000000"/>
+  <controlevent type="7" tick="92592" value="8.00000000"/>
+  <controlevent type="7" tick="92661" value="9.00000000"/>
+  <controlevent type="7" tick="92730" value="10.00000000"/>
+  <controlevent type="7" tick="92799" value="11.00000000"/>
+  <controlevent type="7" tick="92868" value="12.00000000"/>
+  <controlevent type="7" tick="92937" value="13.00000000"/>
+  <controlevent type="7" tick="93006" value="14.00000000"/>
+  <controlevent type="7" tick="93075" value="15.00000000"/>
+  <controlevent type="7" tick="93144" value="16.00000000"/>
+  <controlevent type="7" tick="93213" value="17.00000000"/>
+  <controlevent type="7" tick="93282" value="18.00000000"/>
+  <controlevent type="7" tick="93351" value="19.00000000"/>
+  <controlevent type="7" tick="93420" value="20.00000000"/>
+  <controlevent type="7" tick="93489" value="21.00000000"/>
+  <controlevent type="7" tick="93558" value="22.00000000"/>
+  <controlevent type="7" tick="93627" value="23.00000000"/>
+  <controlevent type="7" tick="93696" value="24.00000000"/>
+  <controlevent type="7" tick="93765" value="25.00000000"/>
+  <controlevent type="7" tick="93834" value="26.00000000"/>
+  <controlevent type="7" tick="93903" value="27.00000000"/>
+  <controlevent type="7" tick="93972" value="28.00000000"/>
+  <controlevent type="7" tick="94041" value="29.00000000"/>
+  <controlevent type="7" tick="94110" value="30.00000000"/>
+  <controlevent type="7" tick="94179" value="31.00000000"/>
+  <controlevent type="7" tick="94248" value="32.00000000"/>
+  <controlevent type="7" tick="94317" value="33.00000000"/>
+  <controlevent type="7" tick="94386" value="34.00000000"/>
+  <controlevent type="7" tick="94455" value="35.00000000"/>
+  <controlevent type="7" tick="94524" value="36.00000000"/>
+  <controlevent type="7" tick="94593" value="37.00000000"/>
+  <controlevent type="7" tick="94662" value="38.00000000"/>
+  <controlevent type="7" tick="94731" value="39.00000000"/>
+  <controlevent type="7" tick="94800" value="40.00000000"/>
+  <controlevent type="7" tick="94869" value="41.00000000"/>
+  <controlevent type="7" tick="94938" value="42.00000000"/>
+  <controlevent type="7" tick="95006" value="43.00000000"/>
+  <controlevent type="7" tick="95075" value="44.00000000"/>
+  <controlevent type="7" tick="95144" value="45.00000000"/>
+  <controlevent type="7" tick="95213" value="46.00000000"/>
+  <controlevent type="7" tick="95282" value="47.00000000"/>
+  <controlevent type="7" tick="95351" value="48.00000000"/>
+  <controlevent type="7" tick="95420" value="49.00000000"/>
+  <controlevent type="7" tick="95489" value="50.00000000"/>
+  <controlevent type="7" tick="95558" value="51.00000000"/>
+  <controlevent type="7" tick="95627" value="52.00000000"/>
+  <controlevent type="7" tick="95696" value="53.00000000"/>
+  <controlevent type="7" tick="95765" value="54.00000000"/>
+  <controlevent type="7" tick="95834" value="55.00000000"/>
+  <controlevent type="7" tick="95903" value="56.00000000"/>
+  <controlevent type="7" tick="95972" value="57.00000000"/>
+  <controlevent type="7" tick="96041" value="58.00000000"/>
+  <controlevent type="7" tick="96110" value="59.00000000"/>
+  <controlevent type="7" tick="96179" value="60.00000000"/>
+  <controlevent type="7" tick="96248" value="61.00000000"/>
+  <controlevent type="7" tick="96317" value="62.00000000"/>
+  <controlevent type="7" tick="96386" value="63.00000000"/>
+  <controlevent type="7" tick="96455" value="64.00000000"/>
+  <controlevent type="7" tick="96524" value="65.00000000"/>
+  <controlevent type="7" tick="96593" value="66.00000000"/>
+  <controlevent type="7" tick="96662" value="67.00000000"/>
+  <controlevent type="7" tick="96731" value="68.00000000"/>
+  <controlevent type="7" tick="96800" value="69.00000000"/>
+  <controlevent type="7" tick="96869" value="70.00000000"/>
+  <controlevent type="7" tick="96938" value="71.00000000"/>
+  <controlevent type="7" tick="97007" value="72.00000000"/>
+  <controlevent type="7" tick="97076" value="73.00000000"/>
+  <controlevent type="7" tick="97145" value="74.00000000"/>
+  <controlevent type="7" tick="97214" value="75.00000000"/>
+  <controlevent type="7" tick="97283" value="76.00000000"/>
+  <controlevent type="7" tick="97352" value="77.00000000"/>
+  <controlevent type="7" tick="97421" value="78.00000000"/>
+  <controlevent type="7" tick="97490" value="79.00000000"/>
+  <controlevent type="7" tick="97559" value="80.00000000"/>
+  <controlevent type="7" tick="97628" value="81.00000000"/>
+  <controlevent type="7" tick="97697" value="82.00000000"/>
+  <controlevent type="7" tick="97766" value="83.00000000"/>
+  <controlevent type="7" tick="97835" value="84.00000000"/>
+  <controlevent type="7" tick="97903" value="85.00000000"/>
+  <controlevent type="7" tick="97972" value="86.00000000"/>
+  <controlevent type="7" tick="98041" value="87.00000000"/>
+  <controlevent type="7" tick="98110" value="88.00000000"/>
+  <controlevent type="7" tick="98179" value="89.00000000"/>
+  <controlevent type="7" tick="98248" value="90.00000000"/>
+  <controlevent type="7" tick="98317" value="91.00000000"/>
+  <controlevent type="7" tick="98386" value="92.00000000"/>
+  <controlevent type="7" tick="98455" value="93.00000000"/>
+  <controlevent type="7" tick="98524" value="94.00000000"/>
+  <controlevent type="7" tick="98593" value="95.00000000"/>
+  <controlevent type="7" tick="98662" value="96.00000000"/>
+  <controlevent type="7" tick="98731" value="97.00000000"/>
+  <controlevent type="7" tick="98800" value="98.00000000"/>
+  <controlevent type="7" tick="98869" value="99.00000000"/>
+  <controlevent type="7" tick="98938" value="100.00000000"/>
+  <controlevent type="7" tick="99007" value="101.00000000"/>
+  <controlevent type="7" tick="99076" value="102.00000000"/>
+  <controlevent type="7" tick="99145" value="103.00000000"/>
+  <controlevent type="7" tick="99214" value="104.00000000"/>
+  <controlevent type="7" tick="99283" value="105.00000000"/>
+  <controlevent type="7" tick="99352" value="106.00000000"/>
+  <controlevent type="7" tick="99421" value="107.00000000"/>
+  <controlevent type="7" tick="99490" value="108.00000000"/>
+  <controlevent type="7" tick="99559" value="109.00000000"/>
+  <controlevent type="7" tick="99628" value="110.00000000"/>
+  <controlevent type="7" tick="99697" value="111.00000000"/>
+  <controlevent type="7" tick="99766" value="112.00000000"/>
+  <controlevent type="7" tick="99835" value="113.00000000"/>
+  <controlevent type="7" tick="99904" value="114.00000000"/>
+  <controlevent type="7" tick="99973" value="115.00000000"/>
+  <controlevent type="7" tick="100042" value="116.00000000"/>
+  <controlevent type="7" tick="100111" value="117.00000000"/>
+  <controlevent type="7" tick="100180" value="118.00000000"/>
+  <controlevent type="7" tick="100249" value="119.00000000"/>
+  <controlevent type="7" tick="100318" value="120.00000000"/>
+  <controlevent type="7" tick="100387" value="121.00000000"/>
+  <controlevent type="7" tick="100456" value="122.00000000"/>
+  <controlevent type="7" tick="100525" value="123.00000000"/>
+  <controlevent type="7" tick="100594" value="124.00000000"/>
+  <controlevent type="7" tick="100663" value="125.00000000"/>
+  <controlevent type="7" tick="100732" value="126.00000000"/>
+</track>
+
+
+<track name="Strings" id="1" channel="0" volume="100" default_volume="80">
+  <key type="C" />
+  <editors height="200">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.456522" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="7"/>
+  </editors>
+  <magneticgrid divider="64" triplet="false" dotted="false"/>
+  <instrument id="49"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="50" start="62880" end="63120" volume="80"/>
+  <note pitch="48" start="63120" end="63360" volume="80"/>
+  <note pitch="47" start="63360" end="65790" volume="80"/>
+  <note pitch="43" start="65760" end="66240" volume="80"/>
+  <note pitch="45" start="66240" end="66960" volume="80"/>
+  <note pitch="52" start="66960" end="69120" volume="80"/>
+  <note pitch="54" start="69120" end="71520" volume="80" selected="true"/>
+  <note pitch="47" start="71520" end="72000" volume="80"/>
+  <note pitch="48" start="72000" end="72720" volume="80"/>
+  <note pitch="55" start="72720" end="74880" volume="80"/>
+  <note pitch="64" start="78240" end="78480" volume="80"/>
+  <note pitch="57" start="78480" end="78720" volume="80"/>
+  <note pitch="62" start="78720" end="80670" volume="80"/>
+  <note pitch="59" start="84000" end="84240" volume="80"/>
+  <note pitch="52" start="84210" end="84480" volume="80"/>
+  <note pitch="57" start="84480" end="84750" volume="80"/>
+  <note pitch="59" start="84720" end="84990" volume="80"/>
+  <note pitch="60" start="84960" end="86400" volume="80"/>
+</track>
+
+
+<track name="Arpeggios" id="2" channel="1" volume="100" default_volume="80">
+  <key type="C" />
+  <editors height="200">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.624182" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="7"/>
+  </editors>
+  <magneticgrid divider="32" triplet="false" dotted="false"/>
+  <instrument id="1"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="81" start="0" end="399" volume="75"/>
+  <note pitch="79" start="240" end="639" volume="75"/>
+  <note pitch="78" start="480" end="879" volume="75"/>
+  <note pitch="74" start="720" end="1119" volume="75"/>
+  <note pitch="71" start="960" end="1359" volume="75"/>
+  <note pitch="67" start="1200" end="1599" volume="75"/>
+  <note pitch="81" start="1440" end="1839" volume="75"/>
+  <note pitch="79" start="1680" end="2079" volume="75"/>
+  <note pitch="78" start="1920" end="2319" volume="75"/>
+  <note pitch="74" start="2160" end="2559" volume="75"/>
+  <note pitch="71" start="2400" end="2799" volume="75"/>
+  <note pitch="67" start="2640" end="3039" volume="75"/>
+  <note pitch="81" start="2880" end="3279" volume="75"/>
+  <note pitch="79" start="3120" end="3519" volume="75"/>
+  <note pitch="78" start="3360" end="3759" volume="75"/>
+  <note pitch="74" start="3600" end="3999" volume="75"/>
+  <note pitch="71" start="3840" end="4239" volume="75"/>
+  <note pitch="67" start="4080" end="4479" volume="75"/>
+  <note pitch="64" start="4320" end="4719" volume="75"/>
+  <note pitch="67" start="4560" end="4959" volume="75"/>
+  <note pitch="71" start="4800" end="5199" volume="75"/>
+  <note pitch="74" start="5040" end="5439" volume="75"/>
+  <note pitch="78" start="5280" end="5679" volume="75"/>
+  <note pitch="79" start="5520" end="5919" volume="75"/>
+  <note pitch="81" start="5760" end="6159" volume="75"/>
+  <note pitch="79" start="6000" end="6399" volume="75"/>
+  <note pitch="78" start="6240" end="6639" volume="75"/>
+  <note pitch="74" start="6480" end="6879" volume="75"/>
+  <note pitch="71" start="6720" end="7119" volume="75"/>
+  <note pitch="67" start="6960" end="7359" volume="75"/>
+  <note pitch="81" start="7200" end="7599" volume="75"/>
+  <note pitch="79" start="7440" end="7839" volume="75"/>
+  <note pitch="78" start="7680" end="8079" volume="75"/>
+  <note pitch="74" start="7920" end="8319" volume="75"/>
+  <note pitch="71" start="8160" end="8559" volume="75"/>
+  <note pitch="67" start="8400" end="8799" volume="75"/>
+  <note pitch="81" start="8640" end="9039" volume="75"/>
+  <note pitch="79" start="8880" end="9279" volume="75"/>
+  <note pitch="78" start="9120" end="9519" volume="75"/>
+  <note pitch="74" start="9360" end="9759" volume="75"/>
+  <note pitch="71" start="9600" end="9999" volume="75"/>
+  <note pitch="67" start="9840" end="10239" volume="75"/>
+  <note pitch="81" start="10080" end="10479" volume="75"/>
+  <note pitch="79" start="10320" end="10719" volume="75"/>
+  <note pitch="78" start="10560" end="10959" volume="75"/>
+  <note pitch="74" start="10800" end="11199" volume="75"/>
+  <note pitch="71" start="11040" end="11439" volume="75"/>
+  <note pitch="67" start="11280" end="11679" volume="75"/>
+  <note pitch="81" start="11520" end="11919" volume="75"/>
+  <note pitch="79" start="11760" end="12159" volume="75"/>
+  <note pitch="78" start="12000" end="12399" volume="75"/>
+  <note pitch="74" start="12240" end="12639" volume="75"/>
+  <note pitch="72" start="12480" end="12879" volume="75"/>
+  <note pitch="67" start="12720" end="13119" volume="75"/>
+  <note pitch="81" start="12960" end="13359" volume="75"/>
+  <note pitch="79" start="13200" end="13599" volume="75"/>
+  <note pitch="78" start="13440" end="13839" volume="75"/>
+  <note pitch="74" start="13680" end="14079" volume="75"/>
+  <note pitch="72" start="13920" end="14319" volume="75"/>
+  <note pitch="67" start="14160" end="14559" volume="75"/>
+  <note pitch="81" start="14400" end="14799" volume="75"/>
+  <note pitch="79" start="14640" end="15039" volume="75"/>
+  <note pitch="78" start="14880" end="15279" volume="75"/>
+  <note pitch="74" start="15120" end="15519" volume="75"/>
+  <note pitch="72" start="15360" end="15759" volume="75"/>
+  <note pitch="67" start="15600" end="15999" volume="75"/>
+  <note pitch="81" start="15840" end="16239" volume="75"/>
+  <note pitch="79" start="16080" end="16479" volume="75"/>
+  <note pitch="78" start="16320" end="16719" volume="75"/>
+  <note pitch="74" start="16560" end="16959" volume="75"/>
+  <note pitch="72" start="16800" end="17199" volume="75"/>
+  <note pitch="67" start="17040" end="17439" volume="75"/>
+  <note pitch="81" start="17280" end="17679" volume="75"/>
+  <note pitch="79" start="17520" end="17919" volume="75"/>
+  <note pitch="78" start="17760" end="18159" volume="75"/>
+  <note pitch="74" start="18000" end="18399" volume="75"/>
+  <note pitch="71" start="18240" end="18639" volume="75"/>
+  <note pitch="67" start="18480" end="18879" volume="75"/>
+  <note pitch="81" start="18720" end="19119" volume="75"/>
+  <note pitch="79" start="18960" end="19359" volume="75"/>
+  <note pitch="78" start="19200" end="19599" volume="75"/>
+  <note pitch="74" start="19440" end="19839" volume="75"/>
+  <note pitch="71" start="19680" end="20079" volume="75"/>
+  <note pitch="67" start="19920" end="20319" volume="75"/>
+  <note pitch="81" start="20160" end="20559" volume="75"/>
+  <note pitch="79" start="20400" end="20799" volume="75"/>
+  <note pitch="78" start="20640" end="21039" volume="75"/>
+  <note pitch="74" start="20880" end="21279" volume="75"/>
+  <note pitch="71" start="21120" end="21519" volume="75"/>
+  <note pitch="67" start="21360" end="21759" volume="75"/>
+  <note pitch="81" start="21600" end="21999" volume="75"/>
+  <note pitch="79" start="21840" end="22239" volume="75"/>
+  <note pitch="78" start="22080" end="22479" volume="75"/>
+  <note pitch="74" start="22320" end="22719" volume="75"/>
+  <note pitch="71" start="22560" end="22959" volume="75"/>
+  <note pitch="67" start="22800" end="23199" volume="75"/>
+  <note pitch="81" start="23040" end="23439" volume="75"/>
+  <note pitch="79" start="23280" end="23679" volume="75"/>
+  <note pitch="78" start="23520" end="23919" volume="75"/>
+  <note pitch="74" start="23760" end="24159" volume="75"/>
+  <note pitch="72" start="24000" end="24399" volume="75"/>
+  <note pitch="67" start="24240" end="24639" volume="75"/>
+  <note pitch="81" start="24480" end="24879" volume="75"/>
+  <note pitch="79" start="24720" end="25119" volume="75"/>
+  <note pitch="78" start="24960" end="25359" volume="75"/>
+  <note pitch="74" start="25200" end="25599" volume="75"/>
+  <note pitch="72" start="25440" end="25839" volume="75"/>
+  <note pitch="67" start="25680" end="26079" volume="75"/>
+  <note pitch="81" start="25920" end="26319" volume="75"/>
+  <note pitch="79" start="26160" end="26559" volume="75"/>
+  <note pitch="78" start="26400" end="26799" volume="75"/>
+  <note pitch="74" start="26640" end="27039" volume="75"/>
+  <note pitch="72" start="26880" end="27279" volume="75"/>
+  <note pitch="67" start="27120" end="27519" volume="75"/>
+  <note pitch="81" start="27360" end="27759" volume="75"/>
+  <note pitch="79" start="27600" end="27999" volume="75"/>
+  <note pitch="78" start="27840" end="28239" volume="75"/>
+  <note pitch="74" start="28080" end="28479" volume="75"/>
+  <note pitch="72" start="28320" end="28719" volume="75"/>
+  <note pitch="67" start="28560" end="28959" volume="75"/>
+  <note pitch="81" start="28800" end="29199" volume="75"/>
+  <note pitch="79" start="29040" end="29439" volume="75"/>
+  <note pitch="78" start="29280" end="29679" volume="75"/>
+  <note pitch="74" start="29520" end="29919" volume="75"/>
+  <note pitch="71" start="29760" end="30159" volume="75"/>
+  <note pitch="67" start="30000" end="30399" volume="75"/>
+  <note pitch="81" start="30240" end="30639" volume="75"/>
+  <note pitch="79" start="30480" end="30879" volume="75"/>
+  <note pitch="78" start="30720" end="31119" volume="75"/>
+  <note pitch="74" start="30960" end="31359" volume="75"/>
+  <note pitch="71" start="31200" end="31599" volume="75"/>
+  <note pitch="67" start="31440" end="31839" volume="75"/>
+  <note pitch="80" start="31680" end="32079" volume="75"/>
+  <note pitch="78" start="31920" end="32319" volume="75"/>
+  <note pitch="76" start="32160" end="32559" volume="75"/>
+  <note pitch="73" start="32400" end="32799" volume="75"/>
+  <note pitch="69" start="32640" end="33039" volume="75"/>
+  <note pitch="66" start="32880" end="33279" volume="75"/>
+  <note pitch="80" start="33120" end="33519" volume="75"/>
+  <note pitch="78" start="33360" end="33759" volume="75"/>
+  <note pitch="76" start="33600" end="33999" volume="75"/>
+  <note pitch="73" start="33840" end="34239" volume="75"/>
+  <note pitch="69" start="34080" end="34479" volume="75"/>
+  <note pitch="66" start="34320" end="34719" volume="75"/>
+  <note pitch="87" start="34560" end="34959" volume="75"/>
+  <note pitch="83" start="34800" end="35199" volume="75"/>
+  <note pitch="80" start="35040" end="35439" volume="75"/>
+  <note pitch="76" start="35280" end="35679" volume="75"/>
+  <note pitch="75" start="35520" end="35919" volume="75"/>
+  <note pitch="71" start="35760" end="36159" volume="75"/>
+  <note pitch="87" start="36000" end="36399" volume="75"/>
+  <note pitch="83" start="36240" end="36639" volume="75"/>
+  <note pitch="80" start="36480" end="36879" volume="75"/>
+  <note pitch="76" start="36720" end="37119" volume="75"/>
+  <note pitch="75" start="36960" end="37359" volume="75"/>
+  <note pitch="71" start="37200" end="37599" volume="75"/>
+  <note pitch="86" start="37440" end="37839" volume="75"/>
+  <note pitch="82" start="37680" end="38079" volume="75"/>
+  <note pitch="79" start="37920" end="38319" volume="75"/>
+  <note pitch="76" start="38160" end="38559" volume="75"/>
+  <note pitch="74" start="38400" end="38799" volume="75"/>
+  <note pitch="70" start="38640" end="39039" volume="75"/>
+  <note pitch="86" start="38880" end="39279" volume="75"/>
+  <note pitch="82" start="39120" end="39519" volume="75"/>
+  <note pitch="79" start="39360" end="39759" volume="75"/>
+  <note pitch="76" start="39600" end="39999" volume="75"/>
+  <note pitch="74" start="39840" end="40239" volume="75"/>
+  <note pitch="70" start="40080" end="40479" volume="75"/>
+  <note pitch="81" start="40320" end="40719" volume="75"/>
+  <note pitch="79" start="40560" end="40959" volume="75"/>
+  <note pitch="78" start="40800" end="41199" volume="75"/>
+  <note pitch="74" start="41040" end="41439" volume="75"/>
+  <note pitch="71" start="41280" end="41679" volume="75"/>
+  <note pitch="67" start="41520" end="41919" volume="75"/>
+  <note pitch="81" start="41760" end="42159" volume="75"/>
+  <note pitch="79" start="42000" end="42399" volume="75"/>
+  <note pitch="78" start="42240" end="42639" volume="75"/>
+  <note pitch="74" start="42480" end="42879" volume="75"/>
+  <note pitch="71" start="42720" end="43119" volume="75"/>
+  <note pitch="67" start="42960" end="43359" volume="75"/>
+  <note pitch="81" start="43200" end="43599" volume="75"/>
+  <note pitch="79" start="43440" end="43839" volume="75"/>
+  <note pitch="78" start="43680" end="44079" volume="75"/>
+  <note pitch="74" start="43920" end="44319" volume="75"/>
+  <note pitch="71" start="44160" end="44559" volume="75"/>
+  <note pitch="67" start="44400" end="44799" volume="75"/>
+  <note pitch="81" start="44640" end="45039" volume="75"/>
+  <note pitch="79" start="44880" end="45279" volume="75"/>
+  <note pitch="78" start="45120" end="45519" volume="75"/>
+  <note pitch="74" start="45360" end="45759" volume="75"/>
+  <note pitch="71" start="45600" end="45999" volume="75"/>
+  <note pitch="67" start="45840" end="46239" volume="75"/>
+  <note pitch="81" start="46080" end="46479" volume="75"/>
+  <note pitch="79" start="46320" end="46719" volume="75"/>
+  <note pitch="78" start="46560" end="46959" volume="75"/>
+  <note pitch="74" start="46800" end="47199" volume="75"/>
+  <note pitch="72" start="47040" end="47439" volume="75"/>
+  <note pitch="67" start="47280" end="47679" volume="75"/>
+  <note pitch="81" start="47520" end="47919" volume="75"/>
+  <note pitch="79" start="47760" end="48159" volume="75"/>
+  <note pitch="78" start="48000" end="48399" volume="75"/>
+  <note pitch="74" start="48240" end="48639" volume="75"/>
+  <note pitch="72" start="48480" end="48879" volume="75"/>
+  <note pitch="67" start="48720" end="49119" volume="75"/>
+  <note pitch="81" start="48960" end="49359" volume="75"/>
+  <note pitch="79" start="49200" end="49599" volume="75"/>
+  <note pitch="78" start="49440" end="49839" volume="75"/>
+  <note pitch="74" start="49680" end="50079" volume="75"/>
+  <note pitch="72" start="49920" end="50319" volume="75"/>
+  <note pitch="67" start="50160" end="50559" volume="75"/>
+  <note pitch="81" start="50400" end="50799" volume="75"/>
+  <note pitch="79" start="50640" end="51039" volume="75"/>
+  <note pitch="78" start="50880" end="51279" volume="75"/>
+  <note pitch="74" start="51120" end="51519" volume="75"/>
+  <note pitch="72" start="51360" end="51759" volume="75"/>
+  <note pitch="67" start="51600" end="51999" volume="75"/>
+  <note pitch="81" start="51840" end="52239" volume="75"/>
+  <note pitch="79" start="52080" end="52479" volume="75"/>
+  <note pitch="78" start="52320" end="52719" volume="75"/>
+  <note pitch="74" start="52560" end="52959" volume="75"/>
+  <note pitch="71" start="52800" end="53199" volume="75"/>
+  <note pitch="67" start="53040" end="53439" volume="75"/>
+  <note pitch="81" start="53280" end="53679" volume="75"/>
+  <note pitch="79" start="53520" end="53919" volume="75"/>
+  <note pitch="78" start="53760" end="54159" volume="75"/>
+  <note pitch="74" start="54000" end="54399" volume="75"/>
+  <note pitch="71" start="54240" end="54639" volume="75"/>
+  <note pitch="67" start="54480" end="54879" volume="75"/>
+  <note pitch="81" start="54720" end="55119" volume="75"/>
+  <note pitch="79" start="54960" end="55359" volume="75"/>
+  <note pitch="78" start="55200" end="55599" volume="75"/>
+  <note pitch="74" start="55440" end="55839" volume="75"/>
+  <note pitch="71" start="55680" end="56079" volume="75"/>
+  <note pitch="67" start="55920" end="56319" volume="75"/>
+  <note pitch="81" start="56160" end="56559" volume="75"/>
+  <note pitch="79" start="56400" end="56799" volume="75"/>
+  <note pitch="78" start="56640" end="57039" volume="75"/>
+  <note pitch="74" start="56880" end="57279" volume="75"/>
+  <note pitch="71" start="57120" end="57519" volume="75"/>
+  <note pitch="67" start="57360" end="57759" volume="75"/>
+  <note pitch="81" start="57600" end="57999" volume="75"/>
+  <note pitch="79" start="57840" end="58239" volume="75"/>
+  <note pitch="78" start="58080" end="58479" volume="75"/>
+  <note pitch="74" start="58320" end="58719" volume="75"/>
+  <note pitch="72" start="58560" end="58959" volume="75"/>
+  <note pitch="67" start="58800" end="59199" volume="75"/>
+  <note pitch="81" start="59040" end="59439" volume="75"/>
+  <note pitch="79" start="59280" end="59679" volume="75"/>
+  <note pitch="78" start="59520" end="59919" volume="75"/>
+  <note pitch="74" start="59760" end="60159" volume="75"/>
+  <note pitch="72" start="60000" end="60399" volume="75"/>
+  <note pitch="67" start="60240" end="60639" volume="75"/>
+  <note pitch="81" start="60480" end="60879" volume="75"/>
+  <note pitch="79" start="60720" end="61119" volume="75"/>
+  <note pitch="78" start="60960" end="61359" volume="75"/>
+  <note pitch="74" start="61200" end="61599" volume="75"/>
+  <note pitch="72" start="61440" end="61839" volume="75"/>
+  <note pitch="67" start="61680" end="62079" volume="75"/>
+  <note pitch="81" start="61920" end="62319" volume="75"/>
+  <note pitch="79" start="62160" end="62559" volume="75"/>
+  <note pitch="78" start="62400" end="62799" volume="75"/>
+  <note pitch="74" start="62640" end="63039" volume="75"/>
+  <note pitch="72" start="62880" end="63279" volume="75"/>
+  <note pitch="67" start="63120" end="63519" volume="75"/>
+  <note pitch="86" start="63360" end="63759" volume="75"/>
+  <note pitch="79" start="63600" end="63999" volume="75"/>
+  <note pitch="78" start="63840" end="64239" volume="75"/>
+  <note pitch="74" start="64080" end="64479" volume="75"/>
+  <note pitch="71" start="64320" end="64719" volume="75"/>
+  <note pitch="67" start="64560" end="64959" volume="75"/>
+  <note pitch="86" start="64800" end="65199" volume="75"/>
+  <note pitch="79" start="65040" end="65439" volume="75"/>
+  <note pitch="78" start="65280" end="65679" volume="75"/>
+  <note pitch="74" start="65520" end="65919" volume="75"/>
+  <note pitch="71" start="65760" end="66159" volume="75"/>
+  <note pitch="67" start="66000" end="66399" volume="75"/>
+  <note pitch="88" start="66240" end="66639" volume="75"/>
+  <note pitch="81" start="66480" end="66879" volume="75"/>
+  <note pitch="79" start="66720" end="67119" volume="75"/>
+  <note pitch="76" start="66960" end="67359" volume="75"/>
+  <note pitch="72" start="67200" end="67599" volume="75"/>
+  <note pitch="69" start="67440" end="67839" volume="75"/>
+  <note pitch="88" start="67680" end="68079" volume="75"/>
+  <note pitch="81" start="67920" end="68319" volume="75"/>
+  <note pitch="79" start="68160" end="68559" volume="75"/>
+  <note pitch="76" start="68400" end="68799" volume="75"/>
+  <note pitch="72" start="68640" end="69039" volume="75"/>
+  <note pitch="69" start="68880" end="69279" volume="75"/>
+  <note pitch="90" start="69120" end="69519" volume="75"/>
+  <note pitch="83" start="69360" end="69759" volume="75"/>
+  <note pitch="81" start="69600" end="69999" volume="75"/>
+  <note pitch="78" start="69840" end="70239" volume="75"/>
+  <note pitch="74" start="70080" end="70479" volume="75"/>
+  <note pitch="71" start="70320" end="70719" volume="75"/>
+  <note pitch="90" start="70560" end="70959" volume="75"/>
+  <note pitch="83" start="70800" end="71199" volume="75"/>
+  <note pitch="81" start="71040" end="71439" volume="75"/>
+  <note pitch="78" start="71280" end="71679" volume="75"/>
+  <note pitch="74" start="71520" end="71919" volume="75"/>
+  <note pitch="71" start="71760" end="72159" volume="75"/>
+  <note pitch="91" start="72000" end="72399" volume="75"/>
+  <note pitch="84" start="72240" end="72639" volume="75"/>
+  <note pitch="83" start="72480" end="72879" volume="75"/>
+  <note pitch="79" start="72720" end="73119" volume="75"/>
+  <note pitch="76" start="72960" end="73359" volume="75"/>
+  <note pitch="72" start="73200" end="73599" volume="75"/>
+  <note pitch="91" start="73440" end="73839" volume="75"/>
+  <note pitch="84" start="73680" end="74079" volume="75"/>
+  <note pitch="83" start="73920" end="74319" volume="75"/>
+  <note pitch="79" start="74160" end="74559" volume="75"/>
+  <note pitch="76" start="74400" end="74799" volume="75"/>
+  <note pitch="72" start="74640" end="75039" volume="75"/>
+  <note pitch="90" start="74880" end="75279" volume="75"/>
+  <note pitch="83" start="75120" end="75519" volume="75"/>
+  <note pitch="81" start="75360" end="75759" volume="75"/>
+  <note pitch="78" start="75600" end="75999" volume="75"/>
+  <note pitch="74" start="75840" end="76239" volume="75"/>
+  <note pitch="71" start="76080" end="76479" volume="75"/>
+  <note pitch="90" start="76320" end="76719" volume="75"/>
+  <note pitch="83" start="76560" end="76959" volume="75"/>
+  <note pitch="81" start="76800" end="77199" volume="75"/>
+  <note pitch="78" start="77040" end="77439" volume="75"/>
+  <note pitch="74" start="77280" end="77679" volume="75"/>
+  <note pitch="71" start="77520" end="77919" volume="75"/>
+  <note pitch="89" start="77760" end="78159" volume="75"/>
+  <note pitch="83" start="78000" end="78399" volume="75"/>
+  <note pitch="80" start="78240" end="78639" volume="75"/>
+  <note pitch="77" start="78480" end="78879" volume="75"/>
+  <note pitch="74" start="78720" end="79119" volume="75"/>
+  <note pitch="71" start="78960" end="79359" volume="75"/>
+  <note pitch="89" start="79200" end="79599" volume="75"/>
+  <note pitch="83" start="79440" end="79839" volume="75"/>
+  <note pitch="80" start="79680" end="80079" volume="75"/>
+  <note pitch="77" start="79920" end="80319" volume="75"/>
+  <note pitch="74" start="80160" end="80559" volume="75"/>
+  <note pitch="71" start="80400" end="80799" volume="75"/>
+  <note pitch="88" start="80640" end="81039" volume="75"/>
+  <note pitch="81" start="80880" end="81279" volume="75"/>
+  <note pitch="79" start="81120" end="81519" volume="75"/>
+  <note pitch="76" start="81360" end="81759" volume="75"/>
+  <note pitch="72" start="81600" end="81999" volume="75"/>
+  <note pitch="69" start="81840" end="82239" volume="75"/>
+  <note pitch="88" start="82080" end="82479" volume="75"/>
+  <note pitch="81" start="82320" end="82719" volume="75"/>
+  <note pitch="79" start="82560" end="82959" volume="75"/>
+  <note pitch="76" start="82800" end="83199" volume="75"/>
+  <note pitch="72" start="83040" end="83439" volume="75"/>
+  <note pitch="69" start="83280" end="83679" volume="75"/>
+  <note pitch="87" start="83520" end="83919" volume="75"/>
+  <note pitch="81" start="83760" end="84159" volume="75"/>
+  <note pitch="78" start="84000" end="84399" volume="75"/>
+  <note pitch="75" start="84240" end="84639" volume="75"/>
+  <note pitch="72" start="84480" end="84879" volume="75"/>
+  <note pitch="69" start="84720" end="85119" volume="75"/>
+  <note pitch="87" start="84960" end="85359" volume="75"/>
+  <note pitch="81" start="85200" end="85599" volume="75"/>
+  <note pitch="78" start="85440" end="85839" volume="75"/>
+  <note pitch="75" start="85680" end="86079" volume="75"/>
+  <note pitch="72" start="85920" end="86319" volume="75"/>
+  <note pitch="69" start="86160" end="86559" volume="75"/>
+  <note pitch="86" start="86400" end="86799" volume="75"/>
+  <note pitch="84" start="86640" end="87039" volume="75"/>
+  <note pitch="83" start="86880" end="87279" volume="75"/>
+  <note pitch="79" start="87120" end="87519" volume="75"/>
+  <note pitch="76" start="87360" end="87759" volume="75"/>
+  <note pitch="72" start="87600" end="87999" volume="75"/>
+  <note pitch="86" start="87840" end="88239" volume="75"/>
+  <note pitch="84" start="88080" end="88479" volume="75"/>
+  <note pitch="83" start="88320" end="88719" volume="75"/>
+  <note pitch="79" start="88560" end="88959" volume="75"/>
+  <note pitch="76" start="88800" end="89199" volume="75"/>
+  <note pitch="72" start="89040" end="89439" volume="75"/>
+  <note pitch="86" start="89280" end="89679" volume="75"/>
+  <note pitch="84" start="89520" end="89919" volume="75"/>
+  <note pitch="83" start="89760" end="90159" volume="75"/>
+  <note pitch="79" start="90000" end="90399" volume="75"/>
+  <note pitch="76" start="90240" end="90639" volume="75"/>
+  <note pitch="72" start="90480" end="90879" volume="75"/>
+  <note pitch="69" start="90720" end="91119" volume="75"/>
+  <note pitch="72" start="90960" end="91359" volume="75"/>
+  <note pitch="76" start="91200" end="91599" volume="75"/>
+  <note pitch="79" start="91440" end="91839" volume="75"/>
+  <note pitch="83" start="91680" end="92079" volume="75"/>
+  <note pitch="84" start="91920" end="92199" volume="75"/>
+  <note pitch="81" start="92160" end="92520" volume="80"/>
+  <note pitch="79" start="92400" end="92799" volume="75" fret="2" string="3"/>
+  <note pitch="78" start="92640" end="93039" volume="75" fret="3" string="3"/>
+  <note pitch="74" start="92880" end="93279" volume="75" fret="2" string="2"/>
+  <note pitch="71" start="93120" end="93519" volume="75" fret="1" string="1"/>
+  <note pitch="67" start="93360" end="93720" volume="80"/>
+  <note pitch="81" start="93600" end="93999" volume="75" fret="0" string="3"/>
+  <note pitch="79" start="93840" end="94239" volume="75" fret="2" string="3"/>
+  <note pitch="78" start="94080" end="94479" volume="75" fret="3" string="3"/>
+  <note pitch="74" start="94320" end="94719" volume="75" fret="2" string="2"/>
+  <note pitch="71" start="94560" end="94959" volume="75" fret="1" string="1"/>
+  <note pitch="67" start="94800" end="95160" volume="80"/>
+  <note pitch="81" start="95040" end="95439" volume="75" fret="0" string="3"/>
+  <note pitch="79" start="95280" end="95679" volume="75" fret="2" string="3"/>
+  <note pitch="78" start="95520" end="95919" volume="75" fret="3" string="3"/>
+  <note pitch="74" start="95760" end="96159" volume="75" fret="2" string="2"/>
+  <note pitch="71" start="96000" end="96399" volume="75" fret="1" string="1"/>
+  <note pitch="67" start="96240" end="96600" volume="80"/>
+  <note pitch="64" start="96480" end="96840" volume="80"/>
+  <note pitch="67" start="96720" end="97080" volume="80"/>
+  <note pitch="71" start="96960" end="97359" volume="75" fret="1" string="1"/>
+  <note pitch="74" start="97200" end="97599" volume="75" fret="2" string="2"/>
+  <note pitch="78" start="97440" end="97839" volume="75" fret="3" string="3"/>
+  <note pitch="79" start="97680" end="98079" volume="75" fret="2" string="3"/>
+  <note pitch="81" start="97920" end="98319" volume="75" fret="0" string="3"/>
+  <note pitch="79" start="98160" end="98559" volume="75" fret="2" string="3"/>
+  <note pitch="78" start="98400" end="98799" volume="75" fret="3" string="3"/>
+  <note pitch="74" start="98640" end="99039" volume="75" fret="2" string="2"/>
+  <note pitch="71" start="98880" end="99279" volume="75" fret="1" string="1"/>
+  <note pitch="67" start="99120" end="99480" volume="80"/>
+  <note pitch="81" start="99360" end="99759" volume="75" fret="0" string="3"/>
+  <note pitch="79" start="99600" end="99999" volume="75" fret="2" string="3"/>
+  <note pitch="78" start="99840" end="100239" volume="75" fret="3" string="3"/>
+  <note pitch="74" start="100080" end="100479" volume="75" fret="2" string="2"/>
+  <note pitch="71" start="100320" end="100719" volume="75" fret="1" string="1"/>
+  <note pitch="67" start="100560" end="100800" volume="80" selected="true"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="7" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="0" value="0.00000000"/>
+  <controlevent type="91" tick="92160" value="0.00000000"/>
+  <controlevent type="7" tick="92238" value="2.00000000"/>
+  <controlevent type="7" tick="92306" value="3.00000000"/>
+  <controlevent type="7" tick="92375" value="4.00000000"/>
+  <controlevent type="7" tick="92443" value="5.00000000"/>
+  <controlevent type="7" tick="92512" value="6.00000000"/>
+  <controlevent type="7" tick="92580" value="7.00000000"/>
+  <controlevent type="7" tick="92649" value="8.00000000"/>
+  <controlevent type="7" tick="92717" value="9.00000000"/>
+  <controlevent type="7" tick="92786" value="10.00000000"/>
+  <controlevent type="7" tick="92854" value="11.00000000"/>
+  <controlevent type="7" tick="92923" value="12.00000000"/>
+  <controlevent type="7" tick="92991" value="13.00000000"/>
+  <controlevent type="7" tick="93060" value="14.00000000"/>
+  <controlevent type="7" tick="93128" value="15.00000000"/>
+  <controlevent type="7" tick="93197" value="16.00000000"/>
+  <controlevent type="7" tick="93265" value="17.00000000"/>
+  <controlevent type="7" tick="93334" value="18.00000000"/>
+  <controlevent type="7" tick="93402" value="19.00000000"/>
+  <controlevent type="7" tick="93471" value="20.00000000"/>
+  <controlevent type="7" tick="93539" value="21.00000000"/>
+  <controlevent type="7" tick="93608" value="22.00000000"/>
+  <controlevent type="7" tick="93676" value="23.00000000"/>
+  <controlevent type="7" tick="93745" value="24.00000000"/>
+  <controlevent type="7" tick="93813" value="25.00000000"/>
+  <controlevent type="7" tick="93882" value="26.00000000"/>
+  <controlevent type="7" tick="93950" value="27.00000000"/>
+  <controlevent type="7" tick="94019" value="28.00000000"/>
+  <controlevent type="7" tick="94087" value="29.00000000"/>
+  <controlevent type="7" tick="94156" value="30.00000000"/>
+  <controlevent type="7" tick="94224" value="31.00000000"/>
+  <controlevent type="7" tick="94293" value="32.00000000"/>
+  <controlevent type="7" tick="94361" value="33.00000000"/>
+  <controlevent type="7" tick="94430" value="34.00000000"/>
+  <controlevent type="7" tick="94498" value="35.00000000"/>
+  <controlevent type="7" tick="94567" value="36.00000000"/>
+  <controlevent type="7" tick="94635" value="37.00000000"/>
+  <controlevent type="7" tick="94704" value="38.00000000"/>
+  <controlevent type="7" tick="94772" value="39.00000000"/>
+  <controlevent type="7" tick="94841" value="40.00000000"/>
+  <controlevent type="7" tick="94909" value="41.00000000"/>
+  <controlevent type="7" tick="94978" value="42.00000000"/>
+  <controlevent type="7" tick="95046" value="43.00000000"/>
+  <controlevent type="7" tick="95115" value="44.00000000"/>
+  <controlevent type="7" tick="95183" value="45.00000000"/>
+  <controlevent type="7" tick="95252" value="46.00000000"/>
+  <controlevent type="7" tick="95320" value="47.00000000"/>
+  <controlevent type="7" tick="95389" value="48.00000000"/>
+  <controlevent type="7" tick="95457" value="49.00000000"/>
+  <controlevent type="7" tick="95526" value="50.00000000"/>
+  <controlevent type="7" tick="95594" value="51.00000000"/>
+  <controlevent type="7" tick="95663" value="52.00000000"/>
+  <controlevent type="7" tick="95731" value="53.00000000"/>
+  <controlevent type="7" tick="95800" value="54.00000000"/>
+  <controlevent type="7" tick="95868" value="55.00000000"/>
+  <controlevent type="7" tick="95937" value="56.00000000"/>
+  <controlevent type="7" tick="96005" value="57.00000000"/>
+  <controlevent type="7" tick="96074" value="58.00000000"/>
+  <controlevent type="7" tick="96142" value="59.00000000"/>
+  <controlevent type="7" tick="96211" value="60.00000000"/>
+  <controlevent type="7" tick="96279" value="61.00000000"/>
+  <controlevent type="7" tick="96348" value="62.00000000"/>
+  <controlevent type="7" tick="96416" value="63.00000000"/>
+  <controlevent type="7" tick="96485" value="64.00000000"/>
+  <controlevent type="7" tick="96553" value="65.00000000"/>
+  <controlevent type="7" tick="96622" value="66.00000000"/>
+  <controlevent type="7" tick="96690" value="67.00000000"/>
+  <controlevent type="7" tick="96759" value="68.00000000"/>
+  <controlevent type="7" tick="96827" value="69.00000000"/>
+  <controlevent type="7" tick="96896" value="70.00000000"/>
+  <controlevent type="7" tick="96964" value="71.00000000"/>
+  <controlevent type="7" tick="97033" value="72.00000000"/>
+  <controlevent type="7" tick="97101" value="73.00000000"/>
+  <controlevent type="7" tick="97170" value="74.00000000"/>
+  <controlevent type="7" tick="97238" value="75.00000000"/>
+  <controlevent type="7" tick="97307" value="76.00000000"/>
+  <controlevent type="7" tick="97375" value="77.00000000"/>
+  <controlevent type="7" tick="97444" value="78.00000000"/>
+  <controlevent type="7" tick="97512" value="79.00000000"/>
+  <controlevent type="7" tick="97581" value="80.00000000"/>
+  <controlevent type="7" tick="97649" value="81.00000000"/>
+  <controlevent type="7" tick="97718" value="82.00000000"/>
+  <controlevent type="7" tick="97786" value="83.00000000"/>
+  <controlevent type="7" tick="97855" value="84.00000000"/>
+  <controlevent type="7" tick="97923" value="85.00000000"/>
+  <controlevent type="7" tick="97992" value="86.00000000"/>
+  <controlevent type="7" tick="98060" value="87.00000000"/>
+  <controlevent type="7" tick="98129" value="88.00000000"/>
+  <controlevent type="7" tick="98197" value="89.00000000"/>
+  <controlevent type="7" tick="98266" value="90.00000000"/>
+  <controlevent type="7" tick="98334" value="91.00000000"/>
+  <controlevent type="7" tick="98403" value="92.00000000"/>
+  <controlevent type="7" tick="98471" value="93.00000000"/>
+  <controlevent type="7" tick="98540" value="94.00000000"/>
+  <controlevent type="7" tick="98608" value="95.00000000"/>
+  <controlevent type="7" tick="98677" value="96.00000000"/>
+  <controlevent type="7" tick="98745" value="97.00000000"/>
+  <controlevent type="7" tick="98814" value="98.00000000"/>
+  <controlevent type="7" tick="98882" value="99.00000000"/>
+  <controlevent type="7" tick="98951" value="100.00000000"/>
+  <controlevent type="7" tick="99019" value="101.00000000"/>
+  <controlevent type="7" tick="99088" value="102.00000000"/>
+  <controlevent type="7" tick="99156" value="103.00000000"/>
+  <controlevent type="7" tick="99225" value="104.00000000"/>
+  <controlevent type="7" tick="99293" value="105.00000000"/>
+  <controlevent type="7" tick="99362" value="106.00000000"/>
+  <controlevent type="7" tick="99430" value="107.00000000"/>
+  <controlevent type="7" tick="99499" value="108.00000000"/>
+  <controlevent type="7" tick="99567" value="109.00000000"/>
+  <controlevent type="7" tick="99636" value="110.00000000"/>
+  <controlevent type="7" tick="99704" value="111.00000000"/>
+  <controlevent type="7" tick="99773" value="112.00000000"/>
+  <controlevent type="7" tick="99841" value="113.00000000"/>
+  <controlevent type="7" tick="99910" value="114.00000000"/>
+  <controlevent type="7" tick="99978" value="115.00000000"/>
+  <controlevent type="7" tick="100047" value="116.00000000"/>
+  <controlevent type="7" tick="100115" value="117.00000000"/>
+  <controlevent type="7" tick="100184" value="118.00000000"/>
+  <controlevent type="7" tick="100252" value="119.00000000"/>
+  <controlevent type="7" tick="100321" value="120.00000000"/>
+  <controlevent type="7" tick="100389" value="121.00000000"/>
+  <controlevent type="7" tick="100458" value="122.00000000"/>
+  <controlevent type="7" tick="100526" value="123.00000000"/>
+  <controlevent type="7" tick="100595" value="124.00000000"/>
+  <controlevent type="7" tick="100663" value="125.00000000"/>
+  <controlevent type="7" tick="100732" value="126.00000000"/>
+</track>
+
+</sequence></seqview>

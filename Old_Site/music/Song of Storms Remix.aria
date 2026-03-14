@@ -1,0 +1,1632 @@
+<seqview xscroll="0.000000" yscroll="0" zoom="100">
+<sequence maintempo="90" measureAmount="116" currentTrack="2" beatResolution="960" internalName="Song of Storms Remix" fileFormatVersion="4" channelManagement="auto" metronome="false">
+
+<measure  firstMeasure="0" denom="4" num="3"/>
+
+<tempo>
+  <controlevent type="201" tick="0" value="104.00000000"/>
+  <controlevent type="201" tick="11520" value="101.00000000"/>
+  <controlevent type="201" tick="23040" value="97.00000000"/>
+  <controlevent type="201" tick="34560" value="94.00000000"/>
+  <controlevent type="201" tick="46080" value="90.00000000"/>
+  <controlevent type="201" tick="57600" value="87.00000000"/>
+  <controlevent type="201" tick="69120" value="85.00000000"/>
+  <controlevent type="201" tick="72000" value="82.00000000"/>
+  <controlevent type="201" tick="74880" value="79.00000000"/>
+  <controlevent type="201" tick="77760" value="77.00000000"/>
+  <controlevent type="201" tick="80640" value="74.00000000"/>
+  <controlevent type="201" tick="83520" value="72.00000000"/>
+  <controlevent type="201" tick="86400" value="69.00000000"/>
+  <controlevent type="201" tick="89280" value="67.00000000"/>
+  <controlevent type="201" tick="129600" value="67.00000000"/>
+  <controlevent type="201" tick="130386" value="67.00000000"/>
+  <controlevent type="201" tick="131171" value="68.00000000"/>
+  <controlevent type="201" tick="131957" value="69.00000000"/>
+  <controlevent type="201" tick="132742" value="70.00000000"/>
+  <controlevent type="201" tick="133528" value="71.00000000"/>
+  <controlevent type="201" tick="134313" value="72.00000000"/>
+  <controlevent type="201" tick="135099" value="73.00000000"/>
+  <controlevent type="201" tick="135884" value="74.00000000"/>
+  <controlevent type="201" tick="136670" value="75.00000000"/>
+  <controlevent type="201" tick="137455" value="76.00000000"/>
+  <controlevent type="201" tick="138240" value="77.00000000"/>
+  <controlevent type="201" tick="139026" value="78.00000000"/>
+  <controlevent type="201" tick="139811" value="79.00000000"/>
+  <controlevent type="201" tick="140597" value="80.00000000"/>
+  <controlevent type="201" tick="141382" value="81.00000000"/>
+  <controlevent type="201" tick="142168" value="82.00000000"/>
+  <controlevent type="201" tick="142953" value="83.00000000"/>
+  <controlevent type="201" tick="143739" value="84.00000000"/>
+  <controlevent type="201" tick="144524" value="85.00000000"/>
+  <controlevent type="201" tick="145310" value="86.00000000"/>
+  <controlevent type="201" tick="146095" value="87.00000000"/>
+  <controlevent type="201" tick="146880" value="88.00000000"/>
+  <controlevent type="201" tick="147666" value="89.00000000"/>
+  <controlevent type="201" tick="148451" value="90.00000000"/>
+  <controlevent type="201" tick="149237" value="91.00000000"/>
+  <controlevent type="201" tick="150022" value="92.00000000"/>
+  <controlevent type="201" tick="150808" value="93.00000000"/>
+  <controlevent type="201" tick="151593" value="94.00000000"/>
+  <controlevent type="201" tick="152379" value="95.00000000"/>
+  <controlevent type="201" tick="153164" value="96.00000000"/>
+  <controlevent type="201" tick="153950" value="97.00000000"/>
+  <controlevent type="201" tick="154735" value="98.00000000"/>
+  <controlevent type="201" tick="155520" value="101.00000000"/>
+  <controlevent type="201" tick="236160" value="99.00000000"/>
+  <controlevent type="201" tick="236161" value="98.00000000"/>
+  <controlevent type="201" tick="236771" value="97.00000000"/>
+  <controlevent type="201" tick="237382" value="96.00000000"/>
+  <controlevent type="201" tick="237993" value="95.00000000"/>
+  <controlevent type="201" tick="238604" value="94.00000000"/>
+  <controlevent type="201" tick="239215" value="93.00000000"/>
+  <controlevent type="201" tick="239826" value="92.00000000"/>
+  <controlevent type="201" tick="240437" value="91.00000000"/>
+  <controlevent type="201" tick="241048" value="90.00000000"/>
+  <controlevent type="201" tick="241659" value="89.00000000"/>
+  <controlevent type="201" tick="242270" value="88.00000000"/>
+  <controlevent type="201" tick="242881" value="87.00000000"/>
+  <controlevent type="201" tick="243491" value="86.00000000"/>
+  <controlevent type="201" tick="244102" value="85.00000000"/>
+  <controlevent type="201" tick="244713" value="84.00000000"/>
+  <controlevent type="201" tick="245324" value="83.00000000"/>
+  <controlevent type="201" tick="245935" value="82.00000000"/>
+  <controlevent type="201" tick="246546" value="81.00000000"/>
+  <controlevent type="201" tick="247157" value="80.00000000"/>
+  <controlevent type="201" tick="247768" value="79.00000000"/>
+  <controlevent type="201" tick="248379" value="78.00000000"/>
+  <controlevent type="201" tick="248990" value="77.00000000"/>
+  <controlevent type="201" tick="249601" value="76.00000000"/>
+  <controlevent type="201" tick="250211" value="75.00000000"/>
+  <controlevent type="201" tick="250822" value="74.00000000"/>
+  <controlevent type="201" tick="251433" value="73.00000000"/>
+  <controlevent type="201" tick="252044" value="72.00000000"/>
+  <controlevent type="201" tick="252655" value="71.00000000"/>
+  <controlevent type="201" tick="253266" value="70.00000000"/>
+  <controlevent type="201" tick="253877" value="69.00000000"/>
+  <controlevent type="201" tick="254488" value="68.00000000"/>
+  <controlevent type="201" tick="255099" value="67.00000000"/>
+  <controlevent type="201" tick="255710" value="66.00000000"/>
+  <controlevent type="201" tick="299520" value="66.00000000"/>
+  <controlevent type="201" tick="300131" value="67.00000000"/>
+  <controlevent type="201" tick="300742" value="68.00000000"/>
+  <controlevent type="201" tick="301353" value="69.00000000"/>
+  <controlevent type="201" tick="301964" value="70.00000000"/>
+  <controlevent type="201" tick="302575" value="71.00000000"/>
+  <controlevent type="201" tick="303186" value="72.00000000"/>
+  <controlevent type="201" tick="303797" value="73.00000000"/>
+  <controlevent type="201" tick="304408" value="74.00000000"/>
+  <controlevent type="201" tick="305019" value="75.00000000"/>
+  <controlevent type="201" tick="305630" value="76.00000000"/>
+  <controlevent type="201" tick="306240" value="77.00000000"/>
+  <controlevent type="201" tick="306851" value="78.00000000"/>
+  <controlevent type="201" tick="307462" value="79.00000000"/>
+  <controlevent type="201" tick="308073" value="80.00000000"/>
+  <controlevent type="201" tick="308684" value="81.00000000"/>
+  <controlevent type="201" tick="309295" value="82.00000000"/>
+  <controlevent type="201" tick="309906" value="83.00000000"/>
+  <controlevent type="201" tick="310517" value="84.00000000"/>
+  <controlevent type="201" tick="311128" value="85.00000000"/>
+  <controlevent type="201" tick="311739" value="86.00000000"/>
+  <controlevent type="201" tick="312350" value="87.00000000"/>
+  <controlevent type="201" tick="312960" value="88.00000000"/>
+  <controlevent type="201" tick="313571" value="89.00000000"/>
+  <controlevent type="201" tick="314182" value="90.00000000"/>
+  <controlevent type="201" tick="314793" value="91.00000000"/>
+  <controlevent type="201" tick="315404" value="92.00000000"/>
+  <controlevent type="201" tick="316015" value="93.00000000"/>
+  <controlevent type="201" tick="316626" value="94.00000000"/>
+  <controlevent type="201" tick="317237" value="95.00000000"/>
+  <controlevent type="201" tick="317848" value="96.00000000"/>
+  <controlevent type="201" tick="318459" value="97.00000000"/>
+  <controlevent type="201" tick="319070" value="98.00000000"/>
+  <controlevent type="201" tick="319680" value="101.00000000"/>
+</tempo>
+<text>
+</text>
+<copyright>
+</copyright>
+<defaultkeysig keytype="1" keysymbolamount="1" />
+
+
+<track name="Song of Storms Remix" id="0" channel="0" volume="100" default_volume="80">
+  <key type="flats" value="1" />
+  <editors height="428">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.818764" proportion="0.500000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="true" controller="201" proportion="0.500000"/>
+  </editors>
+  <magneticgrid divider="16" triplet="false" dotted="false"/>
+  <instrument id="0"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="93" start="0" end="2880" volume="80"/>
+  <note pitch="91" start="2880" end="5760" volume="80"/>
+  <note pitch="90" start="5760" end="8640" volume="80"/>
+  <note pitch="91" start="8640" end="11520" volume="80"/>
+  <note pitch="93" start="11520" end="14400" volume="80"/>
+  <note pitch="81" start="11520" end="14400" volume="80"/>
+  <note pitch="79" start="14400" end="17280" volume="80"/>
+  <note pitch="91" start="14400" end="17280" volume="80"/>
+  <note pitch="90" start="17280" end="20160" volume="80"/>
+  <note pitch="78" start="17280" end="20160" volume="80"/>
+  <note pitch="79" start="20160" end="23040" volume="80"/>
+  <note pitch="91" start="20160" end="23040" volume="80"/>
+  <note pitch="93" start="23040" end="25920" volume="80"/>
+  <note pitch="81" start="23040" end="25920" volume="80"/>
+  <note pitch="79" start="25920" end="28800" volume="80"/>
+  <note pitch="91" start="25920" end="28800" volume="80"/>
+  <note pitch="90" start="28800" end="31680" volume="80"/>
+  <note pitch="78" start="28800" end="31680" volume="80"/>
+  <note pitch="79" start="31680" end="34560" volume="80"/>
+  <note pitch="91" start="31680" end="34560" volume="80"/>
+  <note pitch="93" start="34560" end="37440" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="34560" end="37440" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="37440" end="40320" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="37440" end="40320" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="40320" end="43200" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="40320" end="43200" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="43200" end="46080" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="43200" end="46080" volume="80" fret="0" string="5"/>
+  <note pitch="81" start="46080" end="48960" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="46080" end="48960" volume="80" fret="-2" string="5"/>
+  <note pitch="91" start="48960" end="51840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="48960" end="51840" volume="80" fret="2" string="3"/>
+  <note pitch="78" start="51840" end="54720" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="51840" end="54720" volume="80" fret="1" string="5"/>
+  <note pitch="91" start="54720" end="57600" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="54720" end="57600" volume="80" fret="2" string="3"/>
+  <note pitch="93" start="57600" end="60480" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="57600" end="60480" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="60480" end="63360" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="60480" end="63360" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="63360" end="66240" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="63360" end="66240" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="66240" end="69120" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="66240" end="69120" volume="80" fret="0" string="5"/>
+  <note pitch="93" start="69120" end="72000" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="69120" end="72000" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="72000" end="74880" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="72000" end="74880" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="74880" end="77760" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="74880" end="77760" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="77760" end="80640" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="77760" end="80640" volume="80" fret="0" string="5"/>
+  <note pitch="93" start="80640" end="83520" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="80640" end="83520" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="83520" end="86400" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="83520" end="86400" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="86400" end="89280" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="86400" end="89280" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="89280" end="92160" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="89280" end="92160" volume="80" fret="0" string="5"/>
+  <note pitch="93" start="92160" end="95040" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="92160" end="95040" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="95040" end="97920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="95040" end="97920" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="97920" end="100800" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="97920" end="100800" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="100800" end="103680" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="100800" end="103680" volume="80" fret="0" string="5"/>
+  <note pitch="97" start="103680" end="106560" volume="80"/>
+  <note pitch="85" start="103680" end="106560" volume="80"/>
+  <note pitch="90" start="106560" end="109440" volume="80"/>
+  <note pitch="102" start="106560" end="109440" volume="80"/>
+  <note pitch="97" start="109440" end="112320" volume="80"/>
+  <note pitch="85" start="109440" end="112320" volume="80"/>
+  <note pitch="86" start="112320" end="115200" volume="80"/>
+  <note pitch="98" start="112320" end="115200" volume="80"/>
+  <note pitch="93" start="115200" end="118080" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="115200" end="118080" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="118080" end="120960" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="118080" end="120960" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="120960" end="123840" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="120960" end="123840" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="123840" end="126720" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="123840" end="126720" volume="80" fret="0" string="5"/>
+  <note pitch="97" start="126720" end="129600" volume="80"/>
+  <note pitch="85" start="126720" end="129600" volume="80"/>
+  <note pitch="86" start="129600" end="132480" volume="80"/>
+  <note pitch="98" start="129600" end="132480" volume="80"/>
+  <note pitch="93" start="132480" end="135360" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="132480" end="135360" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="135360" end="138240" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="135360" end="138240" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="138240" end="141120" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="138240" end="141120" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="141120" end="144000" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="141120" end="144000" volume="80" fret="0" string="5"/>
+  <note pitch="93" start="144000" end="146880" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="144000" end="146880" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="146880" end="149760" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="146880" end="149760" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="149760" end="152640" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="149760" end="152640" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="152640" end="155520" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="152640" end="155520" volume="80" fret="0" string="5"/>
+  <note pitch="81" start="155520" end="161280" volume="80"/>
+  <note pitch="93" start="155520" end="161280" volume="80"/>
+  <note pitch="93" start="161280" end="162720" volume="80"/>
+  <note pitch="81" start="162720" end="164160" volume="80"/>
+  <note pitch="93" start="164160" end="165120" volume="80"/>
+  <note pitch="81" start="165120" end="166080" volume="80"/>
+  <note pitch="93" start="166080" end="166560" volume="80"/>
+  <note pitch="81" start="166560" end="167040" volume="80"/>
+  <note pitch="93" start="167040" end="167280" volume="80"/>
+  <note pitch="81" start="167280" end="167520" volume="80"/>
+  <note pitch="93" start="167520" end="167760" volume="80"/>
+  <note pitch="81" start="167760" end="168000" volume="80"/>
+  <note pitch="93" start="168000" end="168240" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="168240" end="168480" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="168480" end="168720" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="168720" end="168960" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="168960" end="169200" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="169200" end="169440" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="169440" end="169680" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="169680" end="169920" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="169920" end="170160" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="170160" end="170400" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="170400" end="170640" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="170640" end="170880" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="170880" end="171120" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="171120" end="171360" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="171360" end="171600" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="171600" end="171840" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="171840" end="172080" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="172080" end="172320" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="172320" end="172560" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="172560" end="172800" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="172800" end="173040" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="173040" end="173280" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="173280" end="173520" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="173520" end="173760" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="173760" end="174000" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="174000" end="174240" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="174240" end="174480" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="174480" end="174720" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="174720" end="174960" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="174960" end="175200" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="175200" end="175440" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="175440" end="175680" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="175680" end="175920" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="175920" end="176160" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="176160" end="176400" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="176400" end="176640" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="176640" end="176880" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="176880" end="177120" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="177120" end="177360" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="177360" end="177600" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="177600" end="177840" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="177840" end="178080" volume="80" fret="0" string="3"/>
+  <note pitch="90" start="178080" end="178320" volume="80" fret="-2" string="5"/>
+  <note pitch="78" start="178320" end="178560" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="178560" end="178800" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="178800" end="179040" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="179040" end="179280" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="179280" end="179520" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="179520" end="179760" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="179760" end="180000" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="180000" end="180240" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="180240" end="180480" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="180480" end="180720" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="180720" end="180960" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="180960" end="181200" volume="80" fret="-2" string="5"/>
+  <note pitch="79" start="181200" end="181440" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="181440" end="181680" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="181680" end="181920" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="181920" end="182160" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="182160" end="182400" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="182400" end="182640" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="182640" end="182880" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="182880" end="183120" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="183120" end="183360" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="183360" end="183600" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="183600" end="183840" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="183840" end="184080" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="184080" end="184320" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="184320" end="184560" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="184560" end="184800" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="184800" end="185040" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="185040" end="185280" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="185280" end="185520" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="185520" end="185760" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="185760" end="186000" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="186000" end="186240" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="186240" end="186480" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="186480" end="186720" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="186720" end="186960" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="186960" end="187200" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="187200" end="187440" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="187440" end="187680" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="187680" end="187920" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="187920" end="188160" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="188160" end="188400" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="188400" end="188640" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="188640" end="188880" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="188880" end="189120" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="189120" end="189360" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="189360" end="189600" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="189600" end="189840" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="189840" end="190080" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="190080" end="190320" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="190320" end="190560" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="190560" end="190800" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="190800" end="191040" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="191040" end="191280" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="191280" end="191520" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="191520" end="191760" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="191760" end="192000" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="192000" end="192240" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="192240" end="192480" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="192480" end="192720" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="192720" end="192960" volume="80" selected="true"/>
+  <note pitch="93" start="192960" end="193200" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="193200" end="193440" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="193440" end="193680" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="193680" end="193920" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="193920" end="194160" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="194160" end="194400" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="194400" end="194640" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="194640" end="194880" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="194880" end="195120" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="195120" end="195360" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="195360" end="195600" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="195600" end="195840" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="195840" end="196080" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="196080" end="196320" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="196320" end="196560" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="196560" end="196800" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="196800" end="197040" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="197040" end="197280" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="197280" end="197520" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="197520" end="197760" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="197760" end="198000" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="198000" end="198240" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="198240" end="198480" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="198480" end="198720" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="198720" end="198960" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="198960" end="199200" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="199200" end="199440" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="199440" end="199680" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="199680" end="199920" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="199920" end="200160" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="200160" end="200400" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="200400" end="200640" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="200640" end="200880" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="200880" end="201120" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="201120" end="201360" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="201360" end="201600" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="201600" end="201840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="201840" end="202080" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="202080" end="202320" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="202320" end="202560" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="202560" end="202800" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="202800" end="203040" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="203040" end="203280" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="203280" end="203520" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="203520" end="203760" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="203760" end="204000" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="204000" end="204240" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="204240" end="204480" volume="80"/>
+  <note pitch="97" start="204480" end="204720" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="204720" end="204960" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="204960" end="205200" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="205200" end="205440" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="205440" end="205680" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="205680" end="205920" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="205920" end="206160" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="206160" end="206400" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="206400" end="206640" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="206640" end="206880" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="206880" end="207120" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="207120" end="207360" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="207360" end="207600" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="207600" end="207840" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="207840" end="208080" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="208080" end="208320" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="208320" end="208560" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="208560" end="208800" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="208800" end="209040" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="209040" end="209280" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="209280" end="209520" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="209520" end="209760" volume="80" fret="0" string="3"/>
+  <note pitch="102" start="209760" end="210000" volume="80" fret="-2" string="5"/>
+  <note pitch="90" start="210000" end="210240" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="210240" end="210480" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="210480" end="210720" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="210720" end="210960" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="210960" end="211200" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="211200" end="211440" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="211440" end="211680" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="211680" end="211920" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="211920" end="212160" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="212160" end="212400" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="212400" end="212640" volume="80" fret="0" string="3"/>
+  <note pitch="97" start="212640" end="212880" volume="80" fret="-2" string="5"/>
+  <note pitch="85" start="212880" end="213120" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="213120" end="213360" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="213360" end="213600" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="213600" end="213840" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="213840" end="214080" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="214080" end="214320" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="214320" end="214560" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="214560" end="214800" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="214800" end="215040" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="215040" end="215280" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="215280" end="215520" volume="80" fret="0" string="3"/>
+  <note pitch="98" start="215520" end="215760" volume="80" fret="-2" string="5"/>
+  <note pitch="86" start="215760" end="216000" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="216000" end="216240" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="216240" end="216480" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="216480" end="216720" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="216720" end="216960" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="216960" end="217200" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="217200" end="217440" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="217440" end="217680" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="217680" end="217920" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="217920" end="218160" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="218160" end="218400" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="218400" end="218640" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="218640" end="218880" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="218880" end="219120" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="219120" end="219360" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="219360" end="219600" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="219600" end="219840" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="219840" end="220080" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="220080" end="220320" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="220320" end="220560" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="220560" end="220800" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="220800" end="221040" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="221040" end="221280" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="221280" end="221520" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="221520" end="221760" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="221760" end="222000" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="222000" end="222240" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="222240" end="222480" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="222480" end="222720" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="222720" end="222960" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="222960" end="223200" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="223200" end="223440" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="223440" end="223680" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="223680" end="223920" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="223920" end="224160" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="224160" end="224400" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="224400" end="224640" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="224640" end="224880" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="224880" end="225120" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="225120" end="225360" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="225360" end="225600" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="225600" end="225840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="225840" end="226080" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="226080" end="226320" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="226320" end="226560" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="226560" end="226800" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="226800" end="227040" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="227040" end="227280" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="227280" end="227520" volume="80"/>
+  <note pitch="97" start="227520" end="227760" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="227760" end="228000" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="228000" end="228240" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="228240" end="228480" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="228480" end="228720" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="228720" end="228960" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="228960" end="229200" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="229200" end="229440" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="229440" end="229680" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="229680" end="229920" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="229920" end="230160" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="230160" end="230400" volume="80" fret="1" string="4"/>
+  <note pitch="98" start="230400" end="230640" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="230640" end="230880" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="230880" end="231120" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="231120" end="231360" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="231360" end="231600" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="231600" end="231840" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="231840" end="232080" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="232080" end="232320" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="232320" end="232560" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="232560" end="232800" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="232800" end="233040" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="233040" end="233280" volume="80" fret="0" string="4"/>
+  <note pitch="93" start="233280" end="233520" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="233520" end="233760" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="233760" end="234000" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="234000" end="234240" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="234240" end="234480" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="234480" end="234720" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="234720" end="234960" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="234960" end="235200" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="235200" end="235440" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="235440" end="235680" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="235680" end="235920" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="235920" end="236160" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="236160" end="236400" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="236400" end="236640" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="236640" end="236880" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="236880" end="237120" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="237120" end="237360" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="237360" end="237600" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="237600" end="237840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="237840" end="238080" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="238080" end="238320" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="238320" end="238560" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="238560" end="238800" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="238800" end="239040" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="239040" end="239280" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="239280" end="239520" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="239520" end="239760" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="239760" end="240000" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="240000" end="240240" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="240240" end="240480" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="240480" end="240720" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="240720" end="240960" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="240960" end="241200" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="241200" end="241440" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="241440" end="241680" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="241680" end="241920" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="241920" end="242160" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="242160" end="242400" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="242400" end="242640" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="242640" end="242880" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="242880" end="243120" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="243120" end="243360" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="243360" end="243600" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="243600" end="243840" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="243840" end="244080" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="244080" end="244320" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="244320" end="244560" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="244560" end="244800" volume="80" fret="2" string="3"/>
+  <note pitch="93" start="244800" end="245040" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="245040" end="245280" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="245280" end="245520" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="245520" end="245760" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="245760" end="246000" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="246000" end="246240" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="246240" end="246480" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="246480" end="246720" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="246720" end="246960" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="246960" end="247200" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="247200" end="247440" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="247440" end="247680" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="247680" end="247920" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="247920" end="248160" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="248160" end="248400" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="248400" end="248640" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="248640" end="248880" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="248880" end="249120" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="249120" end="249360" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="249360" end="249600" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="249600" end="249840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="249840" end="250080" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="250080" end="250320" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="250320" end="250560" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="250560" end="250800" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="250800" end="251040" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="251040" end="251280" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="251280" end="251520" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="251520" end="251760" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="251760" end="252000" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="252000" end="252240" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="252240" end="252480" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="252480" end="252720" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="252720" end="252960" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="252960" end="253200" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="253200" end="253440" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="253440" end="253680" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="253680" end="253920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="253920" end="254160" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="254160" end="254400" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="254400" end="254640" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="254640" end="254880" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="254880" end="255120" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="255120" end="255360" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="255360" end="255600" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="255600" end="255840" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="255840" end="256080" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="256080" end="256320" volume="80"/>
+  <note pitch="93" start="256320" end="256560" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="256560" end="256800" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="256800" end="257040" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="257040" end="257280" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="257280" end="257520" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="257520" end="257760" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="257760" end="258000" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="258000" end="258240" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="258240" end="258480" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="258480" end="258720" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="258720" end="258960" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="258960" end="259200" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="259200" end="259440" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="259440" end="259680" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="259680" end="259920" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="259920" end="260160" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="260160" end="260400" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="260400" end="260640" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="260640" end="260880" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="260880" end="261120" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="261120" end="261360" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="261360" end="261600" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="261600" end="261840" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="261840" end="262080" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="262080" end="262320" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="262320" end="262560" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="262560" end="262800" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="262800" end="263040" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="263040" end="263280" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="263280" end="263520" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="263520" end="263760" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="263760" end="264000" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="264000" end="264240" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="264240" end="264480" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="264480" end="264720" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="264720" end="264960" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="264960" end="265200" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="265200" end="265440" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="265440" end="265680" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="265680" end="265920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="265920" end="266160" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="266160" end="266400" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="266400" end="266640" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="266640" end="266880" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="266880" end="267120" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="267120" end="267360" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="267360" end="267600" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="267600" end="267840" volume="80" fret="2" string="3"/>
+  <note pitch="97" start="267840" end="268080" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="268080" end="268320" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="268320" end="268560" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="268560" end="268800" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="268800" end="269040" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="269040" end="269280" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="269280" end="269520" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="269520" end="269760" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="269760" end="270000" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="270000" end="270240" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="270240" end="270480" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="270480" end="270720" volume="80" fret="1" string="4"/>
+  <note pitch="102" start="270720" end="270960" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="270960" end="271200" volume="80" fret="1" string="5"/>
+  <note pitch="102" start="271200" end="271440" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="271440" end="271680" volume="80" fret="1" string="5"/>
+  <note pitch="102" start="271680" end="271920" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="271920" end="272160" volume="80" fret="1" string="5"/>
+  <note pitch="102" start="272160" end="272400" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="272400" end="272640" volume="80" fret="1" string="5"/>
+  <note pitch="102" start="272640" end="272880" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="272880" end="273120" volume="80" fret="1" string="5"/>
+  <note pitch="102" start="273120" end="273360" volume="80" fret="-11" string="5"/>
+  <note pitch="90" start="273360" end="273600" volume="80" fret="1" string="5"/>
+  <note pitch="97" start="273600" end="273840" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="273840" end="274080" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="274080" end="274320" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="274320" end="274560" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="274560" end="274800" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="274800" end="275040" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="275040" end="275280" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="275280" end="275520" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="275520" end="275760" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="275760" end="276000" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="276000" end="276240" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="276240" end="276480" volume="80" fret="1" string="4"/>
+  <note pitch="98" start="276480" end="276720" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="276720" end="276960" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="276960" end="277200" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="277200" end="277440" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="277440" end="277680" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="277680" end="277920" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="277920" end="278160" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="278160" end="278400" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="278400" end="278640" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="278640" end="278880" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="278880" end="279120" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="279120" end="279360" volume="80" fret="0" string="4"/>
+  <note pitch="93" start="279360" end="279600" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="279600" end="279840" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="279840" end="280080" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="280080" end="280320" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="280320" end="280560" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="280560" end="280800" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="280800" end="281040" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="281040" end="281280" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="281280" end="281520" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="281520" end="281760" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="281760" end="282000" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="282000" end="282240" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="282240" end="282480" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="282480" end="282720" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="282720" end="282960" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="282960" end="283200" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="283200" end="283440" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="283440" end="283680" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="283680" end="283920" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="283920" end="284160" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="284160" end="284400" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="284400" end="284640" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="284640" end="284880" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="284880" end="285120" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="285120" end="285360" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="285360" end="285600" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="285600" end="285840" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="285840" end="286080" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="286080" end="286320" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="286320" end="286560" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="286560" end="286800" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="286800" end="287040" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="287040" end="287280" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="287280" end="287520" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="287520" end="287760" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="287760" end="288000" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="288000" end="288240" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="288240" end="288480" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="288480" end="288720" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="288720" end="288960" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="288960" end="289200" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="289200" end="289440" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="289440" end="289680" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="289680" end="289920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="289920" end="290160" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="290160" end="290400" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="290400" end="290640" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="290640" end="290880" volume="80" fret="2" string="3"/>
+  <note pitch="97" start="290880" end="291120" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="291120" end="291360" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="291360" end="291600" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="291600" end="291840" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="291840" end="292080" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="292080" end="292320" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="292320" end="292560" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="292560" end="292800" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="292800" end="293040" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="293040" end="293280" volume="80" fret="1" string="4"/>
+  <note pitch="97" start="293280" end="293520" volume="80" fret="-6" string="5"/>
+  <note pitch="85" start="293520" end="293760" volume="80" fret="1" string="4"/>
+  <note pitch="98" start="293760" end="294000" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="294000" end="294240" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="294240" end="294480" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="294480" end="294720" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="294720" end="294960" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="294960" end="295200" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="295200" end="295440" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="295440" end="295680" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="295680" end="295920" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="295920" end="296160" volume="80" fret="0" string="4"/>
+  <note pitch="98" start="296160" end="296400" volume="80" fret="-7" string="5"/>
+  <note pitch="86" start="296400" end="296640" volume="80" fret="0" string="4"/>
+  <note pitch="93" start="296640" end="296880" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="296880" end="297120" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="297120" end="297360" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="297360" end="297600" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="297600" end="297840" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="297840" end="298080" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="298080" end="298320" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="298320" end="298560" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="298560" end="298800" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="298800" end="299040" volume="80" fret="0" string="3"/>
+  <note pitch="93" start="299040" end="299280" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="299280" end="299520" volume="80" fret="0" string="3"/>
+  <note pitch="91" start="299520" end="299760" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="299760" end="300000" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="300000" end="300240" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="300240" end="300480" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="300480" end="300720" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="300720" end="300960" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="300960" end="301200" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="301200" end="301440" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="301440" end="301680" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="301680" end="301920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="301920" end="302160" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="302160" end="302400" volume="80" fret="2" string="3"/>
+  <note pitch="90" start="302400" end="302640" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="302640" end="302880" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="302880" end="303120" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="303120" end="303360" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="303360" end="303600" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="303600" end="303840" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="303840" end="304080" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="304080" end="304320" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="304320" end="304560" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="304560" end="304800" volume="80" fret="3" string="3"/>
+  <note pitch="90" start="304800" end="305040" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="305040" end="305280" volume="80" fret="3" string="3"/>
+  <note pitch="91" start="305280" end="305520" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="305520" end="305760" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="305760" end="306000" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="306000" end="306240" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="306240" end="306480" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="306480" end="306720" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="306720" end="306960" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="306960" end="307200" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="307200" end="307440" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="307440" end="307680" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="307680" end="307920" volume="80" fret="0" string="5"/>
+  <note pitch="79" start="307920" end="308160" volume="80" fret="2" string="3"/>
+  <note pitch="93" start="308160" end="311040" volume="80" fret="-2" string="5"/>
+  <note pitch="81" start="308160" end="311040" volume="80" fret="0" string="3"/>
+  <note pitch="79" start="311040" end="313920" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="311040" end="313920" volume="80" fret="0" string="5"/>
+  <note pitch="90" start="313920" end="316800" volume="80" fret="1" string="5"/>
+  <note pitch="78" start="313920" end="316800" volume="80" fret="3" string="3"/>
+  <note pitch="79" start="316800" end="319680" volume="80" fret="2" string="3"/>
+  <note pitch="91" start="316800" end="319680" volume="80" fret="0" string="5"/>
+  <note pitch="93" start="319680" end="334080" volume="80"/>
+  <note pitch="90" start="321600" end="334080" volume="80"/>
+  <note pitch="86" start="323520" end="334080" volume="80"/>
+  <note pitch="81" start="325440" end="334080" volume="80"/>
+</track>
+
+
+<track name="By ZeldaRocks" id="1" channel="0" volume="100" default_volume="80">
+  <key type="flats" value="1" />
+  <editors height="214">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.551429" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="201"/>
+  </editors>
+  <magneticgrid divider="8" triplet="false" dotted="false"/>
+  <instrument id="0"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="69" start="23040" end="25920" volume="80"/>
+  <note pitch="67" start="25920" end="28800" volume="80"/>
+  <note pitch="66" start="28800" end="31680" volume="80"/>
+  <note pitch="67" start="31680" end="34560" volume="80"/>
+  <note pitch="69" start="34560" end="37440" volume="80"/>
+  <note pitch="57" start="34560" end="37440" volume="80"/>
+  <note pitch="55" start="37440" end="40320" volume="80"/>
+  <note pitch="67" start="37440" end="40320" volume="80"/>
+  <note pitch="54" start="40320" end="43200" volume="80"/>
+  <note pitch="66" start="40320" end="43200" volume="80"/>
+  <note pitch="67" start="43200" end="46080" volume="80"/>
+  <note pitch="55" start="43200" end="46080" volume="80"/>
+  <note pitch="69" start="46080" end="48960" volume="80"/>
+  <note pitch="57" start="46080" end="48960" volume="80"/>
+  <note pitch="66" start="46080" end="48960" volume="80"/>
+  <note pitch="64" start="48960" end="51840" volume="80"/>
+  <note pitch="67" start="48960" end="51840" volume="80"/>
+  <note pitch="55" start="48960" end="51840" volume="80"/>
+  <note pitch="54" start="51840" end="54720" volume="80"/>
+  <note pitch="66" start="51840" end="54720" volume="80"/>
+  <note pitch="62" start="51840" end="54720" volume="80"/>
+  <note pitch="55" start="54720" end="57600" volume="80"/>
+  <note pitch="64" start="54720" end="57600" volume="80"/>
+  <note pitch="67" start="54720" end="57600" volume="80"/>
+  <note pitch="62" start="57600" end="60480" volume="80"/>
+  <note pitch="66" start="57600" end="60480" volume="80"/>
+  <note pitch="57" start="57600" end="60480" volume="80"/>
+  <note pitch="69" start="57600" end="60480" volume="80"/>
+  <note pitch="60" start="60480" end="63360" volume="80"/>
+  <note pitch="64" start="60480" end="63360" volume="80"/>
+  <note pitch="67" start="60480" end="63360" volume="80"/>
+  <note pitch="55" start="60480" end="63360" volume="80"/>
+  <note pitch="59" start="63360" end="66240" volume="80"/>
+  <note pitch="62" start="63360" end="66240" volume="80"/>
+  <note pitch="66" start="63360" end="66240" volume="80"/>
+  <note pitch="54" start="63360" end="66240" volume="80"/>
+  <note pitch="55" start="66240" end="69120" volume="80"/>
+  <note pitch="60" start="66240" end="69120" volume="80"/>
+  <note pitch="64" start="66240" end="69120" volume="80"/>
+  <note pitch="67" start="66240" end="69120" volume="80"/>
+  <note pitch="57" start="70080" end="71040" volume="80"/>
+  <note pitch="62" start="70080" end="71040" volume="80"/>
+  <note pitch="69" start="70080" end="71040" volume="80"/>
+  <note pitch="66" start="70080" end="71040" volume="80"/>
+  <note pitch="66" start="71040" end="72000" volume="80"/>
+  <note pitch="57" start="71040" end="72000" volume="80"/>
+  <note pitch="62" start="71040" end="72000" volume="80"/>
+  <note pitch="69" start="71040" end="72000" volume="80"/>
+  <note pitch="55" start="72480" end="72960" volume="80"/>
+  <note pitch="67" start="72480" end="72960" volume="80"/>
+  <note pitch="55" start="72960" end="74880" volume="80"/>
+  <note pitch="67" start="72960" end="74880" volume="80"/>
+  <note pitch="60" start="72960" end="74880" volume="80"/>
+  <note pitch="64" start="72960" end="74880" volume="80"/>
+  <note pitch="59" start="75840" end="76800" volume="80"/>
+  <note pitch="66" start="75840" end="76800" volume="80"/>
+  <note pitch="62" start="75840" end="76800" volume="80"/>
+  <note pitch="54" start="75840" end="76800" volume="80"/>
+  <note pitch="54" start="76800" end="77760" volume="80"/>
+  <note pitch="59" start="76800" end="77760" volume="80"/>
+  <note pitch="66" start="76800" end="77760" volume="80"/>
+  <note pitch="62" start="76800" end="77760" volume="80"/>
+  <note pitch="55" start="78240" end="78720" volume="80"/>
+  <note pitch="67" start="78240" end="78720" volume="80"/>
+  <note pitch="64" start="78720" end="80640" volume="80"/>
+  <note pitch="55" start="78720" end="80640" volume="80"/>
+  <note pitch="67" start="78720" end="80640" volume="80"/>
+  <note pitch="60" start="78720" end="80640" volume="80"/>
+  <note pitch="66" start="81600" end="82560" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="81600" end="82560" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="81600" end="82560" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="81600" end="82560" volume="80" fret="3" string="1"/>
+  <note pitch="69" start="82560" end="83520" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="82560" end="83520" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="82560" end="83520" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="82560" end="83520" volume="80" fret="5" string="0"/>
+  <note pitch="67" start="84000" end="84480" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="84000" end="84480" volume="80" fret="12" string="0"/>
+  <note pitch="64" start="84480" end="86400" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="84480" end="86400" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="84480" end="86400" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="84480" end="86400" volume="80" fret="7" string="0"/>
+  <note pitch="54" start="87360" end="88320" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="87360" end="88320" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="87360" end="88320" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="87360" end="88320" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="88320" end="89280" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="88320" end="89280" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="88320" end="89280" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="88320" end="89280" volume="80" fret="1" string="0"/>
+  <note pitch="67" start="89760" end="90240" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="89760" end="90240" volume="80" fret="12" string="0"/>
+  <note pitch="60" start="90240" end="92160" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="90240" end="92160" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="90240" end="92160" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="90240" end="92160" volume="80" fret="0" string="0"/>
+  <note pitch="69" start="93120" end="94080" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="93120" end="94080" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="93120" end="94080" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="93120" end="94080" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="94080" end="95040" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="94080" end="95040" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="94080" end="95040" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="94080" end="95040" volume="80" fret="10" string="0"/>
+  <note pitch="55" start="95520" end="96000" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="95520" end="96000" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="96000" end="97920" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="96000" end="97920" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="96000" end="97920" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="96000" end="97920" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="98880" end="99840" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="98880" end="99840" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="98880" end="99840" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="98880" end="99840" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="99840" end="100800" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="99840" end="100800" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="99840" end="100800" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="99840" end="100800" volume="80" fret="8" string="0"/>
+  <note pitch="55" start="101280" end="101760" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="101280" end="101760" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="101760" end="103680" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="101760" end="103680" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="101760" end="103680" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="101760" end="103680" volume="80" fret="12" string="0"/>
+  <note pitch="61" start="104640" end="105600" volume="80"/>
+  <note pitch="66" start="104640" end="105600" volume="80"/>
+  <note pitch="73" start="104640" end="105600" volume="80"/>
+  <note pitch="69" start="104640" end="105600" volume="80"/>
+  <note pitch="69" start="105600" end="106560" volume="80"/>
+  <note pitch="66" start="105600" end="106560" volume="80"/>
+  <note pitch="61" start="105600" end="106560" volume="80"/>
+  <note pitch="73" start="105600" end="106560" volume="80"/>
+  <note pitch="66" start="107520" end="109440" volume="80"/>
+  <note pitch="74" start="107520" end="109440" volume="80"/>
+  <note pitch="71" start="107520" end="109440" volume="80"/>
+  <note pitch="78" start="107520" end="109440" volume="80"/>
+  <note pitch="66" start="110400" end="111360" volume="80"/>
+  <note pitch="73" start="110400" end="111360" volume="80"/>
+  <note pitch="69" start="110400" end="111360" volume="80"/>
+  <note pitch="61" start="110400" end="111360" volume="80"/>
+  <note pitch="61" start="111360" end="112320" volume="80"/>
+  <note pitch="66" start="111360" end="112320" volume="80"/>
+  <note pitch="73" start="111360" end="112320" volume="80"/>
+  <note pitch="69" start="111360" end="112320" volume="80"/>
+  <note pitch="74" start="113280" end="115200" volume="80"/>
+  <note pitch="62" start="113280" end="115200" volume="80"/>
+  <note pitch="70" start="113280" end="115200" volume="80"/>
+  <note pitch="67" start="113280" end="115200" volume="80"/>
+  <note pitch="69" start="116160" end="117120" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="116160" end="117120" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="116160" end="117120" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="116160" end="117120" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="117120" end="118080" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="117120" end="118080" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="117120" end="118080" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="117120" end="118080" volume="80" fret="10" string="0"/>
+  <note pitch="55" start="118560" end="119040" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="118560" end="119040" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="119040" end="120960" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="119040" end="120960" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="119040" end="120960" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="119040" end="120960" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="121920" end="122880" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="121920" end="122880" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="121920" end="122880" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="121920" end="122880" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="122880" end="123840" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="122880" end="123840" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="122880" end="123840" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="122880" end="123840" volume="80" fret="8" string="0"/>
+  <note pitch="55" start="124320" end="124800" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="124320" end="124800" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="124800" end="126720" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="124800" end="126720" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="124800" end="126720" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="124800" end="126720" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="127680" end="128640" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="127680" end="128640" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="127680" end="128640" volume="80" fret="3" string="1"/>
+  <note pitch="61" start="127680" end="128640" volume="80" fret="6" string="0"/>
+  <note pitch="61" start="128640" end="129600" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="128640" end="129600" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="128640" end="129600" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="128640" end="129600" volume="80" fret="3" string="1"/>
+  <note pitch="74" start="130560" end="132480" volume="80" fret="2" string="2"/>
+  <note pitch="62" start="130560" end="132480" volume="80" fret="5" string="0"/>
+  <note pitch="70" start="130560" end="132480" volume="80" fret="2" string="1"/>
+  <note pitch="67" start="130560" end="132480" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="133440" end="134400" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="133440" end="134400" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="133440" end="134400" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="133440" end="134400" volume="80" fret="10" string="0"/>
+  <note pitch="57" start="134400" end="135360" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="134400" end="135360" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="134400" end="135360" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="134400" end="135360" volume="80" fret="1" string="0"/>
+  <note pitch="67" start="135840" end="136320" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="135840" end="136320" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="136320" end="138240" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="136320" end="138240" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="136320" end="138240" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="136320" end="138240" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="139200" end="140160" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="139200" end="140160" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="139200" end="140160" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="139200" end="140160" volume="80" fret="8" string="0"/>
+  <note pitch="59" start="140160" end="141120" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="140160" end="141120" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="140160" end="141120" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="140160" end="141120" volume="80" fret="13" string="0"/>
+  <note pitch="67" start="141600" end="142080" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="141600" end="142080" volume="80" fret="12" string="0"/>
+  <note pitch="55" start="142080" end="144000" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="142080" end="144000" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="142080" end="144000" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="142080" end="144000" volume="80" fret="3" string="0"/>
+  <note pitch="57" start="144960" end="145920" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="144960" end="145920" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="144960" end="145920" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="144960" end="145920" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="145920" end="146880" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="145920" end="146880" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="145920" end="146880" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="145920" end="146880" volume="80" fret="3" string="1"/>
+  <note pitch="55" start="147360" end="147840" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="147360" end="147840" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="147840" end="149760" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="147840" end="149760" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="147840" end="149760" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="147840" end="149760" volume="80" fret="3" string="0"/>
+  <note pitch="59" start="150720" end="151680" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="150720" end="151680" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="150720" end="151680" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="150720" end="151680" volume="80" fret="13" string="0"/>
+  <note pitch="54" start="151680" end="152640" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="151680" end="152640" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="151680" end="152640" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="151680" end="152640" volume="80" fret="5" string="0"/>
+  <note pitch="55" start="153120" end="153600" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="153120" end="153600" volume="80" fret="0" string="0"/>
+  <note pitch="64" start="153600" end="155520" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="153600" end="155520" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="153600" end="155520" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="153600" end="155520" volume="80" fret="7" string="0"/>
+  <note pitch="62" start="155520" end="161280" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="155520" end="161280" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="155520" end="161280" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="155520" end="161280" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="170880" end="171840" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="170880" end="171840" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="170880" end="171840" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="170880" end="171840" volume="80" fret="10" string="0"/>
+  <note pitch="57" start="171840" end="172800" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="171840" end="172800" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="171840" end="172800" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="171840" end="172800" volume="80" fret="1" string="0"/>
+  <note pitch="67" start="173280" end="173760" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="173280" end="173760" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="173760" end="175680" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="173760" end="175680" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="173760" end="175680" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="173760" end="175680" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="176640" end="177600" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="176640" end="177600" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="176640" end="177600" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="176640" end="177600" volume="80" fret="8" string="0"/>
+  <note pitch="59" start="177600" end="178560" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="177600" end="178560" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="177600" end="178560" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="177600" end="178560" volume="80" fret="13" string="0"/>
+  <note pitch="67" start="179040" end="179520" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="179040" end="179520" volume="80" fret="12" string="0"/>
+  <note pitch="55" start="179520" end="181440" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="179520" end="181440" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="179520" end="181440" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="179520" end="181440" volume="80" fret="3" string="0"/>
+  <note pitch="57" start="182400" end="183360" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="182400" end="183360" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="182400" end="183360" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="182400" end="183360" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="183360" end="184320" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="183360" end="184320" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="183360" end="184320" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="183360" end="184320" volume="80" fret="3" string="1"/>
+  <note pitch="55" start="184800" end="185280" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="184800" end="185280" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="185280" end="187200" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="185280" end="187200" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="185280" end="187200" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="185280" end="187200" volume="80" fret="3" string="0"/>
+  <note pitch="59" start="188160" end="189120" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="188160" end="189120" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="188160" end="189120" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="188160" end="189120" volume="80" fret="13" string="0"/>
+  <note pitch="54" start="189120" end="190080" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="189120" end="190080" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="189120" end="190080" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="189120" end="190080" volume="80" fret="5" string="0"/>
+  <note pitch="55" start="190560" end="191040" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="190560" end="191040" volume="80" fret="0" string="0"/>
+  <note pitch="64" start="191040" end="192960" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="191040" end="192960" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="191040" end="192960" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="191040" end="192960" volume="80" fret="7" string="0"/>
+  <note pitch="57" start="193920" end="194880" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="193920" end="194880" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="193920" end="194880" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="193920" end="194880" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="194880" end="195840" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="194880" end="195840" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="194880" end="195840" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="194880" end="195840" volume="80" fret="3" string="1"/>
+  <note pitch="55" start="196320" end="196800" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="196320" end="196800" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="196800" end="198720" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="196800" end="198720" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="196800" end="198720" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="196800" end="198720" volume="80" fret="3" string="0"/>
+  <note pitch="59" start="199680" end="200640" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="199680" end="200640" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="199680" end="200640" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="199680" end="200640" volume="80" fret="13" string="0"/>
+  <note pitch="54" start="200640" end="201600" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="200640" end="201600" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="200640" end="201600" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="200640" end="201600" volume="80" fret="5" string="0"/>
+  <note pitch="55" start="202080" end="202560" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="202080" end="202560" volume="80" fret="0" string="0"/>
+  <note pitch="64" start="202560" end="204480" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="202560" end="204480" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="202560" end="204480" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="202560" end="204480" volume="80" fret="7" string="0"/>
+  <note pitch="61" start="205440" end="206400" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="205440" end="206400" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="205440" end="206400" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="205440" end="206400" volume="80" fret="3" string="1"/>
+  <note pitch="69" start="206400" end="207360" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="206400" end="207360" volume="80" fret="1" string="0"/>
+  <note pitch="61" start="206400" end="207360" volume="80" fret="6" string="0"/>
+  <note pitch="73" start="206400" end="207360" volume="80" fret="3" string="2"/>
+  <note pitch="78" start="208320" end="210240" volume="80"/>
+  <note pitch="71" start="208320" end="210240" volume="80" fret="1" string="1"/>
+  <note pitch="66" start="208320" end="210240" volume="80" fret="1" string="0"/>
+  <note pitch="74" start="208320" end="210240" volume="80" fret="2" string="2"/>
+  <note pitch="66" start="211200" end="212160" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="211200" end="212160" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="211200" end="212160" volume="80" fret="3" string="1"/>
+  <note pitch="61" start="211200" end="212160" volume="80" fret="6" string="0"/>
+  <note pitch="61" start="212160" end="213120" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="212160" end="213120" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="212160" end="213120" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="212160" end="213120" volume="80" fret="3" string="1"/>
+  <note pitch="74" start="214080" end="216000" volume="80" fret="2" string="2"/>
+  <note pitch="62" start="214080" end="216000" volume="80" fret="5" string="0"/>
+  <note pitch="70" start="214080" end="216000" volume="80" fret="2" string="1"/>
+  <note pitch="67" start="214080" end="216000" volume="80" fret="0" string="0"/>
+  <note pitch="69" start="216960" end="217920" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="216960" end="217920" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="216960" end="217920" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="216960" end="217920" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="217920" end="218880" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="217920" end="218880" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="217920" end="218880" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="217920" end="218880" volume="80" fret="10" string="0"/>
+  <note pitch="55" start="219360" end="219840" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="219360" end="219840" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="219840" end="221760" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="219840" end="221760" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="219840" end="221760" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="219840" end="221760" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="222720" end="223680" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="222720" end="223680" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="222720" end="223680" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="222720" end="223680" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="223680" end="224640" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="223680" end="224640" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="223680" end="224640" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="223680" end="224640" volume="80" fret="8" string="0"/>
+  <note pitch="55" start="225120" end="225600" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="225120" end="225600" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="225600" end="227520" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="225600" end="227520" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="225600" end="227520" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="225600" end="227520" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="228480" end="229440" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="228480" end="229440" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="228480" end="229440" volume="80" fret="3" string="1"/>
+  <note pitch="61" start="228480" end="229440" volume="80" fret="6" string="0"/>
+  <note pitch="61" start="229440" end="230400" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="229440" end="230400" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="229440" end="230400" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="229440" end="230400" volume="80" fret="3" string="1"/>
+  <note pitch="74" start="231360" end="233280" volume="80" fret="2" string="2"/>
+  <note pitch="62" start="231360" end="233280" volume="80" fret="5" string="0"/>
+  <note pitch="70" start="231360" end="233280" volume="80" fret="2" string="1"/>
+  <note pitch="67" start="231360" end="233280" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="234240" end="235200" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="234240" end="235200" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="234240" end="235200" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="234240" end="235200" volume="80" fret="10" string="0"/>
+  <note pitch="57" start="235200" end="236160" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="235200" end="236160" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="235200" end="236160" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="235200" end="236160" volume="80" fret="1" string="0"/>
+  <note pitch="55" start="236640" end="237120" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="236640" end="237120" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="237120" end="239040" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="237120" end="239040" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="237120" end="239040" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="237120" end="239040" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="240000" end="240960" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="240000" end="240960" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="240000" end="240960" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="240000" end="240960" volume="80" fret="8" string="0"/>
+  <note pitch="59" start="240960" end="241920" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="240960" end="241920" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="240960" end="241920" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="240960" end="241920" volume="80" fret="13" string="0"/>
+  <note pitch="67" start="242400" end="242880" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="242400" end="242880" volume="80" fret="12" string="0"/>
+  <note pitch="55" start="242880" end="244800" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="242880" end="244800" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="242880" end="244800" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="242880" end="244800" volume="80" fret="3" string="0"/>
+  <note pitch="57" start="245760" end="246720" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="245760" end="246720" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="245760" end="246720" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="245760" end="246720" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="246720" end="247680" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="246720" end="247680" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="246720" end="247680" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="246720" end="247680" volume="80" fret="3" string="1"/>
+  <note pitch="55" start="248160" end="248640" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="248160" end="248640" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="248640" end="250560" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="248640" end="250560" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="248640" end="250560" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="248640" end="250560" volume="80" fret="3" string="0"/>
+  <note pitch="59" start="251520" end="252480" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="251520" end="252480" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="251520" end="252480" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="251520" end="252480" volume="80" fret="13" string="0"/>
+  <note pitch="54" start="252480" end="253440" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="252480" end="253440" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="252480" end="253440" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="252480" end="253440" volume="80" fret="5" string="0"/>
+  <note pitch="55" start="253920" end="254400" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="253920" end="254400" volume="80" fret="0" string="0"/>
+  <note pitch="64" start="254400" end="256320" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="254400" end="256320" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="254400" end="256320" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="254400" end="256320" volume="80" fret="7" string="0"/>
+  <note pitch="57" start="257280" end="258240" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="257280" end="258240" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="257280" end="258240" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="257280" end="258240" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="258240" end="259200" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="258240" end="259200" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="258240" end="259200" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="258240" end="259200" volume="80" fret="3" string="1"/>
+  <note pitch="55" start="259680" end="260160" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="259680" end="260160" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="260160" end="262080" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="260160" end="262080" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="260160" end="262080" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="260160" end="262080" volume="80" fret="3" string="0"/>
+  <note pitch="59" start="263040" end="264000" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="263040" end="264000" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="263040" end="264000" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="263040" end="264000" volume="80" fret="13" string="0"/>
+  <note pitch="54" start="264000" end="264960" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="264000" end="264960" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="264000" end="264960" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="264000" end="264960" volume="80" fret="5" string="0"/>
+  <note pitch="55" start="265440" end="265920" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="265440" end="265920" volume="80" fret="0" string="0"/>
+  <note pitch="64" start="265920" end="267840" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="265920" end="267840" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="265920" end="267840" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="265920" end="267840" volume="80" fret="7" string="0"/>
+  <note pitch="61" start="268800" end="269760" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="268800" end="269760" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="268800" end="269760" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="268800" end="269760" volume="80" fret="3" string="1"/>
+  <note pitch="69" start="269760" end="270720" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="269760" end="270720" volume="80" fret="1" string="0"/>
+  <note pitch="61" start="269760" end="270720" volume="80" fret="6" string="0"/>
+  <note pitch="73" start="269760" end="270720" volume="80" fret="3" string="2"/>
+  <note pitch="71" start="271680" end="273600" volume="80" fret="1" string="1"/>
+  <note pitch="66" start="271680" end="273600" volume="80" fret="1" string="0"/>
+  <note pitch="78" start="271680" end="273600" volume="80" selected="true"/>
+  <note pitch="74" start="271680" end="273600" volume="80" fret="2" string="2"/>
+  <note pitch="66" start="274560" end="275520" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="274560" end="275520" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="274560" end="275520" volume="80" fret="3" string="1"/>
+  <note pitch="61" start="274560" end="275520" volume="80" fret="6" string="0"/>
+  <note pitch="61" start="275520" end="276480" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="275520" end="276480" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="275520" end="276480" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="275520" end="276480" volume="80" fret="3" string="1"/>
+  <note pitch="74" start="277440" end="279360" volume="80" fret="2" string="2"/>
+  <note pitch="62" start="277440" end="279360" volume="80" fret="5" string="0"/>
+  <note pitch="70" start="277440" end="279360" volume="80" fret="2" string="1"/>
+  <note pitch="67" start="277440" end="279360" volume="80" fret="0" string="0"/>
+  <note pitch="69" start="280320" end="281280" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="280320" end="281280" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="280320" end="281280" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="280320" end="281280" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="281280" end="282240" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="281280" end="282240" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="281280" end="282240" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="281280" end="282240" volume="80" fret="10" string="0"/>
+  <note pitch="55" start="282720" end="283200" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="282720" end="283200" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="283200" end="285120" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="283200" end="285120" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="283200" end="285120" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="283200" end="285120" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="286080" end="287040" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="286080" end="287040" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="286080" end="287040" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="286080" end="287040" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="287040" end="288000" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="287040" end="288000" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="287040" end="288000" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="287040" end="288000" volume="80" fret="8" string="0"/>
+  <note pitch="55" start="288480" end="288960" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="288480" end="288960" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="288960" end="290880" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="288960" end="290880" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="288960" end="290880" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="288960" end="290880" volume="80" fret="12" string="0"/>
+  <note pitch="66" start="291840" end="292800" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="291840" end="292800" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="291840" end="292800" volume="80" fret="3" string="1"/>
+  <note pitch="61" start="291840" end="292800" volume="80" fret="6" string="0"/>
+  <note pitch="61" start="292800" end="293760" volume="80" fret="6" string="0"/>
+  <note pitch="66" start="292800" end="293760" volume="80" fret="1" string="0"/>
+  <note pitch="73" start="292800" end="293760" volume="80" fret="3" string="2"/>
+  <note pitch="69" start="292800" end="293760" volume="80" fret="3" string="1"/>
+  <note pitch="74" start="294720" end="296640" volume="80" fret="2" string="2"/>
+  <note pitch="62" start="294720" end="296640" volume="80" fret="5" string="0"/>
+  <note pitch="70" start="294720" end="296640" volume="80" fret="2" string="1"/>
+  <note pitch="67" start="294720" end="296640" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="297600" end="298560" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="297600" end="298560" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="297600" end="298560" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="297600" end="298560" volume="80" fret="10" string="0"/>
+  <note pitch="57" start="298560" end="299520" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="298560" end="299520" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="298560" end="299520" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="298560" end="299520" volume="80" fret="1" string="0"/>
+  <note pitch="67" start="300000" end="300480" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="300000" end="300480" volume="80" fret="12" string="0"/>
+  <note pitch="64" start="300480" end="302400" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="300480" end="302400" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="300480" end="302400" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="300480" end="302400" volume="80" fret="7" string="0"/>
+  <note pitch="54" start="303360" end="304320" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="303360" end="304320" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="303360" end="304320" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="303360" end="304320" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="304320" end="305280" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="304320" end="305280" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="304320" end="305280" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="304320" end="305280" volume="80" fret="1" string="0"/>
+  <note pitch="67" start="305760" end="306240" volume="80" fret="0" string="0"/>
+  <note pitch="55" start="305760" end="306240" volume="80" fret="12" string="0"/>
+  <note pitch="60" start="306240" end="308160" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="306240" end="308160" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="306240" end="308160" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="306240" end="308160" volume="80" fret="0" string="0"/>
+  <note pitch="69" start="309120" end="310080" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="309120" end="310080" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="309120" end="310080" volume="80" fret="10" string="0"/>
+  <note pitch="62" start="309120" end="310080" volume="80" fret="5" string="0"/>
+  <note pitch="62" start="310080" end="311040" volume="80" fret="5" string="0"/>
+  <note pitch="69" start="310080" end="311040" volume="80" fret="3" string="1"/>
+  <note pitch="66" start="310080" end="311040" volume="80" fret="1" string="0"/>
+  <note pitch="57" start="310080" end="311040" volume="80" fret="10" string="0"/>
+  <note pitch="55" start="311520" end="312000" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="311520" end="312000" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="312000" end="313920" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="312000" end="313920" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="312000" end="313920" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="312000" end="313920" volume="80" fret="0" string="0"/>
+  <note pitch="62" start="314880" end="315840" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="314880" end="315840" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="314880" end="315840" volume="80" fret="8" string="0"/>
+  <note pitch="66" start="314880" end="315840" volume="80" fret="1" string="0"/>
+  <note pitch="66" start="315840" end="316800" volume="80" fret="1" string="0"/>
+  <note pitch="62" start="315840" end="316800" volume="80" fret="5" string="0"/>
+  <note pitch="54" start="315840" end="316800" volume="80" fret="13" string="0"/>
+  <note pitch="59" start="315840" end="316800" volume="80" fret="8" string="0"/>
+  <note pitch="55" start="317280" end="317760" volume="80" fret="12" string="0"/>
+  <note pitch="67" start="317280" end="317760" volume="80" fret="0" string="0"/>
+  <note pitch="67" start="317760" end="319680" volume="80" fret="0" string="0"/>
+  <note pitch="60" start="317760" end="319680" volume="80" fret="7" string="0"/>
+  <note pitch="64" start="317760" end="319680" volume="80" fret="3" string="0"/>
+  <note pitch="55" start="317760" end="319680" volume="80" fret="12" string="0"/>
+  <note pitch="69" start="319680" end="334080" volume="80"/>
+  <note pitch="66" start="321600" end="334080" volume="80"/>
+  <note pitch="62" start="323520" end="334080" volume="80"/>
+  <note pitch="57" start="325440" end="334080" volume="80"/>
+</track>
+
+
+<track name="07/10/2015" id="2" channel="0" volume="100" default_volume="80">
+  <key type="flats" value="1" />
+  <editors height="289">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.387640" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="7"/>
+  </editors>
+  <magneticgrid divider="8" triplet="false" dotted="false"/>
+  <instrument id="0"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="57" start="92160" end="92640" volume="80"/>
+  <note pitch="54" start="92640" end="93120" volume="80"/>
+  <note pitch="45" start="93120" end="95040" volume="80"/>
+  <note pitch="57" start="95040" end="95520" volume="80"/>
+  <note pitch="54" start="95520" end="96000" volume="80"/>
+  <note pitch="45" start="96000" end="97920" volume="80"/>
+  <note pitch="43" start="97920" end="98880" volume="80"/>
+  <note pitch="42" start="99360" end="99840" volume="80"/>
+  <note pitch="43" start="99840" end="100320" volume="80"/>
+  <note pitch="42" start="100320" end="100800" volume="80"/>
+  <note pitch="43" start="100800" end="101280" volume="80"/>
+  <note pitch="47" start="101280" end="101760" volume="80"/>
+  <note pitch="50" start="101760" end="103680" volume="80"/>
+  <note pitch="50" start="103680" end="104640" volume="80"/>
+  <note pitch="57" start="104640" end="105600" volume="80"/>
+  <note pitch="54" start="105600" end="106080" volume="80"/>
+  <note pitch="52" start="106080" end="106560" volume="80"/>
+  <note pitch="50" start="106560" end="109440" volume="80"/>
+  <note pitch="50" start="109440" end="110400" volume="80"/>
+  <note pitch="57" start="110400" end="111360" volume="80"/>
+  <note pitch="54" start="111360" end="111840" volume="80"/>
+  <note pitch="52" start="111840" end="112320" volume="80"/>
+  <note pitch="58" start="112320" end="115200" volume="80"/>
+  <note pitch="55" start="112320" end="115200" volume="80"/>
+  <note pitch="57" start="115200" end="115680" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="115680" end="116160" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="116160" end="118080" volume="80" fret="22" string="0"/>
+  <note pitch="57" start="118080" end="118560" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="118560" end="119040" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="119040" end="120960" volume="80" fret="22" string="0"/>
+  <note pitch="43" start="120960" end="121920" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="122400" end="122880" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="122880" end="123360" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="123360" end="123840" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="123840" end="124320" volume="80" fret="24" string="0"/>
+  <note pitch="47" start="124320" end="124800" volume="80" fret="20" string="0"/>
+  <note pitch="50" start="124800" end="126720" volume="80" fret="17" string="0"/>
+  <note pitch="50" start="126720" end="127680" volume="80"/>
+  <note pitch="57" start="127680" end="128640" volume="80"/>
+  <note pitch="54" start="128640" end="129120" volume="80"/>
+  <note pitch="52" start="129120" end="129600" volume="80"/>
+  <note pitch="58" start="129600" end="131520" volume="80"/>
+  <note pitch="50" start="129600" end="131520" volume="80"/>
+  <note pitch="50" start="131520" end="132480" volume="80"/>
+  <note pitch="57" start="132480" end="161280" volume="80"/>
+  <note pitch="57" start="192960" end="193440" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="193440" end="193920" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="193920" end="195840" volume="80" fret="22" string="0"/>
+  <note pitch="57" start="195840" end="196320" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="196320" end="196800" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="196800" end="198720" volume="80" fret="22" string="0"/>
+  <note pitch="43" start="198720" end="199680" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="200160" end="200640" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="200640" end="201120" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="201120" end="201600" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="201600" end="202080" volume="80" fret="24" string="0"/>
+  <note pitch="47" start="202080" end="202560" volume="80" fret="20" string="0"/>
+  <note pitch="50" start="202560" end="204480" volume="80" fret="17" string="0"/>
+  <note pitch="50" start="204480" end="205440" volume="80" fret="17" string="0"/>
+  <note pitch="57" start="205440" end="206400" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="206400" end="206880" volume="80" fret="13" string="0"/>
+  <note pitch="52" start="206880" end="207360" volume="80" fret="15" string="0"/>
+  <note pitch="50" start="207360" end="210240" volume="80" fret="17" string="0"/>
+  <note pitch="50" start="210240" end="211200" volume="80" fret="17" string="0"/>
+  <note pitch="57" start="211200" end="212160" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="212160" end="212640" volume="80" fret="13" string="0"/>
+  <note pitch="52" start="212640" end="213120" volume="80" fret="15" string="0"/>
+  <note pitch="58" start="213120" end="216000" volume="80" fret="9" string="0"/>
+  <note pitch="55" start="213120" end="216000" volume="80" fret="12" string="0"/>
+  <note pitch="57" start="216000" end="216480" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="216480" end="216960" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="216960" end="218880" volume="80" fret="22" string="0"/>
+  <note pitch="57" start="218880" end="219360" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="219360" end="219840" volume="80" fret="13" string="0"/>
+  <note pitch="45" start="219840" end="221760" volume="80" fret="22" string="0"/>
+  <note pitch="43" start="221760" end="222720" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="223200" end="223680" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="223680" end="224160" volume="80" fret="24" string="0"/>
+  <note pitch="42" start="224160" end="224640" volume="80" fret="25" string="0"/>
+  <note pitch="43" start="224640" end="225120" volume="80" fret="24" string="0"/>
+  <note pitch="47" start="225120" end="225600" volume="80" fret="20" string="0"/>
+  <note pitch="50" start="225600" end="227520" volume="80" fret="17" string="0"/>
+  <note pitch="50" start="227520" end="228480" volume="80" fret="17" string="0"/>
+  <note pitch="57" start="228480" end="229440" volume="80" fret="10" string="0"/>
+  <note pitch="54" start="229440" end="229920" volume="80" fret="13" string="0"/>
+  <note pitch="52" start="229920" end="230400" volume="80" fret="15" string="0"/>
+  <note pitch="58" start="230400" end="232320" volume="80" fret="9" string="0"/>
+  <note pitch="50" start="230400" end="232320" volume="80" fret="17" string="0"/>
+  <note pitch="50" start="232320" end="233280" volume="80" fret="17" string="0"/>
+  <note pitch="57" start="233280" end="236160" volume="80"/>
+  <note pitch="57" start="256320" end="256800" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="256800" end="257280" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="45" start="257280" end="259200" volume="80" fret="22" string="0" selected="true"/>
+  <note pitch="57" start="259200" end="259680" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="259680" end="260160" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="45" start="260160" end="262080" volume="80" fret="22" string="0" selected="true"/>
+  <note pitch="43" start="262080" end="263040" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="42" start="263520" end="264000" volume="80" fret="25" string="0" selected="true"/>
+  <note pitch="43" start="264000" end="264480" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="42" start="264480" end="264960" volume="80" fret="25" string="0" selected="true"/>
+  <note pitch="43" start="264960" end="265440" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="47" start="265440" end="265920" volume="80" fret="20" string="0" selected="true"/>
+  <note pitch="50" start="265920" end="267840" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="50" start="267840" end="268800" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="57" start="268800" end="269760" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="269760" end="270240" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="52" start="270240" end="270720" volume="80" fret="15" string="0" selected="true"/>
+  <note pitch="50" start="270720" end="273600" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="50" start="273600" end="274560" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="57" start="274560" end="275520" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="275520" end="276000" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="52" start="276000" end="276480" volume="80" fret="15" string="0" selected="true"/>
+  <note pitch="58" start="276480" end="279360" volume="80" fret="9" string="0" selected="true"/>
+  <note pitch="55" start="276480" end="279360" volume="80" fret="12" string="0" selected="true"/>
+  <note pitch="57" start="279360" end="279840" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="279840" end="280320" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="45" start="280320" end="282240" volume="80" fret="22" string="0" selected="true"/>
+  <note pitch="57" start="282240" end="282720" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="282720" end="283200" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="45" start="283200" end="285120" volume="80" fret="22" string="0" selected="true"/>
+  <note pitch="43" start="285120" end="286080" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="42" start="286560" end="287040" volume="80" fret="25" string="0" selected="true"/>
+  <note pitch="43" start="287040" end="287520" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="42" start="287520" end="288000" volume="80" fret="25" string="0" selected="true"/>
+  <note pitch="43" start="288000" end="288480" volume="80" fret="24" string="0" selected="true"/>
+  <note pitch="47" start="288480" end="288960" volume="80" fret="20" string="0" selected="true"/>
+  <note pitch="50" start="288960" end="290880" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="50" start="290880" end="291840" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="57" start="291840" end="292800" volume="80" fret="10" string="0" selected="true"/>
+  <note pitch="54" start="292800" end="293280" volume="80" fret="13" string="0" selected="true"/>
+  <note pitch="52" start="293280" end="293760" volume="80" fret="15" string="0" selected="true"/>
+  <note pitch="58" start="293760" end="295680" volume="80" fret="9" string="0" selected="true"/>
+  <note pitch="50" start="293760" end="295680" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="50" start="295680" end="296640" volume="80" fret="17" string="0" selected="true"/>
+  <note pitch="57" start="296640" end="299520" volume="80" fret="10" string="0" selected="true"/>
+</track>
+
+</sequence></seqview>

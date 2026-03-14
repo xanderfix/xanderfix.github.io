@@ -1,0 +1,106 @@
+.link {
+    display:inline-block;
+    width:12%;
+}
+body {
+    background-color: #2E5CE6;
+}
+#main {
+    margin-left:8%;
+    margin-right:8%;
+    margin-top:-21px;
+    margin-bottom:0%;
+    background-color:black;
+    opacity:0.95;
+}
+p {
+    color:white;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:1.2em;
+}
+.caption {
+    text-align:center;
+    font-size:1em;
+}
+.articleimg {
+    width:50%;
+    display:inline;
+    margin-left:25%;
+}
+#navbar {
+   height:26px;
+   background-color: red;
+}
+li {
+    display:inline;
+}
+a {
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+}
+#title {
+    text-align:center;
+    color:white;
+}
+h1 {
+    text-align:center;
+    color:white;
+}
+#comments {
+    background-color:#99FF33;
+    opacity:0.9;
+    margin-left:8%;
+    margin-right:8%;   
+}
+.date {
+    font-size:12px;
+    margin-left:65%;
+}
+#left {
+    float:left;
+    width:8%;
+}
+#right {
+    float:right;
+    width:8%;
+}
+.leftimg {
+    width:100%;
+}
+.rightimg {
+    width:100%;
+}
+#mandalaDiv {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#mandala {
+    width:100%;
+}
+.mandalaCloseUpDiv {
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.mandalaCloseUp {
+    width:100%;
+}
+#Twitter {
+    display:inline;
+    margin-left:15%;
+}
+#G+ {
+    display:inline;
+}
+#twitterhandle {
+    font-size:18px;
+    text-decoration:none;
+}
+.ad {
+    margin-left:auto;
+    margin-right:auto;
+    width:728px;
+}

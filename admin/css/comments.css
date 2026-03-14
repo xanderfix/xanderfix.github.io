@@ -1,0 +1,25 @@
+.comments .comments-email {
+  display: block;
+  line-height: 1.5;
+}
+
+.comments .select-container-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-row: auto auto;
+  grid-column-gap: 10px;
+}
+
+.comments .box-grid {
+  display:flex;
+  align-items:center;
+  justify-content:left;
+}
+
+.comments .box > select {
+  min-width: 250px;
+}
+
+.comments .body {
+  overflow-wrap: anywhere;
+}

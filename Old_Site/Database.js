@@ -1,0 +1,1 @@
+var MaxNumber = 5;
