@@ -34,14 +34,14 @@ table.width_50 {
 
 table th {
 	font-weight: normal;
-	padding-left: 10px;
+	padding-inline-start: 10px;
 	padding-bottom: 5px;
 	padding-top: 15px;
-	text-align: left;
+	text-align: start;
 }
 
 .main-container table tbody td {
-	padding: 12px 10px
+	padding: 12px 10px;
 }
 
 select {
@@ -59,10 +59,12 @@ input:focus {
 
 .float-left {
 	float: left;
+	float: inline-start;
 }
 
 .float-right {
 	float: right;
+	float: inline-end;
 }
 
 .clearfix {
@@ -71,6 +73,14 @@ input:focus {
 
 .fa {
 	font-size: 13pt;
+}
+
+[dir=rtl] .fa-star-half {
+    transform: scaleX(-1);
+}
+
+[dir=rtl] .fa-star-half.fa-flip-horizontal {
+    transform: scaleX(1);
 }
 
 .flex {
@@ -114,7 +124,7 @@ input:focus {
 }
 
 .text-right {
-	text-align: right;
+	text-align: end;
 }
 
 .text-center {
@@ -173,23 +183,23 @@ input:focus {
 }
 
 .border-left {
-	border-left-width: 1px;
-	border-left-style: solid;
+	border-inline-start-width: 1px;
+	border-inline-start-style: solid;
 }
 
 .border-left-2 {
-	border-left-width: 2px;
-	border-left-style: solid;
+	border-inline-start-width: 2px;
+	border-inline-start-style: solid;
 }
 
 .border-right {
-	border-right-width: 1px;
-	border-right-style: solid;
+	border-inline-end-width: 1px;
+	border-inline-end-style: solid;
 }
 
 .border-right-3 {
-	border-right-width: 3px;
-	border-right-style: solid;
+	border-inline-end-width: 3px;
+	border-inline-end-style: solid;
 }
 
 .border-bottom {
@@ -221,11 +231,15 @@ input:focus {
 }
 
 .margin-left {
-	margin-left: 10px;
+	margin-inline-start: 10px;
 }
 
 .margin-right {
-	margin-right: 10px;
+	margin-inline-end: 10px;
+}
+
+.margin-right-small {
+	margin-inline-end: 5px;
 }
 
 .margin-top-2 {
@@ -237,7 +251,7 @@ input:focus {
 }
 
 .padding-left {
-	padding-left: 10px;
+	padding-inline-start: 10px;
 }
 
 .padding-bottom-2 {
@@ -245,7 +259,7 @@ input:focus {
 }
 
 .padding-left-10-child > * {
-	padding-left: 10px;
+	padding-inline-start: 10px;
 }
 
 .padding-bottom-10-child > * {
@@ -297,7 +311,7 @@ input:focus {
 }
 
 .tabs-container .tabs .fa {
-	margin-right: 10px;
+	margin-inline-end: 10px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -321,7 +335,7 @@ input:focus {
 	}
 
 	.tabs-container .tabs .fa {
-		margin-right: 0;
+		margin-inline-end: 0;
 	}
 }
 
@@ -423,17 +437,18 @@ div.menu::-webkit-scrollbar {
 
 .menu .navbar-link img {
 	vertical-align: middle;
-	margin: 10px 12px 10px 20px;
-	padding-right: 20px;
-	border-right: 1px solid white;
+	margin-block: 10px;
+	margin-inline: 20px 12px;
+	padding-inline-end: 20px;
+	border-inline-end: 1px solid white;
 	height: 24px;
 }
 
 .menu .navbar-link .text {
 	display: block;
 	position: absolute;
-	right: 5px;
-	left: 80px;
+	inset-inline-end: 5px;
+	inset-inline-start: 80px;
 	top: 15px;
 	height: 20px;
 	text-overflow: ellipsis;
@@ -444,7 +459,7 @@ div.menu::-webkit-scrollbar {
 .menu .navbar-link .flag {
 	visibility: hidden;
 	position: absolute;
-	right: -3px;
+	inset-inline-end: -3px;
 	top: 16px;
 	width: 0;
 	height: 0;
@@ -452,7 +467,7 @@ div.menu::-webkit-scrollbar {
 	border-width: 7px 12px;
 	border-top-color: transparent;
 	border-bottom-color: transparent;
-	border-left-color: transparent;
+	border-inline-start-color: transparent;
 }
 
 .menu .selected .flag {
@@ -603,7 +618,7 @@ div.menu::-webkit-scrollbar {
 
 	.sidebar {
 		position: fixed;
-		left: -101%;
+		inset-inline-start: -101%;
 		top: 0;
 		bottom: 0;
 		overflow-y: scroll;
@@ -627,7 +642,7 @@ div.menu::-webkit-scrollbar {
 	.sidebar .header .text {
 		padding: 15px;
 		vertical-align: top;
-		text-align: left;
+		text-align: start;
 	}
 
 	.sidebar .site-title,
@@ -637,10 +652,12 @@ div.menu::-webkit-scrollbar {
 
 	.sidebar .username {
 		float: left;
+		float: inline-start;
 	}
 
 	.sidebar .logout {
 		float: right;
+		float: inline-end;
 	}
 
 	.toolbar {
@@ -650,9 +667,10 @@ div.menu::-webkit-scrollbar {
 	.toolbar .hamburger {
 		display: block; /* Mandatory for correct display  */
 		float: left;
+		float: inline-start;
 		height: 36px;
 		width: 32px;
-		margin-right: 20px;
+		margin-inline-end: 20px;
 		cursor: pointer;
 	}
 
@@ -665,14 +683,15 @@ div.menu::-webkit-scrollbar {
 	.toolbar .logo {
 		display: block; /* Mandatoryfor correct display  */
 		float: right;
+		float: inline-end;
 		max-height: 36px;
 	}
 
 	.toolbar .pagetitle {
 		line-height: 36px;
 		position: absolute;
-		left: 60px;
-		right: 50px;
+		inset-inline-start: 60px;
+		inset-inline-end: 50px;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -733,6 +752,6 @@ div.menu::-webkit-scrollbar {
 
 	.border-left,
 	.border-left-2 {
-		border-left-width: 0;
+		border-inline-start-width: 0;
 	}
 }

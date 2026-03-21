@@ -28,7 +28,7 @@ $main->content .= "<div class=\"dashboard-boxes-container\">";
 // Statistics
 // ----------
 
-if (isset($imSettings['analytics']) && $imSettings['analytics']['type'] == 'wsx5analytics') {
+if (isset($imSettings['analytics']) && isset($imSettings['analytics']['type']) && $imSettings['analytics']['type'] == 'wsx5analytics') {
     $analytics = Configuration::getAnalytics();
 
     // Visitors Count
@@ -63,7 +63,7 @@ if (isset($imSettings['analytics']) && $imSettings['analytics']['type'] == 'wsx5
 // Blog
 // ---------------
 
-if (isset($imSettings['blog']) && $imSettings['blog']['comments_source'] == 'wsx5') {
+if (isset($imSettings['blog']) && isset($imSettings['blog']['comments_source']) && $imSettings['blog']['comments_source'] == 'wsx5') {
     $blog = Configuration::getBlog();
     $comments = $blog->getComments(date("Y-m-d", strtotime("-7 days")) . " 00:00:01", date("Y-m-d") . " 23:59:59", true);
 
@@ -112,7 +112,7 @@ if (isset($imSettings['blog']) && $imSettings['blog']['comments_source'] == 'wsx
 // Guestbook
 // -----------------
 
-if (count($imSettings['guestbooks']) > 0) {
+if (isset($imSettings['guestbooks']) && count($imSettings['guestbooks']) > 0) {
     $validatedComments = ImGuestbook::getAllComments(date("Y-m-d", strtotime("-7 days")) . " 00:00:01", date("Y-m-d") . " 23:59:59", true);
     $waitingComments = ImGuestbook::getAllComments("", "", false);
 

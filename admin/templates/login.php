@@ -1,5 +1,6 @@
+<?php $settings = Configuration::getSettings(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="<?php echo $imSettings['general']['rtl'] ? "rtl" : "ltr" ?>">
 <head>
 	<meta charset="UTF-8">
 	<meta name="robots" content="noindex">
@@ -9,7 +10,7 @@
 	<link rel="stylesheet" href="../style/reset.css">
 	<link rel="stylesheet" href="css/template.css">
 	<link rel="stylesheet" href="css/login.css">
-	<link rel="stylesheet" href="css/theme-<?php $settings = Configuration::getSettings(); echo $settings['admin']['theme'] ?>.css">
+	<link rel="stylesheet" href="css/theme-<?php echo $settings['admin']['theme'] ?>.css">
 </head>
 <body onload="document.getElementById('uname').focus();">
 	<div class="login-margin">

@@ -105,7 +105,7 @@ class ControlPanel {
             "text" => $loc->get("dashboard_title", "Dashboard"),
             "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "index.php"
         );
-        if (isset($settings['blog']) && $settings['blog']['comments_source'] == 'wsx5') {
+        if (isset($settings['blog']) && isset($settings['blog']['comments_source']) && $settings['blog']['comments_source'] == 'wsx5') {
             $menu[] = array(
                 "url" => "blog.php",
                 "image" => "images/blog_white.png",
@@ -121,7 +121,7 @@ class ControlPanel {
                 "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "guestbook.php"
             );
         }
-        if (isset($settings['analytics']) && $settings['analytics']['type'] == "wsx5analytics") {
+        if (isset($settings['analytics']) && isset($settings['analytics']['type']) && $settings['analytics']['type'] == "wsx5analytics") {
             $menu[] = array(
                 "url" => "analytics.php",
                 "image" => "images/analytics_white.png",

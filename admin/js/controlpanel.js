@@ -15,7 +15,6 @@
 
 		// Setup the hamburger menu
 		var $sidebar = $( ".sidebar" ),
-			$menu = $sidebar.find( ".menu" ),
 			$body = $( "body" ),
 			$window = $( window ),
 			touchDevice = $( "html" ).hasClass( "touchevents" ),
@@ -26,7 +25,7 @@
 			e.stopPropagation();
 			$sidebar
 				.stop( false, false )
-				.animate({ "left": 0 }, 500);
+				.animate({ "inset-inline-start": 0 }, 500);
 			if ( !touchDevice ) {
 				$body.one( "click", hideSidebar );
 			} else {
@@ -43,7 +42,7 @@
 			}
 			$sidebar
 				.stop( false, false )
-				.animate({ "left": "-101%" }, 500);
+				.animate({ "inset-inline-start": "-101%" }, 500);
 		};
 
 		var touchStart = function () {

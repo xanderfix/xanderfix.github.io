@@ -45,7 +45,12 @@ class imAdminTest {
         }
 
         // Blog public folder
-        if (isset($imSettings['blog']) && $imSettings['blog']['comments_source'] == 'wsx5' && $imSettings['blog']['sendmode'] == 'file' && !in_array($imSettings['blog']['folder'], $testedFolders)) {
+        if (
+            isset($imSettings['blog']) && 
+            isset($imSettings['blog']['comments_source']) && $imSettings['blog']['comments_source'] == 'wsx5' && 
+            isset($imSettings['blog']['sendmode']) && $imSettings['blog']['sendmode'] == 'file' && 
+            isset($imSettings['blog']['folder']) && !in_array($imSettings['blog']['folder'], $testedFolders)
+        ) {
             $testedFolders[] = $imSettings['blog']['folder'];
             $results[] = array(
                 "name"    => l10n('admin_test_folder') . ($imSettings['blog']['folder'] != "" ? " (" . $imSettings['blog']['folder'] . ")": " (site root folder)"),
@@ -57,9 +62,9 @@ class imAdminTest {
         // Guestbooks public folder
         if (isset($imSettings['guestbooks'])) {
             foreach($imSettings['guestbooks'] as $gb) {
-                if ($gb['sendmode'] == 'file') {
+                if (isset($gb['sendmode']) && $gb['sendmode'] == 'file') {
                     // Check this folder only if it's different from the blog's one
-                    if (!in_array($gb['folder'], $testedFolders)) {
+                    if (isset($gb['folder']) && !in_array($gb['folder'], $testedFolders)) {
                         $testedFolders[] = $gb['folder'];
                         $results[] = array(
                             "name"    => l10n('admin_test_folder') . ($gb['folder'] != "" ? " (" . $gb['folder'] . ")" :  " (site root folder)"),

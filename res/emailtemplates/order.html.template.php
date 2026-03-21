@@ -4,11 +4,17 @@
     // If true, it means that there are both the invoice and the shipping addresses
     $doubleUData = isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
     $doubleUData = $doubleUData && isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
+    $rtl = Configuration::getSettings()['general']['rtl'];
 ?>
 <table border="0" width="100%" style="[email:contentStyle]">
     <tr>
         <td colspan="2" style="[email:contentFontFamily] text-align: center; font-weight: bold;font-size: 1.11em">
-            <?php echo $l10n->get('cart_order_no') . ": " . $orderData['orderNo'] ?>
+            <?php 
+                if ($rtl)
+                    echo $orderData['orderNo'] . " :" . $l10n->get('cart_order_no');
+                else
+                    echo $l10n->get('cart_order_no') . ": " . $orderData['orderNo'];
+            ?>
         </td>
     </tr>
     <!-- Opening Message -->
@@ -23,11 +29,15 @@
             <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_vat_address') ?></h3>
         <?php else: ?>
         <td colspan="2" style="[email:contentFontFamily] padding: 20px 0 0 0;">
-            <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_vat_address') . "/" . $l10n->get('cart_shipping_address') ?></h3>
+            <?php if ($rtl): ?>
+                <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_shipping_address') . "/" . $l10n->get('cart_vat_address') ?></h3>
+            <?php else: ?>
+                <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_vat_address') . "/" . $l10n->get('cart_shipping_address') ?></h3>
+            <?php endif; ?>
         <?php endif; ?>
             <!-- Invoice Data -->
             <?php if (isset($orderData['userInvoiceData']) && is_array($orderData['userInvoiceData'])): ?>
-            <table width="100%" style="[email:contentStyle]">
+            <table width="100%" style="[email:contentStyle]" <?php if ($rtl) echo " dir=\"rtl\"" ?>>
             <?php $i = 0; foreach ($orderData['userInvoiceData'] as $key => $value): ?>
                 <?php if (trim($value['value']) != ""): ?>
                 <tr <?php echo ($i%2 ? " bgcolor=\"[email:bodyBackgroundOdd]\"" : "") ?>>
@@ -64,7 +74,7 @@
         <td style="[email:contentFontFamily] width: 50%; padding: 20px 0;">
             <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_shipping_address') ?></h3>
             <!-- Shipping Data -->
-            <table width="100%" style="[email:contentStyle]">
+            <table width="100%" style="[email:contentStyle]" <?php if ($rtl) echo " dir=\"rtl\"" ?>>
             <?php $i = 0; foreach ($orderData['userShippingData'] as $key => $value): ?>
                 <?php if (trim($value['value']) != ""): ?>
                 <tr <?php echo ($i%2 ? " bgcolor=\"[email:bodyBackgroundOdd]\"" : "") ?>>
@@ -105,7 +115,7 @@
                     $colspan = 3 + ($opt ? 1 : 0) + ($vat ? 1 : 0);
                 }
             ?>
-            <table cellpadding="5" width="100%" style="[email:contentStyle] border-collapse: collapse;">
+            <table cellpadding="5" width="100%" style="[email:contentStyle] border-collapse: collapse;" <?php if ($rtl) echo " dir=\"rtl\"" ?>>
                 <tr bgcolor="[email:bodyBackgroundOdd]">
                     <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; color: [email:bodyTextColorOdd]">
                         <b><?php echo $l10n->get("cart_name") ?></b>
@@ -160,10 +170,18 @@
                 <?php if (isset($orderData['shipping']) && is_array($orderData['shipping'])): ?>
                 <tr>
                     <?php if ($settings['vat_type'] != "none"): ?>
-                        <td colspan="<?php echo ($colspan - 1) ?>"  style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_shipping') ?>: <?php echo $orderData['shipping']['name'] ?></td>
+                        <?php if ($rtl): ?>
+                            <td colspan="<?php echo ($colspan - 1) ?>"  style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: left;"><?php echo $orderData['shipping']['name'] ?> :<?php echo $l10n->get('cart_shipping') ?></td>
+                        <?php else: ?>
+                            <td colspan="<?php echo ($colspan - 1) ?>"  style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_shipping') ?>: <?php echo $orderData['shipping']['name'] ?></td>
+                        <?php endif; ?>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['shipping']['vat'] ?></td>
                     <?php else: ?>
-                        <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_shipping') ?>: <?php echo $orderData['shipping']['name'] ?></td>
+                        <?php if ($rtl): ?>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: left;"><?php echo $orderData['shipping']['name'] ?> :<?php echo $l10n->get('cart_shipping') ?></td>
+                        <?php else: ?>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_shipping') ?>: <?php echo $orderData['shipping']['name'] ?></td>
+                        <?php endif; ?>
                     <?php endif; ?>
                     <td  style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo ($settings['vat_type'] == "excluded" ? $orderData['shipping']['price'] : $orderData['shipping']['pricePlusVat']) ?></td>
                 </tr>
@@ -172,44 +190,53 @@
                 <?php if (isset($orderData['payment']) && is_array($orderData['payment'])): ?>
                 <tr>
                     <?php if ($settings['vat_type'] != "none"): ?>
-                        <td colspan="<?php echo ($colspan - 1) ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_payment') ?>: <?php echo $orderData['payment']['name'] ?></td>
+                        <?php if ($rtl): ?>
+                            <td colspan="<?php echo ($colspan - 1) ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: left;"><?php echo $orderData['payment']['name'] ?> :<?php echo $l10n->get('cart_payment') ?></td>
+                        <?php else: ?>
+                            <td colspan="<?php echo ($colspan - 1) ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_payment') ?>: <?php echo $orderData['payment']['name'] ?></td>
+                        <?php endif; ?>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['payment']['vat'] ?></td>
                     <?php else: ?>
-                        <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_payment') ?>: <?php echo $orderData['payment']['name'] ?></td>
+                        <?php if ($rtl): ?>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: left;"><?php echo $orderData['payment']['name'] ?> :<?php echo $l10n->get('cart_payment') ?></td>
+                        <?php else: ?>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $l10n->get('cart_payment') ?>: <?php echo $orderData['payment']['name'] ?></td>
+                        <?php endif; ?>
                     <?php endif; ?>
                     <td  style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo ($settings['vat_type'] == "excluded" ? $orderData['payment']['price'] : $orderData['payment']['pricePlusVat']) ?></td>
                 </tr>
                 <?php endif; ?>
                 <!-- Total Amount -->
                 <?php
+                    $textAlign = $rtl ? "left" : "right";
                     switch ($settings['vat_type']) {
                         case "excluded":?>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_total') ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $l10n->get('cart_total') ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalPrice'] ?></td>
                     </tr>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $orderData['vatName'] ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $orderData['vatName'] ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalVat'] ?></td>
                     </tr>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalPricePlusVat'] ?></td>
                     </tr>
                         <?php break;
                         case "included": ?>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalPricePlusVat'] ?></td>
                     </tr>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get("cart_vat_included")) ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo str_replace('[NAME]', $orderData['vatName'], $l10n->get("cart_vat_included")) ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalVat'] ?></td>
                     </tr>
                         <?php break;
                         case "none": ?>
                     <tr>
-                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_total_price') ?></td>
+                        <td colspan="<?php echo $colspan; ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $l10n->get('cart_total_price') ?></td>
                         <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalPricePlusVat'] ?></td>
                     </tr>
                         <?php break;
@@ -218,23 +245,27 @@
                     if ( ( isset($orderData['coupon']) && $orderData['coupon'] !== "" && $orderData['rawCouponDiscount'] > 0 ) || (isset($orderData['rawOrderTotalDiscount']) && $orderData['rawOrderTotalDiscount'] !== "" && $orderData['rawOrderTotalDiscount'] > 0) ): ?>
                         <?php if ( isset($orderData['coupon']) && $orderData['coupon'] !== "" && $orderData['rawCouponDiscount'] > 0 ): ?>
                         <tr>
-                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_coupon_code', "Coupon Code") . " (" . $orderData['coupon'] . ")" ?></td>
+                            <?php if ($rtl): ?>
+                                <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: left; font-weight: bold;"><?php echo "(" . $orderData['coupon'] . ") " . $l10n->get('cart_coupon_code', "Coupon Code") ?></td>
+                            <?php else: ?>
+                                <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_coupon_code', "Coupon Code") . " (" . $orderData['coupon'] . ")" ?></td>
+                            <?php endif; ?>
                             <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;">-<?php echo $orderData['couponDiscount'] ?></td>
                         </tr>
 		        <?php endif; ?>
                         <?php if ( isset($orderData['rawOrderTotalDiscount']) && $orderData['rawOrderTotalDiscount'] !== "" && $orderData['rawOrderTotalDiscount'] > 0 ): ?>
                         <tr>
-                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_order_total_discount', "Order Total Discount") ?></td>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $l10n->get('cart_order_total_discount', "Order Total Discount") ?></td>
                             <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;">-<?php echo $orderData['orderTotalDiscount'] ?></td>
                         </tr>
 		        <?php endif; ?>
                         <tr>
-                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_grand_total', "Grand total") ?></td>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $l10n->get('cart_grand_total', "Grand total") ?></td>
                             <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['totalToPay'] ?></td>
                         </tr>
                     <?php elseif (isset($orderData['coupon']) && $orderData['coupon'] !== ""): ?>
                         <tr>
-                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right; font-weight: bold;"><?php echo $l10n->get('cart_coupon_code', "Coupon Code") ?></td>
+                            <td colspan="<?php echo $colspan ?>" style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: <?php echo $textAlign ?>; font-weight: bold;"><?php echo $l10n->get('cart_coupon_code', "Coupon Code") ?></td>
                             <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder]; text-align: right;"><?php echo $orderData['coupon'] ?></td>
                         </tr>
                     <?php endif; ?>
@@ -250,7 +281,7 @@
             <h3 style="font-size: 1.11em"><?php echo $l10n->get('cart_payment') ?></h3>
             <?php echo nl2br($orderData['payment']['name']) ?>
             <?php if ($showCustomerMessages): ?>
-            <div><?php echo nl2br($orderData['payment']['email_text']) . ($orderData['payment']['html'] != "" ? '<div style="text-align: center; margin-top: 20px;">' . $orderData['payment']['html'] : "") ?></div>
+            <div><?php echo nl2br($orderData['payment']['email_text']) . ( ( isset($orderData['payment']['html']) && $orderData['payment']['html'] != "" ) ? '<div style="text-align: center; margin-top: 20px;">' . $orderData['payment']['html'] : "") ?></div>
             <?php endif; ?>
         </td>
     </tr>

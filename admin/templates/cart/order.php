@@ -29,11 +29,11 @@
 		<tr class="page-navbar">
 			<th class="border-bottom-2 border-mute fore-color-1"><span class="text-big"><?php echo l10n('order_status') ?></span></th>
 			<th class="border-bottom-2 border-mute fore-color-1"><span class="text-big"><?php echo l10n('cart_order_date') ?></span></th>
-			<?php if ($order['status'] === 'evaded'): ?>
+			<?php if (isset($order['status']) && $order['status'] === 'evaded'): ?>
 				<?php if ($order['evaded_ts'] !== null): ?>
 			<th class="border-bottom-2 border-mute fore-color-1"><span class="text-big"><?php echo l10n('cart_processed_date') ?></span></th>
 				<?php endif; ?>
-				<?php if ($order['tracking_code'] !== null && $order['tracking_code'] !== ''): ?>
+				<?php if (isset($order['tracking_code']) && $order['tracking_code'] !== null && $order['tracking_code'] !== ''): ?>
 			<th class="border-bottom-2 border-mute fore-color-1"><span class="text-big"><?php echo l10n('tracking_code') ?></span></th>
 				<?php endif; ?>
 			<?php endif; ?>
@@ -57,11 +57,11 @@
 			?>
 			<td class="border-left border-right border-mute-light"><span class="text-big"><?php echo l10n($order_status_loc) ?></span></td>
 			<td class="border-right border-mute-light border-right"><span class="text-big"><?php echo formatDate(DateTimeImmutable::createFromFormat("Y-m-d H:i:s", $order['ts'])) ?></span></td>
-			<?php if ($order['status'] === 'evaded'): ?>
-				<?php if ($order['evaded_ts'] !== null): ?>
+			<?php if (isset($order['status']) && $order['status'] === 'evaded'): ?>
+				<?php if (isset($order['evaded_ts']) && $order['evaded_ts'] !== null): ?>
 				<td class="border-right border-mute-light"><span class="text-big"><?php echo formatDate(DateTimeImmutable::createFromFormat("Y-m-d H:i:s", $order['evaded_ts'])) ?></span></td>
 				<?php endif; ?>
-				<?php if ($order['tracking_code'] !== null && $order['tracking_code'] !== ''): ?>
+				<?php if (isset($order['tracking_code']) && $order['tracking_code'] !== null && $order['tracking_code'] !== ''): ?>
 				<td class="border-right border-mute-light "><span class="text-big"><?php echo $order['tracking_code'] ?></span></td>
 				<?php endif; ?>
 			<?php endif; ?>
@@ -82,7 +82,7 @@
 				<table class="framed" style="<?php echo (count($orderArray['shipping']) === 0) ? "width: auto;" : "" ?>">
 				<thead>
 					<tr>
-<?php if (count($orderArray['shipping']) === 0) : ?>
+<?php if (isset($orderArray['shipping']) && count($orderArray['shipping']) === 0) : ?>
 						<th colspan="2" class="border-bottom-2 border-mute fore-color-1"><?php echo l10n('cart_vat_address') . " / " . l10n('cart_shipping_address') ?></th>
 <?php else: ?>
 						<th colspan="2" class="border-bottom-2 border-mute fore-color-1"><?php echo l10n('cart_vat_address') ?></th>
@@ -97,7 +97,7 @@
 					</tr>
 				<?php endforeach; ?>
 				<?php
-					if (count($orderArray['attachments']) > 0) {
+					if (isset($orderArray['attachments']) && count($orderArray['attachments']) > 0) {
 						foreach ($orderArray['attachments'] as $line) {
 				?>
 							<td class="border-left border-mute-light"><?php echo l10n('cart_field_attachment') . ":" ?></b></td>
@@ -109,7 +109,7 @@
 				</tbody>
 				</table>
 			</td>
-			<?php if (count($orderArray['shipping']) > 0): ?>
+			<?php if (isset($orderArray['shipping']) && count($orderArray['shipping']) > 0): ?>
 			<td class="top no-margin div-phone">
 				<table>
 				<thead>

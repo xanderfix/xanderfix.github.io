@@ -8,9 +8,9 @@ function showSummary($contentT, $gb, $data) {
     // Show the summary
 	$rating = $gb->getRating();
 	$ratingT = new Template("templates/comments/summary.php");
-	$ratingT->vote = $rating["rating"];
-	$ratingT->count = $rating["count"];
-	$ratingT->hasRating = $data['rating'];
+	$ratingT->vote = isset($rating["rating"]) ? $rating["rating"] : 0;
+	$ratingT->count = isset($rating["count"]) ? $rating["count"] : 0;
+	$ratingT->hasRating = isset($rating["rating"]) && $data['rating'];
 	$contentT->content .= $ratingT->render();
 }
 
@@ -86,7 +86,7 @@ $contentT->content = "";
 $id = isset($_GET['id']) ? $_GET['id'] : "";
 
 // If there's only one guestbook just show it and don't ask for more
-if (!strlen($id) && count($imSettings['guestbooks']) < 2) {
+if (!strlen($id) && isset($imSettings['guestbooks']) && count($imSettings['guestbooks']) < 2) {
 	$keys = array_keys($imSettings['guestbooks']);
 	$id = $imSettings['guestbooks'][$keys[0]]['id'];
 }
@@ -141,9 +141,9 @@ else {
 		if ($gb->hasComments()) {
 			for ($i = 0, $size = count($gb->comments->comments); $i < $size; $i++) {
 				$gb->comments->comments[$i]["gbid"] = $gbid;
-				$gb->comments->comments[$i]["generalrating"] = $data['rating'];
-				$gb->comments->comments[$i]["objectnumber"] = $data['objectnumber'];
-				$gb->comments->comments[$i]["pagetitle"] = $data['pagetitle'];
+				$gb->comments->comments[$i]["generalrating"] = isset($data['rating']) ? $data['rating'] : 0;
+				$gb->comments->comments[$i]["objectnumber"] = isset($data['objectnumber']) ? $data['objectnumber'] : 0;
+				$gb->comments->comments[$i]["pagetitle"] = isset($data['pagetitle']) ? $data['pagetitle'] : '';
 			}
 			$totalComments = array_merge($totalComments, $gb->comments->comments);
 		}

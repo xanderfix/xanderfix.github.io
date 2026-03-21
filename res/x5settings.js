@@ -7,7 +7,8 @@
 	s.siteId = 'DF386231E401431C7EC1BE3AEDE65ED2';
 	s.dateFormat = 'dd MMM yyyy';
 	s.dateFormatExt = 'dddd dd MMM yyyy';
-	s.version = '2025-1-6-0';
+	s.rtl = false;
+	s.version = '2025-3-6-0';
 	b.push(function () {
 		x.setupDateTime();
 		x.imAccess.showLogout();
@@ -25,7 +26,7 @@
 	$.extend(s.links, {
 		'htmlPlaceholder' : '<!--html_content_placeholder-->',
 		'cssPlaceholder' : '<!--css_class_placeholder-->',
-		'baseUrlPlaceholder' : '<!--base_url_placeholder-->'
+		'baseUrlPlaceholder' : '--base_url_placeholder--'
 	});
 
 

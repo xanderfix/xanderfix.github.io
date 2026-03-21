@@ -10,7 +10,7 @@
     {{#if misc.isArrangeMasonry}}
         {{misc.rootSelector}} .im-cc-blogpost-cardlayout {
             padding:0px;
-            margin-right:-10px;
+            margin-inline-end:-10px;
         }    
     {{/if}}
 
@@ -19,7 +19,13 @@
             background: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}) !important;
         }
         {{misc.rootSelector}} .swiper-button-next, {{misc.rootSelector}} .swiper-button-prev {
-            color: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}) !important;
+            color: #000000 !important;
+        }
+        {{misc.rootSelector}} .swiper-button-next:after {
+            text-shadow: -3px 0px #FFFFFF;
+        }
+        {{misc.rootSelector}} .swiper-button-prev:after {
+            text-shadow: 3px 0px #FFFFFF;
         }
         {{misc.rootSelector}} > div > .swiper > .swiper-wrapper > x5engine-card {
             display: grid;
@@ -49,18 +55,21 @@
         border-style: solid;
 
         border-top-width: {{card.border.widths.top}}px;
-        border-right-width: {{card.border.widths.right}}px;
+        border-inline-end-width: {{card.border.widths.right}}px;
         border-bottom-width: {{card.border.widths.bottom}}px;
-        border-left-width: {{card.border.widths.left}}px;
+        border-inline-start-width: {{card.border.widths.left}}px;
 
         border-top-color: rgba({{card.border.colors.top.r}},{{card.border.colors.top.g}},{{card.border.colors.top.b}},{{card.border.colors.top.a}}); 
-        border-right-color: rgba({{card.border.colors.right.r}},{{card.border.colors.right.g}},{{card.border.colors.right.b}},{{card.border.colors.right.a}}); 
+        border-inline-end-color: rgba({{card.border.colors.right.r}},{{card.border.colors.right.g}},{{card.border.colors.right.b}},{{card.border.colors.right.a}}); 
         border-bottom-color: rgba({{card.border.colors.bottom.r}},{{card.border.colors.bottom.g}},{{card.border.colors.bottom.b}},{{card.border.colors.bottom.a}}); 
-        border-left-color: rgba({{card.border.colors.left.r}},{{card.border.colors.left.g}},{{card.border.colors.left.b}},{{card.border.colors.left.a}}); 
+        border-inline-start-color: rgba({{card.border.colors.left.r}},{{card.border.colors.left.g}},{{card.border.colors.left.b}},{{card.border.colors.left.a}}); 
 
-        border-radius: {{card.border.radius.topLeft}}px {{card.border.radius.topRight}}px {{card.border.radius.bottomRight}}px {{card.border.radius.bottomLeft}}px; 
+        border-start-start-radius: {{card.border.radius.topLeft}}px;
+        border-start-end-radius: {{card.border.radius.topRight}}px;
+        border-end-start-radius: {{card.border.radius.bottomLeft}}px;
+        border-end-end-radius: {{card.border.radius.bottomRight}}px;
 
-        text-align: left; 
+        text-align: start; 
         line-height: 1.5; 
         overflow: hidden; 
 
@@ -75,18 +84,18 @@
 
     {{#if misc.isArrangeSlideshow}}
         {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard {
-            margin-left: {{card.margin}}px;
+            margin-inline-start: {{card.margin}}px;
             height: {{card.height}}px !important;
         }
         {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard:first-of-type {
-            margin-left: 0px;
+            margin-inline-start: 0px;
         }
     {{/if}}
 
     {{#if misc.isArrangeMasonry}}
         {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard {
             margin: {{card.margin}}px;
-            margin-left: 0px;
+            margin-inline-start: 0px;
             align-items: start;
             align-content:start;
         }
@@ -200,7 +209,10 @@
                 .im-cc-BlogPostCard 
                     [slot=cover] 
         {
-            margin: {{card.image.margins.top}}px {{card.image.margins.right}}px {{card.image.margins.bottom}}px {{card.image.margins.left}}px; 
+            margin-top: {{card.image.margins.top}}px;
+            margin-bottom: {{card.image.margins.bottom}}px;
+            margin-inline-start: {{card.image.margins.left}}px;
+            margin-inline-end: {{card.image.margins.right}}px;
         }
     {{/if}}{{/if}}
 
@@ -232,7 +244,10 @@
         {{misc.rootSelector}} .im-cc-BlogPostCard [slot=title] {
             grid-column: 1/2;
             background-color: rgba({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}},{{card.backgroundColor.a}});
-            margin: {{card.txtBlock.margins.top}}px {{card.txtBlock.margins.right}}px 0px {{card.txtBlock.margins.left}}px;
+            margin-top: {{card.txtBlock.margins.top}}px;
+            margin-bottom: 0px;
+            margin-inline-start: {{card.txtBlock.margins.left}}px;
+            margin-inline-end: {{card.txtBlock.margins.right}}px;
         }
         
         {{misc.rootSelector}} 
@@ -262,7 +277,10 @@
     {{#if misc.isLayoutCoverAsBackground}}
         {{misc.rootSelector}} .im-cc-BlogPostCard [slot=contents] {
             background-color: rgba({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}},{{card.backgroundColor.a}});
-            margin: 0px {{card.txtBlock.margins.right}}px {{card.txtBlock.margins.bottom}}px {{card.txtBlock.margins.left}}px;
+            margin-top: 0px;
+            margin-bottom: {{card.txtBlock.margins.bottom}}px;
+            margin-inline-start: {{card.txtBlock.margins.left}}px;
+            margin-inline-end: {{card.txtBlock.margins.right}}px;
         }
 
         {{misc.rootSelector}} 
@@ -281,9 +299,9 @@
             {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardDescription {
                 position: absolute;
                 bottom: 0px;
-                right: 0px;
+                inset-inline-end: 0px;
                 top: 0px;
-                left: 0px;
+                inset-inline-start: 0px;
             }
         {{#if misc.layoutHorizontalMediaQueryStart}}
         }
@@ -319,7 +337,10 @@
         width: 100%;
 
         margin:auto;        
-        padding: {{card.image.margins.top}}px {{card.image.margins.right}}px {{card.image.margins.bottom}}px {{card.image.margins.left}}px; 
+        padding-top: {{card.image.margins.top}}px;
+        padding-bottom: {{card.image.margins.bottom}}px;
+        padding-inline-start: {{card.image.margins.left}}px;
+        padding-inline-end: {{card.image.margins.right}}px;
 
         cursor: pointer;
 
@@ -469,7 +490,10 @@
     }
     {{#if misc.isLayoutCoverAsBackground}}
         {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-title {
-            padding: 20px 20px 0px 20px; 
+            padding-top: 20px;
+            padding-bottom: 0px;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
         }
     {{else}}
         {{misc.rootSelector}} 
@@ -511,6 +535,7 @@
         text-decoration: none; 
         margin:0px;
         padding:0px;
+        overflow-wrap: anywhere;
     }
 
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostDetails {
@@ -527,7 +552,8 @@
                 {{/if}}
             {{/if}}
         {{/if}}
-
+        overflow-wrap: anywhere;
+        overflow: hidden;
     }
 
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory,
@@ -539,9 +565,10 @@
         position: relative;
         text-wrap: nowrap;
         white-space: nowrap;
+        display: inline-block;
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory { 
-        margin-left: -5px;
+        margin-inline-start: -5px;
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > a,
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > a {
@@ -553,6 +580,7 @@
         text-decoration: none; 
         text-wrap: nowrap;
         white-space: nowrap;
+        overflow-wrap: anywhere;
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > svg,
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > svg,
@@ -571,12 +599,11 @@
         font-style: {{card.txtBlock.details.style.font.style}};
         font-weight: {{card.txtBlock.details.style.font.weight}};
         color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
-        overflow: hidden; 
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor svg { 
         {{#if card.txtBlock.details.showCategory}}{{else}}
             {{#if card.txtBlock.details.showAuthor}}
-                left: -2px;
+                inset-inline-start: -2px;
             {{/if}}
         {{/if}}
     }
@@ -584,7 +611,7 @@
         {{#if card.txtBlock.details.showCategory}}{{else}}
             {{#if card.txtBlock.details.showAuthor}}{{else}}
                 {{#if card.txtBlock.details.showDate}}
-                    left: -1px;
+                    inset-inline-start: -1px;
                 {{/if}}
             {{/if}}
         {{/if}}
@@ -594,12 +621,12 @@
             {{#if card.txtBlock.details.showAuthor}}{{else}}
                 {{#if card.txtBlock.details.showDate}}{{else}}
                     {{#if card.txtBlock.details.showReadTime}}
-                        left: 0px !important;
+                        inset-inline-start: 0px !important;
                     {{/if}}
                 {{/if}}
             {{/if}}
         {{/if}}
-        left: 2px;
+        inset-inline-start: 2px;
     }
 
     {{! ***** ***** ***** ***** ***** TITLE style - end ***** ***** ***** ***** ***** }}
@@ -634,7 +661,10 @@
 
     {{#if misc.isLayoutCoverAsBackground}}
         {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-contents {
-            padding: 0px 20px 20px 20px; 
+            padding-top: 0px;
+            padding-bottom: 20px;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
             height: {{card.txtBlock.height}}px;
         }
     {{else}}
@@ -714,7 +744,7 @@
         position: absolute; 
         width: 100%; 
         height: 25px; 
-        left: 0; 
+        inset-inline-start: 0; 
         bottom: 0; 
         box-shadow: inset 0px -20px 44px rgb({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}}); 
     }
@@ -728,6 +758,13 @@
         text-align: {{card.txtBlock.button.position}}; 
         overflow: hidden; 
     }
+
+    {{#if card.txtBlock.button.flipImage}}
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardButton img {
+        transform: scaleX(-1);
+    }
+    {{/if}}
+
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardButton a { 
 
         {{#if card.txtBlock.button.useImage}}
@@ -739,18 +776,21 @@
             border-style: solid;
 
             border-top-width: {{card.txtBlock.button.border.widths.top}}px;
-            border-right-width: {{card.txtBlock.button.border.widths.right}}px;
+            border-inline-end-width: {{card.txtBlock.button.border.widths.right}}px;
             border-bottom-width: {{card.txtBlock.button.border.widths.bottom}}px;
-            border-left-width: {{card.txtBlock.button.border.widths.left}}px;
+            border-inline-start-width: {{card.txtBlock.button.border.widths.left}}px;
 
             border-top-color: rgba({{card.txtBlock.button.border.colors.top.r}},{{card.txtBlock.button.border.colors.top.g}},{{card.txtBlock.button.border.colors.top.b}},{{card.txtBlock.button.border.colors.top.a}}); 
-            border-right-color: rgba({{card.txtBlock.button.border.colors.right.r}},{{card.txtBlock.button.border.colors.right.g}},{{card.txtBlock.button.border.colors.right.b}},{{card.txtBlock.button.border.colors.right.a}}); 
+            border-inline-end-color: rgba({{card.txtBlock.button.border.colors.right.r}},{{card.txtBlock.button.border.colors.right.g}},{{card.txtBlock.button.border.colors.right.b}},{{card.txtBlock.button.border.colors.right.a}}); 
             border-bottom-color: rgba({{card.txtBlock.button.border.colors.bottom.r}},{{card.txtBlock.button.border.colors.bottom.g}},{{card.txtBlock.button.border.colors.bottom.b}},{{card.txtBlock.button.border.colors.bottom.a}}); 
-            border-left-color: rgba({{card.txtBlock.button.border.colors.left.r}},{{card.txtBlock.button.border.colors.left.g}},{{card.txtBlock.button.border.colors.left.b}},{{card.txtBlock.button.border.colors.left.a}}); 
+            border-inline-start-color: rgba({{card.txtBlock.button.border.colors.left.r}},{{card.txtBlock.button.border.colors.left.g}},{{card.txtBlock.button.border.colors.left.b}},{{card.txtBlock.button.border.colors.left.a}}); 
 
-            border-radius: {{card.txtBlock.button.border.radius.topLeft}}px {{card.txtBlock.button.border.radius.topRight}}px {{card.txtBlock.button.border.radius.bottomRight}}px {{card.txtBlock.button.border.radius.bottomLeft}}px; 
+            border-start-start-radius: {{card.txtBlock.button.border.radius.topLeft}}px;
+            border-start-end-radius: {{card.txtBlock.button.border.radius.topRight}}px;
+            border-end-start-radius: {{card.txtBlock.button.border.radius.bottomLeft}}px;
+            border-end-end-radius: {{card.txtBlock.button.border.radius.bottomRight}}px;
 
-            padding: {{card.txtBlock.button.margins.top}}px {{card.txtBlock.button.margins.left}}px; 
+            padding: {{card.txtBlock.button.margins.top}}px {{card.txtBlock.button.margins.left}}px;
 
             background-color: rgba({{card.txtBlock.button.style.backgroundColor.r}},{{card.txtBlock.button.style.backgroundColor.g}},{{card.txtBlock.button.style.backgroundColor.b}},{{card.txtBlock.button.style.backgroundColor.a}}); 
 

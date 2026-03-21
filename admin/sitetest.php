@@ -9,7 +9,13 @@ $results = imAdminTest::testWsx5Configuration();
  
 if (isset($_POST['send'])) {
 	$attachment = array();
-	if (is_uploaded_file($_FILES['attachment']['tmp_name']) && file_exists($_FILES['attachment']['tmp_name'])) {
+	if (
+		isset($_FILES['attachment']['name']) &&
+		isset($_FILES['attachment']['type']) &&
+		isset($_FILES['attachment']['tmp_name']) &&
+		is_uploaded_file($_FILES['attachment']['tmp_name']) &&
+		file_exists($_FILES['attachment']['tmp_name'])
+	) {
 		$attachment = array(array(
 			"name" => $_FILES['attachment']['name'],
 			"mime" => $_FILES['attachment']['type'],
@@ -17,7 +23,12 @@ if (isset($_POST['send'])) {
 		));
 	}
 	$mailer = new ImSendEmail();
-	if ($_POST['type'] == 'phpmailer' || $_POST['type'] == 'phpmailer-smtp') {
+	if (
+		isset($_POST['type']) && (
+			$_POST['type'] == 'phpmailer' || 
+			$_POST['type'] == 'phpmailer-smtp'
+		)		
+	) {
 		$mailer->emailType = 'phpmailer';
 		if ($_POST['type'] == 'phpmailer-smtp') {
 			$mailer->use_smtp = true;

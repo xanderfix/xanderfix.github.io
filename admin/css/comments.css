@@ -11,9 +11,9 @@
 }
 
 .comments .box-grid {
-  display:flex;
-  align-items:center;
-  justify-content:left;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .comments .box > select {

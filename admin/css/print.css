@@ -9,7 +9,7 @@
 }
 
 .print-text-right, td.print-text-right, th.print-text-right {
-	text-align: right;
+	text-align: end;
 }
 
 table table {

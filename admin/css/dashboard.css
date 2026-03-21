@@ -17,7 +17,7 @@
 
 .dashboard-box .dismiss {
 	position: absolute;
-	right: 10px;
+	inset-inline-end: 10px;
 	top: 15px;
 	cursor: pointer;
 }
@@ -32,7 +32,7 @@
 
 .dashboard-box > .title img {
 	vertical-align: -28%;
-	margin-right: 10px;
+	margin-inline-end: 10px;
 	width: 24px;
 }
 
@@ -42,8 +42,8 @@
 
 .dashboard-box .bottom {
 	position: absolute;
-	left: 14px;
-	right: 14px;
+	inset-inline-start: 14px;
+	inset-inline-end: 14px;
 	bottom: 10px;
 }
 
@@ -52,12 +52,13 @@
 }
 
 .dashboard-box .summary {
-	padding: 5px 0 5px 10px;
+	padding-block: 5px;
+	padding-inline: 10px 0;
 	border-bottom: 1px solid #b5b5b5;
 }
 
 .dashboard-box .summary .icon {
-	margin-right: 20px;
+	margin-inline-end: 20px;
 }
 
 .dashboard-box .summary .value {
@@ -138,8 +139,8 @@
 	box-sizing: border-box;
 	position: relative;
 	display: none;
-	padding-left: 60px;
-	padding-right: 20px;
+	padding-inline-start: 60px;
+	padding-inline-end: 20px;
 	margin: 30px 20px;
 }
 
@@ -154,7 +155,7 @@
 .dashboard-notifications-bar .icon {
 	position: absolute;
 	top: 0;
-	left: 0;
+	inset-inline-start: 0;
 	width: 50px;
 	height: 100%;
 	display: flex;
@@ -164,7 +165,7 @@
 
 .dashboard-notifications-bar .dismiss {
 	position: absolute;
-	right: 10px;
+	inset-inline-end: 10px;
 	top: 10px;
 	cursor: pointer;
 }

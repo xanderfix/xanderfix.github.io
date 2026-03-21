@@ -10,42 +10,25 @@
 	height: 100%;
 	text-decoration: none;
 	overflow: hidden !important;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-webkit-border-bottom-right-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-radius: 0px; ;
+  
 	background-color: rgb(42,54,59);
 	z-index: 1;
 	position: relative;
 }
 
 #soc_imHeader_pluginAppObj_02 .social-icon{
-	width: 40px;
+  width: 40px;
 	height: 40px;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-webkit-border-bottom-right-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+  border-radius: 0px; ;
+	
 	display: block;
 	text-align: center;
-	overflow: hidden;
-    margin: 0 0px 0px 0;
+	/* overflow: hidden; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #soc_imHeader_pluginAppObj_02 .social-icon.last-item-row {
@@ -71,6 +54,7 @@
 	top: 20%;
 	position: relative;
 }
+
 #soc_imHeader_pluginAppObj_02 .flat .social-icon svg{
 	fill: rgb(96,191,0);
 }
@@ -78,6 +62,7 @@
 #soc_imHeader_pluginAppObj_02 .social-icon .fallbacktext{
 	display: none;
 }
+
 .no-svg #soc_imHeader_pluginAppObj_02 .social-icon svg{
 	display: none;
 }
@@ -105,6 +90,7 @@
 	-webkit-transition-property: transform;
 	transition-property: transform;
 }
+
 #soc_imHeader_pluginAppObj_02 .grow .social-icon:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -121,6 +107,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 #soc_imHeader_pluginAppObj_02 .shrink .social-icon:hover{
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
@@ -186,6 +173,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
+
 #soc_imHeader_pluginAppObj_02 .shake .social-icon:hover{
   -webkit-animation-name: hvr-buzz-out;
   animation-name: hvr-buzz-out;
@@ -229,12 +217,14 @@
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
+
 #soc_imHeader_pluginAppObj_02 .float .social-icon:hover {
   overflow: initial;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
+
 #soc_imHeader_pluginAppObj_02 .float .social-icon:hover:before {
   opacity: 1;
   -webkit-transform: translateY(5px);

@@ -241,4 +241,11 @@
 	l('video_unmute_button', 'Unmute audio');
 	l('welcomepage_go_to_home', 'Go to homepage');
 	l('welcomepage_title', 'Entry page');
+	l('magicsite_created_with', 'Created with');
+	l('pwa_banner_close_button', 'Close');
+	l('pwa_banner_install_button', 'Install');
+	l('pwa_banner_install_msg', 'Install this application on your home screen for a better experience');
+	l('pwa_banner_text2', 'Tap {0} then \"Add to your screen\"');
+	l('pwa_icon_alt', 'Application icon');
+	l('pwa_ios_install_button_alt', 'Installation button on iOS');
 })( x5engine );

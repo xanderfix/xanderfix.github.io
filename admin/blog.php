@@ -8,9 +8,9 @@ function showSummary($contentT, $topic, $data) {
     // Show the summary
 	$rating = $topic->getRating();
 	$ratingT = new Template("templates/comments/summary.php");
-	$ratingT->vote = $rating["rating"];
-	$ratingT->count = $rating["count"];
-	$ratingT->hasRating = $data['comment_type'] != "comment";
+	$ratingT->vote = isset($rating["rating"]) ? $rating["rating"] : 0;
+	$ratingT->count = isset($rating["count"]) ? $rating["count"] : 0;
+	$ratingT->hasRating = isset($data['comment_type']) && $data['comment_type'] != "comment";
 	$contentT->content .= $ratingT->render();
 }
 
@@ -106,7 +106,7 @@ $commentsT->siteUrl = $imSettings['general']['url'];
 $commentsT->baseposturlcategory = 'blog.php?category=';
 $commentsT->baseposturlpost = '&post=';
 $commentsT->showObjectTitle = false;
-$commentsT->rating = $data['comment_type'] != "comment";
+$commentsT->rating = isset($data['comment_type']) && $data['comment_type'] != "comment";
 $totalComments = [];
 
 $topic = false;

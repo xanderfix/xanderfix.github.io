@@ -25,7 +25,7 @@
 
     {{! ***** ***** ***** ***** ***** CARD ***** ***** ***** ***** ***** }}
     <x5engine-card
-        id="blogpost_{{id}}_card" 
+        id="{{../misc.objectIdPrefix}}blogpost_{{id}}_card" 
         class="{{#if ../misc.isArrangeSlideshow}}swiper-slide {{/if}}im-cc-BlogPostCard{{#if cardCoverSpecified}} im-cc-BlogPostCardWithCover{{/if}}" 
         contentlayout="{{../misc.cardContentLayout}}" 
         {{#if ../misc.cardContentDimension}}contentdimension="{{../misc.cardContentDimension}}" {{/if}}
@@ -46,7 +46,7 @@
             <div class="im-cc-BlogPostWrapperCardCover" >{{!
                 }}<img 
                     {{#if ../misc.isLazyLoadingEnabled}}loading="lazy"{{/if}}
-                    id="imBlogPostCardCover_{{id}}" 
+                    id="{{../misc.objectIdPrefix}}imBlogPostCardCover_{{id}}" 
                     class="im-cc-BlogPostCardCover{{#if cardCover}}{{else}} contain{{/if}}" 
                     src="{{currentPath}}{{#if isHighlighted}}{{cover}}{{else}}{{#if cardCover}}{{cardCover}}{{else}}blog/images/blog_post_placeholder.svg{{/if}}{{/if}}" 
                     alt="{{coverAlt}}"
@@ -89,8 +89,8 @@
                     }}<span 
                         class="im-cc-BlogPostCardCategory" 
                     >{{!
-                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_category" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
-                            <title id="blogpost_{{id}}_card_category">{{../l10n.blog_icon_category}}</title>
+                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_category" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_category">{{../l10n.blog_icon_category}}</title>
                             <path d="M17 6.659v12.927l-5-3.178-5 3.178V6.659C7 5.19 8.12 4 9.5 4h5C15.88 4 17 5.19 17 6.659z"></path>
                         </svg>{{!
                         }}<a 
@@ -105,8 +105,8 @@
                     <span 
                         class="im-cc-BlogPostCardAuthor" 
                     >{{!
-                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_author" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
-                            <title id="blogpost_{{id}}_card_author">{{../l10n.blog_icon_author}}</title>
+                        }}<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_author" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_author">{{../l10n.blog_icon_author}}</title>
                             <path d="M4 20c0-3 4-3 6-5 1-1-2-1-2-6 0-3.333 1.333-5 4-5s4 1.667 4 5c0 5-3 5-2 6 2 2 6 2 6 5"></path>
                         </svg>{{!
                         }}<a 
@@ -121,8 +121,8 @@
                     <span 
                         class="im-cc-BlogPostCardDate" 
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_date" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
-                            <title id="blogpost_{{id}}_card_date">{{../l10n.blog_icon_date}}</title>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_date" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_date">{{../l10n.blog_icon_date}}</title>
                             <path d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"></path><path d="M15 15h2v2h-2z"></path>
                         </svg>
                         {{timestamp}}
@@ -135,8 +135,8 @@
                     <span 
                         class="im-cc-BlogPostCardReadTime" 
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="blogpost_{{id}}_card_read_time" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
-                            <title id="blogpost_{{id}}_card_read_time">{{../l10n.blog_icon_read_time}}</title>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-linecap="square" aria-labelledby="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_read_time" role="img" color="#000" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" height="100%">
+                            <title id="{{../misc.objectIdPrefix}}blogpost_{{id}}_card_read_time">{{../l10n.blog_icon_read_time}}</title>
                             <circle cx="12" cy="12" r="10"></circle><path d="M12 5v7l4 4"></path>
                         </svg>
                         {{readTime}}

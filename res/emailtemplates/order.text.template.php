@@ -4,8 +4,12 @@ $separator = "<tr><td colspan=\"2\" style=\"margin: 10px 0; height: 10px; font-s
 // If true, it means that there are both the invoice and the shipping addresses
 $doubleUData = isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
 $doubleUData = $doubleUData && isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
+$rtl = Configuration::getSettings()['general']['rtl'];
 
-echo str_replace("<br>", "\n", $l10n->get('cart_order_no') . ": " . $orderData['orderNo']) . "\n";
+if ($rtl)
+    echo str_replace("<br>", "\n", $orderData['orderNo']) . " :" . $l10n->get('cart_order_no') . "\n";
+else
+    echo str_replace("<br>", "\n", $l10n->get('cart_order_no') . ": " . $orderData['orderNo']) . "\n";
 // Opening Message
 if ($showCustomerMessages) {
     echo strip_tags(str_replace("<br />", "\n", $settings['email_opening'])) . "\n";
@@ -15,7 +19,10 @@ if ($showCustomerMessages) {
 if ($doubleUData) {
     echo "\n" . str_replace("<br />", "\n", $l10n->get('cart_vat_address')) . "\n\n";
 } else {
-    echo "\n" . str_replace("<br />", "\n", $l10n->get('cart_vat_address') . "/" . $l10n->get('cart_shipping_address')) . "\n\n";
+    if ($rtl)
+        echo "\n" . str_replace("<br />", "\n", $l10n->get('cart_shipping_address') . "/" . $l10n->get('cart_vat_address')) . "\n\n";
+    else
+        echo "\n" . str_replace("<br />", "\n", $l10n->get('cart_vat_address') . "/" . $l10n->get('cart_shipping_address')) . "\n\n";
 }
 // Invoice Data
 if (isset($orderData['userInvoiceData']) && is_array($orderData['userInvoiceData'])) {
@@ -30,7 +37,10 @@ if (isset($orderData['userInvoiceData']) && is_array($orderData['userInvoiceData
             else
                 $fieldValue = $value['value'];  
             
-            echo "\t" . $value['label'] . ": " . $fieldValue . "\n";
+            if ($rtl)
+                echo "\t" . $fieldValue . " :" . $value['label'] . "\n";
+            else
+                echo "\t" . $value['label'] . ": " . $fieldValue . "\n";
             $i++;
         }
     }
@@ -44,7 +54,10 @@ if (isset($orderData['userShippingData'])) {
     $i = 0;
     foreach ($orderData['userShippingData'] as $key => $value) {
         if (trim($value['value']) != "") {
-            echo "\t" . $value['label'] . ": " . $value['value'] . "\n";
+            if ($rtl)
+                echo "\t" . $value['value'] . " :" . $value['label'] . "\n";
+            else
+                echo "\t" . $value['label'] . ": " . $value['value'] . "\n";
             $i++;
         }
     }
@@ -64,53 +77,97 @@ if (isset($orderData['products']) && is_array($orderData['products'])) {
     }
     foreach ($orderData['products'] as $key => $value) {
         $descr = strip_tags(str_replace(array("\n", "\r"), "", $value["description"]));
-        echo "\t" . strip_tags(str_replace(array("\n", "\r"), "", $value["name"]))
-        . (($opt && $value["option"] != "null") ? " " . $value["option"] . ( $value["suboption"] != "null" ? " " . $value["suboption"] : "") : "")
-        . (strlen($descr) ? " - " . $descr : "") . "\n"
-        . "\t " . $value["quantity"] . " x " 
-        . ( $settings['vat_type'] == "excluded" ?
-        "(" . $value["singlePrice"] . " + " . $value['vatName'] . " " . $value["vat"] . ")"
-        :
-        $value["singlePricePlusVat"]
-        )
-        . " = " . ($settings['vat_type'] == "excluded" ? $value["price"] : $value['pricePlusVat']) . "\n";
+        if ($rtl)
+            echo "\t" . (strlen($descr) ? $descr . " - " : "")
+            . (($opt && $value["option"] != "null") ? ( $value["suboption"] != "null" ? $value["suboption"] . " " : "") . $value["option"] . " " : "")
+            . strip_tags(str_replace(array("\n", "\r"), "", $value["name"]))
+            . "\n"
+            . "\t " . ($settings['vat_type'] == "excluded" ? $value["price"] : $value['pricePlusVat']) . " = " 
+            . ( $settings['vat_type'] == "excluded" ?
+            "(" . $value["vat"] . " " . $value['vatName'] . " + " . $value["singlePrice"] . ")"
+            :
+            $value["singlePricePlusVat"]
+            )
+            . " x " . $value["quantity"] . "\n";
+        else
+            echo "\t" . strip_tags(str_replace(array("\n", "\r"), "", $value["name"]))
+            . (($opt && $value["option"] != "null") ? " " . $value["option"] . ( $value["suboption"] != "null" ? " " . $value["suboption"] : "") : "")
+            . (strlen($descr) ? " - " . $descr : "") . "\n"
+            . "\t " . $value["quantity"] . " x " 
+            . ( $settings['vat_type'] == "excluded" ?
+            "(" . $value["singlePrice"] . " + " . $value['vatName'] . " " . $value["vat"] . ")"
+            :
+            $value["singlePricePlusVat"]
+            )
+            . " = " . ($settings['vat_type'] == "excluded" ? $value["price"] : $value['pricePlusVat']) . "\n";
     }
     // Shipping data
     if (isset($orderData['shipping']) && is_array($orderData['shipping'])) {
         echo "\n" . $l10n->get('cart_shipping') . "\n\n";
-        echo "\t" . $orderData['shipping']['name'] . ": " . ($settings['vat_type'] == "excluded" ? $orderData['shipping']['price'] : $orderData['shipping']['pricePlusVat']) . "\n";
+        if ($rtl)
+            echo "\t" . ($settings['vat_type'] == "excluded" ? $orderData['shipping']['price'] : $orderData['shipping']['pricePlusVat']) . " :" . $orderData['shipping']['name'] . "\n";
+        else
+            echo "\t" . $orderData['shipping']['name'] . ": " . ($settings['vat_type'] == "excluded" ? $orderData['shipping']['price'] : $orderData['shipping']['pricePlusVat']) . "\n";
     }
     // Payment Data
     if (isset($orderData['payment']) && is_array($orderData['payment'])) {
         echo "\n" . $l10n->get('cart_payment') . "\n\n";
-        echo "\t" . $orderData['payment']['name'] . ": " . ($settings['vat_type'] == "excluded" ? $orderData['payment']['price'] : $orderData['payment']['pricePlusVat']) . "\n";
+        if ($rtl)
+            echo "\t" . ($settings['vat_type'] == "excluded" ? $orderData['payment']['price'] : $orderData['payment']['pricePlusVat']) . " :" . $orderData['payment']['name'] . "\n";
+        else
+            echo "\t" . $orderData['payment']['name'] . ": " . ($settings['vat_type'] == "excluded" ? $orderData['payment']['price'] : $orderData['payment']['pricePlusVat']) . "\n";
     }
     // Total Amount
     switch ($settings['vat_type']) {
         case "excluded":
-            echo "\n" . $orderData['vatName'] . ": " . $orderData['totalVat'] . "\n";
-            echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) . ": " . $orderData['totalPricePlusVat'] . "\n";
+            if ($rtl) {
+                echo "\n" . $orderData['totalVat'] . " :" . $orderData['vatName'] . "\n";
+                echo str_replace('[NAME]', $orderData['vatName'], $orderData['totalPricePlusVat'] . " :" . $l10n->get('cart_total_vat')) . "\n";
+            } else {
+                echo "\n" . $orderData['vatName'] . ": " . $orderData['totalVat'] . "\n";
+                echo str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) . ": " . $orderData['totalPricePlusVat'] . "\n";
+            }
         break;
         case "included":
-            echo "\n" . str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) . ": " . $orderData['totalPricePlusVat'] . "\n";
-            echo str_replace('[NAME]', $orderData['vatName'], $l10n->get("cart_vat_included")) . ": " . $orderData['totalVat'] . "\n";
+            if ($rtl) {
+                echo "\n" . str_replace('[NAME]', $orderData['vatName'], $orderData['totalPricePlusVat'] . " :" . $l10n->get('cart_total_vat')) . "\n";
+                echo str_replace('[NAME]', $orderData['vatName'], $orderData['totalVat'] . " :" . $l10n->get("cart_vat_included")) . "\n";
+            } else {
+                echo "\n" . str_replace('[NAME]', $orderData['vatName'], $l10n->get('cart_total_vat')) . ": " . $orderData['totalPricePlusVat'] . "\n";
+                echo str_replace('[NAME]', $orderData['vatName'], $l10n->get("cart_vat_included")) . ": " . $orderData['totalVat'] . "\n";
+            }
         break;
         case "none":
-            echo "\n" . $l10n->get('cart_total_price') . ": " . $orderData['totalPricePlusVat'] . "\n";
+            if ($rtl)
+                echo "\n" . $orderData['totalPricePlusVat'] . " :" . $l10n->get('cart_total_price') . "\n";
+            else
+                echo "\n" . $l10n->get('cart_total_price') . ": " . $orderData['totalPricePlusVat'] . "\n";
         break;
     }
     // Coupon
     if ((isset($orderData['coupon']) && $orderData['coupon'] !== "" && $orderData['rawCouponDiscount'] > 0) || (isset($orderData['rawOrderTotalDiscount']) && $orderData['rawOrderTotalDiscount'] !== "" && $orderData['rawOrderTotalDiscount'] > 0)) {
         if (isset($orderData['coupon']) && $orderData['coupon'] !== "" && $orderData['rawCouponDiscount'] > 0) {
-            echo "\n" . $l10n->get('cart_coupon_code', "Coupon Code") . " (" . $orderData['coupon'] . "): -" . $orderData['couponDiscount'] . "\n";
+            if ($rtl)
+                echo "\n" . $orderData['couponDiscount'] . "- :(" . $orderData['coupon'] . ") " . $l10n->get('cart_coupon_code', "Coupon Code") . "\n";
+            else
+                echo "\n" . $l10n->get('cart_coupon_code', "Coupon Code") . " (" . $orderData['coupon'] . "): -" . $orderData['couponDiscount'] . "\n";
         }
         if (isset($orderData['rawOrderTotalDiscount']) && $orderData['rawOrderTotalDiscount'] !== "" && $orderData['rawOrderTotalDiscount'] > 0) {
-            echo "\n" . $l10n->get('cart_order_total_discount', "Order Total Discount") . ": -" . $orderData['orderTotalDiscount'] . "\n";
+            if ($rtl)
+                echo "\n" . $orderData['orderTotalDiscount'] . "- :" . $l10n->get('cart_order_total_discount', "Order Total Discount") . "\n";
+            else
+                echo "\n" . $l10n->get('cart_order_total_discount', "Order Total Discount") . ": -" . $orderData['orderTotalDiscount'] . "\n";
         }
-        echo "\n" . $l10n->get('cart_grand_total', "Grand total") . ": " . $orderData['totalToPay'] . "\n";
+        if ($rtl)
+            echo "\n" . $orderData['totalToPay'] . " :" . $l10n->get('cart_grand_total', "Grand total") . "\n";
+        else
+            echo "\n" . $l10n->get('cart_grand_total', "Grand total") . ": " . $orderData['totalToPay'] . "\n";
     }
     else if (isset($orderData['coupon']) && $orderData['coupon'] !== "") {
-        echo "\n" . $l10n->get('cart_coupon_code', "Coupon Code") . ": " . $orderData['coupon'] . "\n";
+        if ($rtl)
+            echo "\n" . $orderData['coupon'] . " :" . $l10n->get('cart_coupon_code', "Coupon Code") . "\n";
+        else
+            echo "\n" . $l10n->get('cart_coupon_code', "Coupon Code") . ": " . $orderData['coupon'] . "\n";
     }
 }
 // Payment Text

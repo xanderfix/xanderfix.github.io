@@ -1,5 +1,6 @@
 <?php
 	$float = false; // Used to check if the Y axes is going to be shown with float numbers
+    $rtl = Configuration::getSettings()['general']['rtl'];
 ?>
 <div class="container-plot-bars">
 	<canvas class="plot-canvas" height="110"></canvas>
@@ -13,7 +14,7 @@
 			<?php 
 				$jsondata = "";
 				foreach ($data as $x => $y) {
-					$jsondata .= "\"" . $x . "\",";
+					$jsondata = $rtl ? "\"" . $x . "\"," . $jsondata : $jsondata . "\"" . $x . "\",";
 				}
 				echo trim($jsondata, ",");
 			?>
@@ -47,7 +48,7 @@
 						<?php
 						$jsondata = "";
 						foreach($data as $x => $y) {
-							$jsondata .= $y . ",\n\t\t\t\t\t";
+							$jsondata = $rtl ? $y . ",\n\t\t\t\t\t" . $jsondata : $jsondata . $y . ",\n\t\t\t\t\t";
 						}
 						echo trim($jsondata, ",");
 						?>			
@@ -74,8 +75,19 @@
 	                	"fixedStepSize": 1 // If we're in float risk, force the integer scale
 	                }
 	                <?php endif; ?>
-	           	}]
+                    ,"position": <?php echo $rtl ? "'right'" : "'left'" ?>
+				}]
 	        }
+		},
+		"defaults": {
+			"plugins": {
+				"tooltip": {
+					"rtl": <?php echo $rtl ? "true" : "false" ?>
+				},
+				"legend": {
+					"rtl": <?php echo $rtl ? "true" : "false" ?>
+				}
+			}
 		}
 	});
 	</script>

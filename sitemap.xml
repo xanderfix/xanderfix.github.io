@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
 		<loc>http://localhost/index.html</loc>
-		<lastmod>2026-03-14</lastmod>
+		<lastmod>2026-03-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://localhost/media.html</loc>
-		<lastmod>2026-03-14</lastmod>
+		<loc>http://localhost/discography.html</loc>
+		<lastmod>2026-03-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/live-shows.html</loc>
-		<lastmod>2026-03-14</lastmod>
+		<lastmod>2026-03-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://localhost/contacts.html</loc>
-		<lastmod>2026-03-14</lastmod>
+		<loc>http://localhost/contact.html</loc>
+		<lastmod>2026-03-21</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://localhost/band-member-bios.html</loc>
+		<lastmod>2026-03-21</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://localhost/buy-stream.html</loc>
+		<lastmod>2026-03-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>

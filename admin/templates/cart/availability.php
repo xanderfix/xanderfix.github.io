@@ -4,9 +4,10 @@
 				<?php for ($i = 0; $i < count($data); $i++): ?><div class="store-product-card">
 	<div class="store-product-card-image" data-bg-image="<?php echo $data[$i]['image'] ?>"></div>
 	<div class="store-product-card-text">
-		<div style="margin-left: 6px;"><b><?php echo $data[$i]['name']; ?></b></div>
-		<span class="availability <?php echo $data[$i]['status'] ?>"></span>
-		<span class="text-small"><?php echo l10n("cart_quantity", "Quantity:") . " " . $data[$i]['availableQuantity'] ?></span>
+		<div style="margin-inline-start: 6px;"><b><?php echo $data[$i]['name']; ?></b></div>
+		<span class="availability float-left <?php echo $data[$i]['status'] ?>"></span>
+		<span class="text-small float-left margin-right-small" style="line-height: 22px;"><?php echo l10n("cart_quantity", "Quantity:") ?></span>
+		<span class="text-small float-left" style="line-height: 22px;"><?php echo $data[$i]['availableQuantity'] ?></span>
 	</div>
 </div><?php	endfor; ?>
 <?php endforeach; ?>
@@ -16,7 +17,7 @@ $(document).ready(function () {
 		var div = $( this ),
 			url = div.attr( "data-bg-image" ),
 			body = $( "body" ),
-			img = new $( "<img style=\"position: absolute; top: -1000px; left: -1000px;\"/>" );
+			img = new $( "<img style=\"position: absolute; top: -1000px; inset-inline-start: -1000px;\"/>" );
 
 		// Usage of background-cover does not suit us. Let's load the image and get its size, then decide what to do.
 		img.one( "load", function () {

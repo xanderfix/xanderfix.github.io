@@ -27,13 +27,13 @@
     // -----
 
     $links = "";    
-    if ($comment['abuse'] == "1") {
+    if (isset($comment['abuse']) && $comment['abuse'] == "1") {
         $links .= "<span class=\"bottom icon-large fa fa-exclamation-triangle fore-yellow\" title=\"" . l10n('admin_comment_abuse') . "\"></span> |";
     }
-    if ($comment['abuse'] == "1") {
+    if (isset($comment['abuse']) && $comment['abuse'] == "1") {
         $links .= "<a class=\"fa icon-large fa-level-up fore-green\" href=\"${posturl}unabuse=${comment['id']}\" title=\"" . l10n("blog_abuse_remove", "Remove abuse")  . "\"></a>";
     }
-    if ($comment['approved'] == "1") {
+    if (isset($comment['approved']) && $comment['approved'] == "1") {
         $links .= "<a class=\"fa icon-large fa-thumbs-down fore-yellow\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_unapprove_question'))  . "')\" href=\"${posturl}disable=${comment['id']}\" title=\"" . l10n('blog_unapprove') . "\"></a>";
     } else {
         $links .= "<a class=\"fa icon-large fa-thumbs-up fore-green\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_approve_question')) . "')\" href=\"${posturl}enable=${comment['id']}\" title=\"" . l10n('blog_approve') . "\"></a>";
@@ -44,7 +44,7 @@
     // CSS Class
     // ---------
     
-    $cssClass = ($comment['abuse'] == "1" ? "background-yellow-light" : ($i % 2 ? '' : 'background-blue-light'));
+    $cssClass = (isset($comment['abuse']) && $comment['abuse'] == "1" ? "background-yellow-light" : ($i % 2 ? '' : 'background-blue-light'));
 
     // ---------
     // Stars
@@ -72,7 +72,7 @@
             <div class="margin-bottom"><?php echo $comment['timestamp'] ?></div>
             <div class="margin-bottom"><?php echo $user ?></div>
             <?php echo $rating; ?>
-            <div>IP: <?php echo $comment['ip'] ?></div>
+            <div><span class="float-left margin-right-small">IP:</span><span class="float-left"><?php echo $comment['ip'] ?></span></div>
         </td>
         <td class="text-small border-bottom border-mute-light"><?php echo $comment['body'] ?></td>
         <td class="border-bottom border-right border-mute-light text-right padding-left-10-child padding-bottom-10-child"><?php echo $links ?></td>
@@ -91,7 +91,7 @@
             <?php endif; ?>
             <div class="margin-bottom clearfix"><?php echo $comment['body'] ?></div>
             <div class="flex">
-                <div class="flex-grow-1">IP: <?php echo $comment['ip'] ?></div>
+                <div class="flex-grow-1"><span class="float-left margin-right-small">IP:</span><span class="float-left"><?php echo $comment['ip'] ?></span></div>
                 <div class="flex-grow-1 text-right padding-left-10-child"><?php echo $links ?></div>
             </div>
         </td>

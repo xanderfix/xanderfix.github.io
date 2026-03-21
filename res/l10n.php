@@ -240,6 +240,13 @@
 	$l10n['video_unmute_button'] = 'Unmute audio';
 	$l10n['welcomepage_go_to_home'] = 'Go to homepage';
 	$l10n['welcomepage_title'] = 'Entry page';
+	$l10n['magicsite_created_with'] = 'Created with';
+	$l10n['pwa_banner_close_button'] = 'Close';
+	$l10n['pwa_banner_install_button'] = 'Install';
+	$l10n['pwa_banner_install_msg'] = 'Install this application on your home screen for a better experience';
+	$l10n['pwa_banner_text2'] = 'Tap {0} then "Add to your screen"';
+	$l10n['pwa_icon_alt'] = 'Application icon';
+	$l10n['pwa_ios_install_button_alt'] = 'Installation button on iOS';
 
 
 // End of file l10n.php

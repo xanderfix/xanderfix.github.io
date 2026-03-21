@@ -1,5 +1,7 @@
 <?php
 	$id = md5($title);
+    $rtl = Configuration::getSettings()['general']['rtl'];
+	
 	$colors = array(
 		"rgb(250,164,58)",
 		"rgb(96,189,104)",
@@ -39,7 +41,7 @@
 			<?php 
 				$jsondata = "";
 				foreach ($data as $x => $y) {
-					$jsondata .= "\"" . $x . "\",";
+					$jsondata = $rtl ? "\"" . $x . "\"," . $jsondata : $jsondata . "\"" . $x . "\",";
 				}
 				echo trim($jsondata, ",");
 			?>
@@ -63,7 +65,7 @@
 					<?php
 					$jsondata = "";
 					foreach($data as $x => $y) {
-						$jsondata .= "{ x: \"" . $x . "\", y: " . $y . " },\n\t\t\t\t\t";
+						$jsondata = $rtl ? "{ x: \"" . $x . "\", y: " . $y . " },\n\t\t\t\t\t" . $jsondata : $jsondata . "{ x: \"" . $x . "\", y: " . $y . " },\n\t\t\t\t\t";
 						if ($y > 1) {
 							$float = true; // Ah! we'll correct the Y axes for float numbers
 						}
@@ -94,8 +96,19 @@
 	                	"fixedStepSize": 1 // If we're in float risk, force the integer scale
 	                }
 	                <?php endif; ?>
+					,"position": <?php echo $rtl ? "'right'" : "'left'" ?>
 	           	}]
 	        }
+		},
+		"defaults": {
+			"plugins": {
+				"tooltip": {
+					"rtl": <?php echo $rtl ? "true" : "false" ?>
+				},
+				"legend": {
+					"rtl": <?php echo $rtl ? "true" : "false" ?>
+				}
+			}
 		}
 	});
 	</script>

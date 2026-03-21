@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="fore-mute-dark background-mute-light">
+<html lang="en" dir="<?php echo $imSettings['general']['rtl'] ? "rtl" : "ltr" ?>" class="fore-mute-dark background-mute-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">

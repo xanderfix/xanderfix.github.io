@@ -20,7 +20,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php if (count($orders['orders']) <= 0): ?>
+<?php if (isset($orders['orders']) && count($orders['orders']) <= 0): ?>
 	<tr>
 		<td colspan="6" class="text-center"><?php echo l10n('search_empty', 'Empty results') ?></td>
 	</tr>
@@ -89,7 +89,7 @@
 <?php endif; ?>
 	</tbody>
 </table>
-<?php if ($orders['paginationCount'] > $pagination_length): ?>
+<?php if (isset($orders['paginationCount']) && $orders['paginationCount'] > $pagination_length): ?>
 <?php $limit = ceil($orders['paginationCount'] / $pagination_length); ?>
 		<div class="text-center pagination">
 <?php if (@$_GET['page'] != 0): ?>
