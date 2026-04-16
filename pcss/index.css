@@ -326,6 +326,9 @@ max-height: 100%; position: absolute; top: 0; bottom: 0; inset-inline-start: 3px
 #imTextObject_08_tab0 hr { border: solid; border-block-width: 1px 0px; border-inline-width: 0px; }
 #imTextObject_08_tab0 .fs20lh1-5 { vertical-align: baseline; font-size: 20pt; line-height: 40px; }
 #imTextObject_08_tab0 .ff1 { font-family: 'Press Start 2P'; }
+#imTextObject_08_tab0 .fs24lh1-5 { vertical-align: baseline; font-size: 24pt; line-height: 48px; }
+#imTextObject_08_tab0 .fs16lh1-5 { vertical-align: baseline; font-size: 16pt; line-height: 32px; }
+#imTextObject_08_tab0 .fs14lh1-5 { vertical-align: baseline; font-size: 14pt; line-height: 28px; }
 #imTextObject_08 .text-container {width: 100%;}#imTextObject_08 .text-container {margin: 0 auto; position: relative;overflow: hidden; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr; background-color: rgba(255, 255, 255, 1); border-style: solid;border-color: rgba(169, 169, 169, 1); }
 #imTextObject_08 .text-container .grid-prop.current-tab {z-index: 1; opacity: 1;  }
 #imTextObject_08 .text-container .grid-prop {grid-area: 1 / 1 / 2 / 2; opacity: 0; box-sizing: border-box; position: relative;  }
@@ -942,7 +945,7 @@ max-height: 100%; position: absolute; top: 0; bottom: 0; inset-inline-start: 3px
 	#imHeader_imCellStyleGraphics_17 { box-sizing: border-box; }
 	#imHeader_imObjectTitle_17_text { font-size: 15.02pt; }
 	#imHeader_imObjectTitle_17{ text-shadow: 0px 0px 0px rgba(74, 136, 47, 1), 2px 2px 0px rgba(42, 104, 15, 1), 4px 4px 0px rgba(10, 72, 0, 1), 6px 6px 0px rgba(0, 40, 0, 1), 8px 8px 0px rgba(0, 8, 0, 1) ;}#imHeader_imObjectTitle_17 { width: 100%; }
-	#imHeader_imObjectTitle_17_text { margin-block: 11px; margin-inline: 0px; 
+	#imHeader_imObjectTitle_17_text { margin-block: 5px; margin-inline: 0px; 
 	 }
 	
 }
