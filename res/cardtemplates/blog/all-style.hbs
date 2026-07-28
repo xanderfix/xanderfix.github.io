@@ -44,7 +44,7 @@
             {{card.shadow.offset.y}}px 
             {{card.shadow.blur}}px 
             {{card.shadow.spread}}px 
-            rgb({{card.shadow.color.r}},{{card.shadow.color.g}},{{card.shadow.color.b}}); 
+            rgba({{card.shadow.color.r}},{{card.shadow.color.g}},{{card.shadow.color.b}},{{card.shadow.color.a}}); 
         {{/if}}
 
         position: relative;
@@ -346,12 +346,15 @@
 
         display:block;
 
-        {{#if card.image.sizeAdapted}}object-fit: cover; {{else}}object-fit: scale-down; {{/if}}
+        object-fit: {{#if card.image.sizeAdapted}}cover{{else}}{{#if misc.isArrangeChangingHeightOrMasonry}}cover{{else}}scale-down{{/if}}{{/if}};
 
         {{#if misc.isLayoutVertical}}
             {{#if card.image.sizeAdapted}}
             {{else}}
-            max-height: 100%;
+                {{#if misc.isArrangeChangingHeightOrMasonry}}
+                {{else}}
+                    max-height: 100%;
+                {{/if}}
             {{/if}}
         {{/if}}
 
@@ -425,7 +428,7 @@
                 .im-cc-BlogPostCard 
                     .im-cc-BlogPostCardCover 
         { 
-            {{#if card.image.sizeAdapted}}{{else}}width: auto;{{/if}}
+            width: auto;
         }
     {{/if}}{{/if}}
 
@@ -515,19 +518,19 @@
         grid-row:1/2;
         grid-column:1/2;
         font-family: '{{card.txtBlock.name.style.font.familyName}}';
-        font-size: {{card.txtBlock.name.style.font.size}}pt;
+        font-size: {{card.txtBlock.name.style.font.size}};
         font-style: {{card.txtBlock.name.style.font.style}};
         font-weight: {{card.txtBlock.name.style.font.weight}};
         color: rgb({{card.txtBlock.name.style.textColor.r}},{{card.txtBlock.name.style.textColor.g}},{{card.txtBlock.name.style.textColor.b}}); 
         text-align: {{card.txtBlock.align}};
-        line-height: normal;
+        line-height: 1.15;
         margin:0px;
         padding:0px;
     }
     
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardTitle h1 a { 
         font-family: '{{card.txtBlock.name.style.font.familyName}}';
-        font-size: {{card.txtBlock.name.style.font.size}}pt;
+        font-size: {{card.txtBlock.name.style.font.size}};
         font-style: {{card.txtBlock.name.style.font.style}};
         font-weight: {{card.txtBlock.name.style.font.weight}};
         color: rgb({{card.txtBlock.name.style.textColor.r}},{{card.txtBlock.name.style.textColor.g}},{{card.txtBlock.name.style.textColor.b}}); 
@@ -573,7 +576,7 @@
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > a,
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > a {
         font-family: '{{card.txtBlock.details.style.font.familyName}}';
-        font-size: {{card.txtBlock.details.style.font.size}}pt; 
+        font-size: {{card.txtBlock.details.style.font.size}};
         font-style: {{card.txtBlock.details.style.font.style}};
         font-weight: {{card.txtBlock.details.style.font.weight}};
         color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
@@ -595,7 +598,7 @@
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate,
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime { 
         font-family: '{{card.txtBlock.details.style.font.familyName}}';
-        font-size: {{card.txtBlock.details.style.font.size}}pt; 
+        font-size: {{card.txtBlock.details.style.font.size}};
         font-style: {{card.txtBlock.details.style.font.style}};
         font-weight: {{card.txtBlock.details.style.font.weight}};
         color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
@@ -653,7 +656,7 @@
         grid-template-rows: {{#if misc.isLayoutHorizontal}}{{#if misc.isArrangeChangingHeightOrMasonry}}minmax(3lh, 1fr){{else}}1fr{{/if}}{{else}}1fr{{/if}} auto;
         {{#if misc.isLayoutHorizontal}}
         {{#if card.txtBlock.description.style.font.familyName}}font-family: '{{card.txtBlock.description.style.font.familyName}}';{{/if}}
-        font-size: {{card.txtBlock.description.style.font.size}}pt; 
+        font-size: {{card.txtBlock.description.style.font.size}};
         font-style: {{card.txtBlock.description.style.font.style}}; 
         font-weight: {{card.txtBlock.description.style.font.weight}}; 
         {{/if}}
@@ -705,7 +708,7 @@
         position: relative; 
         padding-top:3px;
         {{#if card.txtBlock.description.style.font.familyName}}font-family: '{{card.txtBlock.description.style.font.familyName}}';{{/if}}
-        font-size: {{card.txtBlock.description.style.font.size}}pt; 
+        font-size: {{card.txtBlock.description.style.font.size}};
         font-style: {{card.txtBlock.description.style.font.style}};
         font-weight: {{card.txtBlock.description.style.font.weight}};
         color: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}); 
@@ -795,7 +798,7 @@
             background-color: rgba({{card.txtBlock.button.style.backgroundColor.r}},{{card.txtBlock.button.style.backgroundColor.g}},{{card.txtBlock.button.style.backgroundColor.b}},{{card.txtBlock.button.style.backgroundColor.a}}); 
 
             font-family: '{{card.txtBlock.button.style.font.familyName}}';
-            font-size: {{card.txtBlock.button.style.font.size}}pt; 
+            font-size: {{card.txtBlock.button.style.font.size}};
             font-style: {{card.txtBlock.button.style.font.style}};
             font-weight: {{card.txtBlock.button.style.font.weight}};
 

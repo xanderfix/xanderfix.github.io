@@ -23,12 +23,7 @@
    * Copyright 2017 Google LLC
    * SPDX-License-Identifier: BSD-3-Clause
    */var ht,ut;class dt extends m{constructor(){super(...arguments),this.renderOptions={host:this},this.st=void 0;}createRenderRoot(){var t,i;const s=super.createRenderRoot();return null!==(t=(i=this.renderOptions).renderBefore)&&void 0!==t||(i.renderBefore=s.firstChild),s}update(t){const i=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this.st=lt(i,this.renderRoot,this.renderOptions);}connectedCallback(){var t;super.connectedCallback(),null===(t=this.st)||void 0===t||t.setConnected(!0);}disconnectedCallback(){var t;super.disconnectedCallback(),null===(t=this.st)||void 0===t||t.setConnected(!1);}render(){return D}}dt.finalized=!0,dt._$litElement$=!0,null===(ht=globalThis.litElementHydrateSupport)||void 0===ht||ht.call(globalThis,{LitElement:dt});const at=globalThis.litElementPolyfillSupport;null==at||at({LitElement:dt});(null!==(ut=globalThis.litElementVersions)&&void 0!==ut?ut:globalThis.litElementVersions=[]).push("3.3.3");
-  class Vt{constructor(t){}get _$AU(){return this._$AM._$AU}_$AT(t,i,s){this.et=t,this._$AM=i,this.nt=s;}_$AS(t,i){return this.update(t,i)}update(t,i){return this.render(...i)}}
-  class fi extends Vt{constructor(t){if(super(t),this.vt=W,2!==t.type)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(t){if(t===W||null==t)return this.Ct=void 0,this.vt=t;if(t===D)return t;if("string"!=typeof t)throw Error(this.constructor.directiveName+"() called with a non-string value");if(t===this.vt)return this.Ct;this.vt=t;const i=[t];return i.raw=i,this.Ct={_$litType$:this.constructor.resultType,strings:i,values:[]}}}fi.directiveName="unsafeHTML",fi.resultType=1;/**
-   * @license
-   * Copyright 2017 Google LLC
-   * SPDX-License-Identifier: BSD-3-Clause
-   */class yi extends fi{}yi.directiveName="unsafeSVG",yi.resultType=2;/**
+  /**
    * @license
    * Copyright 2021 Google LLC
    * SPDX-License-Identifier: BSD-3-Clause

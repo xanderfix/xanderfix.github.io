@@ -23,13 +23,13 @@ function downloadScript() {
 	document.location.href = "download.php?what=" + $(this).val();
 }
 $( document ).ready(function () {
-<?php if (strlen(@$_SESSION["form_test_type"])): ?>
+<?php if (!empty($_SESSION["form_test_type"])): ?>
 	$( "#type" ).val( '<?php echo htmlentities(@$_SESSION["form_test_type"]) ?>' );
 <?php endif; ?>
-<?php if (strlen(@$_SESSION["form_test_smtpencryption"])): ?>
+<?php if (!empty($_SESSION["form_test_smtpencryption"])): ?>
 	$( "#smtpencryption" ).val( '<?php echo htmlentities(@$_SESSION["form_test_smtpencryption"]) ?>' );
 <?php endif; ?>
-<?php if (strlen(@$_SESSION["form_test_smtpauth"])): ?>
+<?php if (!empty($_SESSION["form_test_smtpauth"])): ?>
 	$( "#smtpauth" ).prop( "checked", true );
 <?php endif; ?>
 	onMethodChange();
@@ -62,12 +62,12 @@ $( document ).ready(function () {
 			<tbody class="div-phone">
 				<tr class="div-phone">
 					<td class="div-phone small" colspan="2">
-						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtphost', "Host"), ":"); ?>" name="smtphost" id="smtphost" value="<?php echo htmlentities(@$_SESSION['form_test_smtphost']) ?>"/>
+						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtphost', "Host"), ":"); ?>" name="smtphost" id="smtphost" value="<?php echo htmlentities(isset($_SESSION['form_test_smtphost']) ? $_SESSION['form_test_smtphost'] : '') ?>"/>
 					</td>
 				</tr>
 				<tr class="div-phone" colspan="2">
 					<td class="small div-phone">
-						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtpport', "Port"), ":"); ?>" name="smtpport" id="smtpport" value="<?php echo htmlentities(@$_SESSION['form_test_smtpport']) ?>"/>
+						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtpport', "Port"), ":"); ?>" name="smtpport" id="smtpport" value="<?php echo htmlentities(isset($_SESSION['form_test_smtpport']) ? $_SESSION['form_test_smtpport'] : '') ?>"/>
 					</td>
 				</tr>
 				<tr class="div-phone">
@@ -90,7 +90,7 @@ $( document ).ready(function () {
 				</tr>
 				<tr class="smtp-auth div-phone">
 					<td class="small div-phone" colspan="2">
-						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtpusername', "Username"), ":"); ?>" name="smtpusername" id="smtpusername" value="<?php echo htmlentities(@$_SESSION['form_test_smtpusername']) ?>"/>
+						<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_smtpusername', "Username"), ":"); ?>" name="smtpusername" id="smtpusername" value="<?php echo htmlentities(isset($_SESSION['form_test_smtpusername']) ? $_SESSION['form_test_smtpusername'] : '') ?>"/>
 					</td>
 				</tr>
 				<tr class="smtp-auth div-phone">
@@ -105,22 +105,22 @@ $( document ).ready(function () {
 		<tbody class="div-phone">
 			<tr class="div-phone">
 				<td class="small div-phone" colspan="2">
-					<input class="border border-mute-light background-transparent" placeholder="<?php echo trim(l10n('form_from'), ":"); ?>" type="text" name="from" id="from" value="<?php echo htmlentities(@$_SESSION['form_test_from']) ?>"/>
+					<input class="border border-mute-light background-transparent" placeholder="<?php echo trim(l10n('form_from'), ":"); ?>" type="text" name="from" id="from" value="<?php echo htmlentities(isset($_SESSION['form_test_from']) ? $_SESSION['form_test_from'] : '') ?>"/>
 				</td>
 			</tr>
 			<tr class="div-phone">
 				<td class="small div-phone" colspan="2">
-					<input class="border border-mute-light background-transparent" type="text" id="to" placeholder="<?php echo trim(l10n('form_to'), ":"); ?>" name="to" value="<?php echo htmlentities(@$_SESSION['form_test_to']) ?>"/>
+					<input class="border border-mute-light background-transparent" type="text" id="to" placeholder="<?php echo trim(l10n('form_to'), ":"); ?>" name="to" value="<?php echo htmlentities(isset($_SESSION['form_test_to']) ? $_SESSION['form_test_to'] : '') ?>"/>
 				</td>
 			</tr>
 			<tr class="div-phone">
 				<td class="small div-phone" colspan="2">
-					<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_subject'), ":"); ?>" class="email-subject" name="subject" value="<?php echo htmlentities(@$_SESSION['form_test_subject']) ?>"/>
+					<input class="border border-mute-light background-transparent" type="text" placeholder="<?php echo trim(l10n('form_subject'), ":"); ?>" class="email-subject" name="subject" value="<?php echo htmlentities(isset($_SESSION['form_test_subject']) ? $_SESSION['form_test_subject'] : '') ?>"/>
 				</td>
 			</tr>
 			<tr class="div-phone">
 				<td class="small div-phone" colspan="2">
-					<textarea class="border border-mute-light background-transparent" name="body" id="body" style="width: 99%;" rows="10"><?php echo htmlentities(@$_SESSION['form_test_body']) ?></textarea>	
+					<textarea class="border border-mute-light background-transparent" name="body" id="body" style="width: 99%;" rows="10"><?php echo htmlentities(isset($_SESSION['form_test_body']) ? $_SESSION['form_test_body'] : '') ?></textarea>	
 				</td>
 			</tr>
 			<tr class="div-phone">

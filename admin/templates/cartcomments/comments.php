@@ -14,12 +14,12 @@
         if (strpos($comment['url'], "http://") !== 0 && strpos($comment['url'], "https://") !== 0) {
             $comment['url'] = "http://" . $comment['url'];
         }
-        $user = "<a class=\"text-underline fore-color-inherit\" href=\"${comment['url']}\" target=\"_blank\" " . (strpos($comment['url'], $siteUrl) === false ? 'rel="nofollow"' : '') . "\">${comment['name']}</a>";
+        $user = "<a class=\"text-underline fore-color-inherit\" href=\"{$comment['url']}\" target=\"_blank\" " . (strpos($comment['url'], $siteUrl) === false ? 'rel="nofollow"' : '') . "\">{$comment['name']}</a>";
     } else {
         $user = $comment['name'];
     }
     if (isset($comment['email'])) {
-        $user .= " <span class=\"comments-email no-small-phone\">(<a class=\"fore-color-inherit\" href=\"mailto:${comment['email']}\">${comment['email']}</a>)</span>";
+        $user .= " <span class=\"comments-email no-small-phone\">(<a class=\"fore-color-inherit\" href=\"mailto:{$comment['email']}\">{$comment['email']}</a>)</span>";
     }
 
     // -----
@@ -31,14 +31,14 @@
 
     if (isset($comment['abuse']) && $comment['abuse'] == "1") {
         $links .= "<span class=\"bottom icon-large fa fa-exclamation-triangle fore-yellow\" title=\"" . l10n('admin_comment_abuse') . "\"></span> |";
-        $links .= "<a class=\"fa icon-large fa-level-up fore-green\" href=\"${posturl}unabuse=${comment['id']}\" title=\"" . l10n("blog_abuse_remove", "Remove abuse")  . "\"></a>";
+        $links .= "<a class=\"fa icon-large fa-level-up fore-green\" href=\"{$posturl}unabuse={$comment['id']}\" title=\"" . l10n("blog_abuse_remove", "Remove abuse")  . "\"></a>";
     }
     if (isset($comment['approved']) && $comment['approved'] == "1") {
-        $links .= "<a class=\"fa icon-large fa-thumbs-down fore-yellow\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_unapprove_question'))  . "')\" href=\"${posturl}disable=${comment['id']}\" title=\"" . l10n('blog_unapprove') . "\"></a>";
+        $links .= "<a class=\"fa icon-large fa-thumbs-down fore-yellow\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_unapprove_question'))  . "')\" href=\"{$posturl}disable={$comment['id']}\" title=\"" . l10n('blog_unapprove') . "\"></a>";
     } else {
-        $links .= "<a class=\"fa icon-large fa-thumbs-up fore-green\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_approve_question')) . "')\" href=\"${posturl}enable=${comment['id']}\" title=\"" . l10n('blog_approve') . "\"></a>";
+        $links .= "<a class=\"fa icon-large fa-thumbs-up fore-green\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_approve_question')) . "')\" href=\"{$posturl}enable={$comment['id']}\" title=\"" . l10n('blog_approve') . "\"></a>";
     }
-    $links .= "<a class=\"fa icon-large fa-close fore-red\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_delete_question')) . "')\" href=\"${posturl}delete=${comment['id']}\" title=\"" . l10n('blog_delete') . "\"></a>";
+    $links .= "<a class=\"fa icon-large fa-close fore-red\" onclick=\"return confirm('" . str_replace("'", "\\'", l10n('blog_delete_question')) . "')\" href=\"{$posturl}delete={$comment['id']}\" title=\"" . l10n('blog_delete') . "\"></a>";
 
     // ---------
     // CSS Class

@@ -59,7 +59,7 @@
 	$l10n['blog_login'] = 'Enter';
 	$l10n['blog_message'] = 'Message:';
 	$l10n['blog_name'] = 'Name:';
-	$l10n['blog_new_comment_object'] = 'Blog: Νέο Σχόλιο';
+	$l10n['blog_new_comment_object'] = 'Blog: New comment';
 	$l10n['blog_new_comment_text'] = 'A new comment has been added to the blog in the post';
 	$l10n['blog_no_comment'] = 'No comments';
 	$l10n['blog_offline_message'] = 'This feature will be enabled only when your Site is online.';
@@ -247,6 +247,22 @@
 	$l10n['pwa_banner_text2'] = 'Tap {0} then "Add to your screen"';
 	$l10n['pwa_icon_alt'] = 'Application icon';
 	$l10n['pwa_ios_install_button_alt'] = 'Installation button on iOS';
+	$l10n['blog_read_time'] = '[MM] minutes';
+	$l10n['comments_and_ratings_add_review_label_blog'] = 'Your opinion is important to us and helps us improve our service.';
+	$l10n['comments_and_ratings_add_review_label_ecommerce'] = 'Your opinion is important to us and helps us improve our service.';
+	$l10n['comments_and_ratings_add_review_label_object'] = 'Your opinion is important to us and helps us improve our service.';
+	$l10n['comments_and_ratings_add_review_title'] = 'Write a Review';
+	$l10n['comments_and_ratings_average_rate'] = 'Average rating:';
+	$l10n['comments_and_ratings_email'] = 'E-mail';
+	$l10n['comments_and_ratings_email_tip'] = 'The email address will be visible only to the author and will not be published on the site.';
+	$l10n['comments_and_ratings_go_to_comments'] = 'Go to reviews';
+	$l10n['comments_and_ratings_message'] = 'Message';
+	$l10n['comments_and_ratings_name'] = 'Name';
+	$l10n['comments_and_ratings_percentage_of_rates'] = 'Percentage of ratings:';
+	$l10n['form_goback'] = 'Back';
+	$l10n['form_gonext'] = 'Next';
+	$l10n['guestbook_new_comment_object'] = 'Guestbook: New comment';
+	$l10n['guestbook_new_comment_text'] = 'You received a new comment on your guestbook';
 
 
 // End of file l10n.php

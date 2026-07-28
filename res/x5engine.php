@@ -754,12 +754,7 @@ class imBlog
                 echo " &middot; <svg aria-labelledby=\"blog_post_" . $id . "_read_time\" role=\"img\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"square\" stroke-width=\"2px\" color=\"currentColor\" viewBox=\"0 0 24 24\" width=\"1.2em\" height=\"1.2em\" style=\"vertical-align: text-top;\">";
                 echo "<title id=\"blog_post_" . $id . "_read_time\">" . l10n("blog_icon_read_time") . "</title>";
                 echo "<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M12 5v7l4 4\"></path></svg>&nbsp;";
-                $seconds = ceil($bp['word_count'] * 60 / $bs['article_read_speed']);
-                $seconds = floor(($seconds + 14) / 15) * 15; // round up seconds at multiple of 15 seconds
-                if ($seconds <= 60)
-                    echo "1:00";
-                else
-                    echo floor($seconds / 60) . ":" . ($seconds % 60 < 10 ? "0" : "") . ($seconds % 60);
+                echo ( str_replace('[MM]', $bp["readTimeMinutes"], l10n("blog_read_time", "[MM] minutes")) );
             }
             echo "</span>";
 
@@ -1061,7 +1056,8 @@ class imBlog
 			"blog_icon_category" => l10n("blog_icon_category"),
 			"blog_icon_author" => l10n("blog_icon_author"),
 			"blog_icon_date" => l10n("blog_icon_date"),
-			"blog_icon_read_time" => l10n("blog_icon_read_time")
+			"blog_icon_read_time" => l10n("blog_icon_read_time"),
+            "blog_read_time" => l10n("blog_read_time", "[MM] minutes")
 		);
 
 		return $strings;
@@ -1070,7 +1066,7 @@ class imBlog
 
 
 
-	function customCardBreakpointString( $cardStyle ){
+	function customCardBreakpointString( $cardStyle, $widths = null ){
 
 		$breakpointString = "";
 		$cardsperrowString = "";
@@ -1085,8 +1081,7 @@ class imBlog
 		if ( $numBreakPoints > 0 ) {
 
 			$minContentW = 200;
-			$minCardW = $minContentW;
-			$minCardW = $minCardW + $card["margin"] + $card["margin"];
+			$minCardW = $minContentW + $card["border"]["widths"]["left"] + $card["border"]["widths"]["right"];
 			if ( $card["type"] == "leftcoverrightcontents" || $card["type"] == "leftcontentsrightcover" ) {
                 $minCardW = floor( $minContentW / ( ( 100.0 - $card["image"]["percentSize"] ) / 100.0 ) ) + $card["border"]["widths"]["left"] + $card["border"]["widths"]["right"];
 			}
@@ -1095,15 +1090,19 @@ class imBlog
 			$strPieceCPRdesktop = "";
 			for ( $i = 0 ; $i < $numBreakPoints ; $i++ ) {
 
-				$maxAvailW = $breakPoints[$i]["end"];
-				if ( $breakPoints[$i]["end"] == 0 ) {
-					$maxAvailW = $breakPoints[$i]["start"];
-                    if ( $maxAvailW == "max" ) {
-					    $maxAvailW = $breakPoints[$i]["width"];
-                    }
+                if ( isset($widths) && isset($widths[$i]) && $widths[$i] > 0 ) {
+                    $maxAvailW = $widths[$i];
                 } else {
-                    $maxAvailW = $imSettings['blog']['widths'][$i];
-				}
+                    $maxAvailW = $breakPoints[$i]["end"];
+                    if ( $breakPoints[$i]["end"] == 0 ) {
+                        $maxAvailW = $breakPoints[$i]["start"];
+                        if ( $maxAvailW == "max" ) {
+                            $maxAvailW = $breakPoints[$i]["width"];
+                        }
+                    } else {
+                        $maxAvailW = $imSettings['blog']['widths'][$i];
+                    }
+                }
 
 				$cpr = $cardStyle["cardsPerRow"];
 				$BPEnd = $breakPoints[$i]["end"];
@@ -1112,6 +1111,7 @@ class imBlog
                 }
 				$w = max( floor( min( $BPEnd , $maxAvailW ) / $cpr ) , $minCardW );
 				$cpr = max( floor( min( $BPEnd , $maxAvailW ) / $w ) , 1 );
+                $maxAvailW -= ( $cpr - 1 ) * $card["margin"];
 				$w = max( floor( min( $BPEnd , $maxAvailW ) / $cpr ) , $minCardW );
 
 				$strPieceBP = " (max-width: START) END,";
@@ -1213,7 +1213,7 @@ class imBlog
 
 
 
-	function customCardMisc( $rootSelector, $cardStyle ){
+	function customCardMisc( $rootSelector, $cardStyle, $widths = null ) {
 
 		$misc = array();
 
@@ -1223,7 +1223,7 @@ class imBlog
 
 		if ( isset( $cardStyle ) ) {
 
-			$BPValues = $this->customCardBreakpointString( $cardStyle );
+			$BPValues = $this->customCardBreakpointString( $cardStyle, $widths );
 			$misc["cardBreakpoint"] = $BPValues["breakpointString"];            
 			$misc["cardContentLayout"] = $this->customCardContentLayout( $cardStyle["card"] );
 			$misc["cardLayoutCardArrangement"] = $this->customCardLayoutArrangement( $cardStyle );
@@ -1346,11 +1346,11 @@ class imBlog
 
 
 
-	function getCalculatedData( $bp ) {
+	function getCalculatedData( $bp, $strings, $currentPath = "../" ) {
 
 		$calculated = array();
 
-		$calculated["currentPath"] = "../";
+		$calculated["currentPath"] = $currentPath;
 		$calculated["id"] = $bp["id"];
 		$calculated["isHighlighted"] = false;
         if ( isset($bp["isHighlighted"]) && $bp["isHighlighted"] != null ) {
@@ -1369,7 +1369,7 @@ class imBlog
 
 		$calculated["title"] = $bp["title"];
 		$calculated["summary"] = $bp["summary"];
-		$calculated["relativeUrl"] = $bp["rel_url"];
+		$calculated["relativeUrl"] = ($currentPath == "" ? "blog/" : "") . $bp["rel_url"];
 
 		// Calculated values for the contents
 
@@ -1378,15 +1378,16 @@ class imBlog
 		$calculated["author"] = $bp["author"];
 		$calculated["escapedAuthor"] = str_replace(" ", "_", $bp["author"]);
 		$calculated["timestamp"] = $bp["timestamp"];
-        $calculated["readTime"] = $bp["readTime"];
 
+        $calculated["readTime"] = str_replace("[MM]",$bp["readTimeMinutes"], $strings["blog_read_time"]);
+        
 		return $calculated;
 
 	}
 
 
 
-    function getCalculatedDataMulti( $card, $bps, $strings, $misc ){
+    function getCalculatedDataMulti( $card, $bps, $strings, $misc, $currentPath = "../" ) {
 
 		$calculated = array();
 
@@ -1396,7 +1397,7 @@ class imBlog
 
 			$bp = $bps[$bpsKeys[$i]];
 
-			array_push( $calculated , $this->getCalculatedData( $bp ) );
+			array_push( $calculated , $this->getCalculatedData( $bp, $strings, $currentPath ) );
 
 		}
 
@@ -1447,66 +1448,10 @@ class imBlog
 		$card["txtBlock"]["button"]["style"]["backgroundColor"]["a"] /= 255.0;
 
         // conversion of style-only to (style,weight) font properties
-        // if unset set it to "normal"
-        if ( !isset( $card["txtBlock"]["name"]["style"]["font"]["weight"] ) ) {
-            $card["txtBlock"]["name"]["style"]["font"]["weight"] = "normal";
-        }
-        if ( !isset( $card["txtBlock"]["description"]["style"]["font"]["weight"] ) ) {
-            $card["txtBlock"]["description"]["style"]["font"]["weight"] = "normal";
-        }
-        if ( !isset( $card["txtBlock"]["details"]["style"]["font"]["weight"] ) ) {
-            $card["txtBlock"]["details"]["style"]["font"]["weight"] = "normal";
-        }
-        if ( !isset( $card["txtBlock"]["button"]["style"]["font"]["weight"] ) ) {
-            $card["txtBlock"]["button"]["style"]["font"]["weight"] = "normal";
-        }
-        // if set to "regular" use "normal" instead
-        if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "regular" ) {
-            $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "regular" ) {
-            $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "regular" ) {
-            $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "regular" ) {
-            $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-        }
-        // "style" cannot be "bold", use "bold" for "weight" and set "style" to "normal"
-        if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold" ) {
-            $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold" ) {
-            $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold" ) {
-            $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-        }
-        if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold" ) {
-            $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-        }
-        // "style" "bold, italic" need to be splitted in "weight" "bold" and "style" "italic"
-        if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold, italic" ) {
-            $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["name"]["style"]["font"]["style"] = "italic";
-        }
-        if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold, italic" ) {
-            $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["description"]["style"]["font"]["style"] = "italic";
-        }
-        if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold, italic" ) {
-            $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["details"]["style"]["font"]["style"] = "italic";
-        }
-        if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold, italic" ) {
-            $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-            $card["txtBlock"]["button"]["style"]["font"]["style"] = "italic";
-        }
+        $card["txtBlock"]["name"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["name"]["style"]["font"] );
+        $card["txtBlock"]["description"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["description"]["style"]["font"] );
+        $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
+        $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
 
 		$misc = $this->customCardMisc( "#imBlogContent .blog-cardlayout-wrapper", $cardStyle );
 
@@ -1549,7 +1494,32 @@ class imBlog
 
 	}
 
+    function singleFontStyleWeightComponents ( $font ) {
 
+        // if unset set it to "normal"
+        if ( !isset($font["weight"]) ) {
+            $font["weight"] = "normal";
+        }
+        // if set to "regular" use "normal" instead
+        if ( $font["style"] == "regular" ) {
+            $font["style"] = "normal";
+        }
+        // "style" cannot be "bold", use "bold" for "weight" and set "style" to "normal"
+        if ( $font["style"] == "bold" ) {
+            $font["weight"] = "bold";
+            $font["style"] = "normal";
+        }
+        // "style" "bold, italic" need to be splitted in "weight" "bold" and "style" "italic"
+        if ( $font["style"] == "bold, italic" ) {
+            $font["weight"] = "bold";
+            $font["style"] = "italic";
+        }
+
+        $font["size"] = "calc(" . $font["size"] . "pt - max(" . $font["size"] . "pt - var(--min-text-size), 0pt) * var(--font-size-factor))";
+
+        return $font;
+
+    }
 
     /**
      * Show a list of posts
@@ -1589,67 +1559,13 @@ class imBlog
             // conversion of alpha from (0-255) to (0-1)
             $card["backgroundColor"]["a"] /= 255.0;
             $card["txtBlock"]["button"]["style"]["backgroundColor"]["a"] /= 255.0;
+
             // conversion of style-only to (style,weight) font properties
-            // if unset set it to "normal"
-            if ( !isset( $card["txtBlock"]["name"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["description"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["details"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["button"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "normal";
-            }
-            // if set to "regular" use "normal" instead
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-            }
-            // "style" cannot be "bold", use "bold" for "weight" and set "style" to "normal"
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-            }
-            // "style" "bold, italic" need to be splitted in "weight" "bold" and "style" "italic"
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "italic";
-            }
+            $card["txtBlock"]["name"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["name"]["style"]["font"] );
+            $card["txtBlock"]["description"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["description"]["style"]["font"] );
+            $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
+            $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
+
             $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle );
             $misc['cardLayoutCardArrangement'] = "same-height";
             $miscGlobal = $this->getCalculatedGlobalData( $card, $misc );    
@@ -1725,66 +1641,11 @@ class imBlog
             $card["backgroundColor"]["a"] /= 255.0;
             $card["txtBlock"]["button"]["style"]["backgroundColor"]["a"] /= 255.0;
             // conversion of style-only to (style,weight) font properties
-            // if unset set it to "normal"
-            if ( !isset( $card["txtBlock"]["name"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["description"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["details"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "normal";
-            }
-            if ( !isset( $card["txtBlock"]["button"]["style"]["font"]["weight"] ) ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "normal";
-            }
-            // if set to "regular" use "normal" instead
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "regular" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-            }
-            // "style" cannot be "bold", use "bold" for "weight" and set "style" to "normal"
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "normal";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "normal";
-            }
-            // "style" "bold, italic" need to be splitted in "weight" "bold" and "style" "italic"
-            if ( $card["txtBlock"]["name"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["name"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["name"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["description"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["description"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["description"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["details"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["details"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["details"]["style"]["font"]["style"] = "italic";
-            }
-            if ( $card["txtBlock"]["button"]["style"]["font"]["style"] == "bold, italic" ) {
-                $card["txtBlock"]["button"]["style"]["font"]["weight"] = "bold";
-                $card["txtBlock"]["button"]["style"]["font"]["style"] = "italic";
-            }
+            $card["txtBlock"]["name"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["name"]["style"]["font"] );
+            $card["txtBlock"]["description"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["description"]["style"]["font"] );
+            $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
+            $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
+
             $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle );
             $misc["cardBreakpoint"] = "100%";
             $misc['cardLayoutCardArrangement'] = "slideshow";
@@ -1888,6 +1749,211 @@ END;
         echo "\t\t}";
         echo "\t});\n";
         echo "</script>\n";
+    }
+
+    /**
+     * Show a list of posts for an ObjectBlogPostList
+     *
+     * @param array     $postIds          Array of posts ids
+     * @param array     $l10nStrings      Array of localized strings for the card template
+     * @param array     $cardStyle        Array of style properties for the card template
+     * @param string    $objectId         The object ID for the blog post list
+     * @param array     $outerWidths      Array of outer widths of the object at different breakpoints
+     * @param array     $innerWidths      Array of inner widths of the object at different breakpoints
+     * @param array     $blogPostsPerRow  Array of number of blog posts per row at different breakpoints
+     * @param boolean   $cardBPColumns    List of "(max-width: Npx) cards_per_page" rules for the card layout
+     * @param boolean   $randomOrder      Whether to show the posts in random order
+     *
+     * @return void
+     */
+    function showPostsBlogObj($postIds, $l10nStrings, $cardStyle, $objectId, $outerWidths, $innerWidths, $blogPostsPerRow, $cardBPColumns, $randomOrder)
+    {
+        global $imSettings;
+		$card = $cardStyle["card"];
+		$misc = $this->customCardMisc("#" . $objectId, $cardStyle, $innerWidths);
+		$miscGlobal = $this->getCalculatedGlobalData($card, $misc);
+
+		$blogPostsData = array();
+        $postIdsCount = count($postIds);
+        $utcTime = time();
+		for ($i = 0; $i < $postIdsCount; $i++) {
+			$blogPostItem = $imSettings['blog']['posts'][$postIds[$i]];
+            if ($blogPostItem["utc_time"] <= $utcTime) {
+                array_push($blogPostsData, $blogPostItem);
+            }
+		}
+
+		$postsCalculated = $this->getCalculatedDataMulti(
+			$card,
+			$blogPostsData,
+			$l10nStrings,
+			$misc,
+            ""
+		);
+
+		$templateElaborationData = array(
+			"l10n" => $l10nStrings,
+			"card" => $card,
+			"misc" => $miscGlobal,
+			"bps" => $postsCalculated
+		);
+
+		$customCardTemplatesDir = "./res/cardtemplates/blog/";
+
+		$resultHtml = $this->blogAllInOne( 
+			$templateElaborationData,
+			$customCardTemplatesDir
+		);
+
+        $paginationNeeded = $cardStyle['paginationEnabled'] && $cardStyle['layout'] != 'slideshow' && count($blogPostsData) > $blogPostsPerRow[count($blogPostsPerRow) - 1] * $cardStyle['rowsPerPage'];
+
+        echo "<div id=\"" . $objectId . "\"";
+        if ($paginationNeeded) {
+            echo " data-start=\"0\" data-page-size=\"" . $cardBPColumns . "\" data-count=\"" . count($blogPostsData) . "\"";
+        }
+        echo "><div>" . $resultHtml . "</div>";
+
+        // render a fake paginator to avoid layout shifting
+        if ($paginationNeeded) {
+            echo "<div class=\"imObjPagination pagination-container\"><a class=\"page current\" style=\"visibility: hidden\">1</a></div>";
+        }
+        echo "</div>";
+
+        if ($randomOrder || $paginationNeeded || $cardStyle['layout'] == 'slideshow') {
+            echo "<script>x5engine.boot.push(() => {";
+
+            if ($randomOrder) {
+                echo "x5engine.utils.randomSortCards('" . $objectId . "');";
+                echo "document.getElementById('" . $objectId . "').style.opacity = 1;";
+            }
+
+            if ($cardStyle['layout'] == 'slideshow') {
+                echo "function initSwiper_" . $objectId . "() {";
+
+                echo "  let cardStyle = " .
+                "{" .
+                    "cardsPerRow: " . $cardStyle['cardsPerRow'] . "," .
+                    "card: {" .
+                        "type: '" . $card['type'] . "'," .
+                        "margin: " . $card['margin'] . "," .
+                        "border: {" .
+                            "widths: {" .
+                                "left: " . $card['border']['widths']['left'] . "," .
+                                "right: " . $card['border']['widths']['right'] .
+                            "}" .
+                        "}," .
+                        "image:{" .
+                            "percentSize: " . (100 - $cardStyle['contentWidthPerc']) .
+                        "}" .
+                    "}" .
+                "};";
+
+                $firstBP = true;
+                echo "  let swiperBP = { ";
+                for ($i = 0; $i < count($outerWidths); $i++) {
+                    if ($outerWidths[$i] > 0) {
+                        if ($firstBP)
+                            $firstBP = false;
+                        else
+                            echo ", ";
+                        echo $outerWidths[$i] . ": { slidesPerView: " . min($blogPostsPerRow[$i], count($blogPostsData)) . "}";
+                    }
+                }
+                echo "};";
+
+                // swiper set its own gap between cards; margin-left value set in card template is useful only before swiper initialization, to avoid flickering
+                echo "$('#" . $objectId . " .im-cc-blogpost-cardlayout .im-cc-BlogPostCard').css('margin-left', 0);";
+
+                echo "  const swiper = new Swiper('#" . $objectId . " .swiper', x5engine.utils.getSwiperConfig({" .
+                "    a11y: { prevSlideMessage: '" . l10n("blog_post_prev", "Previous blog post") . "', nextSlideMessage:" . " '" . l10n("blog_post_next", "Next blog post") . "' }," .
+                "    direction: 'horizontal'," .
+                "    loop: false," .
+                "    slidesPerView: 1," .
+                "    breakpoints: swiperBP," .
+                "    spaceBetween: " . $card['margin'] . "," .
+                "    pagination: {" .
+                "      el: '#" . $objectId . " .swiper-pagination'," .
+                "    }," .
+                "    navigation: {" .
+                "      nextEl: '#" . $objectId . " .swiper-button-next'," .
+                "      prevEl: '#" . $objectId . " .swiper-button-prev'," .
+                "    }," .
+                "    scrollbar: {" .
+                "      el: '#" . $objectId . " .swiper-scrollbar'," .
+                "    }" .
+                "  }, false));" .
+                "}" .
+                "initSwiper_" . $objectId . "();";
+            }
+
+            if ($paginationNeeded) {
+                echo "x5engine.utils.paginate('" . $objectId . "');";
+            } else if ($randomOrder) {
+                echo "$('#" . $objectId . " x5engine-card').css('display', 'grid');";
+            }
+
+            echo "}, false, 6);</script>";
+        }
+
+        if ($randomOrder && $cardStyle['layout'] == 'fixedheight') {
+            echo "<style>";
+            $breakpoints = $imSettings['breakpoints'];
+            for ($i = 0; $i < count($breakpoints); $i++) {
+                $bp = $breakpoints[$i];
+                $height = min(ceil(count($blogPostsData) / $blogPostsPerRow[$i]), $cardStyle['paginationEnabled'] ? $cardStyle['rowsPerPage'] : PHP_INT_MAX) * ($card['height'] + $card['margin']) - $card['margin'];
+                echo "@media (" . ($bp["end"] > 0 ? "(min-width: " . $bp["end"] . "px)" : "") . ($bp["end"] > 0 && $bp["start"] != "max" ? " and " : "") . ($bp["start"] != "max" ? "(max-width: " . $bp["start"] . "px)" : "") . ") {";
+                echo "#" . $objectId . " x5engine-cardlayout { height: " . $height . "px; }";
+                echo "}";
+            }
+            echo "</style>";
+        }
+
+        if (!$randomOrder && $cardStyle['layout'] != 'slideshow') {
+            echo "<style>";
+            $breakpoints = $imSettings['breakpoints'];
+            for ($i = 0; $i < count($breakpoints); $i++) {
+                $bp = $breakpoints[$i];
+                echo "@media (" . ($bp["end"] > 0 ? "(min-width: " . $bp["end"] . "px)" : "") . ($bp["end"] > 0 && $bp["start"] != "max" ? " and " : "") . ($bp["start"] != "max" ? "(max-width: " . $bp["start"] . "px)" : "") . ") {";
+                if ($cardStyle['paginationEnabled'] && count($blogPostsData) > $blogPostsPerRow[$i] * $cardStyle['rowsPerPage']) {
+                    // in case of pagination, at first load only the cards of first page are shown
+                    echo "#" . $objectId . " x5engine-card:nth-child(n+" . ($blogPostsPerRow[$i] * $cardStyle['rowsPerPage'] + 1) . ") { display: none; }";
+                } else {
+                    echo "#" . $objectId . " .imObjPagination { display: none; }";
+                }
+                echo "}";
+            }
+            echo "</style>";
+        }
+    }
+
+    /**
+     * Add rich data types for blog posts
+     * Only the posts with utc_time less or equal to current time are included, to avoid adding rich data for not yet published posts
+     * The function is called in the head of the page
+     * 
+     * @param array $posts      Array of rich data types for all posts, indexed by post id; the function filters the posts to include only those published and then outputs the JSON-LD script with the list of blog posts
+     */
+    function addRichDataTypesBlogObj($posts) {
+        global $imSettings;
+		$richDataTypesData = array();
+        $utcTime = time();
+        foreach ($posts as $id => $richDataTypes) {
+            $blogPostItem = $imSettings['blog']['posts'][$id];
+            if ($blogPostItem["utc_time"] <= $utcTime) {
+                array_push($richDataTypesData, $richDataTypes);
+            }
+        }
+
+        if (count($richDataTypesData) > 0) {
+            echo '<script type="application/ld+json">{ "@context": "https:\/\/schema.org", "@type": "ItemList", "numberOfItems": ' . count($richDataTypesData) . ', "itemListElement": [';
+            for ($i = 0; $i < count($richDataTypesData); $i++) {
+                echo '{ "@type": "ListItem", "position": ' . ($i + 1) . ', "item": ' . $richDataTypesData[$i] . ' }';
+                if ($i < count($richDataTypesData) - 1) {
+                    echo ',';
+                }
+            }
+            echo ']}</script>';
+        }
     }
 
     /**
@@ -2463,7 +2529,7 @@ class X5Captcha {
 
         $len = strlen($sCode);
         for ($i = 0; $i < $len; $i++) {
-            $text .= "<img style=\"margin:0; padding:0; border: 0; border-collapse: collapse; width: 32px; height: 32px; position: absolute; top: 0; inset-inline-start: " . (32 * $i) . "px;\" src=\"imcpa_".$this->nameList[substr($sCode, $i, 1)].".gif\" alt=\"\" width=\"32\" height=\"32\">";
+            $text .= "<img style=\"margin:0; padding:0; border: 0; border-collapse: collapse; width: 32px; height: 32px; position: absolute; top: 0; inset-inline-start: " . (32 * $i) . "px;\" src=\"imcpa_".$this->nameList[substr($sCode, $i, 1)].".gif?ts=".time()."\" alt=\"\" width=\"32\" height=\"32\">";
         }
 
         $text .= "</body></html>";
@@ -2539,11 +2605,91 @@ class ReCaptcha {
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
         $result = curl_exec($ch);
         curl_close($ch);
 
         return $result;
+    }
+}
+
+
+/**
+ * ReCaptcha Enterprise handling class
+ * @access public
+ */
+class ReCaptchaEnterprise {
+
+    private $projectId;
+    private $siteKey;
+    private $apiKey;
+
+    /**
+     * Build a new ReCaptcha Enterprise class
+     * @param {String} $projectId
+     * @param {String} $siteKey
+     * @param {String} $apiKey
+     */
+    function __construct($projectId, $siteKey, $apiKey) {
+        $this->projectId = $projectId;
+        $this->siteKey = $siteKey;
+        $this->apiKey = $apiKey;
+    }
+
+    /**
+     * verify Recaptcha
+     * @param string $token The recaptcha token to be checked
+     * @param string $action The action (done by user, i.e. visit-page, login, etc)
+     */
+    function verifyRecaptcha($token, $action) {
+
+        $url =
+            "https://recaptchaenterprise.googleapis.com/v1/" .
+            "projects/" . $this->projectId . "/assessments" .
+            "?key=" . $this->apiKey;
+
+        $data = [
+            'event' => [
+                'token' => $token,
+                'siteKey' => $this->siteKey,
+                'expectedAction' => $action,
+                'userAgent' => $_SERVER['HTTP_USER_AGENT'] ?? '',
+                'userIpAddress' => $_SERVER['REMOTE_ADDR'] ?? ''
+            ]
+        ];
+
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json'
+        ]);
+        curl_setopt(
+            $ch,
+            CURLOPT_POSTFIELDS,
+            json_encode($data)
+        );
+        $response = curl_exec($ch);
+        curl_close($ch);
+        $result = json_decode($response, true);
+
+        if (
+            !isset($result['tokenProperties']['valid']) ||
+            !$result['tokenProperties']['valid']
+        ) {
+            return false;
+        }
+        if (
+            ($result['tokenProperties']['action'] ?? '')
+            !== $action
+        ) {
+            return false;
+        }
+
+        $score = $result['riskAnalysis']['score'] ?? 0;
+
+        return $score >= 0.5;
+
     }
 }
 
@@ -3592,7 +3738,7 @@ class ImDb implements DatabaseAccess
     {
         if ($this->testConnection()) {
 			$table_name = isset($select_data['from']) ? $select_data['from'] : $select_data['select_from'];
-            return $this->query('SELECT ' . $this->_to_sql_column_name($select_data['select']) 
+            return $this->query('SELECT ' . $this->_to_sql_column_name(isset($select_data['select']) ? $select_data['select'] : null)
                 . ' FROM ' . $this->table($table_name) 
                 . $this->_where($select_data)
                 . $this->_group_by($select_data)
@@ -4620,7 +4766,7 @@ class ImForm
                             // Is it an URL?
                             $htmData .= "<tr valign=\"top\"><td width=\"25%\" style=\"[email:contentStyle]\"><b>" . str_replace(array("\\'", '\\"'), array("'", '"'), $label) . "</b></td><td style=\"[email:contentStyle]\"><a href=\"" . $field['value'] . "\">". $field['value'] . "</a></td></tr>\r\n";
                         } else {
-                            $htmData .= "<tr valign=\"top\"><td width=\"25%\" style=\"[email:contentStyle]\"><b>" . str_replace(array("\\'", '\\"'), array("'", '"'), $label) . "</b></td><td style=\"[email:contentStyle]\">" . str_replace(array("\\'", '\\"'), array("'", '"'), $field['value']) . "</td></tr>\r\n";
+                            $htmData .= "<tr valign=\"top\"><td width=\"25%\" style=\"[email:contentStyle]\"><b>" . str_replace(array("\\'", '\\"'), array("'", '"'), $label) . "</b></td><td style=\"[email:contentStyle]\">" . nl2br(str_replace(array("\\'", '\\"'), array("'", '"'), $field['value'])) . "</td></tr>\r\n";
                         }
                     }
                 }
@@ -5349,140 +5495,145 @@ class imSearch {
             foreach ($this->scope as $filename) {
                 $count = 0;
                 $weight = 0;
-                $file_content = @implode("\n", file($filename));
-                // Replace the nonbreaking space with a white space
-                // to avoid that is converted to a 196+160 UTF8 char
-                $file_content = str_replace("&nbsp;", " ", $file_content);
-                if (function_exists("html_entity_decode"))
-                    $file_content = html_entity_decode($file_content, ENT_COMPAT, 'UTF-8');
+				$file = file($filename);
+				if ($file === false) {
+					error_log("File not found: " . $filename, 0);
+				} else {
+                    $file_content = @implode("\n", $file);
+                    // Replace the nonbreaking space with a white space
+                    // to avoid that is converted to a 196+160 UTF8 char
+                    $file_content = str_replace("&nbsp;", " ", $file_content);
+                    if (function_exists("html_entity_decode"))
+                        $file_content = html_entity_decode($file_content, ENT_COMPAT, 'UTF-8');
 
-                // Remove contents wrapped between "<!-- UNSEARCHABLE --><!-- UNSEARCHABLE END -->" comments
-                while (stristr($file_content, "<!-- UNSEARCHABLE -->") !== false) {
-                    $unsearchable_start = stripos($file_content, "<!-- UNSEARCHABLE -->");
-                    $unsearchable_end = stripos($file_content, "<!-- UNSEARCHABLE END -->", $unsearchable_start) + strlen("<!-- UNSEARCHABLE END -->");
-                    $unsearchable = substr($file_content, $unsearchable_start, $unsearchable_end - $unsearchable_start);
-                    $file_content = str_replace($unsearchable, "", $file_content);
-                }
+                    // Remove contents wrapped between "<!-- UNSEARCHABLE --><!-- UNSEARCHABLE END -->" comments
+                    while (stristr($file_content, "<!-- UNSEARCHABLE -->") !== false) {
+                        $unsearchable_start = stripos($file_content, "<!-- UNSEARCHABLE -->");
+                        $unsearchable_end = stripos($file_content, "<!-- UNSEARCHABLE END -->", $unsearchable_start) + strlen("<!-- UNSEARCHABLE END -->");
+                        $unsearchable = substr($file_content, $unsearchable_start, $unsearchable_end - $unsearchable_start);
+                        $file_content = str_replace($unsearchable, "", $file_content);
+                    }
 
-                // Remove the breadcrumbs
-                while (stristr($file_content, "<div id=\"imBreadcrumb\"") !== false) {
-                    $imbreadcrumb_start = stripos($file_content, "<div id=\"imBreadcrumb\"");
-                    $imbreadcrumb_end = stripos($file_content, "</div>", $imbreadcrumb_start) + strlen("</div>");
-                    $imbreadcrumb = substr($file_content, $imbreadcrumb_start, $imbreadcrumb_end - $imbreadcrumb_start);
-                    $file_content = str_replace($imbreadcrumb, "", $file_content);
-                }
+                    // Remove the breadcrumbs
+                    while (stristr($file_content, "<div id=\"imBreadcrumb\"") !== false) {
+                        $imbreadcrumb_start = stripos($file_content, "<div id=\"imBreadcrumb\"");
+                        $imbreadcrumb_end = stripos($file_content, "</div>", $imbreadcrumb_start) + strlen("</div>");
+                        $imbreadcrumb = substr($file_content, $imbreadcrumb_start, $imbreadcrumb_end - $imbreadcrumb_start);
+                        $file_content = str_replace($imbreadcrumb, "", $file_content);
+                    }
 
-                // Remove CSS
-                while (stristr($file_content, "<style") !== false) {
-                    $style_start = stripos($file_content, "<style");
-                    $style_end = stripos($file_content, "</style>", $style_start) + strlen("</style>");
-                    $style = substr($file_content, $style_start, $style_end - $style_start);
-                    $file_content = str_replace($style, "", $file_content);
-                }
+                    // Remove CSS
+                    while (stristr($file_content, "<style") !== false) {
+                        $style_start = stripos($file_content, "<style");
+                        $style_end = stripos($file_content, "</style>", $style_start) + strlen("</style>");
+                        $style = substr($file_content, $style_start, $style_end - $style_start);
+                        $file_content = str_replace($style, "", $file_content);
+                    }
 
-                // Remove JS
-                while (stristr($file_content, "<script") !== false) {
-                    $script_start = stripos($file_content, "<script");
-                    $script_end = stripos($file_content, "</script>", $script_start) + strlen("</script>");
-                    $script = substr($file_content, $script_start, $script_end - $script_start);
-                    $file_content = str_replace($script, "", $file_content);
-                }
+                    // Remove JS
+                    while (stristr($file_content, "<script") !== false) {
+                        $script_start = stripos($file_content, "<script");
+                        $script_end = stripos($file_content, "</script>", $script_start) + strlen("</script>");
+                        $script = substr($file_content, $script_start, $script_end - $script_start);
+                        $file_content = str_replace($script, "", $file_content);
+                    }
 
-                // Remove noscript tag
-                while (stristr($file_content, "<noscript") !== false) {
-                    $noscript_start = stripos($file_content, "<noscript");
-                    $noscript_end = stripos($file_content, "</noscript>", $noscript_start) + strlen("</noscript>");
-                    $noscript = substr($file_content, $noscript_start, $noscript_end - $noscript_start);
-                    $file_content = str_replace($noscript, "", $file_content);
-                }
+                    // Remove noscript tag
+                    while (stristr($file_content, "<noscript") !== false) {
+                        $noscript_start = stripos($file_content, "<noscript");
+                        $noscript_end = stripos($file_content, "</noscript>", $noscript_start) + strlen("</noscript>");
+                        $noscript = substr($file_content, $noscript_start, $noscript_end - $noscript_start);
+                        $file_content = str_replace($noscript, "", $file_content);
+                    }
 
-                // Remove the hidden spans
-                while (stristr($file_content, "<span class=\"imHidden\"") !== false) {
-                    $imhidden_start = stripos($file_content, "<span class=\"imHidden\"");
-                    $imhidden_end = stripos($file_content, "</span>", $imhidden_start) + strlen("</span>");
-                    $imhidden = substr($file_content, $imhidden_start, $imhidden_end - $imhidden_start);
-                    $file_content = str_replace($imhidden, "", $file_content);
-                }
+                    // Remove the hidden spans
+                    while (stristr($file_content, "<span class=\"imHidden\"") !== false) {
+                        $imhidden_start = stripos($file_content, "<span class=\"imHidden\"");
+                        $imhidden_end = stripos($file_content, "</span>", $imhidden_start) + strlen("</span>");
+                        $imhidden = substr($file_content, $imhidden_start, $imhidden_end - $imhidden_start);
+                        $file_content = str_replace($imhidden, "", $file_content);
+                    }
 
-                // Remove PHP
-                while (stristr($file_content, "<?php") !== false) {
-                    $php_start = stripos($file_content, "<?php");
-                    $php_end = stripos($file_content, "?>", $php_start) !== false ? stripos($file_content, "?>", $php_start) + 2 : strlen($file_content);
-                    $php = substr($file_content, $php_start, $php_end - $php_start);
-                    $file_content = str_replace($php, "", $file_content);
-                }
+                    // Remove PHP
+                    while (stristr($file_content, "<?php") !== false) {
+                        $php_start = stripos($file_content, "<?php");
+                        $php_end = stripos($file_content, "?>", $php_start) !== false ? stripos($file_content, "?>", $php_start) + 2 : strlen($file_content);
+                        $php = substr($file_content, $php_start, $php_end - $php_start);
+                        $file_content = str_replace($php, "", $file_content);
+                    }
 
-                // Get the title of the page
-                $file_titles = array();
-                if (preg_match_all('/\<(?:title|header[^\>]*\>[^\<]*\<(h2|h1|div)[^\>]*)\>([^\<]*)\<\/(?:title|\1)\>/', $file_content, $matches, PREG_PATTERN_ORDER)) {
-                    $file_titles = $matches[2];
-                }
+                    // Get the title of the page
+                    $file_titles = array();
+                    if (preg_match_all('/\<(?:title|header[^\>]*\>[^\<]*\<(h2|h1|div)[^\>]*)\>([^\<]*)\<\/(?:title|\1)\>/', $file_content, $matches, PREG_PATTERN_ORDER)) {
+                        $file_titles = $matches[2];
+                    }
 
-                foreach ($file_titles as $file_title) {
-                    foreach ($queries as $query) {
-                        $title = imstrtolower($file_title);
-                        while (($title = imstristr($title, $query)) !== false) {
-                            $weight += 3;
-                            $count++;
-                            $title = imsubstr($title, imstrlen($query));
+                    foreach ($file_titles as $file_title) {
+                        foreach ($queries as $query) {
+                            $title = imstrtolower($file_title);
+                            while (($title = imstristr($title, $query)) !== false) {
+                                $weight += 3;
+                                $count++;
+                                $title = imsubstr($title, imstrlen($query));
+                            }
                         }
                     }
-                }
 
-                // Get the keywords
-                preg_match('/\<meta name\=\"keywords\" content\=\"([^\"]*)\" \/>/', $file_content, $matches);
-                if (count($matches) > 1) {
-                    $keywords = $matches[1];
-                    foreach ($queries as $query) {
-                        $tkeywords = imstrtolower($keywords);
-                        while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
-                            $weight += 4;
-                            $count++;
-                            $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                    // Get the keywords
+                    preg_match('/\<meta name\=\"keywords\" content\=\"([^\"]*)\" \/>/', $file_content, $matches);
+                    if (count($matches) > 1) {
+                        $keywords = $matches[1];
+                        foreach ($queries as $query) {
+                            $tkeywords = imstrtolower($keywords);
+                            while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
+                                $weight += 4;
+                                $count++;
+                                $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                            }
                         }
                     }
-                }
 
-                // Get the description
-                preg_match('/\<meta name\=\"description\" content\=\"([^\"]*)\" \/>/', $file_content, $matches);
-                if (count($matches) > 1) {
-                    $keywords = $matches[1];
-                    foreach ($queries as $query) {
-                        $tkeywords = imstrtolower($keywords);
-                        while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
-                            $weight += 3;
-                            $count++;
-                            $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                    // Get the description
+                    preg_match('/\<meta name\=\"description\" content\=\"([^\"]*)\" \/>/', $file_content, $matches);
+                    if (count($matches) > 1) {
+                        $keywords = $matches[1];
+                        foreach ($queries as $query) {
+                            $tkeywords = imstrtolower($keywords);
+                            while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
+                                $weight += 3;
+                                $count++;
+                                $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                            }
                         }
                     }
-                }
 
-                $page_pos = strpos($file_content, "<main id=\"imContent\">") + imstrlen("<main id=\"imContent\">");
-                if ($page_pos == false)
-                    $page_pos = strpos($file_content, "<body>") + strlen("<body>");
-                $page_end = strpos($file_content, "</main>") + strlen("</main>");
-                if ($page_end == false)
-                    $page_end = strpos($file_content, "</body>") + strlen("</body>");
-                $file_content = strip_tags(substr($file_content, $page_pos, $page_end-$page_pos),"<ol><ul><li>");
-                $t_file_content = imstrtolower($file_content);
+                    $page_pos = strpos($file_content, "<main id=\"imContent\">") + imstrlen("<main id=\"imContent\">");
+                    if ($page_pos == false)
+                        $page_pos = strpos($file_content, "<body>") + strlen("<body>");
+                    $page_end = strpos($file_content, "</main>") + strlen("</main>");
+                    if ($page_end == false)
+                        $page_end = strpos($file_content, "</body>") + strlen("</body>");
+                    $file_content = strip_tags(substr($file_content, $page_pos, $page_end-$page_pos),"<ol><ul><li>");
+                    $t_file_content = imstrtolower($file_content);
 
-                foreach ($queries as $query) {
-                    $file = $t_file_content;
-                    while (($file = imstristr($file, $query)) !== false) {
-                        $count++;
-                        $weight++;
-                        $file = imsubstr($file, imstrlen($query));
+                    foreach ($queries as $query) {
+                        $file = $t_file_content;
+                        while (($file = imstristr($file, $query)) !== false) {
+                            $count++;
+                            $weight++;
+                            $file = imsubstr($file, imstrlen($query));
+                        }
                     }
-                }
 
-                if ($count > 0) {
-                    $found_count[$filename] = $count;
-                    $found_weight[$filename] = $weight;
-                    $found_content[$filename] = $file_content;
-                    if (count($file_titles) == 0)
-                        $found_title[$filename] = $filename;
-                    else
-                        $found_title[$filename] = $file_titles[0];
+                    if ($count > 0) {
+                        $found_count[$filename] = $count;
+                        $found_weight[$filename] = $weight;
+                        $found_content[$filename] = $file_content;
+                        if (count($file_titles) == 0)
+                            $found_title[$filename] = $filename;
+                        else
+                            $found_title[$filename] = $file_titles[0];
+                    }
                 }
             }
         }
@@ -5697,6 +5848,42 @@ class imSearch {
         return array("content" => $html, "count" => count($found_content));
     }
 
+
+
+    /**
+     * Autocorrect words using Levenshtein distance
+     * @access public
+     * @param queries The search query (array)
+     */
+    function autocorrectWords($queries) {
+
+        global $imSettings;
+
+        // Get from the search settings a dictionary of words from the catalog
+        $dictionary = $imSettings['search']['products_words_dictionary'];
+
+        $suggestions = [];
+        foreach ($queries as $q) {
+            $best = $q;
+            $bestDist = 99;
+            foreach ($dictionary as $real) {
+                $d = levenshtein($q, $real);
+                if ($d < $bestDist) {
+                    $bestDist = $d;
+                    $best     = $real;
+                }
+            }
+            // if very similar it is probably the correct word
+            if ($bestDist > 0 && $bestDist <= 2) {
+                $suggestions[] = $best;
+            } else {
+                $suggestions[] = $q;
+            }
+        }
+
+        return $suggestions;
+    }
+
     /**
      * Do the products search
      * @access public
@@ -5706,9 +5893,23 @@ class imSearch {
     {
        // Di questa funzione manca la paginazione!
 
+        // Remove quots from queries
+        for ($i=0 ; $i < count($queries); $i++) {
+            $query = $queries[$i];
+            $query = str_replace(['&amp;quot;', '&quot;', '"'], '', $query);
+            $queries[$i] = $query;
+        }
+
+        // WORD AUTOCORRECTION (light)
+        $corrected = $this->autocorrectWords($queries);
+        if ( str_replace( ['&amp;quot;', '&quot;', '"'], '', $corrected ) !== $queries ) {
+            $autocorrect = implode(' ', $corrected);   // save it if you need to display it
+        }
+
         global $imSettings;
         $html = "";
         $found_products = array();
+        $found_weight = array();
         $found_count = array();
 
         foreach ($imSettings['search']['products'] as $id => $product) {
@@ -5718,16 +5919,71 @@ class imSearch {
             $t_description = strip_tags(imstrtolower($product['description']));
             $t_sku = strip_tags(imstrtolower($product['sku']));
 
-            // Conto il numero di match nel titolo
-            foreach ($queries as $query) {
-                $t_count = preg_match_all('/' . preg_quote($query, '/') . '/', $t_title, $matches);
-                if ($t_count !== false) {
-                    $weight += ($t_count * 4);
-                    $count += $t_count;
+            // Looking for an exact match in the title
+            $full_query = imstrtolower(implode(' ', $queries));
+            if (strpos($t_title, $full_query) !== false) {
+                $weight += 50;  // Super bonus for exact phrase match
+            }
+
+            // --- PROXIMITY SCORING ---
+            // split the title into words
+            $words = preg_split('/\s+/', $t_title);
+            $indexes = [];
+            foreach ($queries as $q) {
+                foreach ($words as $i => $w) {
+                    if ($w === $q) {
+                        $indexes[] = $i;
+                        break;
+                    }
+                }
+            }
+            if (count($indexes) > 1) {
+                // calculate proximity score (still works even if words are out of order)
+                $distance = max($indexes) - min($indexes);
+                $num = count($indexes);
+                $proximity_score = ($num * 10) - $distance;
+                if ($proximity_score > 0) {
+                    $weight += $proximity_score;
+                }
+                // correct order bonus: check if indexes are in ascending order
+                $in_order = true;
+                for ($i = 1; $i < count($indexes); $i++) {
+                    if ($indexes[$i] <= $indexes[$i - 1]) {
+                        $in_order = false;
+                        break;
+                    }
+                }
+                if ($in_order) {
+                    $weight += 5; // bonus only if the words appear in the correct order
                 }
             }
 
-            // Conto il numero di match nella descrizione
+            // Count the number of matches in the title
+            foreach ($queries as $query) {
+
+                // Fuzzy match for each word in the title
+                $words = preg_split('/\s+/', $t_title);
+                $bestDistance = 99;
+                foreach ($words as $w) {
+                    $d = levenshtein($query, $w);
+                    if ($d < $bestDistance) {
+                        $bestDistance = $d;
+                    }
+                }
+                if ($bestDistance === 0) { // exact match
+                    $weight += 4;
+                    $count +=1;
+                } elseif ($bestDistance === 1) { // minimal typo
+                    $weight += 3;
+                    $count +=1;
+                } elseif ($bestDistance === 2 && strlen($query) > 4) { // major typo, but quite a long word
+                    $weight += 1;
+                    $count +=1;
+                }
+
+            }
+
+            // Count the number of matches in the description
             foreach ($queries as $query) {
                 $t_count = preg_match_all('/' . preg_quote($query, '/') . '/', $t_description, $matches);
                 if ($t_count !== false) {
@@ -5736,7 +5992,7 @@ class imSearch {
                 }
             }
 
-            // Conto il numero di match nello SKU
+            // Count the number of matches in the SKU
             foreach ($queries as $query) {
                 $t_count = preg_match_all('/' . preg_quote($query, '/') . '/', $t_sku, $matches);
                 if ($t_count !== false) {
@@ -5752,10 +6008,25 @@ class imSearch {
             }
         }
 
+        // Show the autocorrection suggestion
+        if (!empty($autocorrect)) {
+            $query_param = urlencode($autocorrect);
+            $autocorrect_no_apostr = str_replace("\\'", "'", $autocorrect);
+            $html = "<div class=\"imSearchSuggestion\">" 
+                . str_replace(
+                    "{0}", 
+                    "<a class=\"imCssLink\" href=\"?search={$query_param}&type=products\"><strong>{$autocorrect_no_apostr}</strong></a>", 
+                    l10n('cart_search_autocorrect_hint', "Did you mean: {0}?")
+                ) 
+                . "</div>" 
+                . $html;
+        }
+
         if (count($found_count)) {
             arsort($found_weight);
             $i = 0;
-            foreach ($found_products as $id => $product) {
+            foreach ($found_weight as $id => $weight) {
+                $product = $found_products[$id];
                 $i++;
                 if (($i > $this->page * $this->results_per_page) && ($i <= ($this->page + 1) * $this->results_per_page)) {
                     $count = $found_count[$id];
@@ -5769,7 +6040,11 @@ class imSearch {
                     $html .= "<h3>" . $product['title_link'] . "</h3>";
                     $html .= "<span>" . $product['price'] . "<a class=\"imCssLink\" href=\"#\"  onclick=\"x5engine.cart.ui.addToCart('" . $id . "', 1);\" style=\"margin-inline-start: 5px;\">" . l10n('cart_add') . "</a></span>";
                     $html .= "</div>";
-                    $html .= "<p>" . strip_tags($product['description']) . "</p>";
+                    $productDescripionHighlight = strip_tags($product['description']);
+                    foreach ($queries as $query) {
+                        $productDescripionHighlight = str_replace($query, "<strong>".$query."</strong>", $productDescripionHighlight);
+                    }
+                    $html .= "<p>" . $productDescripionHighlight . "</p>";
                     $html .= "</div>";
                     // Close the container
                     $html .= "</div>";
@@ -5966,7 +6241,7 @@ class imSearch {
     /**
      * Start the site search
      * 
-     * @param array  $keys The search keys as string (string)
+     * @param string $keys The search keys as string (string)
      * @param string $page Page to show (integer)
      * @param string $type The content type to show
      *
@@ -5980,10 +6255,19 @@ class imSearch {
         $content = "";
         $emptyResultsHtml = "<div style=\"margin-top: 15px; text-align: center; font-weight: bold;\">" . l10n('search_empty') . "</div>\n";
 
-        $html .= "<div class=\"imPageSearchField\"><form method=\"get\" action=\"imsearch.php\" role=\"search\">";
-        $html .= "<input value=\"" . htmlspecialchars($keys, ENT_COMPAT, 'UTF-8') . "\" type=\"text\" name=\"search\" aria-label=\"" . l10n('search_search') . "\" autofocus/>";
-        $html .= "<input style=\"margin-inline-start: 6px;\" type=\"submit\" value=\"" . l10n('search_search') . "\">";
-        $html .= "</form></div>\n";
+        $searchFieldHtml = "<div class=\"imPageSearchField\"><form method=\"get\" action=\"imsearch.php\" role=\"search\">";
+        $searchFieldHtml .= '<input
+            placeholder="' . l10n("cart_search_page_custom_research_placeholder") . '"
+            value="' . htmlspecialchars(html_entity_decode(stripslashes($keys)), ENT_COMPAT, 'UTF-8') . '"
+            type="text"
+            name="search"
+            aria-label="' . l10n('search_search') . '"
+            autofocus
+        />';
+        $searchFieldHtml .= "<button type=\"submit\" value=\"" . l10n('search_search') . "\" >";
+        $searchFieldHtml .= "<svg aria-hidden=\"true\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 250.313 250.313\" xml:space=\"preserve\"><g><path style=\"fill-rule:evenodd;clip-rule:evenodd;\" d=\"M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911	c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38	c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146	c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z\"></path></g></svg>";
+        $searchFieldHtml .= "</button>";
+        $searchFieldHtml .= "</form></div>\n";
 
         // Exit if no search query was given
         if (trim($keys) == "" || $keys == null) {
@@ -6074,17 +6358,28 @@ class imSearch {
             return $html;
         }
 
-        $sidebar = "<ul>\n";
-        if ($pages['count'] > 0)
-            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=pages\">" . l10n('search_pages') . " (" . $pages['count'] . ")</a></span></li>\n";
-        if ($blog['count'] > 0)
-            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=blog\">" . l10n('search_blog') . " (" . $blog['count'] . ")</a></span></li>\n";
-        if ($products['count'] > 0)
-            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=products\">" . l10n('search_products') . " (" . $products['count'] . ")</a></span></li>\n";
-        if ($images['count'] > 0)
-            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=images\">" . l10n('search_images') . " (" . $images['count'] . ")</a></span></li>\n";
-        if ($videos['count'] > 0)
-            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=videos\">" . l10n('search_videos') . " (" . $videos['count'] . ")</a></span></li>\n";
+        $sidebar = $searchFieldHtml . "<ul>\n";
+        $firstDefaultActiveSection = !isset($_GET["type"]) || ( isset($_GET["type"]) && $_GET["type"]!="pages" && $_GET["type"]!="blog" && $_GET["type"]!="products" && $_GET["type"]!="images" && $_GET["type"]!="videos" );
+        if ($pages['count'] > 0) {
+            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=pages\">"      . ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="pages" ? "<b>" : "" )       . l10n('search_pages')    . " (" . $pages['count']    . ")". ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="pages" ? "</b>" : "" ) . "</a></span></li>\n";
+            $firstDefaultActiveSection = false;
+        }
+        if ($blog['count'] > 0) {
+            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=blog\">"       . ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="blog" ? "<b>" : "" )        . l10n('search_blog')     . " (" . $blog['count']     . ")". ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="blog" ? "</b>" : "" )  . "</a></span></li>\n";
+            $firstDefaultActiveSection = false;
+        }
+        if ($products['count'] > 0) {
+            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=products\">"   . ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="products" ? "<b>" : "" )    . l10n('search_products') . " (" . $products['count'] . ")". ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="products" ? "</b>" : "" ) . "</a></span></li>\n";
+            $firstDefaultActiveSection = false;
+        }
+        if ($images['count'] > 0) {
+            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=images\">"     . ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="images" ? "<b>" : "" )      . l10n('search_images')   . " (" . $images['count']   . ")". ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="images" ? "</b>" : "" ) . "</a></span></li>\n";
+            $firstDefaultActiveSection = false;
+        }
+        if ($videos['count'] > 0) {
+            $sidebar .= "\t<li><span class=\"imScMnTxt\"><a href=\"imsearch.php?search=" . urlencode($keys) . "&type=videos\">"     . ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="videos" ? "<b>" : "" )      . l10n('search_videos')   . " (" . $videos['count']   . ")". ( $firstDefaultActiveSection || isset($_GET["type"]) && $_GET["type"]=="videos" ? "</b>" : "" ) . "</a></span></li>\n";
+            $firstDefaultActiveSection = false;
+        }
         $sidebar .= "</ul>\n";
 
         $html .= "<div id=\"imSearchResults\">\n";
@@ -6161,15 +6456,15 @@ class ImSendEmail
      */
     function styleHTML($html)
     {
-        $html = str_replace("[email:contentStyle]", $this->emailContentStyle, $html);
-        $html = str_replace("[email:contentFontFamily]", $this->emailContentFontFamily, $html);
-        $html = str_replace("[email:bodyBackground]", $this->bodyBackground, $html);
-        $html = str_replace("[email:bodyBackgroundBorder]", $this->bodyBackgroundBorder, $html);
-        $html = str_replace("[email:bodyBackgroundOdd]", $this->bodyBackgroundOdd, $html);
-        $html = str_replace("[email:bodyBackgroundEven]", $this->bodyBackgroundEven, $html);
-        $html = str_replace("[email:bodyTextColorOdd]", $this->bodyTextColorOdd, $html);
-        $html = str_replace("[email:bodySeparatorBorderColor]", $this->bodySeparatorBorderColor, $html);
-        $html = str_replace("[email:emailBackground]", $this->emailBackground, $html);
+        $html = str_replace("[email:contentStyle]", isset($this->emailContentStyle) ? $this->emailContentStyle : "", $html);
+        $html = str_replace("[email:contentFontFamily]", isset($this->emailContentFontFamily) ? $this->emailContentFontFamily : "", $html);
+        $html = str_replace("[email:bodyBackground]", isset($this->bodyBackground) ? $this->bodyBackground : "", $html);
+        $html = str_replace("[email:bodyBackgroundBorder]", isset($this->bodyBackgroundBorder) ? $this->bodyBackgroundBorder : "", $html);
+        $html = str_replace("[email:bodyBackgroundOdd]", isset($this->bodyBackgroundOdd) ? $this->bodyBackgroundOdd : "", $html);
+        $html = str_replace("[email:bodyBackgroundEven]", isset($this->bodyBackgroundEven) ? $this->bodyBackgroundEven : "", $html);
+        $html = str_replace("[email:bodyTextColorOdd]", isset($this->bodyTextColorOdd) ? $this->bodyTextColorOdd : "", $html);
+        $html = str_replace("[email:bodySeparatorBorderColor]", isset($this->bodySeparatorBorderColor) ? $this->bodySeparatorBorderColor : "", $html);
+        $html = str_replace("[email:emailBackground]", isset($this->emailBackground) ? $this->emailBackground : "", $html);
         return $html;
     }
 
@@ -6654,7 +6949,7 @@ class ImTopic
 
             if ($imSettings['general']['rtl']) {
                 if ($type == "guestbook")
-                    $html = ":\"" . $this->title . "\" " . str_replace(array("Blog", "blog"), array("Guestbook", "guestbook"), l10n('blog_new_comment_text')) . "<br /><br />\n\n";
+                    $html = ":\"" . $this->title . "\" " . l10n('guestbook_new_comment_text') . "<br /><br />\n\n";
                 else if ($type == "productpage")
                     $html = ":\"" . $this->title . "\" " . l10n('cart_new_comment_text') . "<br /><br />\n\n";
                 else
@@ -6667,7 +6962,7 @@ class ImTopic
                 $html .= stripslashes($_POST['body']) . " <b>" . l10n('blog_message') . "</b><br /><br />\n\n";
             } else {
                 if ($type == "guestbook")
-                    $html = str_replace(array("Blog", "blog"), array("Guestbook", "guestbook"), l10n('blog_new_comment_text')) . " \"" . $this->title . "\":<br /><br />\n\n";
+                    $html = l10n('guestbook_new_comment_text') . " \"" . $this->title . "\":<br /><br />\n\n";
                 else if ($type == "productpage")
                     $html = l10n('cart_new_comment_text') . " \"" . $this->title . "\":<br /><br />\n\n";
                 else
@@ -6685,9 +6980,9 @@ class ImTopic
                 $html .= "<a href=\"" . $moderateurl . "\">" . $moderateurl . "</a>";
             }
             if ($type == "guestbook")
-                $subject = str_replace(array("Blog", "blog"), array("Guestbook", "guestbook"), l10n('blog_new_comment_object'));
+                $subject = l10n('guestbook_new_comment_object');
             else if ($type == "productpage")
-                $subject = str_replace(array("Blog", "blog"), array($this->title, $this->title), l10n('blog_new_comment_object'));
+                $subject = str_replace("{0}", $this->title, l10n('cart_new_comment_object'));
             else
                 $subject = l10n('blog_new_comment_object');
             $ImMailer->send($from, $replyTo, $to, $subject, strip_tags($html), $html);
@@ -6818,45 +7113,62 @@ class ImTopic
 
         echo "<div class=\"topic-form\">
               <form id=\"" . $id ."\" class=\"comments-and-ratings-topic-form\" action=\"" . $this->posturl . "\" method=\"post\">
-                <input type=\"hidden\" name=\"post_id\" value=\"" . $this->id . "\"/>
-                <div class=\"topic-form-row\">
-                    <div class=\"topic-form-item\">
-                        <label for=\"" . $id . "-name\">" . l10n('blog_name') . $requiredMark . "</label> 
-                        <input type=\"text\" id=\"" . $id . "-name\" name=\"name\" class=\"imfield mandatory striptags trim\" aria-required=\"true\"/>
-                    </div>
-                    <div class=\"topic-form-item second-column\">
-                        <label for=\"" . $id . "-url\">" . l10n('blog_website') . "</label>
-                        <input type=\"text\" id=\"" . $id . "-url\" name=\"url\" />
-                    </div>
-                </div>
-                <div class=\"topic-form-row\">
-                    <div class=\"topic-form-item\">
-                        <label for=\"" . $id . "-email\">" . l10n('blog_email') . $requiredMark . "</label>
-                        <input type=\"text\" id=\"" . $id . "-email\" name=\"email\" class=\"imfield mandatory valEmail\" aria-required=\"true\"/>
-                    </div>
-                    <div class=\"topic-form-item second-column empty-column\">
-                    </div>
-                </div>";
+                <input type=\"hidden\" name=\"post_id\" value=\"" . $this->id . "\"/>";
 
+        // Rating stars row
         if ($rating) {
             //note: star-full Input occupies the same width as the stars and is used to understand if at least one star has been selected
             //and to make the "mandatory" tip appear to the right of the stars: the span kills 0% if a score is not selected.
             echo "<div class=\"topic-form-row\">
                     <div class=\"topic-form-item rating\">
-                        <label for=\"" . $id . "-star-full\">" . l10n('blog_rating') . $requiredMark . "</label>
+                        <label class=\"sr-only\" for=\"" . $id . "-star-full\">" . l10n('blog_rating') . $requiredMark . "</label>
                         <span class=\"topic-star-container-big variable-star-rating\" aria-label=\"" . l10n('comments_and_ratings_selected_rate') . " 0\">";
                             $this->getStarRatingHTML();
-            echo "          <input type=\"text\" id=\"" . $id . "-star-full\" name=\"star-full\" class=\"imfield mandatory\" style=\"width: 160px; visibility: hidden; display: none;\"/>
+            echo "          <input type=\"text\" id=\"" . $id . "-star-full\" name=\"star-full\" class=\"imfield mandatory\" style=\"width: 0px; height: 0px; opacity: 0; position: relative; top: -30px; left: 150px; z-index: -1;\"/>
                         </span>
                     </div>
                 </div>";
         }
+
+        // "Write a comment" row
+        echo "  <div class=\"topic-form-row\"><span class=\"title\">" . l10n("comments_and_ratings_add_review_title", l10n("comments_and_ratings_add_review")) . "</span></div>";
+
+        // Name & Email row
+        echo "  <div class=\"topic-form-row\">
+                    <div class=\"topic-form-item\">
+                        <label class=\"sr-only\" for=\"" . $id . "-name\">" . l10n('comments_and_ratings_name', "Name") . $requiredMark . "</label> 
+                        <input type=\"text\" id=\"" . $id . "-name\" name=\"name\" class=\"imfield mandatory striptags trim\" placeholder=\"" . l10n('comments_and_ratings_name', "Name") . "\" aria-required=\"true\"/>
+                    </div>
+                    <div class=\"topic-form-item second-column\">
+                        <label class=\"sr-only\" for=\"" . $id . "-email\">" . l10n('comments_and_ratings_email', "E-Mail") . $requiredMark . "</label>
+                        <input type=\"text\" id=\"" . $id . "-email\" name=\"email\" class=\"imfield mandatory valEmail\" placeholder=\"" . l10n('comments_and_ratings_email', "E-Mail") . "\" aria-required=\"true\"/>
+
+                        <button type=\"button\" class=\"topic-form-item-email-info\" 
+                            onmouseover=\"
+                                x5engine.imTip.Show(this , { 
+                                    target : $(this).find('img') , 
+                                    text: `<div>" . l10n("comments_and_ratings_email_tip", "the email address will be visible only to the author and will not be published on the site") . "</div>` 
+                            } ) \" 
+                            onclick=\"$(this).trigger('mouseover')\" 
+                        >
+                            <img width=\"20\" height=\"20\" 
+                                loading=\"lazy\" 
+                                alt=\"" . l10n("comments_and_ratings_email_tip") . "\"
+                                src=\"".$imSettings["general"]["url"]."res/info.png\"
+                            />
+                        </button>
+
+                    </div>
+                </div>";
+
+        // Comment textarea row
         echo "<div class=\"topic-form-row\">
                 <div class=\"topic-form-item\">
-                    <label for=\"" . $id . "-body\">" . l10n('blog_message') . $requiredMark . "</label>
-                    <textarea maxlength=\"1500\" id=\"" . $id . "-body\" name=\"body\" class=\"imfield mandatory striptags trim\" style=\"width: 100%; height: 100px;\" aria-required=\"true\"></textarea>
+                    <label class=\"sr-only\" for=\"" . $id . "-body\">" . l10n('comments_and_ratings_message', "Message") . $requiredMark . "</label>
+                    <textarea maxlength=\"3000\" id=\"" . $id . "-body\" name=\"body\" class=\"imfield mandatory striptags trim\" style=\"width: 100%; height: 100px;\" placeholder=\"" . l10n('comments_and_ratings_message', "Message") . "\" aria-required=\"true\"></textarea>
                 </div>
         </div>";
+        
         if ($captcha) {
             echo ImTopic::$captcha_code;
         }
@@ -6876,10 +7188,11 @@ class ImTopic
      * @param {boolean} $rating      TRUE to show the ratings
      * @param {boolean} $admin       TRUE to show approved and unapproved comments
      * @param {boolean} $hideifempty true to hide the summary if there are no comments
+     * @param {string}  $type        The topic type ("guestbook"|"productpage"|"blog")
      *
      * @return {Void}
      */
-    function showSummary($ratingAndStars = true, $admin = false, $hideifempty = true)
+    function showSummary($ratingAndStars = true, $admin = false, $hideifempty = true, $type = "guestbook")
     {
         $data = $this->getRatingsDataSummary($admin);
 
@@ -6891,13 +7204,13 @@ class ImTopic
             /** case comment and star **/
 
             //add block of topic average
-            echo $data["totalComments"] == 0 ? $this->getTopicZeroAverage() : $this->getTopicAverage($data["totalComments"], $data["vote"]);
+            echo $data["totalComments"] == 0 ? $this->getTopicAverage(0, 0) : $this->getTopicAverage($data["totalComments"], $data["vote"]);
 
             //add block topic bars
             echo $this->getTopicBars($data["votescount"], $data["ratingByValue"]);
 
             //add block of add review button
-            echo $this->getTopicAddReviewHtml();
+            echo $this->getTopicAddReviewHtml($type);
         }
         else {
             /** case only comment **/
@@ -6910,7 +7223,7 @@ class ImTopic
             echo "</div>\n";
 
             //add block of button of topic to add review
-            echo $this->getTopicAddReviewHtml();
+            echo $this->getTopicAddReviewHtml($type);
             
             echo "<div class=\"topic-space\">";
                 echo "<div class=\"fill\"></div>";
@@ -7009,12 +7322,20 @@ class ImTopic
     {
         $average = "<div class=\"topic-average\">";
         $average .=     "<div style=\"margin-bottom: 5px;\">";
-        $average .=         "<div class=\"rating-value\"><span class=\"big\">" . ( $vote == 0 ? "-" : number_format($vote, 1) ) . "</span>&nbsp;/&nbsp;<span>5</span></div>";
+        $average .=         "<div class=\"rating-value\"><span class=\"big\">" . ( $vote == 0 ? "0" : number_format($vote, 1) ) . "</span>&nbsp;/&nbsp;<span>5</span></div>";
         $average .=     "</div>";
-        $average .=     "<span class=\"topic-star-container-big\" title=\"" . number_format($vote, 1) . "/5\">";
-        $average .=         "<span class=\"topic-star-fixer-big\" style=\"width: " . round($vote/5 * 100) . "%;\"></span>";
-        $average .=     "</span>\n";
-        $average .=     "<div class=\"label-review\">" . $totalComments . "&nbsp;" . ( $totalComments == 1 ? l10n('comments_and_ratings_label_review') : l10n('comments_and_ratings_label_reviews') ) . "</div>";
+
+        $average .=     "<div style=\"margin-bottom: 5px;\">";
+        $average .=         "<span class=\"topic-star-container-big\" title=\"" . number_format($vote, 1) . "/5\" role=\"img\">";
+        $average .=             "<span class=\"topic-star-fixer-big\" style=\"width: " . round($vote/5 * 100) . "%;\"></span>";
+        $average .=         "</span>\n";
+        $average .=     "</div>";
+
+        if ( $totalComments > 0 ) {
+            $average .=     "<div class=\"label-review\">" . $totalComments . "&nbsp;" . ( $totalComments == 1 ? l10n('comments_and_ratings_label_review') : l10n('comments_and_ratings_label_reviews') ) . "</div>";
+        } else {
+            $average .=     "<div class=\"label-no-review\">" . l10n('comments_and_ratings_no_reviews') . "</div>";
+        }
         $average .=     "<div class=\"fill\"></div>";
         $average .= "</div>\n"; //end topic-average
         return $average;
@@ -7027,27 +7348,39 @@ class ImTopic
     function getTopicBars($votescount, $ratingByValue)
     {
         $topicBars =  "<div class=\"topic-bars\">";
+        $topicBars .= "  <div class=\"topic-bars-inner\">";
         for ($i = 5; $i > 0; $i--) {
-            $topicBars .= "<div class=\"topic-bar\">";
-            $topicBars .= "<div class=\"bar-star-n\"><span class=\"screen-reader-only-even-focused\">" . l10n("comments_and_ratings_rate", "Rate:") . "</span>" . $i . "&nbsp; <span class=\"topic-star-fixer-small star\"></span></div>\n";  
-            $topicBars .= "<div class=\"bar-progress\"><span style=\"width:". ($votescount > 0 ? ( ($ratingByValue[$i] * 100) / $votescount ) : 0) ."%;\"></span></div>\n";        
-            $topicBars .= "<div class=\"bar-total\"><span class=\"screen-reader-only-even-focused\">" . l10n("comments_and_ratings_number_of_rates", "Number of rates:") . "</span>". $ratingByValue[$i] ."</div>\n";
-            $topicBars .= "</div>\n"; //end topic-bar
+            $topicBars .= "    <div class=\"bar-star-n\"><span class=\"screen-reader-only-even-focused\">" . l10n("comments_and_ratings_rate", "Rate:") . "</span>" . $i . "</div>\n";  
+            $topicBars .= "    <div class=\"bar-progress\"><span style=\"width:". ($votescount > 0 ? ( ($ratingByValue[$i] * 100) / $votescount ) : 0) ."%;\"></span></div>\n";        
+            $topicBars .= "    <div class=\"bar-total\"><span class=\"screen-reader-only-even-focused\">" . l10n("comments_and_ratings_number_of_rates", "Number of rates:") . "</span>". $ratingByValue[$i] ."&nbsp;</div>\n";
+            $topicBars .= "    <div class=\"bar-percentage\"><span class=\"screen-reader-only-even-focused\">" . l10n("comments_and_ratings_percentage_of_rates", "Percentage of rates:") . "</span>(". ($votescount > 0 ? round( ($ratingByValue[$i] * 100) / $votescount ) : 0) ."%)</div>\n";
         }
-        $topicBars .= "<div class=\"fill\"></div>";
+        $topicBars .= "  </div>\n";
+        $topicBars .= "  <div class=\"fill\"></div>";
         $topicBars .= "</div>\n"; //end topic-bars
         return $topicBars;
     }
 
     /**
      * Returns html of button to add add review of topic
+     * @param {string}  $type        The topic type ("guestbook"|"productpage"|"blog")
      * @return string
      */
-    function getTopicAddReviewHtml()
+    function getTopicAddReviewHtml($type = "guestbook")
     {
+
+        $ctaStr = l10n("comments_and_ratings_add_review_label_object", "Your opinion is important to us and helps us improve our service.");
+        if ($type == "productpage") {
+            $ctaStr = l10n("comments_and_ratings_add_review_label_ecommerce", "Your opinion is important to us and helps us improve our service.");
+        } else if ($type == "blog") {
+            $ctaStr = l10n("comments_and_ratings_add_review_label_blog", "Your opinion is important to us and helps us improve our service.");
+        }
+
         $addReview = "<div class=\"topic-add-review\">";
-        $addReview .= "<input type=\"button\" class=\"topic-add-review-btn\" value=\"" . l10n('comments_and_ratings_add_review') . "\" />";
-        $addReview .= "<div class=\"fill\"></div>";
+        $addReview .= "  <div class=\"topic-add-review-inner\">";
+        $addReview .= "    <input type=\"button\" class=\"topic-add-review-btn\" value=\"" . l10n('comments_and_ratings_add_review') . "\" />";
+        $addReview .= "    <div class=\"fill\">" . $ctaStr . "</div>";
+        $addReview .= "  </div>";
         $addReview .= "</div>";
         return $addReview;
     }
@@ -7085,9 +7418,9 @@ class ImTopic
             return;
         }
 
-        echo "<div class=\"topic-comments " . ($showOnMultipleColumns  == true ? "multiple-columns" : "one-columns") . "\">\n";
+        echo "<div class=\"topic-comments multiple-columns\">\n";
         if ( count($c) > 0 ) {
-            $ncolumns = min(count($c), 4);
+            $ncolumns = $showOnMultipleColumns ? min(count($c), 4) : 1;
 
             // Show the comments
             $i = 0;
@@ -7108,7 +7441,7 @@ class ImTopic
                             $body = $new_body;
                         }
                         while ($delta > 0);
-                        $bodyTooLong = mb_strlen( $body ) > 1500;
+                        $bodyTooLong = mb_strlen( $body ) > 3000;
                     }
                     else {
                         do {
@@ -7117,12 +7450,12 @@ class ImTopic
                             $body = $new_body;
                         }
                         while ($delta > 0);
-                        $bodyTooLong = strlen( $body ) > 1500;
+                        $bodyTooLong = strlen( $body ) > 3000;
                     }
                     if ( $bodyTooLong ) {
                         // WARNING: Maybe you don't see them, there are invisibile spaces inside quotes in the next lines
                         $body = str_replace(array("<br>", "<br />"), "​", $comment['body']);
-                        $body = substr($body, 0, 1500) . '...';
+                        $body = substr($body, 0, 3000) . '...';
                         $body = str_replace("​", "<br>", $body);
                     }
                     else {
@@ -7137,21 +7470,23 @@ class ImTopic
                     echo "<div class=\"topic-comment-info-body\">\n";
                     echo "<div class=\"topic-comment-info\">\n";
                     echo "<div class=\"topic-comment-avatar\">" . $gravatar->toHTML() . "</div>\n";
-                    if ( $showOnMultipleColumns ) {
-                        echo "<div class=\"topic-comment-info-details\">\n";
-                    }
-                    echo "<div class=\"topic-comment-user\">";
-                    echo stristr($comment['url'], "http") ? "<a href=\"" . $comment['url'] . "\" target=\"_blank\" " . (strpos($comment['url'], $imSettings['general']['url']) === false ? 'rel="nofollow"' : '') . "><span>" . $comment['name'] . "</span></a>" : "<span>" . $comment['name'] . "</span>";
-                    echo "</div>";
-                    echo "<div class=\"topic-comment-date imBreadcrumb\" datetime=\"" . $comment['timestamp'] . "\">" . $formatDate . "</div>\n";
+
+                    echo "<div class=\"topic-comment-info-details\">\n";
+
+
                     if ( $rating && isset($comment['rating']) && $comment['rating'] > 0 ) {
                         echo "<div><span class=\"topic-star-container-small\" aria-label=\"" . $comment['rating'] . "/5\" role=\"img\">
                                     <span class=\"topic-star-fixer-small\" style=\"width: " . round($comment['rating']/5 * 100) . "%;\"></span>
                             </span></div>\n";
                     }
-                    if ( $showOnMultipleColumns ) {
-                        echo "</div>\n"; // closed topic-comment-info-details
-                    }
+
+                    echo "<div class=\"topic-comment-user\">";
+                    echo stristr($comment['url'], "http") ? "<a href=\"" . $comment['url'] . "\" target=\"_blank\" " . (strpos($comment['url'], $imSettings['general']['url']) === false ? 'rel="nofollow"' : '') . "><span>" . $comment['name'] . "</span></a>" : "<span>" . $comment['name'] . "</span>";
+                    echo "</div>";
+                    echo "<div class=\"topic-comment-date imBreadcrumb\" datetime=\"" . $comment['timestamp'] . "\">" . $formatDate . "</div>\n";
+
+                    echo "</div>\n"; // closed topic-comment-info-details
+
                     echo "</div>\n"; // closed topic-info
                     echo "<div class=\"topic-comment-body\">" . $body . "</div>\n";
                     echo "</div>\n"; // closed topic-info-body
@@ -7172,10 +7507,8 @@ class ImTopic
         }
         echo "</div>\n";
 
-        if ( $showOnMultipleColumns ) {
-            echo "<script src=\"" . $this->basePathRes ."res/masonry.pkgd.min.js\" ></script>\n";
-            echo "<script>x5engine.boot.push(\"x5engine.topicCommentsMultipleColumnsResize('" . $this->target . "', " . $ncolumns . ")\", false, 6);</script>\n";
-        }
+        echo "<script src=\"" . $this->basePathRes ."res/masonry.pkgd.min.js\" ></script>\n";
+        echo "<script>x5engine.boot.push(\"x5engine.topicCommentsMultipleColumnsResize('" . $this->target . "', " . $ncolumns . ")\", false, 6);</script>\n";
 
         // Show the pagination
         $this->showPagination($page);
@@ -7379,7 +7712,7 @@ class ImTopic
         echo "<div id=\"" . $this->id . "-topic-summary\" class=\""  . $classContainer . "\">\n";
 
         //add block of topic average
-        echo $data["totalComments"] == 0 ? $this->getTopicZeroAverage() : $this->getTopicAverage($data["totalComments"], $data["vote"]);
+        echo $data["totalComments"] == 0 ? $this->getTopicAverage(0, 0) : $this->getTopicAverage($data["totalComments"], $data["vote"]);
 
         //add block topic bars
         echo $this->getTopicBars($data["totalComments"], $data["ratingByValue"]);

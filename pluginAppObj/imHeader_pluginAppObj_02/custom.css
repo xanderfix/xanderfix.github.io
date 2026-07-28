@@ -12,7 +12,7 @@
 	overflow: hidden !important;
 	border-radius: 0px; ;
   
-	background-color: rgb(42,54,59);
+	background-color: rgba(42, 54, 59, 1);
 	z-index: 1;
 	position: relative;
 }
@@ -56,7 +56,7 @@
 }
 
 #soc_imHeader_pluginAppObj_02 .flat .social-icon svg{
-	fill: rgb(96,191,0);
+	fill: rgba(96, 191, 0, 1);
 }
 
 #soc_imHeader_pluginAppObj_02 .social-icon .fallbacktext{
@@ -73,7 +73,7 @@
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
-	color: rgb(96,191,0);
+	color: rgba(96, 191, 0, 1);
 	text-decoration: none;
 }
 

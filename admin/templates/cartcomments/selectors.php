@@ -33,7 +33,7 @@ function showProduct( obj, objcat ) {
 			</select>
 		</div>
 		
-		<?php if (strlen($selectedCategory)): ?>
+		<?php if (!empty($selectedCategory)): ?>
 		<div class="box box-grid margin-bottom-2">
 			<label for="post"><?php echo l10n("admin_product_select") ?></label>
 		</div>
@@ -67,7 +67,7 @@ function showProduct( obj, objcat ) {
 		</select>
 	</div>
 	
-	<?php if (strlen($selectedCategory)): ?>
+	<?php if (!empty($selectedCategory)): ?>
 	<div class="box margin-bottom">
 		<label for="product"><?php echo l10n("admin_product_select") ?></label>
 	</div>

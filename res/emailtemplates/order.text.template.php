@@ -2,8 +2,7 @@
 // This is the email separator line
 $separator = "<tr><td colspan=\"2\" style=\"margin: 10px 0; height: 10px; font-size: 0.1px; border-bottom: 1px solid [email:emailBackground];\">&nbsp;</td></tr>";
 // If true, it means that there are both the invoice and the shipping addresses
-$doubleUData = isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
-$doubleUData = $doubleUData && isset($orderData['userShippingData']) && is_array($orderData['userShippingData']);
+$doubleUData = !empty($orderData['userShippingData']);
 $rtl = Configuration::getSettings()['general']['rtl'];
 
 if ($rtl)
