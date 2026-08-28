@@ -8,8 +8,8 @@ function socialicons_imHeader_pluginAppObj_02() {
     
     x5engine.boot.push(function(){
         
-        btnWidth = 40;
-        btnHeight = 40;
+        btnWidth = 60;
+        btnHeight = 60;
         btnMargin = 0;
         numBtn = $("#imHeader_pluginAppObj_02 .social-icon").length;
         

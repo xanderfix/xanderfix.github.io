@@ -570,7 +570,7 @@ max-height: 100%; position: absolute; top: 0; bottom: 0; inset-inline-start: 3px
 }
 
 @media (min-width: 1150.0px) {
-	#imHeader_pluginAppObj_02_wrapper { position: absolute; top: 320px; inset-inline-start: 507px; width: 137px; height: 45px; text-align: center; z-index: 1004;  }
+	#imHeader_pluginAppObj_02_wrapper { position: absolute; top: 300px; inset-inline-start: 0px; width: 1147px; height: 65px; text-align: center; z-index: 1004;  }
 	#imHeader_imCell_2 { padding-top: 0px; padding-bottom: 0px; padding-inline-start: 0px; padding-inline-end: 0px; }
 	#imHeader_imCell_2 { grid-template-rows: [row-content] auto ; }
 	#imHeader_pluginAppObj_02 { padding-top: 0px; padding-bottom: 0px; padding-inline-start: 0px; padding-inline-end: 0px; grid-row: row-content / span 1; grid-column: 1 / -1; }
