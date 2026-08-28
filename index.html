@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="style/template.css?2026-2-3-1" media="screen" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_29/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_02/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/index.css?2026-2-3-1-639235247689702372" media="screen,print" />
+		<link rel="stylesheet" href="pcss/index.css?2026-2-3-1-639235260526765127" media="screen,print" />
 		<script src="res/jquery.js?2026-2-3-1"></script>
 		<script src="res/x5engine.js?2026-2-3-1" data-files-version="2026-2-3-1"></script>
 		<script src="pluginAppObj/pluginAppObj_29/main.js"></script>
@@ -35,7 +35,7 @@
 			x5engine.boot.push(function () { x5engine.parallax.start(); });
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2026-2-3-1-639235247689611374" type="image/png" />
+		<link rel="icon" href="favicon.png?2026-2-3-1-639235260526673722" type="image/png" />
 	</head>
 	<body>
 		<div id="imPageExtContainer">
@@ -243,48 +243,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imCell_7" class=""> <div id="imCellStyleGraphics_7" ></div><div id="imCellStyleBorders_7"></div><div id="imObjectVideo_07"><div id="imObjectVideo_07_container"></div></div>
-						<script>
-							function loadimObjectVideo_07() {
-								$('#imObjectVideo_07').width('100%');
-								$('#imObjectVideo_07_container').empty();
-								var settings = { 
-									'target': '#imObjectVideo_07_container',
-									'type': 'youtube',
-									'url': 'http://www.youtube.com/watch?v=XnuIz7Mgjew',
-									'width': 640,
-									'height': 360,
-									'showVideoControls': true,
-									'loop': false,
-									'muted': false,
-									'autoplay': false
-								};
-								var w = Math.min(640, $('#imObjectVideo_07').width());
-								settings.width = w;
-								var h = w > 640 ? 360 : (settings.width / 640 * 360);
-								settings.height = h;
-								x5engine.mediaPlayer(settings);
-							}
-							x5engine.boot.push(loadimObjectVideo_07);
-							var imObjectVideo_07_resizeTo = null,
-							imObjectVideo_07_width = 0;
-							var elementResize = function() {
-							x5engine.utils.onElementResize(document.getElementById('imObjectVideo_07'), function (rect, target) {
-							if (imObjectVideo_07_width == rect.width || (imObjectVideo_07_width >= 640 && rect.width > 640)) {
-								return;
-							}
-							imObjectVideo_07_width = rect.width;
-							if (!!imObjectVideo_07_resizeTo) {
-								clearTimeout(imObjectVideo_07_resizeTo);
-							}
-							imObjectVideo_07_resizeTo = setTimeout(function() {
-								loadimObjectVideo_07();
-							}, 50);
-								});
-							}
-							x5engine.boot.push(elementResize); 
-						</script>
-						</div><div id="imPageRow_3" class="imPageRow">
+						</div><div id="imCell_32" class=""> <div id="imCellStyleGraphics_32" ></div><div id="imCellStyleBorders_32"></div><div id="imHTMLObject_32" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/XnuIz7Mgjew?si=31Htsjum107xCCP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imPageRow_3" class="imPageRow">
 						
 						</div>
 						<div id="imCell_30" class=""> <div id="imCellStyleGraphics_30" ></div><div id="imCellStyleBorders_30"></div><div id="imTextObject_30">
