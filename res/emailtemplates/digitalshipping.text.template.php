@@ -6,7 +6,7 @@ if ($rtl)
 else
     echo $l10n->get('cart_order_no') . ": " . $orderData['order']['id'] . "\n\n";
 
-echo $opening . "\n\n";
+echo html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $opening)), ENT_QUOTES, "UTF-8") . "\n\n";
 
 echo $l10n->get('cart_product_list') . "\n\n";
 
@@ -22,4 +22,4 @@ foreach ($products as $value) {
     echo "\n";
 }
 
-echo $closing;
+echo html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $closing)), ENT_QUOTES, "UTF-8");

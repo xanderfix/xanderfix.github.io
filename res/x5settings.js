@@ -10,7 +10,7 @@
 	s.rtl = false;
 	s.responsiveTextMargin = false;
 	s.responsiveMinTextSize = 11;
-	s.version = '2026-2-3-1';
+	s.version = '2026-3-6-0';
 	b.push(function () {
 		x.setupDateTime();
 		x.imAccess.showLogout();

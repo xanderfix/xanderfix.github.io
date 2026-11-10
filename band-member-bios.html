@@ -1,11 +1,10 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="en-GB" dir="ltr">
 	<head>
-		<title>Band Member Bios - ZeldaRocks</title>
 		<meta charset="utf-8" />
-		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		<title>Band Member Bios - ZeldaRocks</title>
 		<meta name="author" content="sweetums meat" />
-		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.2.3 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.3.6 - www.websitex5.com" />
 		<meta property="og:image" content="http://localhost/favImage.png" />
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="630">
@@ -17,21 +16,21 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2026-2-3-1" media="print" />
-		<link rel="stylesheet" href="style/style.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2026-2-3-1" media="screen" />
+		<link rel="stylesheet" href="style/reset.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2026-3-6-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2026-3-6-0" media="screen" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_02/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/band-member-bios.css?2026-2-3-1-639207746550843099" media="screen,print" />
-		<script src="res/jquery.js?2026-2-3-1"></script>
-		<script src="res/x5engine.js?2026-2-3-1" data-files-version="2026-2-3-1"></script>
+		<link rel="stylesheet" href="pcss/band-member-bios.css?2026-3-6-0-639299181602709957" media="screen,print" />
+		<script src="res/jquery.js?2026-3-6-0"></script>
+		<script src="res/x5engine.js?2026-3-6-0" data-files-version="2026-3-6-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_02/main.js"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('Your browser does not support the features necessary to display this website.','Your browser may not support the features necessary to display this website.','[1]Update your browser[/1] or [2]continue without updating[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'band-member-bios.html';
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2026-2-3-1-639207746550692327" type="image/png" />
+		<link rel="icon" href="favicon.png?2026-3-6-0-639299181602675365" type="image/png" />
 	</head>
 	<body>
 		<div id="imPageExtContainer">
@@ -99,6 +98,20 @@ var imHeader_imMenuObject_12_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_12_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -111,6 +124,7 @@ $(function () {
     });
 });
 $(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div><div id="imHeader_imObjectTitle_17_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectTitle_17"><span id ="imHeader_imObjectTitle_17_text" >ZeldaRocks</span></div></div><div id="imHeader_imTextObject_14_wrapper" class="template-object-wrapper"><div id="imHeader_imTextObject_14">
@@ -194,6 +208,20 @@ var imStickyBar_imMenuObject_01_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imStickyBar_imMenuObject_01_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -206,6 +234,7 @@ $(function () {
     });
 });
 $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div></div>
@@ -221,9 +250,10 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							<h2 id="imPgTitle">Band Member Bios</h2>
 							<div id="imBreadcrumb">About Us</div>
 						</header>
-						<div id="imPageRow_1" class="imPageRow">
+						<div id="imPageSection_1" class="imPageSection">
 						
 						</div>
+						<section id="imSection_1" class="imSection">
 						<div id="imCell_1" class=""> <div id="imCellStyleGraphics_1" ></div><div id="imCellStyleBorders_1"></div><div id="imTextObject_9_01">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_9_01_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
@@ -232,10 +262,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_2" class="imPageRow">
-						
-						</div>
-						<div id="imCell_2" class=""> <div id="imCellStyleGraphics_2" ></div><div id="imCellStyleBorders_2"></div><div id="imTextObject_9_02">
+						</div><div id="imCell_2" class=""> <div id="imCellStyleGraphics_2" ></div><div id="imCellStyleBorders_2"></div><div id="imTextObject_9_02">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_9_02_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
 									<div data-text-align="center" class="imTACenter"><span class="fs28lh1-5">Nicole</span></div><div data-text-align="start" style="text-align: start;"><span class="fs18lh1-5">Instruments: Flute, EWI, Trombone</span></div><div data-text-align="start" style="text-align: start;"><span class="fs18lh1-5">Favorite Game: Earthbound</span></div>
@@ -243,7 +270,8 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div>
+						</div></section>
+						
 					</main>
 					<div id="imFooterBg"></div>
 					<footer id="imFooter">

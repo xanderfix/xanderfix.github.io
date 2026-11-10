@@ -5,6 +5,7 @@
 		var $sender;
 		var $from;
 		var $to;
+		var $bcc;
 		var $subject;
 		var $charset;
 		var $enable_sender;
@@ -45,6 +46,10 @@
 		
 		function setTo($to) {
 			$this->to = $to;
+		}
+
+		function setBcc($bcc) {
+			$this->bcc = $bcc;
 		}
 		
 		function setSubject($subject) {
@@ -97,9 +102,16 @@
 					$headers .= "From: " . $this->from . $this->newline;
 				else
 					$headers .= "From: " . $this->sender . $this->newline;
+
 				if ($this->from != null && $this->from != "" && !$this->enable_sender) {
 					$headers .= "Reply-To: " . $this->from . $this->newline;
 				}
+
+				if ($this->bcc != null && $this->bcc != "") {
+					$bcc = str_replace(";", ",", $this->bcc);
+					$headers .= "Bcc: " . $bcc . $this->newline;
+				}
+
 				$headers .= "Message-ID: <" . time() . rand(0,9) . rand(0,9) . "@websitex5.users>" . $this->newline;
 				$headers .= "X-Mailer: WebSiteX5 Mailer" . $this->newline;
 				
@@ -185,9 +197,16 @@
 					$headers .= "From: " . $this->from . $this->newline;
 				else
 					$headers .= "From: " . $this->sender . $this->newline;
+
 				if ($this->from != null && $this->from != "" && !$this->enable_sender) {
 					$headers .= "Reply-To: " . $this->from . $this->newline;
 				}
+
+				if ($this->bcc != null && $this->bcc != "") {
+					$bcc = str_replace(";", ",", $this->bcc);
+					$headers .= "Bcc: " . $bcc . $this->newline;
+				}
+
 				$headers .= "Content-Type: text/plain;charset=" . $this->charset . $this->newline;
 				$msg .= $this->text . $this->newline . $this->newline;
 

@@ -218,3 +218,4 @@ foreach ($settings['admin']['extra-dashboard'] as $key => $item) {
 $main->content .= "</div>";
 
 echo $main->render();
+

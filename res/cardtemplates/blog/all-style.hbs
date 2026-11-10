@@ -714,12 +714,36 @@
         color: rgb({{card.txtBlock.description.style.textColor.r}},{{card.txtBlock.description.style.textColor.g}},{{card.txtBlock.description.style.textColor.b}}); 
         text-align: {{card.txtBlock.align}};
         overflow: auto;
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.0));
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) calc(100% - min(1.5lh, 100%)), rgba(0,0,0,0.0));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) calc(100% - min(1.5lh, 100%)), rgba(0,0,0,0.0));
         scrollbar-width: thin;
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription:hover { 
         overflow: auto;
         -webkit-mask-image: none;
+        mask-image: none;
+    }
+    @supports (animation-timeline: scroll(self y)) {
+        @keyframes im-cc-blog-description-scroll-fade {
+            from {
+                -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) calc(100% - min(1.5lh, 100%)), rgba(0,0,0,0.0));
+                mask-image: linear-gradient(to bottom, rgba(0,0,0,1) calc(100% - min(1.5lh, 100%)), rgba(0,0,0,0.0));
+            }
+            to {
+                -webkit-mask-image: none;
+                mask-image: none;
+            }
+        }
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription {
+            /* Without vertical overflow the timeline is inactive, leaving the text unmasked. */
+            -webkit-mask-image: none;
+            mask-image: none;
+        }
+        {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription:not(:hover) {
+            /* Keep the fade until the scroll reaches the bottom. */
+            animation: im-cc-blog-description-scroll-fade 1s steps(1, end) both;
+            animation-timeline: scroll(self y);
+        }
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar { 
           width: 8px;
@@ -740,16 +764,6 @@
     }
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription::-webkit-scrollbar-thumb:hover {
         background: #b3b3b3; 
-    }
-
-    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDescription .im-cc-BlogPostCardDescriptionFade { 
-        display:none;
-        position: absolute; 
-        width: 100%; 
-        height: 25px; 
-        inset-inline-start: 0; 
-        bottom: 0; 
-        box-shadow: inset 0px -20px 44px rgb({{card.backgroundColor.r}},{{card.backgroundColor.g}},{{card.backgroundColor.b}}); 
     }
 
     {{misc.rootSelector}} .im-cc-BlogPostButtonRowWrapper {

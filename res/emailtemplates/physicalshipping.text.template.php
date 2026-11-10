@@ -9,7 +9,7 @@ if ($rtl)
 else
     echo $l10n->get('cart_order_no') . ": " . $orderData['order']['id'] . "\n\n";
 
-echo str_replace("<br />", "\n", $opening) . "\n\n";
+echo html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $opening)), ENT_QUOTES, "UTF-8") . "\n\n";
 
 echo $l10n->get('cart_product_list') . "\n\n";
 
@@ -56,5 +56,5 @@ if (isset($shippingData) && is_array($shippingData)) {
     }
 }
     
-echo str_replace("<br />", "\n", $closing);
+echo html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $closing)), ENT_QUOTES, "UTF-8");
 

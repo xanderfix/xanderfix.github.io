@@ -2,11 +2,10 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="en-GB" dir="ltr">
 	<head>
-		<title>Search - ZeldaRocks</title>
 		<meta charset="utf-8" />
-		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		<title>Search - ZeldaRocks</title>
 		<meta name="author" content="sweetums meat" />
-		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.2.3 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.3.6 - www.websitex5.com" />
 		<meta property="og:image" content="http://localhost/favImage.png" />
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="630">
@@ -18,21 +17,21 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2026-2-3-1" media="print" />
-		<link rel="stylesheet" href="style/style.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2026-2-3-1" media="screen" />
+		<link rel="stylesheet" href="style/reset.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2026-3-6-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2026-3-6-0" media="screen" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_02/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/imsearch.css?2026-2-3-1-639207746550732713" media="screen,print" />
-		<script src="res/jquery.js?2026-2-3-1"></script>
-		<script src="res/x5engine.js?2026-2-3-1" data-files-version="2026-2-3-1"></script>
+		<link rel="stylesheet" href="pcss/imsearch.css?2026-3-6-0-639299181602438117" media="screen,print" />
+		<script src="res/jquery.js?2026-3-6-0"></script>
+		<script src="res/x5engine.js?2026-3-6-0" data-files-version="2026-3-6-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_02/main.js"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('Your browser does not support the features necessary to display this website.','Your browser may not support the features necessary to display this website.','[1]Update your browser[/1] or [2]continue without updating[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'imsearch.php';
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2026-2-3-1-639207746550679129" type="image/png" />
+		<link rel="icon" href="favicon.png?2026-3-6-0-639299181602395050" type="image/png" />
 	</head>
 	<body>
 		<div id="imPageExtContainer">
@@ -100,6 +99,20 @@ var imHeader_imMenuObject_12_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_12_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -112,6 +125,7 @@ $(function () {
     });
 });
 $(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div><div id="imHeader_imObjectTitle_17_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectTitle_17"><span id ="imHeader_imObjectTitle_17_text" >ZeldaRocks</span></div></div><div id="imHeader_imTextObject_14_wrapper" class="template-object-wrapper"><div id="imHeader_imTextObject_14">
@@ -195,6 +209,20 @@ var imStickyBar_imMenuObject_01_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imStickyBar_imMenuObject_01_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -207,6 +235,7 @@ $(function () {
     });
 });
 $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div></div>

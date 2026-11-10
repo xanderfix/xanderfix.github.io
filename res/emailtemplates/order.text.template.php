@@ -11,7 +11,7 @@ else
     echo str_replace("<br>", "\n", $l10n->get('cart_order_no') . ": " . $orderData['orderNo']) . "\n";
 // Opening Message
 if ($showCustomerMessages) {
-    echo strip_tags(str_replace("<br />", "\n", $settings['email_opening'])) . "\n";
+    echo html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $settings['email_opening'])), ENT_QUOTES, "UTF-8") . "\n";
 }
 // Invoice & Shipping Data
 // Data header
@@ -179,5 +179,5 @@ if (isset($orderData['shipping']) && is_array($orderData['shipping'])) {
 }
 // Closing message
 if ($showCustomerMessages) {
-    echo "\n" . strip_tags(str_replace("<br />", "\n", $settings['email_closing']));
+    echo "\n" . html_entity_decode(strip_tags(str_replace(array("<br />", "<br>", "<br/>", "</div>", "</p>"), "\n", $settings['email_closing'])), ENT_QUOTES, "UTF-8");
 }

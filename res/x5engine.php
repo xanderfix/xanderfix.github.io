@@ -121,7 +121,7 @@ class imBlog
             }
         }
         else if(isset($array['tag'])) {
-            $data['tag'] = htmlspecialchars(@$array['tag']);
+            $data['tag'] = @$array['tag'];
         }
         else if(isset($array['month'])) {
             $data['month'] = htmlspecialchars(@$array['month']);
@@ -221,7 +221,7 @@ class imBlog
             return htmlspecialchars($urlData['author'] . $separator . $basetitle);
         } else if (isset($urlData['tag'])) {
             // Tag
-            return htmlspecialchars(strip_tags($urlData['tag']) . $separator . $basetitle);
+            return htmlspecialchars($urlData['tag'] . $separator . $basetitle);
         } else if (isset($urlData['month']) && is_numeric($urlData['month']) && strlen($urlData['month']) == 6) {
             // Month
             return htmlspecialchars(substr($urlData['month'], 4, 2) . "/" . substr($urlData['month'], 0, 4) . $separator . $basetitle);
@@ -265,7 +265,7 @@ class imBlog
             return htmlspecialchars($urlData['author']);
         } else if (isset($urlData['tag'])) {
             // Tag
-            return htmlspecialchars(strip_tags($urlData['tag']));
+            return htmlspecialchars($urlData['tag']);
         } else if (isset($urlData['month']) && is_numeric($urlData['month']) && strlen($urlData['month']) == 6) {
             // Month
             return htmlspecialchars(substr($urlData['month'], 4, 2) . "/" . substr($urlData['month'], 0, 4));
@@ -587,7 +587,7 @@ class imBlog
             return htmlspecialchars(strip_tags($data['author']));
         } else if (isset($data['tag'])) {
             // Tag
-            return htmlspecialchars(strip_tags($data['tag']));
+            return htmlspecialchars($data['tag']);
         } else if (isset($data['month'])) {
             // Month
             return htmlspecialchars(substr($data['month'], 4, 2) . "/" . substr($data['month'], 0, 4));
@@ -727,7 +727,7 @@ class imBlog
             }
 
             echo "<header>\n";
-            echo "  <" . $bp['title_heading_tag'] . " class=\"imPgTitle\" style=\"display: block;\">" . $bp['title'] . "</" . $bp['title_heading_tag'] . ">\n";
+            echo "  <" . $bp['title_heading_tag'] . " class=\"imPgTitle\" style=\"display: block;\">" . htmlspecialchars($bp['title']) . "</" . $bp['title_heading_tag'] . ">\n";
             echo "</header>\n";
 
             // Publisher Microdata
@@ -742,10 +742,10 @@ class imBlog
             if ($bp['author'] != "" || $bp['category'] != "") {
                 echo l10n('blog_published') . " ";
                 if ($bp['author'] != "") {
-                    echo l10n('blog_by') . " <a href=\"?author=" . urlencode(str_replace(' ', '_', $bp['author'])) . "\" target=\"_blank\"><span><strong>" . $bp['author'] . "</strong></span></a> ";
+                    echo l10n('blog_by') . " <a href=\"?author=" . urlencode(str_replace(' ', '_', $bp['author'])) . "\" target=\"_blank\"><span><strong>" . htmlspecialchars($bp['author']) . "</strong></span></a> ";
                 }
                 if ($bp['category'] != "") {
-                    echo l10n('blog_in') . " <a href=\"?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\" target=\"_blank\"><span>" . $bp['category'] . "</span></a> ";
+                    echo l10n('blog_in') . " <a href=\"?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\" target=\"_blank\"><span>" . htmlspecialchars($bp['category']) . "</span></a> ";
                 }
                 echo "&middot; ";
             }
@@ -763,7 +763,7 @@ class imBlog
                 for ($i = 0; $i < count($bp['tag']); $i++) {
                     if ($i > 0)
                         echo ",&nbsp;";
-                    echo "<a href=\"?tag=" . $bp['tag'][$i] . "\">" . $bp['tag'][$i] . "</a>";
+                    echo "<a href=\"?tag=" . rawurlencode($bp['tag'][$i]) . "\">" . htmlspecialchars($bp['tag'][$i]) . "</a>";
                 }
             }
             echo "</div>\n";
@@ -846,19 +846,19 @@ class imBlog
                 echo "<div class=\"imBlogPostWrapperCardCover\"><img id=\"imBlogPostCardCover_" . $id . "\" class=\"imBlogPostCardCover\" src=\"../" . ($isHighlighted ? $bp['cover'] : $bp['cardCover']) . "\" alt=\"" . $bp['coverAlt'] . "\" title=\"" . $bp['coverTitle'] . "\" onclick=\"window.location='" . $bp['rel_url'] . "';\"/></div>";
             }
             if ($imSettings['blog']['show_card_title']) {
-                echo "<header class=\"imBlogPostCardTitle\"><h1><a href=\"" . $bp['rel_url'] . "\">" . $bp['title'] . "</a></h1></header>";
+                echo "<header class=\"imBlogPostCardTitle\"><h1><a href=\"" . $bp['rel_url'] . "\">" . htmlspecialchars($bp['title']) . "</a></h1></header>";
             }
             if ($imSettings['blog']['show_card_category']) {
-                echo "<div class=\"imBlogPostCardCategory\"><a href=\"?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\">" . $bp['category'] . "</a></div>";
+                echo "<div class=\"imBlogPostCardCategory\"><a href=\"?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\">" . htmlspecialchars($bp['category']) . "</a></div>";
             }
             if ($imSettings['blog']['show_card_description']) {
-                echo "<div class=\"imBlogPostCardDescription\">" . $bp['summary'] . "<div class=\"imBlogPostCardDescriptionFade\"></div></div>";
+                echo "<div class=\"imBlogPostCardDescription\">" . nl2br(htmlspecialchars($bp['summary'])) . "<div class=\"imBlogPostCardDescriptionFade\"></div></div>";
             }
             if ($imSettings['blog']['show_card_author'] || $imSettings['blog']['show_card_date']) {
                 echo "<div class=\"imBlogPostCardDetails\">";
                 echo "<div class=\"imBlogSeparator\"></div>";
                 if ($imSettings['blog']['show_card_author']) {
-                    echo "<span class=\"imBlogPostCardAuthor\"><a href=\"?author=" . urlencode(str_replace(' ', '_', $bp['author'])) . "\">" . $bp['author'] . "</a></span>";
+                    echo "<span class=\"imBlogPostCardAuthor\"><a href=\"?author=" . urlencode(str_replace(' ', '_', $bp['author'])) . "\">" . htmlspecialchars($bp['author']) . "</a></span>";
                 }
                 if ($imSettings['blog']['show_card_date']) {
                     if ($imSettings['blog']['show_card_author'] && $bp['author'] != "") {
@@ -1013,10 +1013,10 @@ class imBlog
         if ($bp['author'] != "" || $bp['category'] != "") {
             $details .= l10n('blog_published') . " ";
             if ($bp['author'] != "") {
-                $details .= l10n('blog_by') . " <strong>" . $bp['author'] . "</strong> ";
+                $details .= l10n('blog_by') . " <strong>" . htmlspecialchars($bp['author']) . "</strong> ";
             }
             if ($bp['category'] != "") {
-                $details .= l10n('blog_in') . " <a href=\"../?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\">" . $bp['category'] . "</a> ";
+                $details .= l10n('blog_in') . " <a href=\"../?category=" . urlencode(str_replace(' ', '_', $bp['category'])) . "\">" . htmlspecialchars($bp['category']) . "</a> ";
             }
             $details .= "&middot; ";
         }
@@ -1026,14 +1026,14 @@ class imBlog
             for ($i = 0; $i < count($bp['tag']); $i++) {
                 if ($i > 0)
                     $details .= ",&nbsp;";
-                $details .= "<a href=\"../?tag=" . $bp['tag'][$i] . "\">" . $bp['tag'][$i] . "</a>";
+                $details .= "<a href=\"../?tag=" . rawurlencode($bp['tag'][$i]) . "\">" . htmlspecialchars($bp['tag'][$i]) . "</a>";
             }
         }
 
         if (isset($bs['article_type']) && $bs['article_type'] == 'covertitlecontents') {
             echo $cover;
         }
-        echo "\t\t\t<h1 class=\"post-title\">" . $bp['title'] . "</h1>\n";
+        echo "\t\t\t<h1 class=\"post-title\">" . htmlspecialchars($bp['title']) . "</h1>\n";
         echo "\t\t\t<div class=\"post-details\">" . $details . "</div>\n";
         if (isset($bs['article_type']) && $bs['article_type'] == 'titlecovercontents') {
             echo $cover;
@@ -1066,7 +1066,7 @@ class imBlog
 
 
 
-	function customCardBreakpointString( $cardStyle, $widths = null ){
+	function customCardBreakpointString( $cardStyle, $pageData, $widths = null, $fullWidth = false ){
 
 		$breakpointString = "";
 		$cardsperrowString = "";
@@ -1080,39 +1080,16 @@ class imBlog
 
 		if ( $numBreakPoints > 0 ) {
 
-			$minContentW = 200;
-			$minCardW = $minContentW + $card["border"]["widths"]["left"] + $card["border"]["widths"]["right"];
-			if ( $card["type"] == "leftcoverrightcontents" || $card["type"] == "leftcontentsrightcover" ) {
-                $minCardW = floor( $minContentW / ( ( 100.0 - $card["image"]["percentSize"] ) / 100.0 ) ) + $card["border"]["widths"]["left"] + $card["border"]["widths"]["right"];
-			}
-
+			$minCardW = $pageData["minCardWidth"];
 			$strPieceBPdesktop = "";
 			$strPieceCPRdesktop = "";
 			for ( $i = 0 ; $i < $numBreakPoints ; $i++ ) {
 
-                if ( isset($widths) && isset($widths[$i]) && $widths[$i] > 0 ) {
-                    $maxAvailW = $widths[$i];
-                } else {
-                    $maxAvailW = $breakPoints[$i]["end"];
-                    if ( $breakPoints[$i]["end"] == 0 ) {
-                        $maxAvailW = $breakPoints[$i]["start"];
-                        if ( $maxAvailW == "max" ) {
-                            $maxAvailW = $breakPoints[$i]["width"];
-                        }
-                    } else {
-                        $maxAvailW = $imSettings['blog']['widths'][$i];
-                    }
-                }
-
+                $maxAvailW = $pageData["itemsContainerWidth"][$i];
 				$cpr = $cardStyle["cardsPerRow"];
-				$BPEnd = $breakPoints[$i]["end"];
-                if ( $breakPoints[$i]["end"] == 0 && $breakPoints[$i]["start"] == "max" ) {
-					$BPEnd = $breakPoints[$i]["width"];
-                }
-				$w = max( floor( min( $BPEnd , $maxAvailW ) / $cpr ) , $minCardW );
-				$cpr = max( floor( min( $BPEnd , $maxAvailW ) / $w ) , 1 );
-                $maxAvailW -= ( $cpr - 1 ) * $card["margin"];
-				$w = max( floor( min( $BPEnd , $maxAvailW ) / $cpr ) , $minCardW );
+				$w = max( floor( $maxAvailW / $cpr ) , $minCardW );
+				$cpr = max( floor( $maxAvailW / $w ) , 1 );
+				$w = max( floor( $maxAvailW / $cpr ) , $minCardW );
 
 				$strPieceBP = " (max-width: START) END,";
 				$strPieceCPR = " (max-width: START) END,";
@@ -1125,7 +1102,7 @@ class imBlog
 					$strPieceCPR = str_replace( "START" , $breakPoints[$i]["start"] . "px" , $strPieceCPR );
 				}
 
-				if ( $breakPoints[$i]["end"] == 0 ) {
+				if ( $breakPoints[$i]["end"] == 0 || $fullWidth ) {
 					$strPieceBP = str_replace( "END" , "100%" , $strPieceBP );
 				} else {
 					$strPieceBP = str_replace( "END" , $w . "px" , $strPieceBP );
@@ -1213,7 +1190,7 @@ class imBlog
 
 
 
-	function customCardMisc( $rootSelector, $cardStyle, $widths = null ) {
+	function customCardMisc( $rootSelector, $cardStyle, $pageData, $widths = null, $fullWidth = false ) {
 
 		$misc = array();
 
@@ -1223,7 +1200,7 @@ class imBlog
 
 		if ( isset( $cardStyle ) ) {
 
-			$BPValues = $this->customCardBreakpointString( $cardStyle, $widths );
+			$BPValues = $this->customCardBreakpointString( $cardStyle, $pageData, $widths, $fullWidth );
 			$misc["cardBreakpoint"] = $BPValues["breakpointString"];            
 			$misc["cardContentLayout"] = $this->customCardContentLayout( $cardStyle["card"] );
 			$misc["cardLayoutCardArrangement"] = $this->customCardLayoutArrangement( $cardStyle );
@@ -1374,9 +1351,9 @@ class imBlog
 		// Calculated values for the contents
 
 		$calculated["category"] = $bp["category"];
-		$calculated["escapedCategory"] = str_replace(" ", "_", $bp["category"]);
+		$calculated["escapedCategory"] = rawurlencode(str_replace(" ", "_", $bp["category"]));
 		$calculated["author"] = $bp["author"];
-		$calculated["escapedAuthor"] = str_replace(" ", "_", $bp["author"]);
+		$calculated["escapedAuthor"] = rawurlencode(str_replace(" ", "_", $bp["author"]));
 		$calculated["timestamp"] = $bp["timestamp"];
 
         $calculated["readTime"] = str_replace("[MM]",$bp["readTimeMinutes"], $strings["blog_read_time"]);
@@ -1453,7 +1430,7 @@ class imBlog
         $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
         $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
 
-		$misc = $this->customCardMisc( "#imBlogContent .blog-cardlayout-wrapper", $cardStyle );
+		$misc = $this->customCardMisc( "#imBlogContent .blog-cardlayout-wrapper", $cardStyle, $imSettings['blog'] );
 
 		$miscGlobal = $this->getCalculatedGlobalData( $card, $misc );
 
@@ -1566,7 +1543,7 @@ class imBlog
             $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
             $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
 
-            $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle );
+            $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle, $imSettings['blog'] );
             $misc['cardLayoutCardArrangement'] = "same-height";
             $miscGlobal = $this->getCalculatedGlobalData( $card, $misc );    
             $blogPostsData = array();
@@ -1646,7 +1623,7 @@ class imBlog
             $card["txtBlock"]["details"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["details"]["style"]["font"] );
             $card["txtBlock"]["button"]["style"]["font"] = $this->singleFontStyleWeightComponents( $card["txtBlock"]["button"]["style"]["font"] );
 
-            $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle );
+            $misc = $this->customCardMisc( "#imBlogContent .imBlogHighlightedCards", $cardStyle, $imSettings['blog'] );
             $misc["cardBreakpoint"] = "100%";
             $misc['cardLayoutCardArrangement'] = "slideshow";
             $misc['cardContentLayout'] = "cover-as-background";
@@ -1763,14 +1740,15 @@ END;
      * @param array     $blogPostsPerRow  Array of number of blog posts per row at different breakpoints
      * @param boolean   $cardBPColumns    List of "(max-width: Npx) cards_per_page" rules for the card layout
      * @param boolean   $randomOrder      Whether to show the posts in random order
+     * @param boolean   $fullWidth        Whether the object is full width
      *
      * @return void
      */
-    function showPostsBlogObj($postIds, $l10nStrings, $cardStyle, $objectId, $outerWidths, $innerWidths, $blogPostsPerRow, $cardBPColumns, $randomOrder)
+    function showPostsBlogObj($postIds, $l10nStrings, $cardStyle, $objectId, $outerWidths, $innerWidths, $blogPostsPerRow, $cardBPColumns, $randomOrder, $fullWidth)
     {
         global $imSettings;
 		$card = $cardStyle["card"];
-		$misc = $this->customCardMisc("#" . $objectId, $cardStyle, $innerWidths);
+		$misc = $this->customCardMisc("#" . $objectId, $cardStyle, $imSettings['blog'], $innerWidths, $fullWidth);
 		$miscGlobal = $this->getCalculatedGlobalData($card, $misc);
 
 		$blogPostsData = array();
@@ -1974,7 +1952,7 @@ END;
             return;
         $bps = array_values($this->getTagPosts($tag));
         $this->showPosts($bps, $start, $length, $count);
-        $this->paginate("?tag=" . $tag . "&", $start, $length, $count);
+        $this->paginate("?tag=" . rawurlencode($tag) . "&", $start, $length, $count);
     }
 
     /**
@@ -2144,7 +2122,7 @@ END;
             $categoriesCount = count($categories);
             for ($i = 0; $i < $categoriesCount && $i < $n; $i++) {
                 if ($categories[$i] != "") {
-                    echo "<li><a href=\"?category=" . urlencode(str_replace(' ', '_', $categories[$i])) . "\">" . $categories[$i] . "</a></li>";
+                    echo "<li><a href=\"?category=" . urlencode(str_replace(' ', '_', $categories[$i])) . "\">" . htmlspecialchars($categories[$i]) . "</a></li>";
                 }
             }
             echo "<li><a href=\"?category=|All|\">" . l10n("blog_all_categories", "All categories") . "</a></li>";
@@ -2175,7 +2153,7 @@ END;
             $authorsCount = count($authors);
             for ($i = 0; $i < $authorsCount && $i < $n; $i++) {
                 if ($authors[$i] != "") {
-                    echo "<li><a href=\"?author=" . urlencode(str_replace(' ', '_', $authors[$i])) . "\">" . $authors[$i] . "</a></li>";
+                    echo "<li><a href=\"?author=" . urlencode(str_replace(' ', '_', $authors[$i])) . "\">" . htmlspecialchars($authors[$i]) . "</a></li>";
                 }
             }
             echo "<li><a href=\"?author=|All|\">" . l10n("blog_all_authors", "All authors") . "</a></li>";
@@ -2217,7 +2195,7 @@ END;
             foreach ($tags as $name => $number) {
                 $size = number_format(($number/$max * ($max_em - $min_em)) + $min_em, 2, '.', '');
                 echo "\t\t\t<span class=\"imBlogCloudItem\" style=\"font-size: " . $size . "em;\">\n";
-                echo "\t\t\t\t<a href=\"?tag=" . urlencode($name) . "\" style=\"font-size: " . $size . "em;\">" . $name . "</a>\n";
+                echo "\t\t\t\t<a href=\"?tag=" . urlencode($name) . "\" style=\"font-size: " . $size . "em;\">" . htmlspecialchars($name) . "</a>\n";
                 echo "\t\t\t</span>\n";
             }
         } else if ($type == "categories") {
@@ -2241,7 +2219,7 @@ END;
             foreach ($categories as $name => $number) {
                 $size = number_format(($number/$max * ($max_em - $min_em)) + $min_em, 2, '.', '');
                 echo "\t\t\t<span class=\"imBlogCloudItem\" style=\"font-size: " . $size . "em;\">\n";
-                echo "\t\t\t\t<a href=\"?category=" . urlencode(str_replace(' ', '_', $name)) . "\" style=\"font-size: " . $size . "em;\">" . $name . "</a>\n";
+                echo "\t\t\t\t<a href=\"?category=" . urlencode(str_replace(' ', '_', $name)) . "\" style=\"font-size: " . $size . "em;\">" . htmlspecialchars($name) . "</a>\n";
                 echo "\t\t\t</span>\n";
             }
         }
@@ -2291,7 +2269,7 @@ END;
             echo "<ul>";
             $postsCount = count($posts);
             for ($i = 0; $i < $postsCount && $i < $n; $i++) {
-                echo "<li><a href=\"" . $posts[$i]['rel_url'] . "\">" . $posts[$i]['title'] . "</a></li>";
+                echo "<li><a href=\"" . $posts[$i]['rel_url'] . "\">" . htmlspecialchars($posts[$i]['title']) . "</a></li>";
             }
             echo "</ul>";
         }
@@ -4627,6 +4605,13 @@ class ImForm
     {
         global $ImMailer;
         global $imSettings;
+
+        $placeholders = array(
+            '[NOW]' => formatDate(new DateTime(), false, true, true)
+        );
+        $subject = strtr($subject, $placeholders);
+        $text = strtr($text, $placeholders);
+
         $rtl = isset($imSettings['general']['rtl']) ? $imSettings['general']['rtl'] : false;
 
         //Form Data
@@ -4723,6 +4708,13 @@ class ImForm
     {
         global $ImMailer;
         global $imSettings;
+
+        $placeholders = array(
+            '[NOW]' => formatDate(new DateTime(), false, true, true)
+        );
+        $subject = strtr($subject, $placeholders);
+        $text = strtr($text, $placeholders);
+
         $rtl = isset($imSettings['general']['rtl']) ? $imSettings['general']['rtl'] : false;
 
         //Form Data
@@ -5445,8 +5437,11 @@ class imPrivateArea
  */
 class imSearch {
 
+    /** @var array The scope of pages to search */
     var $scope;
+    /** @var int The current page number */
     var $page;
+    /** @var int The number of results per page */
     var $results_per_page;
 
     function __construct()
@@ -5482,7 +5477,7 @@ class imSearch {
     /**
      * Do the pages search
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
     function searchPages($queries)
     {        
@@ -5490,11 +5485,16 @@ class imSearch {
         $html = "";
         $found_content = array();
         $found_count = array();
+        $found_weight = array();
+        $found_title = array();
 
         if (is_array($this->scope)) {
             foreach ($this->scope as $filename) {
                 $count = 0;
                 $weight = 0;
+                $found_terms = array(); //parole distinte trovate in tutto
+                $term_hits = 0;         // parole distinte trovate nelle varie sezioni
+                $total_hits = 0;        // occorrenze totali
 				$file = file($filename);
 				if ($file === false) {
 					error_log("File not found: " . $filename, 0);
@@ -5570,11 +5570,18 @@ class imSearch {
 
                     foreach ($file_titles as $file_title) {
                         foreach ($queries as $query) {
+                            $occ = 0;
                             $title = imstrtolower($file_title);
                             while (($title = imstristr($title, $query)) !== false) {
                                 $weight += 3;
                                 $count++;
                                 $title = imsubstr($title, imstrlen($query));
+                                $occ++;
+                                $found_terms[$query] = true;
+                            }
+                            if ($occ > 0) {
+                                $term_hits++;
+                                $total_hits += $occ * 3; // title pesa di più
                             }
                         }
                     }
@@ -5584,11 +5591,18 @@ class imSearch {
                     if (count($matches) > 1) {
                         $keywords = $matches[1];
                         foreach ($queries as $query) {
+                            $occ = 0;
                             $tkeywords = imstrtolower($keywords);
                             while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
                                 $weight += 4;
                                 $count++;
                                 $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                                $occ++;
+                                $found_terms[$query] = true;
+                            }
+                            if ($occ > 0) {
+                                $term_hits++;
+                                $total_hits += $occ;
                             }
                         }
                     }
@@ -5598,11 +5612,18 @@ class imSearch {
                     if (count($matches) > 1) {
                         $keywords = $matches[1];
                         foreach ($queries as $query) {
+                            $occ = 0;
                             $tkeywords = imstrtolower($keywords);
                             while (($tkeywords = imstristr($tkeywords, $query)) !== false) {
                                 $weight += 3;
                                 $count++;
                                 $tkeywords = imsubstr($tkeywords, imstrlen($query));
+                                $occ++;
+                                $found_terms[$query] = true;
+                            }
+                            if ($occ > 0) {
+                                $term_hits++;
+                                $total_hits += $occ;
                             }
                         }
                     }
@@ -5617,17 +5638,28 @@ class imSearch {
                     $t_file_content = imstrtolower($file_content);
 
                     foreach ($queries as $query) {
+                        $occ = 0;
                         $file = $t_file_content;
                         while (($file = imstristr($file, $query)) !== false) {
                             $count++;
                             $weight++;
                             $file = imsubstr($file, imstrlen($query));
+                            $occ++;
+                            $found_terms[$query] = true;
+                        }
+                        if ($occ > 0) {
+                            $term_hits++;
+                            $total_hits += $occ;
                         }
                     }
 
                     if ($count > 0) {
                         $found_count[$filename] = $count;
-                        $found_weight[$filename] = $weight;
+                        $found_weight[$filename] = [
+                            'w1' => count($found_terms),
+                            'w2' => $term_hits,
+                            'w3' => $total_hits
+                        ];
                         $found_content[$filename] = $file_content;
                         if (count($file_titles) == 0)
                             $found_title[$filename] = $filename;
@@ -5639,7 +5671,18 @@ class imSearch {
         }
 
         if (count($found_count)) {
-            arsort($found_weight);
+            uasort($found_weight, function($a, $b) {
+                // Ordine decrescente per w1
+                if ($a['w1'] != $b['w1']) {
+                    return $b['w1'] <=> $a['w1'];
+                }
+                // A parità di w1, ordine decrescente per w2
+                if ($a['w2'] != $b['w2']) {
+                    return $b['w2'] <=> $a['w2'];
+                }
+                // A parità di w1 e w2, ordine decrescente per w3
+                return $b['w3'] <=> $a['w3'];
+            });
             $i = 0;
             foreach ($found_weight as $name => $weight) {
                 $count = $found_count[$name];
@@ -5698,7 +5741,7 @@ class imSearch {
     /**
      * Do the blog posts search
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
     function searchBlog($queries)
     {
@@ -5706,6 +5749,9 @@ class imSearch {
         $html = "";
         $found_content = array();
         $found_count = array();
+        $found_weight = array();
+        $found_title = array();
+        $found_breadcrumbs = array();
 
         if (isset($imSettings['blog']) && isset($imSettings['blog']['posts']) && is_array($imSettings['blog']['posts'])) {
             foreach ($imSettings['blog']['posts'] as $key => $value) {
@@ -5853,7 +5899,7 @@ class imSearch {
     /**
      * Autocorrect words using Levenshtein distance
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
     function autocorrectWords($queries) {
 
@@ -5885,12 +5931,76 @@ class imSearch {
     }
 
     /**
+     * Calculate weight and matches count
+     * @access public
+     * 
+     * @param array $queries The search queries (array)
+     * @param string $from The string where to find the queries
+     * 
+     * @return array(
+     *  "weight" => the assigned weight
+     *  "count" => count of matches found
+     * )
+     */
+    function weightAndCount($queries, $from) {
+
+        $weight = 0;
+        $count = 0;
+
+        // Count the number of matches in the title
+        foreach ($queries as $query) {
+
+            $queryLen = strlen($query);
+
+            // Fuzzy match for each word in the string
+            $words = preg_split('/\s+/', $from);
+
+            $bestDistance = 99;
+            $isPrefix = false;
+            foreach ($words as $w) {
+                // Prefer prefix matches over Levenshtein suggestions to support partial searches
+                if ( $queryLen >= 3 && strpos($w, $query) === 0 ) {
+                    $isPrefix = true;
+                }
+
+                $d = levenshtein($query, $w);
+                if ($d < $bestDistance) {
+                    $bestDistance = $d;
+                }
+            }
+
+            if ( $isPrefix ) { // prefix bonus
+                $weight += 5;
+                $count += 1;
+            }
+
+            if ($bestDistance === 0) { // exact match
+                $weight += 4;
+                $count +=1;
+            } elseif ($bestDistance === 1) { // minimal typo
+                $weight += 3;
+                $count +=1;
+            } elseif ($bestDistance === 2 && $queryLen > 4) { // major typo, but quite a long word
+                $weight += 1;
+                $count +=1;
+            }
+
+        }
+
+        return array(
+            "weight" => $weight,
+            "count" => $count
+        );
+
+    }
+
+    /**
      * Do the products search
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
-    function searchProducts($queries)
-    {
+    function searchProducts($queries) {
+
        // Di questa funzione manca la paginazione!
 
         // Remove quots from queries
@@ -5905,6 +6015,9 @@ class imSearch {
         if ( str_replace( ['&amp;quot;', '&quot;', '"'], '', $corrected ) !== $queries ) {
             $autocorrect = implode(' ', $corrected);   // save it if you need to display it
         }
+
+        // strToLower the queries
+        $queries = array_map('imstrtolower', $queries);
 
         global $imSettings;
         $html = "";
@@ -5959,44 +6072,20 @@ class imSearch {
             }
 
             // Count the number of matches in the title
-            foreach ($queries as $query) {
-
-                // Fuzzy match for each word in the title
-                $words = preg_split('/\s+/', $t_title);
-                $bestDistance = 99;
-                foreach ($words as $w) {
-                    $d = levenshtein($query, $w);
-                    if ($d < $bestDistance) {
-                        $bestDistance = $d;
-                    }
-                }
-                if ($bestDistance === 0) { // exact match
-                    $weight += 4;
-                    $count +=1;
-                } elseif ($bestDistance === 1) { // minimal typo
-                    $weight += 3;
-                    $count +=1;
-                } elseif ($bestDistance === 2 && strlen($query) > 4) { // major typo, but quite a long word
-                    $weight += 1;
-                    $count +=1;
-                }
-
-            }
+            $weightAndCountFromTitle = $this->weightAndCount($queries, $t_title);
+            $weight += $weightAndCountFromTitle["weight"];
+            $count += $weightAndCountFromTitle["count"];
 
             // Count the number of matches in the description
-            foreach ($queries as $query) {
-                $t_count = preg_match_all('/' . preg_quote($query, '/') . '/', $t_description, $matches);
-                if ($t_count !== false) {
-                    $weight++;
-                    $count += $t_count;
-                }
-            }
+            $weightAndCountFromDescription = $this->weightAndCount($queries, $t_description);
+            $weight += $weightAndCountFromDescription["weight"];
+            $count += $weightAndCountFromDescription["count"];
 
             // Count the number of matches in the SKU
             foreach ($queries as $query) {
                 $t_count = preg_match_all('/' . preg_quote($query, '/') . '/', $t_sku, $matches);
                 if ($t_count !== false) {
-                    $weight++;
+                    $weight += 5;
                     $count += $t_count;
                 }
             }
@@ -6058,7 +6147,7 @@ class imSearch {
     /**
      * Do the images search
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
     function searchImages($queries)
     {
@@ -6139,7 +6228,7 @@ class imSearch {
     /**
      * Do the videos search
      * @access public
-     * @param queries The search query (array)
+     * @param array $queries The search query (array)
      */
     function searchVideos($queries)
     {
@@ -6321,7 +6410,9 @@ class imSearch {
             $videos = array("count" => 0);
         // Fallback on the selection if there are no videos
         if ($videos['count'] == 0 && $type == "videos")
-            $type = "pages";            
+            $type = "pages";
+
+        $results_count = 0;
 
         // Show only the requested content type
         switch ($type) {
@@ -6481,7 +6572,7 @@ class ImSendEmail
      *
      * @return boolean
      */
-    function send($sender = "", $from = "", $to = "", $subject = "", $text = "", $html = "", $attachments = array())
+    function send($sender = "", $from = "", $to = "", $subject = "", $text = "", $html = "", $attachments = array(), $bcc = "")
     {
         global $imSettings;
         /*
@@ -6533,6 +6624,21 @@ class ImSendEmail
                 // WSXELE-1157: Provide support for the format John Doe <johndoe@email.com>
                 $email->addAddress(addressFromEmail($addr), nameFromEmail($addr));
             }
+
+            // BCC
+            if ($bcc != null && $bcc != "") {
+                $bcc = str_replace(";", ",", $bcc);
+                foreach (explode(",", $bcc) as $addr) {
+                    $addr = trim($addr);
+                    if ($addr != "") {
+                        $email->addBCC(
+                            addressFromEmail($addr),
+                            nameFromEmail($addr)
+                        );
+                    }
+                }
+            }
+
             // Content
             $email->isHTML(true);
             $email->Body = $this->header . $this->styleHTML($html) . $this->footer;
@@ -6540,7 +6646,12 @@ class ImSendEmail
             // Attachments
             foreach ($attachments as $file) {
                 if (isset($file['name']) && isset($file['content']) && isset($file['mime'])) {
-                    $email->addStringAttachment($file['content'], $file['name'], 'base64', $file['mime'], 'attachment');
+                    $added = $email->addStringAttachment($file['content'], $file['name'], 'base64', $file['mime'], 'attachment');
+                    if (!$added) {
+                        $this->registerLog('[EmailAttachments] PHPMailer failed to add attachment: ' . json_encode(array('name' => $file['name'], 'bytes' => strlen($file['content']), 'mime' => $file['mime'])));
+                    }
+                } else {
+                    $this->registerLog('[EmailAttachments] PHPMailer: skipping entry with missing name, content or mime');
                 }
             }
             if (!$email->send()) {
@@ -6556,13 +6667,24 @@ class ImSendEmail
         |--------------
          */
 
-        $email = new imEMail($sender, $from, $to, $subject, "utf-8", isset($imSettings['general']['enable_sender_header']) && $imSettings['general']['enable_sender_header']);
+        $email = new imEMail(
+            $sender, 
+            $from, 
+            $to, 
+            $subject, 
+            "utf-8", 
+            isset($imSettings['general']['enable_sender_header']) && $imSettings['general']['enable_sender_header']
+        );
+        $email->setBcc($bcc);
+        
         $email->setText($text);
         $email->setHTML($this->header . $this->styleHTML($html) . $this->footer);
         $email->setStandardType($this->emailType);
         foreach ($attachments as $a) {
             if (isset($a['name']) && isset($a['content']) && isset($a['mime'])) {
                 $email->attachFile($a['name'], $a['content'], $a['mime']);
+            } else {
+                $this->registerLog('[EmailAttachments] Internal mailer: skipping entry with missing name, content or mime');
             }
         }
         if (!$email->send()) {

@@ -1,11 +1,10 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="en-GB" dir="ltr">
 	<head>
-		<title>Live Shows - ZeldaRocks</title>
 		<meta charset="utf-8" />
-		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		<title>Live Shows - ZeldaRocks</title>
 		<meta name="author" content="sweetums meat" />
-		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.2.3 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Evo 2026.3.6 - www.websitex5.com" />
 		<meta property="og:image" content="http://localhost/favImage.png" />
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="630">
@@ -17,21 +16,21 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2026-2-3-1" media="print" />
-		<link rel="stylesheet" href="style/style.css?2026-2-3-1" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2026-2-3-1" media="screen" />
+		<link rel="stylesheet" href="style/reset.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2026-3-6-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2026-3-6-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2026-3-6-0" media="screen" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_02/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/live-shows.css?2026-2-3-1-639246336475174532" media="screen,print" />
-		<script src="res/jquery.js?2026-2-3-1"></script>
-		<script src="res/x5engine.js?2026-2-3-1" data-files-version="2026-2-3-1"></script>
+		<link rel="stylesheet" href="pcss/live-shows.css?2026-3-6-0-639299199652854554" media="screen,print" />
+		<script src="res/jquery.js?2026-3-6-0"></script>
+		<script src="res/x5engine.js?2026-3-6-0" data-files-version="2026-3-6-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_02/main.js"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('Your browser does not support the features necessary to display this website.','Your browser may not support the features necessary to display this website.','[1]Update your browser[/1] or [2]continue without updating[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'live-shows.html';
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2026-2-3-1-639246336475113637" type="image/png" />
+		<link rel="icon" href="favicon.png?2026-3-6-0-639299199652802541" type="image/png" />
 	</head>
 	<body>
 		<div id="imPageExtContainer">
@@ -99,6 +98,20 @@ var imHeader_imMenuObject_12_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_12_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -111,6 +124,7 @@ $(function () {
     });
 });
 $(function () {$('#imHeader_imMenuObject_12_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_12_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div><div id="imHeader_imObjectTitle_17_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectTitle_17"><span id ="imHeader_imObjectTitle_17_text" >ZeldaRocks</span></div></div><div id="imHeader_imTextObject_14_wrapper" class="template-object-wrapper"><div id="imHeader_imTextObject_14">
@@ -194,6 +208,20 @@ var imStickyBar_imMenuObject_01_settings = {
 	'animationDuration': 1000,
 }
 x5engine.boot.push(function(){x5engine.initMenu(imStickyBar_imMenuObject_01_settings)});
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+$(function () {
+    $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
+        $(this).on('mouseenter', function (evt) {
+            if (!evt.originalEvent) {
+                evt.stopImmediatePropagation();
+                evt.preventDefault();
+                return;
+            }
+        });
+    });
+});
+$(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).show(); }, 250);    }).on('mouseleave', function () {        timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).hide(); }, 250);    });});});
+} else {
 $(function () {
     $('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {
         $(this).on('mouseenter', function (evt) {
@@ -206,6 +234,7 @@ $(function () {
     });
 });
 $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+}
 
 </script>
 </div></div>
@@ -220,9 +249,10 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 						<header>
 							<h2 id="imPgTitle">Live Shows</h2>
 						</header>
-						<div id="imPageRow_1" class="imPageRow">
+						<div id="imPageSection_1" class="imPageSection">
 						
 						</div>
+						<section id="imSection_1" class="imSection">
 						<div id="imCell_14" class=""> <div id="imCellStyleGraphics_14" ></div><div id="imCellStyleBorders_14"></div><div id="imTextObject_4_14">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_14_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
@@ -231,22 +261,16 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_2" class="imPageRow">
-						
-						</div>
-						<div id="imCell_59" class=""> <div id="imCellStyleGraphics_59" ></div><div id="imCellStyleBorders_59"></div><div id="imObjectImage_4_59"><div id="imObjectImage_4_59_container"><a href="https://www.instagram.com/p/Db9RA6NGTCZ/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==" target="_blank"><img src="images/SGMF-2-Poster.jpg"  width="440" height="569" />
+						</div><div id="imCell_59" class=""> <div id="imCellStyleGraphics_59" ></div><div id="imCellStyleBorders_59"></div><div id="imObjectImage_4_59"><div id="imObjectImage_4_59_container"><a href="https://www.eventbrite.com/e/super-game-music-fest-ii-flatiron-fantasy-tickets-2004559773243" target="_blank"><img src="images/SGMF-2-Poster-v2.jpg"  width="440" height="568" />
 						</a></div></div></div><div id="imCell_60" class=""> <div id="imCellStyleGraphics_60" ></div><div id="imCellStyleBorders_60"></div><div id="imTextObject_4_60">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_60_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
-									<div><span class="fs20lh1-5 ff1">Super Game Music Fest 2026</span></div><div><span class="fs20lh1-5 ff1"><br></span></div><div class="imTACenter"><div style="text-align: start;">11/28/2026</div><div style="text-align: start;">Boulder, CO</div><div style="text-align: start;"><br></div><div style="text-align: start;">Catch us performing at the second annual Colorado Super Game Music Fest (SGMF)! It'll be a wild night at the Boulder Library Canyon Theatre as we're joined by our friends Audio Mocha, Nostal-Jazz, the Chunderfins, and the Pixel Peaks Community Ensemble!</div></div>
+									<div><span class="fs20lh1-5 ff1">Super Game Music Fest 2026</span></div><div><span class="fs20lh1-5 ff1"><br></span></div><div class="imTACenter"><div style="text-align: start;">11/28/2026</div><div style="text-align: start;">Boulder, CO</div><div style="text-align: start;"><br></div><div style="text-align: start;">Catch us performing at the second annual Colorado Super Game Music Fest (SGMF)! It'll be a wild night of <b>free</b> music at the Boulder Library Canyon Theatre as we're joined by our friends Audio Mocha, Nostal-Jazz, the Chunderfins, and the Pixel Peaks Community Ensemble!</div><div style="text-align: start;">Find more info and reserve a spot here: <span class="imTACenter fs14lh1-5"><a href="https://www.eventbrite.com/e/super-game-music-fest-ii-flatiron-fantasy-tickets-2004559773243" target="_blank" class="imCssLink">https://www.eventbrite.com/e/super-game-music-fest-ii-flatiron-fantasy-tickets-2004559773243</a></span></div></div>
 								</div>
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_3" class="imPageRow">
-						
-						</div>
-						<div id="imCell_61" class=""> <div id="imCellStyleGraphics_61" ></div><div id="imCellStyleBorders_61"></div><div id="imTextObject_4_61">
+						</div><div id="imCell_61" class=""> <div id="imCellStyleGraphics_61" ></div><div id="imCellStyleBorders_61"></div><div id="imTextObject_4_61">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_61_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
 									<div data-line-height="1" class="lh1 imTACenter"><span class="fs36lh1 ff1">Show Archive:</span></div>
@@ -254,10 +278,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_4" class="imPageRow">
-						
-						</div>
-						<div id="imCell_62" class=""> <div id="imCellStyleGraphics_62" ></div><div id="imCellStyleBorders_62"></div><div id="imTextObject_4_62">
+						</div><div id="imCell_62" class=""> <div id="imCellStyleGraphics_62" ></div><div id="imCellStyleBorders_62"></div><div id="imTextObject_4_62">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_62_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
 									<div data-text-align="center" class="imTACenter"><span class="fs14lh1-5 cb1">07/11/2026 - Creators Con @ Level 7 Games Westminster</span></div><div data-text-align="center" class="imTACenter"><span class="cb1">05/24/2026 - Performance @ Akihabara Japanese Arcade</span></div>
@@ -265,10 +286,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_5" class="imPageRow">
-						
-						</div>
-						<div id="imCell_63" class=""> <div id="imCellStyleGraphics_63" ></div><div id="imCellStyleBorders_63"></div><div id="imHTMLObject_4_63" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/d7utJMYH8vs?si=evomrsZnyvQd9cUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_64" class=""> <div id="imCellStyleGraphics_64" ></div><div id="imCellStyleBorders_64"></div><div id="imTextObject_4_64">
+						</div><div id="imCell_63" class=""> <div id="imCellStyleGraphics_63" ></div><div id="imCellStyleBorders_63"></div><div id="imHTMLObject_4_63" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/d7utJMYH8vs?si=evomrsZnyvQd9cUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_64" class=""> <div id="imCellStyleGraphics_64" ></div><div id="imCellStyleBorders_64"></div><div id="imTextObject_4_64">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_64_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
 									<div><span class="fs20lh1-5 ff1">Bizarre Electronics VGM Night 2026</span></div><div><span class="fs24lh1-5 ff1"><br></span></div><div class="imTACenter"><div style="text-align: start;">08/08/2026</div><div style="text-align: start;">Longmont, CO</div><div style="text-align: start;"><br></div><div style="text-align: start;">Middle act of a full night of game music also featuring The Chunderfins, Airship Overdrive, Audio Mocha, and Nostal-Jazz.</div></div>
@@ -276,10 +294,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_6" class="imPageRow">
-						
-						</div>
-						<div id="imCell_57" class=""> <div id="imCellStyleGraphics_57" ></div><div id="imCellStyleBorders_57"></div><div id="imHTMLObject_4_57" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/PJw4touJ2so?si=UPNkqyOiY91Lw3hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_54" class=""> <div id="imCellStyleGraphics_54" ></div><div id="imCellStyleBorders_54"></div><div id="imHTMLObject_4_54" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/N_9niSfk1UE?si=_cHzCdgroShkFJKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_51" class=""> <div id="imCellStyleGraphics_51" ></div><div id="imCellStyleBorders_51"></div><div id="imHTMLObject_4_51" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/XMjnl-XwSnQ?si=CXd_cumXpppZqQhf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_58" class=""> <div id="imCellStyleGraphics_58" ></div><div id="imCellStyleBorders_58"></div><div id="imTextObject_4_58">
+						</div><div id="imCell_57" class=""> <div id="imCellStyleGraphics_57" ></div><div id="imCellStyleBorders_57"></div><div id="imHTMLObject_4_57" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/PJw4touJ2so?si=UPNkqyOiY91Lw3hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_54" class=""> <div id="imCellStyleGraphics_54" ></div><div id="imCellStyleBorders_54"></div><div id="imHTMLObject_4_54" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/N_9niSfk1UE?si=_cHzCdgroShkFJKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_51" class=""> <div id="imCellStyleGraphics_51" ></div><div id="imCellStyleBorders_51"></div><div id="imHTMLObject_4_51" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/XMjnl-XwSnQ?si=CXd_cumXpppZqQhf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imCell_58" class=""> <div id="imCellStyleGraphics_58" ></div><div id="imCellStyleBorders_58"></div><div id="imTextObject_4_58">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_4_58_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
 								<div class="text-inner">
 									<div><span class="fs20lh1-5 ff1">Warp Stage @VGMCon 2026</span></div><div><span class="fs24lh1-5 ff1"><br></span></div><div class="imTACenter"><div style="text-align: start;">04/18/2026</div><div style="text-align: start;">Plymouth, MN</div><div style="text-align: start;"><br></div><div style="text-align: start;">Recorded performance shown live on the Warp Stage at VGMCon 2026. Includes several new covers of Kirby's Epic Yarn, Yoshi's Wooly World, and Hollow Knight: Silksong pieces to fit the convention's theme of "Stitched Together"</div></div>
@@ -311,9 +326,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imCell_52" class=""> <div id="imCellStyleGraphics_52" ></div><div id="imCellStyleBorders_52"></div><div id="imHTMLObject_4_52" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/2P3nq8NPKeI?si=498QMcccD-d-msRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><div id="imPageRow_7" class="imPageRow">
-						
-						</div>
+						</div><div id="imCell_52" class=""> <div id="imCellStyleGraphics_52" ></div><div id="imCellStyleBorders_52"></div><div id="imHTMLObject_4_52" class="imHTMLObject" style="text-align: center; width: 100%; overflow: hidden;"><iframe width="560" height="315" src="https://www.youtube.com/embed/2P3nq8NPKeI?si=498QMcccD-d-msRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></section>
 						
 					</main>
 					<div id="imFooterBg"></div>

@@ -141,7 +141,26 @@
                 </tr>
                 <?php foreach ($orderData['products'] as $key => $value): ?>
                     <tr valign="top" style="[email:contentFontFamily] vertical-align: top"<?php ($i%2 ? " bgcolor=\"#EEEEEE\"" : "") ?>>
-                        <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder];"><?php echo $value["name"] ?><br /><?php echo $value["description"] ?></td>
+                        <td style="[email:contentFontFamily] border: 1px solid [email:bodyBackgroundBorder];"><?php echo $value["name"] ?><br /><?php echo $value["description"] ?>
+                            <?php $catalogProduct = isset($products[$value['id']]) ? $products[$value['id']] : array(); ?>
+                            <?php if (!empty($catalogProduct['producerGuarantee']) && !empty($catalogProduct['guaranteeImage'])): ?>
+                                <?php
+                                    $guaranteeLink = rtrim($baseurl, '/') . '/';
+                                    if (isset($catalogProduct['productPageLinkType']) && $catalogProduct['productPageLinkType'] === 'productpage' && !empty($catalogProduct['slug'])) {
+                                        $guaranteeLink .= 'product/?' . $catalogProduct['slug'];
+                                    } elseif (!empty($catalogProduct['guaranteeLinkUrl'])) {
+                                        $guaranteeLink = $catalogProduct['guaranteeLinkUrl'];
+                                    }
+                                ?>
+                                <div style="margin-top: 8px;">
+                                    <a href="<?php echo htmlspecialchars($guaranteeLink, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars(str_replace('{{YEARS}}', (string)(int)$catalogProduct['guaranteeYears'], $l10n->get('cart_garan_years', "GARAN Producer's guarantee: {{YEARS}} years")), ENT_QUOTES, 'UTF-8'); ?>">
+                                        <img src="<?php echo htmlspecialchars(rtrim($baseurl, '/') . '/' . ltrim($catalogProduct['guaranteeImage'], '/'), ENT_QUOTES, 'UTF-8'); ?>" width="128" 
+                                             alt="<?php echo htmlspecialchars(str_replace('{{YEARS}}', (string)(int)$catalogProduct['guaranteeYears'], $l10n->get('cart_garan_years', "GARAN Producer's guarantee: {{YEARS}} years")), ENT_QUOTES, 'UTF-8'); ?>"
+                                             style="display: block; width: 128px; max-width: 100%; height: auto; border: 1px solid black;" />
+                                    </a>
+                                </div>
+                            <?php endif; ?>
+                        </td>
                         <?php if ($opt): ?>
                         <td style="border: 1px solid [email:bodyBackgroundBorder];">
                             <?php if ($value["option"] != "null"): ?>
